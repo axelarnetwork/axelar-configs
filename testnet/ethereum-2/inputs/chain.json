@@ -4,8 +4,18 @@
     "name": "Ethereum",
     "symbol": "ETH",
     "decimals": 18,
-    "icon": "https://tokens.1inch.io/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png"
+    "iconUrls": {
+      "png_1x": "https://tokens.1inch.io/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png",
+      "png_2x": "",
+      "png_3x": "",
+      "svg": ""
+    }
   },
-  "chainIconURI": "https://tokens.1inch.io/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png",
+  "iconUrls": {
+    "png_1x": "https://tokens.1inch.io/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png",
+    "png_2x": "",
+    "png_3x": "",
+    "svg": ""
+  },
   "blockExplorerUrls": ["https://goerli.etherscan.io/"]
 }
