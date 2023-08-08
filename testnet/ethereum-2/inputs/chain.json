@@ -1,0 +1,11 @@
+{
+  "rpc": ["https://rpc.ankr.com/eth_goerli"],
+  "nativeCurrency": {
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "decimals": 18,
+    "icon": "https://tokens.1inch.io/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png"
+  },
+  "chainIconURI": "https://tokens.1inch.io/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png",
+  "blockExplorerUrls": ["https://goerli.etherscan.io/"]
+}
