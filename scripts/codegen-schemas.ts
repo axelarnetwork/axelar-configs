@@ -38,5 +38,4 @@ await spinner(
     )
 );
 
-// with emoji
 console.log("Done generating JSON schemas 🎉");
