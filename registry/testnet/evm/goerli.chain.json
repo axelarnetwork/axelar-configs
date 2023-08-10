@@ -1,0 +1,21 @@
+{
+  "$schema": "../../evm-chain.schema.json",
+  "id": 5,
+  "network": "goerli",
+  "name": "Goerli",
+  "nativeCurrency": {
+    "name": "Goerli Ether",
+    "symbol": "ETH",
+    "decimals": 18,
+    "iconUrl": "/images/tokens/eth.svg"
+  },
+  "rpcUrls": ["https://rpc.ankr.com/eth_goerli"],
+  "blockExplorers": [
+    {
+      "name": "Etherscan",
+      "url": "https://goerli.etherscan.io"
+    }
+  ],
+  "iconUrl": "/images/chains/ethereum.svg",
+  "testnet": true
+}

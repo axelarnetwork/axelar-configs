@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "evm-chain schema",
+  "$ref": "#/definitions/chain",
+  "definitions": {
+    "address": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
+    "blockExplorer": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      },
+      "required": ["name", "url"],
+      "additionalProperties": false,
+      "description": "a block explorer for the chain"
+    },
+    "chain": {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string",
+          "pattern": "^(?:\\.\\.\\/)+evm-chain\\.schema\\.json$"
+        },
+        "id": { "type": "integer" },
+        "name": { "type": "string" },
+        "network": { "type": "string" },
+        "nativeCurrency": { "$ref": "#/definitions/nativeCurrency" },
+        "rpcUrls": {
+          "type": "array",
+          "items": { "type": "string", "format": "uri" }
+        },
+        "blockExplorers": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/blockExplorer" }
+        },
+        "testnet": { "type": "boolean" },
+        "iconUrl": {
+          "type": "string",
+          "pattern": "\\/images\\/chains\\/([a-z]+)\\.svg$",
+          "description": "the icon for the chain, must be a relative path to a svg icon under /images/chains"
+        }
+      },
+      "required": [
+        "$schema",
+        "id",
+        "name",
+        "network",
+        "nativeCurrency",
+        "rpcUrls",
+        "iconUrl"
+      ],
+      "additionalProperties": false,
+      "description": "an EVM compatible chain configuration"
+    },
+    "nativeCurrency": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "symbol": { "type": "string", "minLength": 2, "maxLength": 6 },
+        "decimals": { "type": "integer", "minimum": 0 },
+        "iconUrl": {
+          "type": "string",
+          "pattern": "\\/images\\/tokens\\/([a-z]+)\\.svg$",
+          "description": "the icon for the currency, must be a relative path to a svg icon under /images/tokens"
+        }
+      },
+      "required": ["name", "symbol", "decimals", "iconUrl"],
+      "additionalProperties": false,
+      "description": "the native currency for the chain"
+    },
+    "rpcUrls": {
+      "type": "object",
+      "properties": {
+        "http": {
+          "type": "array",
+          "items": { "type": "string", "format": "uri" }
+        },
+        "webSocket": {
+          "type": "array",
+          "items": { "type": "string", "format": "uri" }
+        }
+      },
+      "required": ["http"],
+      "additionalProperties": false,
+      "description": "the RPC endpoints for the chain"
+    }
+  }
+}

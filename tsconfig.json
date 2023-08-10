@@ -1,0 +1,15 @@
+{
+  "extends": "ts-node/node16/tsconfig.json",
+  "experimentalSpecifierResolution": "node",
+  "ts-node": {
+    "experimentalSpecifierResolution": "node",
+    "compilerOptions": {
+      "moduleResolution": "node"
+    }
+  },
+  "compilerOptions": {
+    "module": "ESNext",
+    "baseUrl": "."
+  },
+  "include": ["cli/**/*.ts", "scripts/**/*.ts"]
+}

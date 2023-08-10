@@ -1,0 +1,21 @@
+{
+  "$schema": "../../evm-chain.schema.json",
+  "id": 12345,
+  "network": "example-evm",
+  "name": "Example EVM",
+  "nativeCurrency": {
+    "name": "Example Coin",
+    "symbol": "EXC",
+    "decimals": 18,
+    "iconUrl": "/images/tokens/example_coin.svg"
+  },
+  "rpcUrls": ["https://rpc.example-evm.org"],
+  "blockExplorers": [
+    {
+      "name": "ExampleScan",
+      "url": "https://explorer.example-evm.org"
+    }
+  ],
+  "iconUrl": "/images/chains/example_chain.svg",
+  "testnet": true
+}

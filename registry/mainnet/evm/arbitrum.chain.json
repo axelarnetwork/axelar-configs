@@ -1,0 +1,20 @@
+{
+  "$schema": "../../evm-chain.schema.json",
+  "id": 42161,
+  "network": "arbitrum",
+  "name": "Arbitrum One",
+  "nativeCurrency": {
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18,
+    "iconUrl": "/images/tokens/eth.svg"
+  },
+  "rpcUrls": ["https://arb1.arbitrum.io/rpc"],
+  "blockExplorers": [
+    {
+      "name": "Arbiscan",
+      "url": "https://arbiscan.io"
+    }
+  ],
+  "iconUrl": "/images/chains/arbitrum.svg"
+}
