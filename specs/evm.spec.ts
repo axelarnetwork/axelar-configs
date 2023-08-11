@@ -1,7 +1,18 @@
 import { test, describe, expect } from "vitest";
+import { globby } from "zx";
+import { validate } from "jsonschema";
 
-describe("EVM Chain Configs", () => {
-  test("should be able to deploy a contract", () => {
-    expect(1).toBe(1);
-  });
+const files = await globby("registry/**/evm/*chain.json");
+const schema = await import("../registry/evm-chain.schema.json");
+
+describe("EVM Chain Configs", async () => {
+  for (const file of files) {
+    test(`${file} should match the schema`, async () => {
+      const config = await import(`../${file}`);
+
+      const result = validate(config, schema);
+
+      expect(result.valid).toBeTruthy();
+    });
+  }
 });

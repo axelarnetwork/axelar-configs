@@ -1,8 +1,8 @@
+name: test
 on:
   - pull_request
   - push
 
-name: test
 jobs:
   setup-and-test:
     name: setup-and-test
