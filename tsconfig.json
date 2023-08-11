@@ -4,12 +4,14 @@
   "ts-node": {
     "experimentalSpecifierResolution": "node",
     "compilerOptions": {
-      "moduleResolution": "node"
+      "moduleResolution": "node",
+      "types": ["bun-types"]
     }
   },
   "compilerOptions": {
     "module": "ESNext",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "types": ["bun-types"]
   },
   "include": ["cli/**/*.ts", "scripts/**/*.ts"]
 }

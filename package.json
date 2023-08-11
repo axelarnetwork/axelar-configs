@@ -6,8 +6,9 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --write .",
-    "wizard": "ts-node-esm ./cli/wizard.ts",
-    "codegen:schemas": "ts-node-esm ./scripts/codegen-schemas.ts"
+    "wizard": "ts-node-esm ./cli/wizard",
+    "codegen:schemas": "ts-node-esm ./scripts/codegen-schemas.ts",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -19,12 +20,14 @@
     "@tsconfig/node16": "^16.1.0",
     "@types/node": "^20.4.9",
     "@types/prettier": "^2.7.3",
+    "bun-types": "^0.7.3",
     "chalk": "^5.3.0",
     "prettier": "^2.8.8",
     "pretty-quick": "^3.1.3",
     "svgo": "^3.0.2",
     "ts-node": "^10.9.1",
     "tslib": "^2.6.1",
+    "vitest": "^0.34.1",
     "zod": "^3.21.4",
     "zod-to-json-schema": "^3.21.4",
     "zx": "^7.2.3"

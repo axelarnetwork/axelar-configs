@@ -1,5 +1,6 @@
 import { input, select, checkbox } from "@inquirer/prompts";
 import { z, ZodSchema } from "zod";
+import chalk from "chalk";
 
 export const prettyPrint = <T extends Record<string, unknown>>(obj: T) =>
   JSON.stringify(obj, null, 2);
@@ -27,10 +28,10 @@ export const validators = {
   nonEmpty: validateWith(z.string().nonempty("This field cannot be empty")),
   optionalString: validateWith(z.string().optional()),
   numeric: validateWith(
-    z
-      .number()
-      .positive("This field must be a number")
-      .gt(0, "This field must be a number greater than 0")
+    // should receive a string and verify that it's a number
+    z.string().refine((value) => !isNaN(Number(value)), {
+      message: "This field must be a number",
+    })
   ),
   url: validateWith(
     z.string().url("This field must be a valid URL (e.g. https://example.com)")
@@ -97,32 +98,34 @@ export const evmChainPrompts = {
     }),
   nativeCurrencyName: () =>
     input({
-      message: "What is the name of the native currency?",
+      message: `What's the ${chalk.yellow("name")} of the native currency?`,
       validate: validators.nonEmpty,
     }),
   nativeCurrencySymbol: () =>
     input({
-      message: "What is the symbol of the native currency?",
+      message: `What's the ${chalk.yellow("symbol")} of the native currency?`,
       validate: validators.nonEmpty,
     }),
   nativeCurrencyDecimals: () =>
     input({
-      message: "How many decimals does the native currency have?",
+      message: `How many ${chalk.yellow(
+        "decimals"
+      )} does the native currency have?`,
       validate: validators.numeric,
     }),
   rpcUrl: () =>
     input({
-      message: "Provide the RPC URL:",
+      message: `Provide the ${chalk.yellow("RPC")} URL:`,
       validate: validators.url,
     }),
   blockExplorerName: () =>
     input({
-      message: "Name of the block explorer?",
+      message: `Name of the ${chalk.yellow("block explorer")}?`,
       validate: validators.nonEmpty,
     }),
   blockExplorerUrl: () =>
     input({
-      message: "URL of the block explorer?",
+      message: `Provide ${chalk.yellow("block explorer")} URL?`,
       validate: validators.url,
     }),
 };
@@ -245,8 +248,42 @@ export const cosmosChainPrompts = {
     }),
 };
 
-export type DraftConfig = Record<string, string | string[]>;
+type ChainConfigPropmts = typeof evmChainPrompts | typeof cosmosChainPrompts;
 
-export type EVMChainField = keyof typeof evmChainPrompts;
+export type DraftConfig<T extends string = string> = Partial<
+  Record<T, string | string[]>
+>;
 
-export type CosmosChainField = keyof typeof cosmosChainPrompts;
+/**
+ * Builds a chain config interactively.
+ * @param prompts
+ * @returns a chain config
+ */
+export async function buildChainConfig(prompts: ChainConfigPropmts) {
+  type Field = keyof typeof prompts;
+
+  const draft: DraftConfig<Field> = {};
+
+  for (const [field, prompt] of Object.entries(prompts)) {
+    draft[field as Field] = await prompt();
+  }
+
+  let confirm = await confirmPrompt(draft);
+
+  while (!confirm) {
+    const field = await select({
+      message: "Which field would you like to change?",
+      choices: Object.keys(draft).map((key) => ({
+        name: key,
+        value: key,
+      })),
+    });
+
+    const prompt = prompts[field as Field];
+    draft[field as Field] = await prompt();
+
+    confirm = await confirmPrompt(draft);
+  }
+
+  return draft;
+}

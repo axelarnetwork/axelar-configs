@@ -1,12 +1,12 @@
 {
-  "$schema": "../../../cosmos-chain.schema.json",
-  "rest": "https://api.example-ibc.org",
-  "rpc": "https://api.example-ibc.org/chain/exampleibc",
-  "chainId": "exampleibc-1",
-  "chainName": "Example IBC",
+  "$schema": "../../cosmos-chain.schema.json",
+  "rest": "https://api.examople.network",
+  "rpc": "https://api.example.network/chain/examplehub",
+  "chainId": "examplehub-4",
+  "chainName": "examplehub",
   "stakeCurrency": {
-    "coinDenom": "EXC",
-    "coinMinimalDenom": "uexc",
+    "coinDenom": "ATOM",
+    "coinMinimalDenom": "uatom",
     "coinDecimals": 6
   },
   "bech32Config": {
@@ -18,21 +18,20 @@
     "bech32PrefixValPub": "examplevaloperpub"
   },
   "bip44": {
-    "coinType": 1234
+    "coinType": 118
   },
   "feeCurrencies": [
     {
-      "coinDenom": "EXC",
-      "coinMinimalDenom": "uexc",
+      "coinDenom": "ATOM",
+      "coinMinimalDenom": "uatom",
       "coinDecimals": 6
     }
   ],
   "currencies": [
     {
-      "coinDenom": "EXC",
-      "coinMinimalDenom": "uexc",
+      "coinDenom": "ATOM",
+      "coinMinimalDenom": "uatom",
       "coinDecimals": 6
     }
-  ],
-  "features": ["stargate", "ibc-transfer"]
+  ]
 }

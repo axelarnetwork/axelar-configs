@@ -1,0 +1,20 @@
+{
+  "$schema": "../../evm-chain.schema.json",
+  "id": 42161,
+  "network": "example",
+  "name": "Example Chain",
+  "nativeCurrency": {
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18,
+    "iconUrl": "/images/tokens/eth.svg"
+  },
+  "rpcUrls": ["https://examplechain.io/rpc"],
+  "blockExplorers": [
+    {
+      "name": "ExampleScan",
+      "url": "https://examplescan.io"
+    }
+  ],
+  "iconUrl": "/images/chains/arbitrum.svg"
+}
