@@ -8,7 +8,7 @@
     "format": "prettier --write .",
     "wizard": "ts-node-esm ./cli/wizard",
     "codegen:schemas": "ts-node-esm ./scripts/codegen-schemas.ts",
-    "test": "vitest"
+    "test": "vitest --run"
   },
   "keywords": [],
   "author": "",
