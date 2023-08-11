@@ -1,6 +1,13 @@
-import { input, select } from "@inquirer/prompts";
+import { select } from "@inquirer/prompts";
 import chalk from "chalk";
-import { prettyPrint } from "./utils";
+import {
+  evmChainPrompts,
+  cosmosChainPrompts,
+  confirmPrompt,
+  EVMChainField,
+  CosmosChainField,
+  DraftConfig,
+} from "./utils";
 
 console.log(chalk.bold.green("\nWelcome to the Axelar config wizard!\n"));
 
@@ -45,63 +52,32 @@ const validators = {
   },
 };
 
-const prompts = {
-  configKind: () =>
-    select({
-      message: "What kind of configuration is this?",
-      choices: [
-        {
-          name: "Mainnet",
-          value: "mainnet" as const,
-        },
-        {
-          name: "Testnet",
-          value: "testnet" as const,
-        },
-      ],
-    }),
-  chainName: () =>
-    input({
-      message: "What is the name of the chain?",
-      validate: validators.nonEmpty,
-    }),
-};
-
 switch (configType) {
   case "evm-chain":
     {
-      const configKind = await prompts.configKind();
+      const draftConfig: Record<string, string> = {};
 
-      const chainName = await prompts.chainName();
+      for (const [name, prompt] of Object.entries(evmChainPrompts)) {
+        draftConfig[name] = await prompt();
+      }
 
-      const chainId = await input({
-        message: "What is the chain ID?",
-        validate: validators.numeric,
-      });
+      let confirm = await confirmPrompt(draftConfig);
 
-      const draftConfig = {
-        chainName,
-        chainId,
-        isTestnet: configKind === "testnet",
-      };
+      while (!confirm) {
+        // prompt to change field
+        const targetField = await select({
+          message: "Which field would you like to change?",
+          choices: Object.entries(draftConfig).map(([name, value]) => ({
+            name: `${name} (${chalk.cyan(value)})`,
+            value: name as EVMChainField,
+          })),
+        });
 
-      const confirm = await select({
-        message: `Is this correct? \n${prettyPrint(draftConfig)}\n`,
-        choices: [
-          {
-            name: "Yes",
-            value: true,
-          },
-          {
-            name: "No",
-            value: false,
-          },
-        ],
-      });
+        const prompt = evmChainPrompts[targetField];
 
-      if (!confirm) {
-        console.log(chalk.red("\nAborting...\n"));
-        process.exit(0);
+        draftConfig[targetField] = await prompt();
+
+        confirm = await confirmPrompt(draftConfig);
       }
 
       const shouldIncludeAssetlist = await select({
@@ -127,10 +103,30 @@ switch (configType) {
     break;
   case "cosmos-chain":
     {
-      const chainName = await input({
-        message: "What is the name of the chain?",
-        validate: validators.nonEmpty,
-      });
+      const draftConfig: DraftConfig = {};
+
+      for (const [name, prompt] of Object.entries(cosmosChainPrompts)) {
+        draftConfig[name] = await prompt();
+      }
+
+      let confirm = await confirmPrompt(draftConfig);
+
+      while (!confirm) {
+        // prompt to change field
+        const targetField = await select({
+          message: "Which field would you like to change?",
+          choices: Object.entries(draftConfig).map(([name, value]) => ({
+            name: `${name} (${chalk.cyan(value)})`,
+            value: name as CosmosChainField,
+          })),
+        });
+
+        const prompt = cosmosChainPrompts[targetField];
+
+        draftConfig[targetField] = await prompt();
+
+        confirm = await confirmPrompt(draftConfig);
+      }
 
       console.log(chalk.blue("\nGenerating Cosmos chain config...\n"));
     }

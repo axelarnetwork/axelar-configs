@@ -40,3 +40,5 @@ export const chain = z
     iconUrl: chainIconUrl,
   })
   .describe("an EVM compatible chain configuration");
+
+export type EVMChainConfig = z.infer<typeof chain>;

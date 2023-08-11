@@ -37,10 +37,11 @@ export const chain = z
       .string()
       .url()
       .describe(
-        "Address of REST/API endpoint of the chain. Default port is 1317. Must be enabled in app.toml"
+        "Address of REST/API endpoint of the chain. Default port is 1317."
       ),
     chainId: z.string().describe("The unique identifier for the chain"),
     chainName: z.string().describe("The name of the chain"),
+    chainIconUrl: chainIconUrl.optional().describe("The icon of the chain"),
     stakeCurrency: currency.describe(
       "Information on the staking token of the chain"
     ),
@@ -74,8 +75,12 @@ export const chain = z
       )
       .describe("List of fee tokens accepted by the chain's validator"),
     features: z
-      .array(z.string())
+      .array(
+        z.enum(["stargate", "ibc-transfer", "fee_grant", "authz", "cosmwasm"])
+      )
       .optional()
       .describe("List of features supported by the chain"),
   })
   .describe("A Cosmos compatible chain configuration");
+
+export type CosmosChainConfig = z.infer<typeof chain>;

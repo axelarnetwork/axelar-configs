@@ -4,8 +4,8 @@ import { spinner } from "zx";
 
 import fs from "fs/promises";
 
-import * as evmDefinitions from "../schemas/zod/evm-chain";
-import * as cosmosDefinitions from "../schemas/zod/cosmos-chain";
+import * as evmDefinitions from "../cli/schemas/evm-chain";
+import * as cosmosDefinitions from "../cli/schemas/cosmos-chain";
 
 const inputs = [
   [evmDefinitions, "evm-chain"] as const,
@@ -18,10 +18,8 @@ await spinner(
     await Promise.all(
       inputs.map(async ([definitions, fileName]) => {
         const { $schema, ...schema } = zodToJsonSchema(definitions.chain, {
-          definitions: definitions,
+          definitions,
         });
-
-        await new Promise((resolve) => setTimeout(resolve, 1000));
 
         return fs.writeFile(
           `registry/${fileName}.schema.json`,
