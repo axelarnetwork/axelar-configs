@@ -8,11 +8,11 @@ const schema = await import("../registry/evm-chain.schema.json");
 describe("EVM Chain Configs", async () => {
   for (const file of files) {
     test(`${file} should match the schema`, async () => {
-      const config = await import(`../${file}`);
+      const { default: config } = await import(`../${file}`);
 
       const result = validate(config, schema);
 
-      expect(result.valid).toBeTruthy();
+      expect(result.valid).toBe(true);
     });
   }
 });
