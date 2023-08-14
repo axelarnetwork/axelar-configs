@@ -43,10 +43,10 @@ You're all set 🎉
 
 `coming soon...`
 
-### Configuration files
+### Registering a EVM Token Lists
 
-#### Assetlists
+`Token Lists` is a standard for lists of ERC20 tokens within the Ethereum ecosystem. It aids in the discoverability of tokens by mapping ERC20 contracts to their associated metadata, such as token name, symbol, and logo. The lists are community-maintained and serve as a single source of truth for token metadata, ensuring a consistent experience across different platforms and applications.
 
-Asset lists are a similar mechanism to allow frontends and other UIs to fetch metadata associated with Cosmos SDK denoms, especially for assets sent over IBC.
+### Registering a Cosmos Asset List
 
-### Tokenlists
+`Cosmos Asset Lists` is a standard inspired by the Ethereum Token Lists project, tailored for the Cosmos ecosystem. It provides a mechanism for user interfaces to fetch metadata associated with Cosmos SDK denominations, especially for assets sent over IBC (Inter-Blockchain Communication). The lists help in the discoverability of assets by mapping them to their metadata, ensuring a consistent and unified representation across different platforms within the Cosmos ecosystem.
