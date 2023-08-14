@@ -3,7 +3,7 @@ import { globby } from "zx";
 import { validate } from "jsonschema";
 
 const files = await globby("registry/**/cosmos/*chain.json");
-const schema = await import("../registry/cosmos-chain.schema.json");
+const schema = await import("../registry/schemas/cosmos-chain.schema.json");
 
 describe("Cosmos Chain Configs", async () => {
   for (const file of files) {
@@ -12,9 +12,12 @@ describe("Cosmos Chain Configs", async () => {
 
       const result = validate(config, schema);
 
-      if (!result.valid) console.log({ errors: result.errors, file });
+      if (!result.valid) {
+        console.log({ errors: result.errors });
+      }
 
-      expect(result.valid).toBe(true);
+      expect(result.schema).toEqual(schema);
+      expect(result.valid).toBeTruthy();
     });
   }
 });

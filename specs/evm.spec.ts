@@ -3,7 +3,7 @@ import { globby } from "zx";
 import { validate } from "jsonschema";
 
 const files = await globby("registry/**/evm/*chain.json");
-const schema = await import("../registry/evm-chain.schema.json");
+const schema = await import("../registry/schemas/evm-chain.schema.json");
 
 describe("EVM Chain Configs", async () => {
   for (const file of files) {
@@ -12,7 +12,12 @@ describe("EVM Chain Configs", async () => {
 
       const result = validate(config, schema);
 
-      expect(result.valid).toBe(true);
+      if (!result.valid) {
+        console.log({ errors: result.errors });
+      }
+
+      expect(result.schema).toEqual(schema);
+      expect(result.valid).toBeTruthy();
     });
   }
 });

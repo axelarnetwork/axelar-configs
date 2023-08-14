@@ -40,7 +40,7 @@
         "rest": {
           "type": "string",
           "format": "uri",
-          "description": "Address of REST/API endpoint of the chain. Default port is 1317. Must be enabled in app.toml"
+          "description": "Address of REST/API endpoint of the chain. Default port is 1317."
         },
         "chainId": {
           "type": "string",
@@ -49,6 +49,11 @@
         "chainName": {
           "type": "string",
           "description": "The name of the chain"
+        },
+        "chainIconUrl": {
+          "type": "string",
+          "pattern": "\\/images\\/chains\\/([a-z]+)\\.svg$",
+          "description": "The icon of the chain"
         },
         "stakeCurrency": {
           "type": "object",
@@ -144,7 +149,16 @@
         },
         "features": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": {
+            "type": "string",
+            "enum": [
+              "stargate",
+              "ibc-transfer",
+              "fee_grant",
+              "authz",
+              "cosmwasm"
+            ]
+          },
           "description": "List of features supported by the chain"
         }
       },

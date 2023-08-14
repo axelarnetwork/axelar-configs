@@ -42,3 +42,11 @@ You're all set 🎉
 ### Registering a new Cosmos chain
 
 `coming soon...`
+
+### Configuration files
+
+#### Assetlists
+
+Asset lists are a similar mechanism to allow frontends and other UIs to fetch metadata associated with Cosmos SDK denoms, especially for assets sent over IBC.
+
+### Tokenlists
