@@ -7,10 +7,15 @@ A public registry for chains and asset configurations
 Before we begin, make sure your system has the minimum runtime requirements:
 
 - [git](https://git-scm.com/downloads)
-- [nodejs](https://nodejs.org/en/download)
-- [pnpm](https://pnpm.io/installation)
+- [bun](https://bun.sh/)
 
-Once you have `nodejs` and `pnpm`, you can clone this repository:
+To install `bun`, run the following command:
+
+```bash
+curl -fsSL https://bun.sh/install | bash
+```
+
+Once you have `nodejs` and `bun`, you can clone this repository:
 
 ```bash
 git clone git@github.com:axelarnetwork/public-chain-configs.git
