@@ -1,5 +1,5 @@
 {
-  "$schema": "../../cosmos-chain.schema.json",
+  "$schema": "../../schemas/cosmos-chain.schema.json",
   "rest": "https://api.cosmos.network",
   "rpc": "https://api.cosmos.network/chain/cosmoshub",
   "chainId": "cosmoshub-4",

@@ -1,5 +1,5 @@
 {
-  "$schema": "../../evm-chain.schema.json",
+  "$schema": "../../schemas/evm-chain.schema.json",
   "id": 80001,
   "network": "maticmum",
   "name": "Polygon Mumbai",
