@@ -27,7 +27,7 @@ export const chain = z
   .object({
     $schema: z
       .string()
-      .regex(/^(?:\.\.\/)+cosmos-chain\.schema\.json$/)
+      .regex(/^(?:\.\.\/)+schemas\/cosmos-chain\.schema\.json$/)
       .describe("the schema file for the chain"),
     rpc: z
       .string()

@@ -26,7 +26,9 @@ export const interchainToken = z.object({
 });
 
 const interchainTokenList = z.object({
-  $schema: z.string().regex(/^(?:\.\.\/)+interchain-tokenlist\.schema\.json$/),
+  $schema: z
+    .string()
+    .regex(/^(?:\.\.\/)+schemas\/interchain-tokenlist\.schema\.json$/),
   version: z.string(),
   items: z.array(interchainToken),
 });

@@ -27,7 +27,7 @@ export const rpcUrls = z
 
 const chain = z
   .object({
-    $schema: z.string().regex(/^(?:\.\.\/)+evm-chain\.schema\.json$/),
+    $schema: z.string().regex(/^(?:\.\.\/)+schemas\/evm-chain\.schema\.json$/),
     id: z.number().int(),
     name: z.string(),
     network: z.string(),
