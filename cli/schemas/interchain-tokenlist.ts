@@ -6,30 +6,34 @@ export const IconUrlsSchema = z.object({
 });
 
 export const remoteToken = z.object({
-  chain_id: z.string(),
-  axelar_chain_id: z.string(),
-  token_address: address,
+  chainId: z.string(),
+  axelarChainId: z.string(),
+  tokenAddress: address,
 });
 
 export const interchainToken = z.object({
-  token_id: hash,
-  token_address: address,
+  tokenId: hash,
+  tokenAddress: address,
   symbol: z.string(),
-  pretty_symbol: z.string(),
+  prettySymbol: z.string(),
   decimals: z.number().int(),
   name: z.string(),
-  origin_chain_id: z.string(),
-  origin_axelar_chain_id: z.string(),
-  transfer_type: z.string(),
+  originChainId: z.string(),
+  originAxelarChainId: z.string(),
+  transferType: z.string(),
   iconUrls: IconUrlsSchema,
-  remote_tokens: z.array(remoteToken),
+  remoteTokens: z.array(remoteToken),
 });
 
 const interchainTokenList = z.object({
   $schema: z
     .string()
     .regex(/^(?:\.\.\/)+schemas\/interchain-tokenlist\.schema\.json$/),
-  version: z.string(),
+  version: z.object({
+    major: z.number().int(),
+    minor: z.number().int(),
+    patch: z.number().int(),
+  }),
   items: z.array(interchainToken),
 });
 

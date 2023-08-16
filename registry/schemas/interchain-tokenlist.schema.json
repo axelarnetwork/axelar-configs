@@ -7,7 +7,16 @@
       "type": "string",
       "pattern": "^(?:\\.\\.\\/)+schemas\\/interchain-tokenlist\\.schema\\.json$"
     },
-    "version": { "type": "string" },
+    "version": {
+      "type": "object",
+      "properties": {
+        "major": { "type": "integer" },
+        "minor": { "type": "integer" },
+        "patch": { "type": "integer" }
+      },
+      "required": ["major", "minor", "patch"],
+      "additionalProperties": false
+    },
     "items": {
       "type": "array",
       "items": { "$ref": "#/definitions/interchainToken" }
@@ -25,46 +34,46 @@
     "interchainToken": {
       "type": "object",
       "properties": {
-        "token_id": { "type": "string", "pattern": "^0x[a-fA-F0-9]{64}$" },
-        "token_address": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
+        "tokenId": { "type": "string", "pattern": "^0x[a-fA-F0-9]{64}$" },
+        "tokenAddress": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
         "symbol": { "type": "string" },
-        "pretty_symbol": { "type": "string" },
+        "prettySymbol": { "type": "string" },
         "decimals": { "type": "integer" },
         "name": { "type": "string" },
-        "origin_chain_id": { "type": "string" },
-        "origin_axelar_chain_id": { "type": "string" },
-        "transfer_type": { "type": "string" },
+        "originChainId": { "type": "string" },
+        "originAxelarChainId": { "type": "string" },
+        "transferType": { "type": "string" },
         "iconUrls": { "$ref": "#/definitions/IconUrlsSchema" },
-        "remote_tokens": {
+        "remoteTokens": {
           "type": "array",
           "items": { "$ref": "#/definitions/remoteToken" }
         }
       },
       "required": [
-        "token_id",
-        "token_address",
+        "tokenId",
+        "tokenAddress",
         "symbol",
-        "pretty_symbol",
+        "prettySymbol",
         "decimals",
         "name",
-        "origin_chain_id",
-        "origin_axelar_chain_id",
-        "transfer_type",
+        "originChainId",
+        "originAxelarChainId",
+        "transferType",
         "iconUrls",
-        "remote_tokens"
+        "remoteTokens"
       ],
       "additionalProperties": false
     },
     "remoteToken": {
       "type": "object",
       "properties": {
-        "chain_id": { "type": "string" },
-        "axelar_chain_id": { "type": "string" },
-        "token_address": {
-          "$ref": "#/definitions/interchainToken/properties/token_address"
+        "chainId": { "type": "string" },
+        "axelarChainId": { "type": "string" },
+        "tokenAddress": {
+          "$ref": "#/definitions/interchainToken/properties/tokenAddress"
         }
       },
-      "required": ["chain_id", "axelar_chain_id", "token_address"],
+      "required": ["chainId", "axelarChainId", "tokenAddress"],
       "additionalProperties": false
     }
   }
