@@ -7,22 +7,14 @@
       "type": "string",
       "pattern": "^(?:\\.\\.\\/)+schemas\\/interchain-tokenlist\\.schema\\.json$"
     },
-    "version": {
-      "type": "object",
-      "properties": {
-        "major": { "type": "integer" },
-        "minor": { "type": "integer" },
-        "patch": { "type": "integer" }
-      },
-      "required": ["major", "minor", "patch"],
-      "additionalProperties": false
-    },
-    "items": {
+    "name": { "type": "string" },
+    "version": { "$ref": "#/definitions/version" },
+    "tokens": {
       "type": "array",
       "items": { "$ref": "#/definitions/interchainToken" }
     }
   },
-  "required": ["$schema", "version", "items"],
+  "required": ["$schema", "name", "version", "tokens"],
   "additionalProperties": false,
   "definitions": {
     "IconUrlsSchema": {
@@ -74,6 +66,16 @@
         }
       },
       "required": ["chainId", "axelarChainId", "tokenAddress"],
+      "additionalProperties": false
+    },
+    "version": {
+      "type": "object",
+      "properties": {
+        "major": { "type": "integer" },
+        "minor": { "type": "integer" },
+        "patch": { "type": "integer" }
+      },
+      "required": ["major", "minor", "patch"],
       "additionalProperties": false
     }
   }

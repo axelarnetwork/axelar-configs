@@ -1,11 +1,12 @@
 {
   "$schema": "../../schemas/interchain-tokenlist.schema.json",
+  "name": "Squid Interchain Token List",
   "version": {
     "major": 0,
     "minor": 1,
     "patch": 0
   },
-  "items": [
+  "tokens": [
     {
       "tokenId": "0x42cf40c325b764af70ce0cef78ab550b212cb66a812e442e425630523b303785",
       "tokenAddress": "0xD772a13cf187272e2A914aD90e06c47990014975",

@@ -25,16 +25,19 @@ export const interchainToken = z.object({
   remoteTokens: z.array(remoteToken),
 });
 
+export const version = z.object({
+  major: z.number().int(),
+  minor: z.number().int(),
+  patch: z.number().int(),
+});
+
 const interchainTokenList = z.object({
   $schema: z
     .string()
     .regex(/^(?:\.\.\/)+schemas\/interchain-tokenlist\.schema\.json$/),
-  version: z.object({
-    major: z.number().int(),
-    minor: z.number().int(),
-    patch: z.number().int(),
-  }),
-  items: z.array(interchainToken),
+  name: z.string(),
+  version,
+  tokens: z.array(interchainToken),
 });
 
 export default interchainTokenList;
