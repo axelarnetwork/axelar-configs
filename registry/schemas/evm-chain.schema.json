@@ -1,9 +1,43 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "evm-chain schema",
-  "$ref": "#/definitions/chain",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "pattern": "^(?:\\.\\.\\/)+evm-chain\\.schema\\.json$"
+    },
+    "id": { "type": "integer" },
+    "name": { "type": "string" },
+    "network": { "type": "string" },
+    "nativeCurrency": { "$ref": "#/definitions/nativeCurrency" },
+    "rpcUrls": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" }
+    },
+    "blockExplorers": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/blockExplorer" }
+    },
+    "testnet": { "type": "boolean" },
+    "iconUrl": {
+      "type": "string",
+      "pattern": "\\/images\\/chains\\/([a-z]+)\\.svg$",
+      "description": "the icon for the chain, must be a relative path to a svg icon under /images/chains"
+    }
+  },
+  "required": [
+    "$schema",
+    "id",
+    "name",
+    "network",
+    "nativeCurrency",
+    "rpcUrls",
+    "iconUrl"
+  ],
+  "additionalProperties": false,
+  "description": "an EVM compatible chain configuration",
   "definitions": {
-    "address": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
     "blockExplorer": {
       "type": "object",
       "properties": {
@@ -13,44 +47,6 @@
       "required": ["name", "url"],
       "additionalProperties": false,
       "description": "a block explorer for the chain"
-    },
-    "chain": {
-      "type": "object",
-      "properties": {
-        "$schema": {
-          "type": "string",
-          "pattern": "^(?:\\.\\.\\/)+schemas/evm-chain\\.schema\\.json$"
-        },
-        "id": { "type": "integer" },
-        "name": { "type": "string" },
-        "network": { "type": "string" },
-        "nativeCurrency": { "$ref": "#/definitions/nativeCurrency" },
-        "rpcUrls": {
-          "type": "array",
-          "items": { "type": "string", "format": "uri" }
-        },
-        "blockExplorers": {
-          "type": "array",
-          "items": { "$ref": "#/definitions/blockExplorer" }
-        },
-        "testnet": { "type": "boolean" },
-        "iconUrl": {
-          "type": "string",
-          "pattern": "\\/images\\/chains\\/([a-z]+)\\.svg$",
-          "description": "the icon for the chain, must be a relative path to a svg icon under /images/chains"
-        }
-      },
-      "required": [
-        "$schema",
-        "id",
-        "name",
-        "network",
-        "nativeCurrency",
-        "rpcUrls",
-        "iconUrl"
-      ],
-      "additionalProperties": false,
-      "description": "an EVM compatible chain configuration"
     },
     "nativeCurrency": {
       "type": "object",

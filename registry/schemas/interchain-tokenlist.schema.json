@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "interchain-tokenlist schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "pattern": "^(?:\\.\\.\\/)+interchain-tokenlist\\.schema\\.json$"
+    },
+    "version": { "type": "string" },
+    "items": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/interchainToken" }
+    }
+  },
+  "required": ["$schema", "version", "items"],
+  "additionalProperties": false,
+  "definitions": {
+    "IconUrlsSchema": {
+      "type": "object",
+      "properties": { "svg": { "type": "string", "format": "uri" } },
+      "required": ["svg"],
+      "additionalProperties": false
+    },
+    "interchainToken": {
+      "type": "object",
+      "properties": {
+        "token_id": { "type": "string", "pattern": "^0x[a-fA-F0-9]{64}$" },
+        "token_address": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
+        "symbol": { "type": "string" },
+        "pretty_symbol": { "type": "string" },
+        "decimals": { "type": "integer" },
+        "name": { "type": "string" },
+        "origin_chain_id": { "type": "string" },
+        "origin_axelar_chain_id": { "type": "string" },
+        "transfer_type": { "type": "string" },
+        "iconUrls": { "$ref": "#/definitions/IconUrlsSchema" },
+        "remote_tokens": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/remoteToken" }
+        }
+      },
+      "required": [
+        "token_id",
+        "token_address",
+        "symbol",
+        "pretty_symbol",
+        "decimals",
+        "name",
+        "origin_chain_id",
+        "origin_axelar_chain_id",
+        "transfer_type",
+        "iconUrls",
+        "remote_tokens"
+      ],
+      "additionalProperties": false
+    },
+    "remoteToken": {
+      "type": "object",
+      "properties": {
+        "chain_id": { "type": "string" },
+        "axelar_chain_id": { "type": "string" },
+        "token_address": {
+          "$ref": "#/definitions/interchainToken/properties/token_address"
+        }
+      },
+      "required": ["chain_id", "axelar_chain_id", "token_address"],
+      "additionalProperties": false
+    }
+  }
+}

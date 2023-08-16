@@ -29,7 +29,7 @@
       "properties": {
         "$schema": {
           "type": "string",
-          "pattern": "^(?:\\.\\.\\/)+schemas/cosmos-chain\\.schema\\.json$",
+          "pattern": "^(?:\\.\\.\\/)+cosmos-chain\\.schema\\.json$",
           "description": "the schema file for the chain"
         },
         "rpc": {

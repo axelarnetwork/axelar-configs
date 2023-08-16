@@ -2,8 +2,6 @@ import { z } from "zod";
 
 import { chainIconUrl, currencyIconUrl } from "./common";
 
-export const address = z.string().regex(/^0x[a-fA-F0-9]{40}$/);
-
 export const blockExplorer = z
   .object({
     name: z.string(),
@@ -27,7 +25,7 @@ export const rpcUrls = z
   })
   .describe("the RPC endpoints for the chain");
 
-export const chain = z
+const chain = z
   .object({
     $schema: z.string().regex(/^(?:\.\.\/)+evm-chain\.schema\.json$/),
     id: z.number().int(),
@@ -40,5 +38,7 @@ export const chain = z
     iconUrl: chainIconUrl,
   })
   .describe("an EVM compatible chain configuration");
+
+export default chain;
 
 export type EVMChainConfig = z.infer<typeof chain>;

@@ -83,4 +83,6 @@ export const chain = z
   })
   .describe("A Cosmos compatible chain configuration");
 
+export default chain;
+
 export type CosmosChainConfig = z.infer<typeof chain>;
