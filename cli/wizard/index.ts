@@ -1,6 +1,10 @@
 import { select } from "@inquirer/prompts";
 import chalk from "chalk";
-import { evmChainPrompts, cosmosChainPrompts, buildChainConfig } from "./utils";
+import {
+  evmChainPrompts,
+  cosmosChainPrompts,
+  buildChainConfig,
+} from "./prompts";
 
 console.log(chalk.bold.green("\nWelcome to the Axelar config wizard!\n"));
 
