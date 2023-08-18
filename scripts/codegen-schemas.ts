@@ -1,22 +1,26 @@
 import { zodToJsonSchema } from "zod-to-json-schema";
 import prettier from "prettier";
-import { spinner } from "zx";
+import { globby, spinner } from "zx";
 
 import fs from "fs/promises";
 
-import * as evmDefinitions from "../cli/schemas/evm-chain";
-import * as cosmosDefinitions from "../cli/schemas/cosmos-chain";
-import * as interchainTokenList from "../cli/schemas/interchain-tokenlist";
+const schemaFiles = await globby("cli/schemas/*.ts");
 
 const TIMER_LABEL = "Finised generating JSON schemas 🎉";
 
 console.time(TIMER_LABEL);
 
-const inputs = [
-  [evmDefinitions, "evm-chain"] as const,
-  [cosmosDefinitions, "cosmos-chain"] as const,
-  [interchainTokenList, "interchain-tokenlist"] as const,
-];
+const inputs = await Promise.all(
+  schemaFiles
+    .filter((fileName) => !fileName.includes("common"))
+    .map(async (schemaFile) => {
+      const fileName = schemaFile.match(/(?<=schemas\/).*(?=\.ts)/)?.[0];
+
+      const { $schema, ...definitions } = await import(`../${schemaFile}`);
+
+      return [definitions, fileName] as const;
+    })
+);
 
 await spinner(
   "Generating JSON schemas... ⏳",
