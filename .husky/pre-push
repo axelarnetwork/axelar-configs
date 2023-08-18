@@ -1,9 +1,11 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo 'Running tests'
+
 bun run test
-echo 'Running codegen-chains'
+
 bun run scripts/codegen-chains.ts 
-echo 'Adding generated files to git'
-git commit -am 'chore: update generated files'
+# add files to git without triggering husky
+git add -N .
+git add -p
+git commit -m "chore: update generated files"
