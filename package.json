@@ -1,9 +1,8 @@
 {
   "name": "public-chain-configs",
   "version": "0.0.1",
-  "description": "",
+  "description": "Axelar Network public chain & assets registry",
   "type": "module",
-  "main": "index.js",
   "scripts": {
     "format": "prettier --write .",
     "wizard": "ts-node-esm ./cli/wizard",
@@ -12,7 +11,6 @@
     "test": "vitest --run"
   },
   "keywords": [],
-  "author": "",
   "license": "LicenseRef-LICENSE",
   "husky": {
     "hooks": {
