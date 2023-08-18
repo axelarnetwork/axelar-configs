@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-bun run test && bun run scripts/codegen-chains.ts && git add . && git commit -m 'chore: update generated files'
+bun run test && bun run scripts/codegen-chains.ts 
+git add . 
+git commit -m 'chore: update generated files'
