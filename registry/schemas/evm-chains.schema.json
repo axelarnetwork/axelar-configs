@@ -7,6 +7,7 @@
       "type": "string",
       "pattern": "^(?:\\.\\.\\/)+schemas\\/evm-chains\\.schema\\.json$"
     },
+    "timestamp": { "type": "string" },
     "chains": {
       "type": "array",
       "items": {
@@ -68,7 +69,7 @@
       }
     }
   },
-  "required": ["$schema", "chains"],
+  "required": ["$schema", "timestamp", "chains"],
   "additionalProperties": false,
   "definitions": {}
 }
