@@ -7,8 +7,8 @@
   "scripts": {
     "format": "prettier --write .",
     "wizard": "ts-node-esm ./cli/wizard",
-    "codegen:schemas": "bun run ./scripts/codegen-schemas.ts",
-    "codegen:chains": "bun run ./scripts/codegen-chains.ts",
+    "codegen:schemas": "bun run scripts/codegen-schemas.ts",
+    "codegen:chains": "bun run scripts/codegen-chains.ts",
     "test": "vitest --run"
   },
   "keywords": [],
@@ -17,7 +17,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged",
-      "pre-push": "bun run test && bun run ./scripts/codegen-chains.ts && git add . && git commit -m 'chore: update generated files'"
+      "pre-push": "bun run test && bun run scripts/codegen-chains.ts && git add . && git commit -m 'chore: update generated files'"
     }
   },
   "dependencies": {
