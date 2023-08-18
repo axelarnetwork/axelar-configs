@@ -8,4 +8,4 @@ bun run scripts/codegen-chains.ts
 # add files to git without triggering husky
 git add -N .
 git add -p
-git commit -m "chore: update generated files"
+
