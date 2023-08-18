@@ -7,21 +7,28 @@
   "scripts": {
     "format": "prettier --write .",
     "wizard": "ts-node-esm ./cli/wizard",
-    "codegen:schemas": "ts-node-esm ./scripts/codegen-schemas.ts",
-    "codegen:chains": "ts-node-esm ./scripts/codegen-chains.ts",
+    "codegen:schemas": "bun run ./scripts/codegen-schemas.ts",
+    "codegen:chains": "bun run ./scripts/codegen-chains.ts",
     "test": "vitest --run"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "LicenseRef-LICENSE",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "pre-push": "bun run test && bun run ./scripts/codegen-chains.ts && git add . && git commit -m 'chore: update generated files'"
+    }
+  },
   "dependencies": {
-    "@inquirer/prompts": "^3.0.2"
+    "@inquirer/prompts": "^3.0.3"
   },
   "devDependencies": {
     "@types/node": "^20.4.9",
     "@types/prettier": "^2.7.3",
     "bun-types": "^0.7.3",
     "chalk": "^5.3.0",
+    "husky": "^8.0.3",
     "jsonschema": "^1.4.1",
     "prettier": "^2.8.8",
     "pretty-quick": "^3.1.3",
