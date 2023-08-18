@@ -17,6 +17,7 @@ for (const network of networkKind) {
 
     const chainsInputFile = {
       $schema: `../../schemas/${network}-chains.schema.json`,
+      timestamp: new Date().toISOString(),
       chains,
     };
 
