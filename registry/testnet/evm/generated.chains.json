@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/evm-chains.schema.json",
-  "timestamp": "2023-08-18T06:02:51.360Z",
+  "timestamp": "2023-08-18T06:03:02.180Z",
   "chains": [
     {
       "id": 80001,
