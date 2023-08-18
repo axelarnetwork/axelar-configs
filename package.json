@@ -12,12 +12,6 @@
   },
   "keywords": [],
   "license": "LicenseRef-LICENSE",
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged",
-      "pre-push": "bun run test && bun run scripts/codegen-chains.ts && git add . && git commit -m 'chore: update generated files'"
-    }
-  },
   "dependencies": {
     "@inquirer/prompts": "^3.0.3"
   },
