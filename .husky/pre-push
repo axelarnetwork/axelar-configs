@@ -6,5 +6,5 @@ bun run test
 echo 'Running codegen-chains'
 bun run scripts/codegen-chains.ts 
 echo 'Adding generated files to git'
-git add . 
+git add . --no-verify
 git commit -m 'chore: update generated files'
