@@ -6,6 +6,5 @@ bun run test
 
 bun run scripts/codegen-chains.ts 
 # add files to git without triggering husky
-git add -N .
-git add -p
-
+git add .
+git commit -no-verify -m "chore: update generated files"
