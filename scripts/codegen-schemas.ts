@@ -6,20 +6,22 @@ import fs from "fs/promises";
 
 const schemaFiles = await globby("cli/schemas/*.ts");
 
-const TIMER_LABEL = "Finished generating JSON schemas 🎉";
+const validSchemaFiles = schemaFiles.filter(
+  (fileName) => !fileName.includes("common")
+);
+
+const TIMER_LABEL = `Finished generating ${validSchemaFiles.length} JSON schemas 🎉`;
 
 console.time(TIMER_LABEL);
 
 const inputs = await Promise.all(
-  schemaFiles
-    .filter((fileName) => !fileName.includes("common"))
-    .map(async (schemaFile) => {
-      const fileName = schemaFile.match(/(?<=schemas\/).*(?=\.ts)/)?.[0];
+  validSchemaFiles.map(async (schemaFile) => {
+    const fileName = schemaFile.match(/(?<=schemas\/).*(?=\.ts)/)?.[0];
 
-      const { $schema, ...definitions } = await import(`../${schemaFile}`);
+    const { $schema, ...definitions } = await import(`../${schemaFile}`);
 
-      return [definitions, fileName] as const;
-    })
+    return [definitions, fileName] as const;
+  })
 );
 
 await spinner(
