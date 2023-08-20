@@ -8,7 +8,8 @@
     "wizard": "ts-node-esm ./cli/wizard",
     "codegen:schemas": "bun run scripts/codegen-schemas.ts",
     "codegen:chains": "bun run scripts/codegen-chains.ts",
-    "test": "vitest --run"
+    "test": "vitest --run",
+    "prepare": "husky install"
   },
   "keywords": [],
   "license": "LicenseRef-LICENSE",
