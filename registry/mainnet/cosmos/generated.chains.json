@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/cosmos-chains.schema.json",
-  "timestamp": "2023-08-20T22:55:28.630Z",
+  "timestamp": "2023-08-20T22:57:11.840Z",
   "chains": [
     {
       "rest": "https://api.cosmos.network",
