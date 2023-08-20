@@ -51,6 +51,7 @@ export const evmChainPrompts = {
       message: `How many ${chalk.yellow(
         "decimals"
       )} does the native currency have?`,
+      default: "18",
       validate: validators.numeric,
     }),
   rpcUrl: () =>
