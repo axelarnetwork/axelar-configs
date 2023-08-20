@@ -6,7 +6,7 @@ import fs from "fs/promises";
 
 const schemaFiles = await globby("cli/schemas/*.ts");
 
-const TIMER_LABEL = "Finised generating JSON schemas 🎉";
+const TIMER_LABEL = "Finished generating JSON schemas 🎉";
 
 console.time(TIMER_LABEL);
 
