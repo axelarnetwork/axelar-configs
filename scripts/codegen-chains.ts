@@ -3,17 +3,29 @@ import { fs, globby } from "zx";
 const networkKind = ["evm", "cosmos"];
 const envKind = ["mainnet", "testnet"];
 
+type MinimalChainConfig = {
+  $schema: string;
+} & Record<string, any>;
+
+const TIMER_LABEL = `Finished generating ${
+  networkKind.length * envKind.length
+} chain files 🎉`;
+
+console.time(TIMER_LABEL);
+
 for (const network of networkKind) {
   for (const env of envKind) {
     const chainConfigFiles = await globby(
       `registry/${env}/${network}/*.chain.json`
     );
 
-    const chains = chainConfigFiles.map((chainConfigFile) => {
-      const { $schema, ...chainConfig } = fs.readJsonSync(chainConfigFile);
-
-      return chainConfig;
-    });
+    const chains = await Promise.all(
+      chainConfigFiles.map((chainConfigFile) =>
+        fs
+          .readJSON(chainConfigFile)
+          .then(({ $schema, ...chain }: MinimalChainConfig) => chain)
+      )
+    );
 
     const chainsInputFile = {
       $schema: `../../schemas/${network}-chains.schema.json`,
@@ -29,3 +41,5 @@ for (const network of networkKind) {
     );
   }
 }
+
+console.timeEnd(TIMER_LABEL);

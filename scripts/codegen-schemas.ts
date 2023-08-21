@@ -1,8 +1,6 @@
 import { zodToJsonSchema } from "zod-to-json-schema";
 import prettier from "prettier";
-import { globby, spinner } from "zx";
-
-import fs from "fs/promises";
+import { globby, spinner, fs } from "zx";
 
 const schemaFiles = await globby("cli/schemas/*.ts");
 
