@@ -30,7 +30,7 @@ cd public-chain-configs
 Install dependencies
 
 ```bash
-pnpm i
+bun i
 ```
 
 You're all set 🎉
