@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "interchain-tokenlist schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "pattern": "^(?:\\.\\.\\/)+schemas\\/interchain-tokenlist\\.schema\\.json$"
+    },
+    "name": { "type": "string" },
+    "version": { "$ref": "#/definitions/version" },
+    "tokens": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/interchainToken" }
+    }
+  },
+  "required": ["$schema", "name", "version", "tokens"],
+  "additionalProperties": false,
+  "definitions": {
+    "IconUrlsSchema": {
+      "type": "object",
+      "properties": { "svg": { "type": "string", "format": "uri" } },
+      "required": ["svg"],
+      "additionalProperties": false
+    },
+    "interchainToken": {
+      "type": "object",
+      "properties": {
+        "tokenId": { "type": "string", "pattern": "^0x[a-fA-F0-9]{64}$" },
+        "tokenAddress": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
+        "symbol": { "type": "string" },
+        "prettySymbol": { "type": "string" },
+        "decimals": { "type": "integer" },
+        "name": { "type": "string" },
+        "originChainId": { "type": "string" },
+        "originAxelarChainId": { "type": "string" },
+        "transferType": { "type": "string" },
+        "iconUrls": { "$ref": "#/definitions/IconUrlsSchema" },
+        "remoteTokens": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/remoteToken" }
+        }
+      },
+      "required": [
+        "tokenId",
+        "tokenAddress",
+        "symbol",
+        "prettySymbol",
+        "decimals",
+        "name",
+        "originChainId",
+        "originAxelarChainId",
+        "transferType",
+        "iconUrls",
+        "remoteTokens"
+      ],
+      "additionalProperties": false
+    },
+    "remoteToken": {
+      "type": "object",
+      "properties": {
+        "chainId": { "type": "string" },
+        "axelarChainId": { "type": "string" },
+        "tokenAddress": {
+          "$ref": "#/definitions/interchainToken/properties/tokenAddress"
+        }
+      },
+      "required": ["chainId", "axelarChainId", "tokenAddress"],
+      "additionalProperties": false
+    },
+    "version": {
+      "type": "object",
+      "properties": {
+        "major": { "type": "integer" },
+        "minor": { "type": "integer" },
+        "patch": { "type": "integer" }
+      },
+      "required": ["major", "minor", "patch"],
+      "additionalProperties": false
+    }
+  }
+}

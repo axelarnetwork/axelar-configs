@@ -1,0 +1,193 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "cosmos-chains schema",
+  "allOf": [
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "the name of the chain list"
+        },
+        "timestamp": {
+          "type": "string",
+          "description": "the timestamp of the last update"
+        }
+      },
+      "required": ["name", "timestamp"]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string",
+          "pattern": "^(?:\\.\\.\\/)+schemas\\/cosmos-chains\\.schema\\.json$"
+        },
+        "chains": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rpc": {
+                "type": "string",
+                "format": "uri",
+                "description": "Address of RPC endpoint of the chain. Default port is 26657"
+              },
+              "rest": {
+                "type": "string",
+                "format": "uri",
+                "description": "Address of REST/API endpoint of the chain. Default port is 1317."
+              },
+              "chainId": {
+                "type": "string",
+                "description": "The unique identifier for the chain"
+              },
+              "chainName": {
+                "type": "string",
+                "description": "The name of the chain"
+              },
+              "chainIconUrl": {
+                "type": "string",
+                "pattern": "\\/images\\/chains\\/([a-z]+)\\.svg$",
+                "description": "The icon of the chain"
+              },
+              "stakeCurrency": {
+                "type": "object",
+                "properties": {
+                  "coinDenom": { "type": "string" },
+                  "coinMinimalDenom": { "type": "string" },
+                  "coinDecimals": { "type": "number" },
+                  "coinGeckoId": { "type": "string" },
+                  "coinImageUrl": {
+                    "type": "string",
+                    "pattern": "\\/images\\/tokens\\/([a-z]+)\\.svg$",
+                    "description": "the icon for the currency, must be a relative path to a svg icon under /images/tokens"
+                  }
+                },
+                "required": ["coinDenom", "coinMinimalDenom", "coinDecimals"],
+                "additionalProperties": false,
+                "description": "Information on the staking token of the chain"
+              },
+              "walletUrlForStaking": {
+                "type": "string",
+                "format": "uri",
+                "description": "The URL for the staking interface frontend for the chain"
+              },
+              "bip44": {
+                "type": "object",
+                "properties": { "coinType": { "type": "number" } },
+                "required": ["coinType"],
+                "additionalProperties": false,
+                "description": "BIP44 coin type for address derivation"
+              },
+              "bech32Config": {
+                "type": "object",
+                "properties": {
+                  "bech32PrefixAccAddr": { "type": "string" },
+                  "bech32PrefixAccPub": { "type": "string" },
+                  "bech32PrefixValAddr": { "type": "string" },
+                  "bech32PrefixValPub": { "type": "string" },
+                  "bech32PrefixConsAddr": { "type": "string" },
+                  "bech32PrefixConsPub": { "type": "string" }
+                },
+                "required": [
+                  "bech32PrefixAccAddr",
+                  "bech32PrefixAccPub",
+                  "bech32PrefixValAddr",
+                  "bech32PrefixValPub",
+                  "bech32PrefixConsAddr",
+                  "bech32PrefixConsPub"
+                ],
+                "additionalProperties": false,
+                "description": "Bech32 config using the address prefix of the chain"
+              },
+              "currencies": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "coinDenom": {
+                      "$ref": "#/allOf/1/properties/chains/items/properties/stakeCurrency/properties/coinDenom"
+                    },
+                    "coinMinimalDenom": {
+                      "$ref": "#/allOf/1/properties/chains/items/properties/stakeCurrency/properties/coinMinimalDenom"
+                    },
+                    "coinDecimals": {
+                      "$ref": "#/allOf/1/properties/chains/items/properties/stakeCurrency/properties/coinDecimals"
+                    },
+                    "coinGeckoId": {
+                      "$ref": "#/allOf/1/properties/chains/items/properties/stakeCurrency/properties/coinGeckoId"
+                    },
+                    "coinImageUrl": {
+                      "$ref": "#/allOf/1/properties/chains/items/properties/stakeCurrency/properties/coinImageUrl"
+                    }
+                  },
+                  "required": ["coinDenom", "coinMinimalDenom", "coinDecimals"],
+                  "additionalProperties": false,
+                  "description": "a token on the chain"
+                },
+                "description": "List of currencies on the chain"
+              },
+              "feeCurrencies": {
+                "type": "array",
+                "items": {
+                  "allOf": [
+                    {
+                      "$ref": "#/allOf/1/properties/chains/items/properties/currencies/items"
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "gasPriceStep": {
+                          "type": "object",
+                          "properties": {
+                            "low": { "type": "number" },
+                            "average": { "type": "number" },
+                            "high": { "type": "number" }
+                          },
+                          "required": ["low", "average", "high"],
+                          "additionalProperties": false
+                        }
+                      }
+                    }
+                  ],
+                  "description": "a token on the chain"
+                },
+                "description": "List of fee tokens accepted by the chain's validator"
+              },
+              "features": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "stargate",
+                    "ibc-transfer",
+                    "fee_grant",
+                    "authz",
+                    "cosmwasm"
+                  ]
+                },
+                "description": "List of features supported by the chain"
+              }
+            },
+            "required": [
+              "rpc",
+              "rest",
+              "chainId",
+              "chainName",
+              "stakeCurrency",
+              "bip44",
+              "bech32Config",
+              "currencies",
+              "feeCurrencies"
+            ],
+            "additionalProperties": false,
+            "description": "A Cosmos compatible chain configuration"
+          }
+        }
+      },
+      "required": ["$schema", "chains"]
+    }
+  ],
+  "definitions": {}
+}

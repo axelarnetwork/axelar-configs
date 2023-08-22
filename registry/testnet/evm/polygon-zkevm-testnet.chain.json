@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/evm-chain.schema.json",
+  "id": 1442,
+  "network": "polygon-zkevm-testnet",
+  "name": "Polygon zkEVM Testnet",
+  "nativeCurrency": {
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18,
+    "iconUrl": "/images/tokens/eth.svg"
+  },
+  "rpcUrls": ["https://rpc.public.zkevm-test.net"],
+  "blockExplorers": [
+    {
+      "name": "PolygonScan",
+      "url": "https://testnet-zkevm.polygonscan.com"
+    }
+  ],
+  "iconUrl": "/images/chains/polygon.svg",
+  "testnet": true
+}

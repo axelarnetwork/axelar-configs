@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+
+if [[ $(git diff --cached --name-only | grep -E 'registry/.+\.chain\.json') ]]; then
+  bun run scripts/codegen-chains.ts
+  git add .
+  git commit --no-verify -m "chore: update generated files"
+fi
+
+bunx pretty-quick --staged

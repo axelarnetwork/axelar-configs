@@ -1,0 +1,37 @@
+{
+  "$schema": "../../schemas/cosmos-chain.schema.json",
+  "rest": "https://api.examople.network",
+  "rpc": "https://api.example.network/chain/examplehub",
+  "chainId": "examplehub-4",
+  "chainName": "examplehub",
+  "stakeCurrency": {
+    "coinDenom": "ATOM",
+    "coinMinimalDenom": "uatom",
+    "coinDecimals": 6
+  },
+  "bech32Config": {
+    "bech32PrefixAccAddr": "example",
+    "bech32PrefixAccPub": "examplepub",
+    "bech32PrefixConsAddr": "examplevalcons",
+    "bech32PrefixConsPub": "examplevalconspub",
+    "bech32PrefixValAddr": "examplevaloper",
+    "bech32PrefixValPub": "examplevaloperpub"
+  },
+  "bip44": {
+    "coinType": 118
+  },
+  "feeCurrencies": [
+    {
+      "coinDenom": "ATOM",
+      "coinMinimalDenom": "uatom",
+      "coinDecimals": 6
+    }
+  ],
+  "currencies": [
+    {
+      "coinDenom": "ATOM",
+      "coinMinimalDenom": "uatom",
+      "coinDecimals": 6
+    }
+  ]
+}
