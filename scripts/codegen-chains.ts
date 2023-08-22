@@ -35,7 +35,7 @@ for (const network of networkKind) {
     };
 
     await fs.writeJson(
-      `registry/${env}/${network}/generated.chains.json`,
+      `registry/${env}/${network}/chains.json`,
       chainsInputFile,
       { spaces: 2 }
     );
