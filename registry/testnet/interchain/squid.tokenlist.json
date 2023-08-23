@@ -20,6 +20,7 @@
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/public-chain-configs/images/tokens/sushi.svg"
       },
+      "coinGeckoId": "sushi",
       "remoteTokens": [
         {
           "chainId": "80001",

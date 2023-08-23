@@ -36,6 +36,7 @@
         "originAxelarChainId": { "type": "string" },
         "transferType": { "type": "string" },
         "iconUrls": { "$ref": "#/definitions/IconUrlsSchema" },
+        "coinGeckoId": { "type": "string" },
         "remoteTokens": {
           "type": "array",
           "items": { "$ref": "#/definitions/remoteToken" }
@@ -52,6 +53,7 @@
         "originAxelarChainId",
         "transferType",
         "iconUrls",
+        "coinGeckoId",
         "remoteTokens"
       ],
       "additionalProperties": false
