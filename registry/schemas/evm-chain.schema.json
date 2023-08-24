@@ -22,7 +22,7 @@
     "testnet": { "type": "boolean" },
     "iconUrl": {
       "type": "string",
-      "pattern": "\\/images\\/chains\\/([a-z]+)\\.svg$",
+      "pattern": "\\/images\\/chains\\/([a-z\\-]+)\\.svg$",
       "description": "the icon for the chain, must be a relative path to a svg icon under /images/chains"
     }
   },
@@ -56,7 +56,7 @@
         "decimals": { "type": "integer", "minimum": 0 },
         "iconUrl": {
           "type": "string",
-          "pattern": "\\/images\\/tokens\\/([a-z]+)\\.svg$",
+          "pattern": "\\/images\\/tokens\\/([a-z\\-]+)\\.svg$",
           "description": "the icon for the currency, must be a relative path to a svg icon under /images/tokens"
         }
       },

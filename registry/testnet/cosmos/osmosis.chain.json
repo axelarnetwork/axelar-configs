@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schemas/cosmos-chain.schema.json",
+  "rest": "https://lcd.osmotest5.osmosis.zone",
+  "rpc": "https://testnet.rpc.axelar.dev/chain/osmosis",
+  "chainId": "osmo-test-5",
+  "chainName": "Osmosis Testnet",
+  "stakeCurrency": {
+    "coinDenom": "OSMO",
+    "coinMinimalDenom": "uosmo",
+    "coinDecimals": 6,
+    "coinImageUrl": "/images/tokens/osmo.svg"
+  },
+  "bech32Config": {
+    "bech32PrefixAccAddr": "osmo",
+    "bech32PrefixAccPub": "osmopub",
+    "bech32PrefixConsAddr": "osmovalcons",
+    "bech32PrefixConsPub": "osmovalconspub",
+    "bech32PrefixValAddr": "osmovaloper",
+    "bech32PrefixValPub": "osmovaloperpub"
+  },
+  "bip44": {
+    "coinType": 118
+  },
+  "feeCurrencies": [
+    {
+      "coinDenom": "OSMO",
+      "coinMinimalDenom": "uosmo",
+      "coinDecimals": 6,
+      "coinImageUrl": "/images/tokens/osmo.svg"
+    }
+  ],
+  "currencies": [
+    {
+      "coinDenom": "OSMO",
+      "coinMinimalDenom": "uosmo",
+      "coinDecimals": 6,
+      "coinImageUrl": "/images/tokens/osmo.svg"
+    },
+    {
+      "coinDenom": "ION",
+      "coinMinimalDenom": "uion",
+      "coinDecimals": 6,
+      "coinImageUrl": "/images/tokens/osmosis-ion.svg"
+    }
+  ],
+  "chainIconUrl": "/images/chains/osmosis.svg"
+}

@@ -48,7 +48,7 @@
               },
               "chainIconUrl": {
                 "type": "string",
-                "pattern": "\\/images\\/chains\\/([a-z]+)\\.svg$",
+                "pattern": "\\/images\\/chains\\/([a-z\\-]+)\\.svg$",
                 "description": "The icon of the chain"
               },
               "stakeCurrency": {
@@ -60,7 +60,7 @@
                   "coinGeckoId": { "type": "string" },
                   "coinImageUrl": {
                     "type": "string",
-                    "pattern": "\\/images\\/tokens\\/([a-z]+)\\.svg$",
+                    "pattern": "\\/images\\/tokens\\/([a-z\\-]+)\\.svg$",
                     "description": "the icon for the currency, must be a relative path to a svg icon under /images/tokens"
                   }
                 },
