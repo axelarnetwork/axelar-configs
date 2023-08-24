@@ -23,6 +23,7 @@ export const interchainToken = z.object({
   transferType: z.string(),
   iconUrls: IconUrlsSchema,
   remoteTokens: z.array(remoteToken),
+  coinGeckoId: z.string().optional(),
 });
 
 export const version = z.object({
