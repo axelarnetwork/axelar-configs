@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schemas/cosmos-chain.schema.json",
+  "rest": "https://api.xion-testnet-1.burnt.com",
+  "rpc": "https://testnet.rpc.axelar.dev/chain/burnt",
+  "chainId": "xion-testnet-1",
+  "chainName": "Burnt Testnet",
+  "stakeCurrency": {
+    "coinDenom": "XION",
+    "coinMinimalDenom": "uxion",
+    "coinDecimals": 6,
+    "coinImageUrl": "/images/tokens/xion.svg"
+  },
+  "bech32Config": {
+    "bech32PrefixAccAddr": "xion",
+    "bech32PrefixAccPub": "xionpub",
+    "bech32PrefixConsAddr": "xionvalcons",
+    "bech32PrefixConsPub": "xionvalconspub",
+    "bech32PrefixValAddr": "xionvaloper",
+    "bech32PrefixValPub": "xionvaloperpub"
+  },
+  "bip44": {
+    "coinType": 118
+  },
+  "feeCurrencies": [
+    {
+      "coinDenom": "XION",
+      "coinMinimalDenom": "uxion",
+      "coinDecimals": 6,
+      "coinImageUrl": "/images/tokens/xion.svg"
+    }
+  ],
+  "currencies": [
+    {
+      "coinDenom": "XION",
+      "coinMinimalDenom": "uxion",
+      "coinDecimals": 6,
+      "coinImageUrl": "/images/tokens/xion.svg"
+    },
+    {
+      "coinDenom": "AXL",
+      "coinMinimalDenom": "ibc/D934516FBE457F3A98AFABD87E0EFF7F95A15325C191EA8CDD7763C702FDDEC2",
+      "coinDecimals": 6,
+      "coinImageUrl": "/images/tokens/axl.svg"
+    }
+  ],
+  "chainIconUrl": "/images/chains/burnt.svg"
+}

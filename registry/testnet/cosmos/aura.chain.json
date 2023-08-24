@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schemas/cosmos-chain.schema.json",
+  "rest": "https://lcd.euphoria.aura.network",
+  "rpc": "https://testnet.rpc.axelar.dev/chain/aura",
+  "chainId": "euphoria-2",
+  "chainName": "Aura Testnet",
+  "stakeCurrency": {
+    "coinDenom": "EAURA",
+    "coinMinimalDenom": "ueaura",
+    "coinDecimals": 6,
+    "coinImageUrl": "/images/tokens/eaura.svg"
+  },
+  "bech32Config": {
+    "bech32PrefixAccAddr": "aura",
+    "bech32PrefixAccPub": "aurapub",
+    "bech32PrefixConsAddr": "auravalcons",
+    "bech32PrefixConsPub": "auravalconspub",
+    "bech32PrefixValAddr": "auravaloper",
+    "bech32PrefixValPub": "auravaloperpub"
+  },
+  "bip44": {
+    "coinType": 118
+  },
+  "feeCurrencies": [
+    {
+      "coinDenom": "EAURA",
+      "coinMinimalDenom": "ueaura",
+      "coinDecimals": 6,
+      "coinImageUrl": "/images/tokens/eaura.svg"
+    }
+  ],
+  "currencies": [
+    {
+      "coinDenom": "EAURA",
+      "coinMinimalDenom": "ueaura",
+      "coinDecimals": 6,
+      "coinImageUrl": "/images/tokens/eaura.svg"
+    }
+  ],
+  "chainIconUrl": "/images/chains/aura.svg"
+}
