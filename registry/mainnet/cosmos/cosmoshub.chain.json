@@ -7,7 +7,8 @@
   "stakeCurrency": {
     "coinDenom": "ATOM",
     "coinMinimalDenom": "uatom",
-    "coinDecimals": 6
+    "coinDecimals": 6,
+    "coinImageUrl": "/images/tokens/atom.svg"
   },
   "bech32Config": {
     "bech32PrefixAccAddr": "cosmos",
@@ -24,14 +25,17 @@
     {
       "coinDenom": "ATOM",
       "coinMinimalDenom": "uatom",
-      "coinDecimals": 6
+      "coinDecimals": 6,
+      "coinImageUrl": "/images/tokens/atom.svg"
     }
   ],
   "currencies": [
     {
       "coinDenom": "ATOM",
       "coinMinimalDenom": "uatom",
-      "coinDecimals": 6
+      "coinDecimals": 6,
+      "coinImageUrl": "/images/tokens/atom.svg"
     }
-  ]
+  ],
+  "chainIconUrl": "/images/chains/cosmoshub.svg"
 }
