@@ -31,6 +31,11 @@ const configType = await select({
       description: "Generates an assetlist for a Cosmos compatible chain",
       value: "cosmos-assetlist" as const,
     },
+    {
+      name: "N/A",
+      description: "Exit the wizard",
+      value: "none" as const,
+    },
   ],
 });
 
@@ -75,4 +80,7 @@ switch (configType) {
       console.log(chalk.blue("\nGenerating Cosmos chain config...\n"));
     }
     break;
+  case "none":
+    console.log(chalk.bold.green("\nGoodbye!\n"));
+    process.exit(0);
 }
