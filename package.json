@@ -15,7 +15,7 @@
   "keywords": [],
   "license": "LicenseRef-LICENSE",
   "dependencies": {
-    "@inquirer/prompts": "^3.0.3"
+    "@inquirer/prompts": "^3.0.4"
   },
   "devDependencies": {
     "@types/prettier": "^2.7.3",
