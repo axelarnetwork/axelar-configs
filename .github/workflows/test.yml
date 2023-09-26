@@ -7,10 +7,15 @@ jobs:
     name: setup-and-test
     runs-on: ubuntu-latest
     steps:
-      # ...
-      - uses: actions/checkout@v3
-      - uses: oven-sh/setup-bun@v1
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: setup bun
+        uses: oven-sh/setup-bun@v1
 
       # run any `bun` or `bunx` command
-      - run: bun install
-      - run: bun run test
+      - name: install dependencies
+        run: bun install
+
+      - name: run tests
+        run: bun run test
