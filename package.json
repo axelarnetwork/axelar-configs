@@ -15,7 +15,7 @@
   "keywords": [],
   "license": "LicenseRef-LICENSE",
   "dependencies": {
-    "@inquirer/prompts": "^3.1.2"
+    "@inquirer/prompts": "^3.2.0"
   },
   "devDependencies": {
     "@types/prettier": "^2.7.3",
@@ -28,8 +28,8 @@
     "svgo": "^3.0.2",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
-    "vitest": "^0.34.5",
-    "zod": "^3.22.2",
+    "vitest": "^0.34.6",
+    "zod": "^3.22.4",
     "zod-to-json-schema": "^3.21.4",
     "zx": "^7.2.3"
   }
