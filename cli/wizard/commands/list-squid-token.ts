@@ -59,10 +59,15 @@ export async function listSquidToken() {
   console.log("Here is your interchain token config:\n");
   console.log(JSON.stringify(tokenConfig, null, 2));
 
-  const filePath = [environment, "interchain", "squid.tokenlist.json"];
+  const relativePath = [
+    "registry",
+    environment,
+    "interchain",
+    "squid.tokenlist.json",
+  ];
 
   const shouldWriteToConfigFile = await input({
-    message: `Would you like to save this config to '${filePath.join(
+    message: `Would you like to save this config to \n './${relativePath.join(
       "/"
     )}'? [yN]`,
   }).then((answer) => answer.toLowerCase() === "y");
@@ -72,13 +77,7 @@ export async function listSquidToken() {
     process.exit(0);
   }
 
-  const tokenListPath = path.resolve(
-    process.cwd(),
-    "registry",
-    environment,
-    "interchain",
-    "squid.tokenlist.json"
-  );
+  const tokenListPath = path.resolve(process.cwd(), ...relativePath);
   const tokenList = await fs.readFile(tokenListPath, "utf-8");
   const tokenListConfig = JSON.parse(tokenList) as InterchainTokenListConfig;
 
@@ -183,7 +182,7 @@ function parseAsInterchainTokenConfig(
     originAxelarChainId: data.axelarChainId,
     transferType: data.kind,
     iconUrls: {
-      svg: "",
+      svg: `https://raw.githubusercontent.com/axelarnetwork/public-chain-configs/images/tokens/${data.tokenSymbol.toLowerCase()}.svg`,
     },
     remoteTokens: data.remoteTokens.map((token) => ({
       axelarChainId: token.axelarChainId,
