@@ -68,6 +68,32 @@
           "tokenAddress": "0xD772a13cf187272e2A914aD90e06c47990014975"
         }
       ]
+    },
+    {
+      "tokenId": "0xbaedb481ec578b6f4bc0947253986ec5d196bf3fc7aaae302df2dc27feebabea",
+      "tokenAddress": "0x34c0B5Da5C6ea4Fd68694c36BAa2dffae2cA6843",
+      "symbol": "DGRNR11",
+      "prettySymbol": "DGRNR11",
+      "decimals": 18,
+      "name": "Dog3 Runner 11",
+      "originChainId": "43113",
+      "originAxelarChainId": "Avalanche",
+      "transferType": "standardized",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/public-chain-configs/images/tokens/dgrnr11.svg"
+      },
+      "remoteTokens": [
+        {
+          "axelarChainId": "polygon",
+          "chainId": "80001",
+          "tokenAddress": "0x34c0B5Da5C6ea4Fd68694c36BAa2dffae2cA6843"
+        },
+        {
+          "axelarChainId": "polygon-zkevm",
+          "chainId": "1442",
+          "tokenAddress": "0x34c0B5Da5C6ea4Fd68694c36BAa2dffae2cA6843"
+        }
+      ]
     }
   ]
 }
