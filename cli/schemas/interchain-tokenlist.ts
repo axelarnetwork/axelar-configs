@@ -43,4 +43,6 @@ const interchainTokenList = z.object({
 
 export default interchainTokenList;
 
+export type InterchainTokenListConfig = z.infer<typeof interchainTokenList>;
+
 export type InterchainTokenConfig = z.infer<typeof interchainToken>;

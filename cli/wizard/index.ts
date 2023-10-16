@@ -1,16 +1,21 @@
 import { select } from "@inquirer/prompts";
 import chalk from "chalk";
-import {
-  evmChainPrompts,
-  cosmosChainPrompts,
-  buildChainConfig,
-} from "./prompts";
+
+import { listSquidToken } from "./commands/list-squid-token";
+import { addEvmChain } from "./commands/add-evm-chain";
+import { addCosmosChain } from "./commands/add-cosmos-chain";
 
 console.log(chalk.bold.green("\nWelcome to the Axelar config wizard!\n"));
 
 const configType = await select({
   message: "What config would you like to generate?",
   choices: [
+    {
+      name: "List an interchain token on Squid",
+      description:
+        "Generates a config for listing an interchain token on Squid",
+      value: "list-squid-token" as const,
+    },
     {
       name: "EVM chain",
       description: "Generates a config for an EVM compatible chain",
@@ -41,44 +46,13 @@ const configType = await select({
 
 switch (configType) {
   case "evm-chain":
-    {
-      const draftConfig = await buildChainConfig(evmChainPrompts);
-
-      console.log({
-        draftConfig,
-      });
-
-      const shouldIncludeAssetlist = await select({
-        message: "Would you like to generate an assetlist for this chain?",
-        choices: [
-          {
-            name: "Yes",
-            value: true,
-          },
-          {
-            name: "No",
-            value: false,
-          },
-        ],
-      });
-
-      console.log(chalk.blue("\nGenerating EVM chain config...\n"));
-
-      if (shouldIncludeAssetlist) {
-        console.log(chalk.blue("\nGenerating EVM assetlist...\n"));
-      }
-    }
+    await addEvmChain();
     break;
   case "cosmos-chain":
-    {
-      const draftConfig = await buildChainConfig(cosmosChainPrompts);
-
-      console.log({
-        draftConfig,
-      });
-
-      console.log(chalk.blue("\nGenerating Cosmos chain config...\n"));
-    }
+    await addCosmosChain();
+    break;
+  case "list-squid-token":
+    await listSquidToken();
     break;
   case "none":
     console.log(chalk.bold.green("\nGoodbye!\n"));
