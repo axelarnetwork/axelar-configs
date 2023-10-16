@@ -11,7 +11,8 @@ export async function listSquidToken() {
   console.log(chalk.blue("\nGenerating token listing config...\n"));
 
   const didRegisterViaPortal = await input({
-    message: "Did you register your token via ITS portal? [yN]",
+    message: "Did you register your token via ITS portal? [N/y]",
+    default: "N",
   }).then((answer) => answer.toLowerCase() === "y");
 
   if (!didRegisterViaPortal) {
@@ -69,7 +70,8 @@ export async function listSquidToken() {
   const shouldWriteToConfigFile = await input({
     message: `Would you like to save this config to \n './${relativePath.join(
       "/"
-    )}'? [yN]`,
+    )}'? [N/y]`,
+    default: "N",
   }).then((answer) => answer.toLowerCase() === "y");
 
   if (!shouldWriteToConfigFile) {
@@ -113,7 +115,7 @@ export async function listSquidToken() {
   console.log(chalk.bold.green("\nConfig saved!\n"));
 
   const shouldCreatePR = await input({
-    message: "Would you like to create a PR? [yN]",
+    message: "Would you like to create a PR? [N/y]",
     default: "N",
   })
     .then((answer) => answer.toLowerCase() === "y")
