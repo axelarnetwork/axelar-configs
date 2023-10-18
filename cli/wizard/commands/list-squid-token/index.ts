@@ -8,6 +8,9 @@ import {
 } from "../../../schemas/interchain-tokenlist";
 import { address, hash } from "../../../schemas/common";
 
+const BASE_REPO_URL =
+  "https://raw.githubusercontent.com/axelarnetwork/public-chain-configs";
+
 export async function listSquidToken() {
   console.log(chalk.blue("\nGenerating token listing config...\n"));
 
@@ -112,23 +115,37 @@ export async function listSquidToken() {
     JSON.stringify(nextTokenListConfig, null, 2)
   );
 
+  // create a placeholder svg file for the token icon under images/tokens/{tokenSymbol}.svg, copy the svg content from tokens/axl.svg
+  const tokenIconPath = path.resolve(
+    process.cwd(),
+    "images",
+    "tokens",
+    `${tokenConfig.symbol.toLowerCase()}.svg`
+  );
+  const tokenIconContent = await fs.readFile(
+    path.resolve(process.cwd(), "images", "tokens", "axl.svg"),
+    "utf-8"
+  );
+  await fs.writeFile(tokenIconPath, tokenIconContent);
+
   console.log(chalk.bold.green("\nConfig saved!\n"));
 
-  const shouldCreatePR = await input({
-    message: "Would you like to create a PR? [N/y]",
-    default: "N",
-  })
-    .then((answer) => answer.toLowerCase() === "y")
-    .catch(() => false);
+  const shouldCreatePR = await confirm({
+    message: "Would you like to create a PR?",
+    default: false,
+  });
 
-  if (shouldCreatePR) {
-    await spinner("Creating PR...", async () => {
-      await $`git checkout -b feat/add-${tokenConfig.symbol}-token`;
-      await $`git add ${tokenListPath}`;
-      await $`git commit -m "feat: add ${tokenConfig.symbol} token"`;
-      await $`git push -u origin HEAD`;
-    });
+  if (!shouldCreatePR) {
+    console.log(chalk.bold.green("\nGoodbye!\n"));
+    process.exit(0);
   }
+
+  await spinner("Creating PR...", async () => {
+    await $`git checkout -b feat/add-${tokenConfig.symbol}-token`;
+    await $`git add ${tokenListPath}`;
+    await $`git commit -m "feat: add ${tokenConfig.symbol} token"`;
+    await $`git push -u origin HEAD`;
+  });
 }
 
 export type InterchainTokenInfo = {
@@ -184,7 +201,7 @@ function parseAsInterchainTokenConfig(
     originAxelarChainId: data.axelarChainId,
     transferType: data.kind,
     iconUrls: {
-      svg: `https://raw.githubusercontent.com/axelarnetwork/public-chain-configs/images/tokens/${data.tokenSymbol.toLowerCase()}.svg`,
+      svg: `${BASE_REPO_URL}/images/tokens/${data.tokenSymbol.toLowerCase()}.svg`,
     },
     remoteTokens: data.remoteTokens.map((token) => ({
       axelarChainId: token.axelarChainId,
