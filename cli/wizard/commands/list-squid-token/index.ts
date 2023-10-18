@@ -1,19 +1,20 @@
-import { input } from "@inquirer/prompts";
+import { input, confirm } from "@inquirer/prompts";
 import chalk from "chalk";
+import { $, fs, path, spinner } from "zx";
+
 import {
   InterchainTokenConfig,
   InterchainTokenListConfig,
 } from "../../../schemas/interchain-tokenlist";
 import { address, hash } from "../../../schemas/common";
-import { $, fs, path, spinner } from "zx";
 
 export async function listSquidToken() {
   console.log(chalk.blue("\nGenerating token listing config...\n"));
 
-  const didRegisterViaPortal = await input({
-    message: "Did you register your token via ITS portal? [N/y]",
-    default: "N",
-  }).then((answer) => answer.toLowerCase() === "y");
+  const didRegisterViaPortal = await confirm({
+    message: "Did you register your token via ITS portal?",
+    default: false,
+  });
 
   if (!didRegisterViaPortal) {
     console.log(
@@ -67,12 +68,11 @@ export async function listSquidToken() {
     "squid.tokenlist.json",
   ];
 
-  const shouldWriteToConfigFile = await input({
+  const shouldWriteToConfigFile = await confirm({
     message: `Would you like to save this config to \n './${relativePath.join(
       "/"
-    )}'? [N/y]`,
-    default: "N",
-  }).then((answer) => answer.toLowerCase() === "y");
+    )}'?`,
+  });
 
   if (!shouldWriteToConfigFile) {
     console.log(chalk.bold.green("\nGoodbye!\n"));
