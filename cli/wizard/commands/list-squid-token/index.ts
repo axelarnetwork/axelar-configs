@@ -3,8 +3,8 @@ import chalk from "chalk";
 import {
   InterchainTokenConfig,
   InterchainTokenListConfig,
-} from "../../schemas/interchain-tokenlist";
-import { address, hash } from "../../schemas/common";
+} from "../../../schemas/interchain-tokenlist";
+import { address, hash } from "../../../schemas/common";
 import { $, fs, path, spinner } from "zx";
 
 export async function listSquidToken() {
