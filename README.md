@@ -7,7 +7,7 @@ A public registry for chains and asset configurations
 Before we begin, make sure your system has the minimum runtime requirements:
 
 - [git](https://git-scm.com/downloads)
-- [bun](https://bun.sh/) >= 0.8.1
+- [bun](https://bun.sh/) >= 1.0
 
 To install `bun`, run the following command:
 
