@@ -46,16 +46,16 @@ export const confirmPrompt = (draft: {}) =>
         value: "true",
       },
       {
-        name: "No",
+        name: "No (edit record)",
         value: "false",
       },
       {
-        name: "Cancel",
-        value: "cancel",
+        name: "Exit",
+        value: "exit",
       },
     ],
   }).then((value) => {
-    if (value === "cancel") {
+    if (value === "exit") {
       process.exit(0);
     }
     return value === "true";

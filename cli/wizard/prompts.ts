@@ -193,6 +193,10 @@ export type DraftConfig<T extends string = string> = Partial<
   Record<T, string | string[]>
 >;
 
+type StringKeysOnly<T> = T extends string ? T : never;
+
+type PromptMap<T extends string> = Record<T, () => Promise<string | string[]>>;
+
 export type ChainConfigPropmts =
   | typeof evmChainPrompts
   | typeof cosmosChainPrompts;
@@ -203,12 +207,17 @@ export type ChainConfigPropmts =
  * @returns a chain config
  */
 export async function buildChainConfig(prompts: ChainConfigPropmts) {
-  type Field = keyof typeof prompts;
+  return buildConfigInquiry(prompts);
+}
 
-  const draft: DraftConfig<Field> = {};
+async function buildConfigInquiry<
+  P extends PromptMap<string>,
+  F extends string = StringKeysOnly<keyof P>
+>(prompts: P): Promise<DraftConfig<F>> {
+  const draft: DraftConfig<F> = {};
 
   for (const [field, prompt] of Object.entries(prompts)) {
-    draft[field as Field] = await prompt();
+    draft[field as F] = await prompt();
   }
 
   let confirm = await confirmPrompt(draft);
@@ -222,8 +231,9 @@ export async function buildChainConfig(prompts: ChainConfigPropmts) {
       })),
     });
 
-    const prompt = prompts[field as Field];
-    draft[field as Field] = await prompt();
+    const prompt = prompts[field];
+
+    draft[field as F] = await prompt();
 
     confirm = await confirmPrompt(draft);
   }
