@@ -35,6 +35,31 @@ bun i
 
 You're all set 🎉
 
+### Running the wizard
+
+```bash
+bun wizard
+```
+
+or
+
+```bash
+pnpm wizard
+```
+
+or
+
+```bash
+npm run wizard
+```
+
+The wizard currently allows you to:
+
+- List an interchain token on Squid
+- Add a Cosmos/EVM chain config
+- Add a Cosmos/EVM asset list config
+- more to come...
+
 ### Registering a new EVM chain
 
 `coming soon...`
