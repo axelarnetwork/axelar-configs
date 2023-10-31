@@ -7,6 +7,7 @@ import {
   InterchainTokenListConfig,
 } from "../../../schemas/interchain-tokenlist";
 import { address, hash } from "../../../schemas/common";
+import { patchConfig } from "../../utils";
 
 const BASE_REPO_URL =
   "https://raw.githubusercontent.com/axelarnetwork/public-chain-configs";
@@ -82,37 +83,23 @@ export async function listSquidToken() {
     process.exit(0);
   }
 
-  const tokenListPath = path.resolve(process.cwd(), ...relativePath);
-  const tokenList = await fs.readFile(tokenListPath, "utf-8");
-  const tokenListConfig = JSON.parse(tokenList) as InterchainTokenListConfig;
-
-  // check if token already exists in tokenlist
-
-  const tokenExists = tokenListConfig.tokens.some(
-    (token: InterchainTokenConfig) =>
-      token.tokenAddress === tokenConfig.tokenAddress ||
-      token.tokenId === tokenConfig.tokenId
-  );
-
-  if (tokenExists) {
-    console.log(
-      chalk.red(
-        "\nThis token already exists in the tokenlist. Please check the tokenlist and try again.\n"
-      )
-    );
-    process.exit(1);
-  }
-
-  console.log(chalk.blue("\nGenerating token listing config...\n"));
-
-  const nextTokenListConfig = {
-    ...tokenListConfig,
-    tokens: [...tokenListConfig.tokens, tokenConfig],
-  };
-
-  await fs.writeFile(
-    tokenListPath,
-    JSON.stringify(nextTokenListConfig, null, 2)
+  await patchConfig<InterchainTokenListConfig>(
+    relativePath,
+    {
+      tokens: (tokens) => [...(tokens ?? []), tokenConfig],
+    },
+    {
+      isDuplicate: (config) =>
+        config.tokens.some(
+          (token) =>
+            token.tokenAddress === tokenConfig.tokenAddress ||
+            token.tokenId === tokenConfig.tokenId
+        ),
+      transformConfig: (config) => ({
+        ...config,
+        tokens: [...config.tokens, tokenConfig],
+      }),
+    }
   );
 
   // create a placeholder svg file for the token icon under images/tokens/{tokenSymbol}.svg, copy the svg content from tokens/axl.svg
@@ -139,6 +126,8 @@ export async function listSquidToken() {
     console.log(chalk.bold.green("\nGoodbye!\n"));
     process.exit(0);
   }
+
+  const tokenListPath = path.resolve(process.cwd(), ...relativePath);
 
   await spinner("Creating PR...", async () => {
     await $`git checkout -b feat/add-${tokenConfig.symbol}-token`;

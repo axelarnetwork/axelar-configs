@@ -1,9 +1,62 @@
-import { select } from "@inquirer/prompts";
+import { confirm, select } from "@inquirer/prompts";
 import { z, ZodSchema } from "zod";
+import { chalk, fs, path } from "zx";
 
 export const prettyPrint = <T extends Record<string, unknown>>(obj: T) =>
   JSON.stringify(obj, null, 2);
 
+export type Spec<T extends Record<string, unknown>> = {
+  [K in keyof T]: (value: T[K]) => T[K];
+};
+
+export async function patchConfig<T extends Record<string, unknown>>(
+  relativePath: string[],
+  patch: Partial<T> | Spec<Partial<T>>,
+  options: {
+    isDuplicate(config: T): boolean;
+    transformConfig(config: T): T;
+  }
+) {
+  const shouldWriteToConfigFile = await confirm({
+    message: `Would you like to save this config to \n './${relativePath.join(
+      "/"
+    )}'?`,
+  });
+
+  if (!shouldWriteToConfigFile) {
+    console.log(chalk.bold.green("\nGoodbye!\n"));
+    process.exit(0);
+  }
+
+  const configPath = path.resolve(process.cwd(), ...relativePath);
+  const configContent = await fs.readFile(configPath, "utf-8");
+  const config = JSON.parse(configContent) as T;
+
+  const isDuplicate = options.isDuplicate(config);
+
+  if (isDuplicate) {
+    console.log(
+      chalk.red(
+        "\nThis config already exists. Please edit the existing config instead.\n"
+      )
+    );
+    process.exit(1);
+  }
+
+  const patched = Object.entries(patch).reduce(
+    (acc, [key, value]) => ({
+      ...acc,
+      [key]: typeof value === "function" ? value(acc[key]) : value,
+    }),
+    config
+  );
+
+  const transformed = options.transformConfig(patched);
+
+  console.log(chalk.blue("\nUpdating config file...\n"));
+
+  await fs.writeFile(configPath, JSON.stringify(transformed, null, 2));
+}
 /**
  * Validates the input against the given zod schema.
  * @param schema

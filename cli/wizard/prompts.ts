@@ -5,7 +5,7 @@ import { confirmPrompt, validators } from "./utils";
 export const commonPrompts = {
   configKind: () =>
     select({
-      message: "What kind of configuration is this?",
+      message: "What environment is this config for?",
       choices: [
         {
           name: "Mainnet",
@@ -210,6 +210,12 @@ export async function buildChainConfig(prompts: ChainConfigPropmts) {
   return buildConfigInquiry(prompts);
 }
 
+/**
+ * Builds a config interactively.
+ *
+ * @param prompts
+ * @returns a config
+ */
 async function buildConfigInquiry<
   P extends PromptMap<string>,
   F extends string = StringKeysOnly<keyof P>
