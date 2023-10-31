@@ -1,5 +1,5 @@
 import { select } from "@inquirer/prompts";
-import { buildChainConfig, evmChainPrompts } from "../prompts";
+import { buildChainConfig, evmChainPrompts } from "../../prompts";
 import chalk from "chalk";
 
 export async function addEvmChain() {

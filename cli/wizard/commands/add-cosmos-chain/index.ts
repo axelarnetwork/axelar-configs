@@ -1,5 +1,5 @@
 import chalk from "chalk";
-import { buildChainConfig, cosmosChainPrompts } from "../prompts";
+import { buildChainConfig, cosmosChainPrompts } from "../../prompts";
 
 export async function addCosmosChain() {
   const draftConfig = await buildChainConfig(cosmosChainPrompts);

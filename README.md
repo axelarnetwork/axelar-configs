@@ -55,7 +55,7 @@ npm run wizard
 
 The wizard currently allows you to:
 
-- List an interchain token on Squid
+- [List an interchain token on Squid](/cli/wizard/commands/list-squid-token/README.md)
 - Add a Cosmos/EVM chain config
 - Add a Cosmos/EVM asset list config
 - more to come...

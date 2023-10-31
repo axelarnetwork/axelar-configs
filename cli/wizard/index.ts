@@ -5,6 +5,25 @@ import { listSquidToken } from "./commands/list-squid-token";
 import { addEvmChain } from "./commands/add-evm-chain";
 import { addCosmosChain } from "./commands/add-cosmos-chain";
 
+const WIZARD_ASCII = `
+                  .
+
+                   .
+         /${chalk.green("^")}\\     .
+    /\\   "V"
+   /__\\   I      O  o
+  //..\\\\  I     .
+  \\].\`[/  I
+  /l\\/j\\  (]    .  O
+ /. ~~ ,\\/I          .
+ \\\\L__j^\\/I       o
+  \\/--v}  I     o   .
+  |    |  I   _________
+  |    |  I c('   ${chalk.cyan("▲")}   ')o
+  |    l  I   \\. ${chalk.cyan("𝛼×λ")} ,/
+_/j  L l\\_!  _//^---^\\\\_\n`;
+
+console.log(WIZARD_ASCII);
 console.log(chalk.bold.green("\nWelcome to the Axelar config wizard!\n"));
 
 const configType = await select({
