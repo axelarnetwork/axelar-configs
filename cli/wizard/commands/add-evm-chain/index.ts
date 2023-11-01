@@ -33,16 +33,19 @@ export async function addEvmChain() {
   await patchConfig(relativePath, draftConfig, {
     isDuplicate: (config) => config.chainId === draftConfig.chainId,
     transformConfig(config): EVMChainConfig {
+      const currencySymbol = String(config.nativeCurrencySymbol);
+      const chainName = String(config.chainName);
+
       return {
         $schema: "../../schemas/evm-chain.schema.json",
-        id: parseInt(String(config.chainId)), // Assuming the 'chainId' can be converted to a number
+        id: parseInt(String(config.chainId)),
         network: String(config.network),
-        name: String(config.chainName),
+        name: chainName,
         nativeCurrency: {
           name: String(config.nativeCurrencyName),
-          symbol: String(config.nativeCurrencySymbol),
-          decimals: parseInt(String(config.nativeCurrencyDecimals)), // Assuming this is always a valid integer
-          iconUrl: "/images/tokens/eth.svg", // This is a placeholder, adjust if needed
+          symbol: currencySymbol,
+          decimals: parseInt(String(config.nativeCurrencyDecimals)),
+          iconUrl: `/images/tokens/${currencySymbol.toLowerCase()}.svg`,
         },
         rpcUrls: [String(config.rpcUrl)],
         blockExplorers: [
@@ -51,7 +54,7 @@ export async function addEvmChain() {
             url: String(config.blockExplorerUrl),
           },
         ],
-        iconUrl: "/images/chains/ethereum.svg", // This is a placeholder, adjust if needed
+        iconUrl: `/images/chains/${chainName.toLowerCase()}.svg`,
         testnet: String(config.configKind)?.toLowerCase() === "testnet",
       };
     },
