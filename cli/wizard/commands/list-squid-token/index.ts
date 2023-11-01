@@ -72,7 +72,7 @@ export async function listSquidToken() {
     "squid.tokenlist.json",
   ];
 
-  await patchConfig<InterchainTokenListConfig>(
+  await patchConfig<InterchainTokenListConfig, InterchainTokenListConfig>(
     relativePath,
     {
       tokens: (tokens) => [...(tokens ?? []), newTokenConfig],

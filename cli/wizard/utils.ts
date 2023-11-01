@@ -14,7 +14,7 @@ export async function patchConfig<T extends Record<string, unknown>, U>(
   patch: Partial<T> | Spec<Partial<T>>,
   options: {
     isDuplicate(config: T): boolean;
-    transformConfig(config: T): U;
+    transformConfig?: (config: T) => U;
   }
 ) {
   const shouldWriteToConfigFile = await confirm({
@@ -51,7 +51,7 @@ export async function patchConfig<T extends Record<string, unknown>, U>(
     config
   );
 
-  const transformed = options.transformConfig(patched);
+  const transformed = options.transformConfig?.(patched) ?? patched;
 
   console.log(chalk.blue("\nUpdating config file...\n"));
 
