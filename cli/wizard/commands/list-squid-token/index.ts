@@ -60,10 +60,10 @@ export async function listSquidToken() {
         .catch(() => ({})) as Promise<InterchainTokenDetails>
   );
 
-  const tokenConfig = parseAsInterchainTokenConfig(tokenDetails);
+  const newTokenConfig = parseAsInterchainTokenConfig(tokenDetails);
 
   console.log("Here is your interchain token config:\n");
-  console.log(JSON.stringify(tokenConfig, null, 2));
+  console.log(JSON.stringify(newTokenConfig, null, 2));
 
   const relativePath = [
     "registry",
@@ -72,32 +72,21 @@ export async function listSquidToken() {
     "squid.tokenlist.json",
   ];
 
-  const shouldWriteToConfigFile = await confirm({
-    message: `Would you like to save this config to \n './${relativePath.join(
-      "/"
-    )}'?`,
-  });
-
-  if (!shouldWriteToConfigFile) {
-    console.log(chalk.bold.green("\nGoodbye!\n"));
-    process.exit(0);
-  }
-
   await patchConfig<InterchainTokenListConfig>(
     relativePath,
     {
-      tokens: (tokens) => [...(tokens ?? []), tokenConfig],
+      tokens: (tokens) => [...(tokens ?? []), newTokenConfig],
     },
     {
       isDuplicate: (config) =>
         config.tokens.some(
           (token) =>
-            token.tokenAddress === tokenConfig.tokenAddress ||
-            token.tokenId === tokenConfig.tokenId
+            token.tokenAddress === newTokenConfig.tokenAddress ||
+            token.tokenId === newTokenConfig.tokenId
         ),
       transformConfig: (config) => ({
         ...config,
-        tokens: [...config.tokens, tokenConfig],
+        tokens: [...config.tokens, newTokenConfig],
       }),
     }
   );
@@ -107,7 +96,7 @@ export async function listSquidToken() {
     process.cwd(),
     "images",
     "tokens",
-    `${tokenConfig.symbol.toLowerCase()}.svg`
+    `${newTokenConfig.symbol.toLowerCase()}.svg`
   );
   const tokenIconContent = await fs.readFile(
     path.resolve(process.cwd(), "images", "tokens", "axl.svg"),
@@ -130,9 +119,9 @@ export async function listSquidToken() {
   const tokenListPath = path.resolve(process.cwd(), ...relativePath);
 
   await spinner("Creating PR...", async () => {
-    await $`git checkout -b feat/add-${tokenConfig.symbol}-token`;
+    await $`git checkout -b feat/add-${newTokenConfig.symbol}-token`;
     await $`git add ${tokenListPath}`;
-    await $`git commit -m "feat: add ${tokenConfig.symbol} token"`;
+    await $`git commit -m "feat: add ${newTokenConfig.symbol} token"`;
     await $`git push -u origin HEAD`;
   });
 }

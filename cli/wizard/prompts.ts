@@ -190,7 +190,7 @@ export const cosmosChainPrompts = {
 };
 
 export type DraftConfig<T extends string = string> = Partial<
-  Record<T, string | string[]>
+  Record<T, string | string[] | undefined>
 >;
 
 type StringKeysOnly<T> = T extends string ? T : never;
@@ -201,12 +201,28 @@ export type ChainConfigPropmts =
   | typeof evmChainPrompts
   | typeof cosmosChainPrompts;
 
+export type Unfold<T> = T extends Promise<infer U> ? U : T;
+
+export type PromptsResult<T extends PromptMap<string>> = {
+  [K in keyof T]: Unfold<ReturnType<T[K]>>;
+};
+
+export type CommonPromptsResult = PromptsResult<typeof commonPrompts>;
+
+export type EVMChainPromptsResult = CommonPromptsResult &
+  PromptsResult<typeof evmChainPrompts>;
+
+export type CosmosChainPromptsResult = CommonPromptsResult &
+  PromptsResult<typeof cosmosChainPrompts>;
+
 /**
  * Builds a chain config interactively.
  * @param prompts
  * @returns a chain config
  */
-export async function buildChainConfig(prompts: ChainConfigPropmts) {
+export async function buildChainConfig<T extends ChainConfigPropmts>(
+  prompts: T
+) {
   return buildConfigInquiry(prompts);
 }
 
