@@ -22,7 +22,7 @@ export async function addCosmosChain() {
 
   const resolvedPath = path.resolve(process.cwd(), ...relativePath);
 
-  const file = await fs.readFile(resolvedPath, "utf-8");
+  const file = await fs.readFile(resolvedPath, "utf-8").catch(() => null);
 
   // create file if it doesn't exist
   if (!file) {

@@ -9,12 +9,12 @@ export type Spec<T extends Record<string, unknown>> = {
   [K in keyof T]: (value: T[K]) => T[K];
 };
 
-export async function patchConfig<T extends Record<string, unknown>>(
+export async function patchConfig<T extends Record<string, unknown>, U>(
   relativePath: string[],
   patch: Partial<T> | Spec<Partial<T>>,
   options: {
     isDuplicate(config: T): boolean;
-    transformConfig(config: T): T;
+    transformConfig(config: T): U;
   }
 ) {
   const shouldWriteToConfigFile = await confirm({
