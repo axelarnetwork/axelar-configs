@@ -1,0 +1,10 @@
+{
+  "$schema": "../../schemas/interchain-tokenlist.schema.json",
+  "name": "Squid Interchain Token List",
+  "version": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "tokens": []
+}
