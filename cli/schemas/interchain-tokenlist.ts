@@ -6,7 +6,6 @@ export const IconUrlsSchema = z.object({
 });
 
 export const remoteToken = z.object({
-  chainId: z.string(),
   axelarChainId: z.string(),
   tokenAddress: address,
 });
@@ -18,7 +17,6 @@ export const interchainToken = z.object({
   prettySymbol: z.string(),
   decimals: z.number().int(),
   name: z.string(),
-  originChainId: z.string(),
   originAxelarChainId: z.string(),
   transferType: z.string(),
   iconUrls: IconUrlsSchema,

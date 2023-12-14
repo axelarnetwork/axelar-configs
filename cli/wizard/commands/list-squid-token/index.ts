@@ -10,7 +10,7 @@ import { address, hash } from "../../../schemas/common";
 import { patchConfig } from "../../utils";
 
 const BASE_REPO_URL =
-  "https://raw.githubusercontent.com/axelarnetwork/public-chain-configs";
+  "https://raw.githubusercontent.com/axelarnetwork/axelar-configs";
 
 export async function listSquidToken() {
   console.log(chalk.blue("\nGenerating token listing config...\n"));
@@ -84,10 +84,6 @@ export async function listSquidToken() {
             token.tokenAddress === newTokenConfig.tokenAddress ||
             token.tokenId === newTokenConfig.tokenId
         ),
-      transformConfig: (config) => ({
-        ...config,
-        tokens: [...config.tokens, newTokenConfig],
-      }),
     }
   );
 
@@ -143,9 +139,8 @@ export type InterchainTokenSearchResult = InterchainTokenInfo & {
 };
 
 export type RemoteInterchainToken = {
-  chainId: number;
   axelarChainId: string;
-  address: string;
+  tokenAddress: string;
   deploymentStatus: string;
   deploymentTxHash: string;
 };
@@ -157,7 +152,6 @@ export type InterchainTokenDetails = {
   tokenSymbol: string;
   tokenDecimals: number;
   tokenAddress: string;
-  chainId: number;
   axelarChainId: string;
   tokenId: string;
   deploymentTxHash: string;
@@ -175,7 +169,6 @@ function parseAsInterchainTokenConfig(
     prettySymbol: data.tokenSymbol,
     decimals: data.tokenDecimals,
     name: data.tokenName,
-    originChainId: String(data.chainId),
     originAxelarChainId: data.axelarChainId,
     transferType: data.kind,
     iconUrls: {
@@ -183,8 +176,7 @@ function parseAsInterchainTokenConfig(
     },
     remoteTokens: data.remoteTokens.map((token) => ({
       axelarChainId: token.axelarChainId,
-      chainId: String(token.chainId),
-      tokenAddress: address.parse(token.address),
+      tokenAddress: address.parse(token.tokenAddress),
     })),
   };
 }
