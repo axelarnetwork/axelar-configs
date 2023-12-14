@@ -32,7 +32,6 @@
         "prettySymbol": { "type": "string" },
         "decimals": { "type": "integer" },
         "name": { "type": "string" },
-        "originChainId": { "type": "string" },
         "originAxelarChainId": { "type": "string" },
         "transferType": { "type": "string" },
         "iconUrls": { "$ref": "#/definitions/IconUrlsSchema" },
@@ -49,7 +48,6 @@
         "prettySymbol",
         "decimals",
         "name",
-        "originChainId",
         "originAxelarChainId",
         "transferType",
         "iconUrls",
@@ -60,13 +58,12 @@
     "remoteToken": {
       "type": "object",
       "properties": {
-        "chainId": { "type": "string" },
         "axelarChainId": { "type": "string" },
         "tokenAddress": {
           "$ref": "#/definitions/interchainToken/properties/tokenAddress"
         }
       },
-      "required": ["chainId", "axelarChainId", "tokenAddress"],
+      "required": ["axelarChainId", "tokenAddress"],
       "additionalProperties": false
     },
     "version": {
