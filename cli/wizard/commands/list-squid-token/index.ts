@@ -84,10 +84,6 @@ export async function listSquidToken() {
             token.tokenAddress === newTokenConfig.tokenAddress ||
             token.tokenId === newTokenConfig.tokenId
         ),
-      transformConfig: (config) => ({
-        ...config,
-        tokens: [...config.tokens, newTokenConfig],
-      }),
     }
   );
 
