@@ -6,5 +6,77 @@
     "minor": 1,
     "patch": 0
   },
-  "tokens": []
+  "tokens": [
+    {
+      "tokenId": "0x977be77da4e97b7a71f7ed2b9d6bf8e49900f63c7f2e055e66746406ea575ace",
+      "tokenAddress": "0xE280532Bc53B0135B9a4076022B563118Cf838c9",
+      "symbol": "tSUSHI",
+      "prettySymbol": "tSUSHI",
+      "decimals": 18,
+      "name": "Testnet SushiToken",
+      "originAxelarChainId": "ethereum-2",
+      "transferType": "interchain",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/images/tokens/tsushi.svg"
+      },
+      "remoteTokens": [
+        {
+          "axelarChainId": "linea",
+          "tokenAddress": "0xE280532Bc53B0135B9a4076022B563118Cf838c9"
+        },
+        {
+          "axelarChainId": "celo",
+          "tokenAddress": "0xE280532Bc53B0135B9a4076022B563118Cf838c9"
+        },
+        {
+          "axelarChainId": "moonbeam",
+          "tokenAddress": "0xE280532Bc53B0135B9a4076022B563118Cf838c9"
+        },
+        {
+          "axelarChainId": "polygon-zkevm",
+          "tokenAddress": "0xE280532Bc53B0135B9a4076022B563118Cf838c9"
+        },
+        {
+          "axelarChainId": "ethereum-sepolia",
+          "tokenAddress": "0xE280532Bc53B0135B9a4076022B563118Cf838c9"
+        },
+        {
+          "axelarChainId": "scroll",
+          "tokenAddress": "0xE280532Bc53B0135B9a4076022B563118Cf838c9"
+        },
+        {
+          "axelarChainId": "binance",
+          "tokenAddress": "0xE280532Bc53B0135B9a4076022B563118Cf838c9"
+        },
+        {
+          "axelarChainId": "kava",
+          "tokenAddress": "0xE280532Bc53B0135B9a4076022B563118Cf838c9"
+        },
+        {
+          "axelarChainId": "polygon",
+          "tokenAddress": "0xE280532Bc53B0135B9a4076022B563118Cf838c9"
+        },
+        {
+          "axelarChainId": "base",
+          "tokenAddress": "0xE280532Bc53B0135B9a4076022B563118Cf838c9"
+        },
+        {
+          "axelarChainId": "fantom",
+          "tokenAddress": "0xE280532Bc53B0135B9a4076022B563118Cf838c9"
+        },
+        {
+          "axelarChainId": "mantle",
+          "tokenAddress": "0xE280532Bc53B0135B9a4076022B563118Cf838c9"
+        },
+        {
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0xE280532Bc53B0135B9a4076022B563118Cf838c9"
+        },
+        {
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xE280532Bc53B0135B9a4076022B563118Cf838c9"
+        }
+      ]
+    }
+  ]
 }
