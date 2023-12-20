@@ -6,5 +6,29 @@
     "minor": 1,
     "patch": 0
   },
-  "tokens": []
+  "tokens": [
+    {
+      "tokenId": "0x41e276f2a123d67022502cdfa56ce754fc6eb27f13e7ac3da4c69a08ac668169",
+      "tokenAddress": "0x7e5738bDabc8ADb3670b07eA0e7D4b0B94282E4f",
+      "symbol": "RMRK",
+      "prettySymbol": "RMRK",
+      "decimals": 18,
+      "name": "Test RMRK",
+      "originAxelarChainId": "moonbeam",
+      "transferType": "interchain",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/images/tokens/rmrk.png"
+      },
+      "remoteTokens": [
+        {
+          "axelarChainId": "moonbeam",
+          "tokenAddress": "0x7e5738bDabc8ADb3670b07eA0e7D4b0B94282E4f"
+        },
+        {
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x7e5738bDabc8ADb3670b07eA0e7D4b0B94282E4f"
+        }
+      ]
+    }
+  ]
 }
