@@ -17,7 +17,7 @@
       "originAxelarChainId": "moonbeam",
       "transferType": "interchain",
       "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/images/tokens/rmrk.png"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/images/tokens/rmrk.svg"
       },
       "remoteTokens": [
         {
