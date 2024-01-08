@@ -8,12 +8,12 @@
   },
   "tokens": [
     {
-      "tokenId": "0x41e276f2a123d67022502cdfa56ce754fc6eb27f13e7ac3da4c69a08ac668169",
-      "tokenAddress": "0x7e5738bDabc8ADb3670b07eA0e7D4b0B94282E4f",
+      "tokenId": "0xb689de707e78469c6a115fdcfd9a0c2db9f8e7ce5ade7b29526d63f4e01d77fb",
+      "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
       "symbol": "RMRK",
       "prettySymbol": "RMRK",
       "decimals": 18,
-      "name": "Test RMRK",
+      "name": "RMRK",
       "originAxelarChainId": "moonbeam",
       "transferType": "interchain",
       "iconUrls": {
@@ -21,12 +21,20 @@
       },
       "remoteTokens": [
         {
-          "axelarChainId": "moonbeam",
-          "tokenAddress": "0x7e5738bDabc8ADb3670b07eA0e7D4b0B94282E4f"
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
         },
         {
-          "axelarChainId": "polygon",
-          "tokenAddress": "0x7e5738bDabc8ADb3670b07eA0e7D4b0B94282E4f"
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
+        },
+        {
+          "axelarChainId": "base",
+          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
+        },
+        {
+          "axelarChainId": "binance",
+          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
         }
       ]
     }
