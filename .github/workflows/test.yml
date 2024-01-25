@@ -3,19 +3,18 @@ on:
   - pull_request
 
 jobs:
-  setup-and-test:
-    name: setup-and-test
+  test:
+    name: Test
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - name: setup bun
+      - name: Setup bun
         uses: oven-sh/setup-bun@v1
 
-      # run any `bun` or `bunx` command
-      - name: install dependencies
+      - name: Install dependencies
         run: bun install
 
-      - name: run tests
+      - name: Run tests
         run: bun run test

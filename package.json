@@ -1,7 +1,7 @@
 {
-  "name": "public-chain-configs",
-  "version": "0.0.1",
-  "description": "Axelar Network public chain & assets registry",
+  "name": "axelar-configs",
+  "version": "1.0.0",
+  "description": "A public registry for chains and asset configurations for applications built on the Axelar network",
   "type": "module",
   "scripts": {
     "format": "prettier --write .",
@@ -12,7 +12,12 @@
     "test": "vitest --run",
     "prepare": "husky install"
   },
-  "keywords": [],
+  "keywords": [
+    "axelar",
+    "ethereum",
+    "blockchain",
+    "interoperability"
+  ],
   "license": "LicenseRef-LICENSE",
   "dependencies": {
     "@inquirer/prompts": "^3.2.0"

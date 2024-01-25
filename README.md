@@ -1,13 +1,13 @@
-# public-chain-configs
+# Axelar configs
 
-A public registry for chains and asset configurations
+A public registry for chains and asset configurations for applications built on the Axelar network.
 
 ## Getting started
 
 Before we begin, make sure your system has the minimum runtime requirements:
 
 - [git](https://git-scm.com/downloads)
-- [bun](https://bun.sh/) >= 1.0
+- [bun](https://bun.sh/) >= 1.0 OR [npm](https://docs.npmjs.com/)
 
 To install `bun`, run the following command:
 
@@ -15,16 +15,16 @@ To install `bun`, run the following command:
 curl -fsSL https://bun.sh/install | bash
 ```
 
-Once you have `nodejs` and `bun`, you can clone this repository:
+Once you have `bun` or `nodejs` installed, you can clone this repository:
 
 ```bash
-git clone git@github.com:axelarnetwork/public-chain-configs.git
+git clone git@github.com:axelarnetwork/axelar-configs.git
 ```
 
 cd into the folder
 
 ```bash
-cd public-chain-configs
+cd axelar-configs
 ```
 
 Install dependencies
