@@ -39,6 +39,11 @@
           "type": "array",
           "items": { "$ref": "#/definitions/remoteToken" }
         },
+        "tokenManagerAddress": {
+          "type": "string",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "tokenManagerType": { "type": "string" },
         "coinGeckoId": { "type": "string" }
       },
       "required": [
@@ -51,7 +56,9 @@
         "originAxelarChainId",
         "transferType",
         "iconUrls",
-        "remoteTokens"
+        "remoteTokens",
+        "tokenManagerAddress",
+        "tokenManagerType"
       ],
       "additionalProperties": false
     },
@@ -61,9 +68,20 @@
         "axelarChainId": { "type": "string" },
         "tokenAddress": {
           "$ref": "#/definitions/interchainToken/properties/tokenAddress"
+        },
+        "tokenManagerAddress": {
+          "$ref": "#/definitions/interchainToken/properties/tokenManagerAddress"
+        },
+        "tokenManagerType": {
+          "$ref": "#/definitions/interchainToken/properties/tokenManagerType"
         }
       },
-      "required": ["axelarChainId", "tokenAddress"],
+      "required": [
+        "axelarChainId",
+        "tokenAddress",
+        "tokenManagerAddress",
+        "tokenManagerType"
+      ],
       "additionalProperties": false
     },
     "version": {

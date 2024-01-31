@@ -125,6 +125,8 @@ export async function listSquidToken() {
 export type InterchainTokenInfo = {
   tokenId: string;
   tokenAddress: string;
+  tokenManagerAddress: string;
+  tokenManagerType: string;
   isOriginToken: boolean;
   isRegistered: boolean;
   chainId: number;
@@ -141,6 +143,8 @@ export type InterchainTokenSearchResult = InterchainTokenInfo & {
 export type RemoteInterchainToken = {
   axelarChainId: string;
   tokenAddress: string;
+  tokenManagerAddress: string;
+  tokenManagerType: string;
   deploymentStatus: string;
   deploymentTxHash: string;
 };
@@ -152,6 +156,8 @@ export type InterchainTokenDetails = {
   tokenSymbol: string;
   tokenDecimals: number;
   tokenAddress: string;
+  tokenManagerAddress: string;
+  tokenManagerType: string;
   axelarChainId: string;
   tokenId: string;
   deploymentTxHash: string;
@@ -165,6 +171,8 @@ function parseAsInterchainTokenConfig(
   return {
     tokenId: hash.parse(data.tokenId),
     tokenAddress: address.parse(data.tokenAddress),
+    tokenManagerAddress: address.parse(data.tokenManagerAddress),
+    tokenManagerType: data.tokenManagerType,
     symbol: data.tokenSymbol,
     prettySymbol: data.tokenSymbol,
     decimals: data.tokenDecimals,

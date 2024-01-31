@@ -13,6 +13,8 @@ export const remoteToken = z.object({
 export const interchainToken = z.object({
   tokenId: hash,
   tokenAddress: address,
+  tokenManagerAddress: address,
+  tokenManagerType: z.string(),
   symbol: z.string(),
   prettySymbol: z.string(),
   decimals: z.number().int(),
