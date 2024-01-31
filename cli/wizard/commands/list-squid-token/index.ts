@@ -158,6 +158,7 @@ export type InterchainTokenDetails = {
   tokenAddress: string;
   tokenManagerAddress: string;
   tokenManagerType: string;
+  originalMinterAddress: string;
   axelarChainId: string;
   tokenId: string;
   deploymentTxHash: string;
@@ -173,6 +174,8 @@ function parseAsInterchainTokenConfig(
     tokenAddress: address.parse(data.tokenAddress),
     tokenManagerAddress: address.parse(data.tokenManagerAddress),
     tokenManagerType: data.tokenManagerType,
+    deployerAddress: data.deployerAddress,
+    originalMinterAddress: data.originalMinterAddress,
     symbol: data.tokenSymbol,
     prettySymbol: data.tokenSymbol,
     decimals: data.tokenDecimals,
@@ -185,6 +188,8 @@ function parseAsInterchainTokenConfig(
     remoteTokens: data.remoteTokens.map((token) => ({
       axelarChainId: token.axelarChainId,
       tokenAddress: address.parse(token.tokenAddress),
+      tokenManagerAddress: address.parse(token.tokenManagerAddress),
+      tokenManagerType: token.tokenManagerType,
     })),
   };
 }
