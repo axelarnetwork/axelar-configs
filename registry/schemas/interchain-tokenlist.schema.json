@@ -19,7 +19,7 @@
   "definitions": {
     "IconUrlsSchema": {
       "type": "object",
-      "properties": { "svg": { "type": "string", "format": "uri" } },
+      "properties": { "svg": { "type": "string" } },
       "required": ["svg"],
       "additionalProperties": false
     },

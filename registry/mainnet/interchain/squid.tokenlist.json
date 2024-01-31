@@ -10,6 +10,8 @@
     {
       "tokenId": "0xb689de707e78469c6a115fdcfd9a0c2db9f8e7ce5ade7b29526d63f4e01d77fb",
       "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
+      "tokenManagerAddress": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+      "tokenManagerType": "mint_burn",
       "symbol": "RMRK",
       "prettySymbol": "RMRK",
       "decimals": 18,
@@ -22,19 +24,27 @@
       "remoteTokens": [
         {
           "axelarChainId": "polygon",
-          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
+          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
+          "tokenManagerAddress": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "tokenManagerType": "mint_burn"
         },
         {
           "axelarChainId": "ethereum",
-          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
+          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
+          "tokenManagerAddress": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "tokenManagerType": "mint_burn"
         },
         {
           "axelarChainId": "base",
-          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
+          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
+          "tokenManagerAddress": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "tokenManagerType": "mint_burn"
         },
         {
           "axelarChainId": "binance",
-          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
+          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
+          "tokenManagerAddress": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "tokenManagerType": "mint_burn"
         }
       ]
     }
