@@ -41,7 +41,8 @@
         "decimals": { "type": "integer" },
         "name": { "type": "string" },
         "originAxelarChainId": { "type": "string" },
-        "transferType": { "type": "string" },
+        "tokenType": { "type": "string" },
+        "srcTxHash": { "type": "string" },
         "iconUrls": { "$ref": "#/definitions/IconUrlsSchema" },
         "chains": {
           "type": "array",
@@ -62,9 +63,10 @@
         "decimals",
         "name",
         "originAxelarChainId",
-        "transferType",
+        "tokenType",
         "iconUrls",
         "chains",
+        "srcTxHash",
         "tokenManager",
         "tokenManagerType"
       ],

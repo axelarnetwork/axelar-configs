@@ -17,11 +17,12 @@
       "decimals": 18,
       "name": "RMRK",
       "originAxelarChainId": "moonbeam",
-      "transferType": "interchain",
+      "tokenType": "interchain",
       "iconUrls": {
         "svg": "/images/tokens/rmrk.svg"
       },
       "salt": "0x",
+      "srcTxHash": "",
       "chains": [
         {
           "axelarChainId": "moonbeam",
