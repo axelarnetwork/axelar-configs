@@ -1,6 +1,7 @@
 import { input, confirm } from "@inquirer/prompts";
 import chalk from "chalk";
 import { $, fs, path, spinner } from "zx";
+import { convertCase } from "@axelarjs/utils";
 
 import {
   InterchainTokenConfig,
@@ -162,35 +163,56 @@ export type InterchainTokenDetails = {
   axelarChainId: string;
   tokenId: string;
   deploymentTxHash: string;
-  deployerAddress: string;
+  deployer: string;
   remoteTokens: RemoteInterchainToken[];
 };
 
 function parseAsInterchainTokenConfig(
   data: InterchainTokenDetails
 ): InterchainTokenConfig {
+  console.log({ data });
   return {
     tokenId: hash.parse(data.tokenId),
     tokenAddress: address.parse(data.tokenAddress),
-    tokenManagerAddress: address.parse(data.tokenManagerAddress),
-    tokenManagerType: data.tokenManagerType,
-    deployerAddress: data.deployerAddress,
-    originalMinterAddress: data.originalMinterAddress,
+    tokenManager: address.parse(data.tokenManagerAddress),
+    tokenManagerType: convertCase(
+      "CONSTANT_CASE",
+      "camelCase"
+    )(data.tokenManagerType),
+    deployer: data.deployer,
+    originalMinter: data.originalMinterAddress,
     symbol: data.tokenSymbol,
     prettySymbol: data.tokenSymbol,
     decimals: data.tokenDecimals,
     name: data.tokenName,
     originAxelarChainId: data.axelarChainId,
     transferType: data.kind,
+    salt: data.salt,
     iconUrls: {
       svg: `${BASE_REPO_URL}/images/tokens/${data.tokenSymbol.toLowerCase()}.svg`,
     },
-    chains: data.remoteTokens.map((token) => ({
-      axelarChainId: token.axelarChainId,
-      tokenAddress: address.parse(token.tokenAddress),
-      tokenManagerAddress: address.parse(token.tokenManagerAddress),
-      tokenManagerType: token.tokenManagerType,
-    })),
+    chains: [
+      ...[
+        {
+          axelarChainId: data.axelarChainId,
+          tokenAddress: address.parse(data.tokenAddress),
+          tokenManager: address.parse(data.tokenManagerAddress),
+          tokenManagerType: convertCase(
+            "CONSTANT_CASE",
+            "camelCase"
+          )(data.tokenManagerType),
+        },
+      ],
+      ...data.remoteTokens.map((token) => ({
+        axelarChainId: token.axelarChainId,
+        tokenAddress: address.parse(token.tokenAddress),
+        tokenManager: address.parse(token.tokenManagerAddress),
+        tokenManagerType: convertCase(
+          "CONSTANT_CASE",
+          "camelCase"
+        )(token.tokenManagerType),
+      })),
+    ],
   };
 }
 

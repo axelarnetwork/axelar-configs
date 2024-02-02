@@ -5,9 +5,11 @@ export const IconUrlsSchema = z.object({
   svg: z.string().url(),
 });
 
-export const remoteToken = z.object({
+export const chains = z.object({
   axelarChainId: z.string(),
   tokenAddress: address,
+  tokenManager: address,
+  tokenManagerType: z.string(),
 });
 
 export const interchainToken = z.object({
@@ -24,7 +26,8 @@ export const interchainToken = z.object({
   originAxelarChainId: z.string(),
   transferType: z.string(),
   iconUrls: IconUrlsSchema,
-  remoteTokens: z.array(remoteToken),
+  salt: z.string(),
+  chains: z.array(chains),
   coinGeckoId: z.string().optional(),
 });
 

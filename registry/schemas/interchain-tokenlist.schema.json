@@ -39,7 +39,7 @@
           "type": "array",
           "items": { "$ref": "#/definitions/remoteToken" }
         },
-        "tokenManagerAddress": {
+        "tokenManager": {
           "type": "string",
           "pattern": "^0x[a-fA-F0-9]{40}$"
         },
@@ -57,7 +57,7 @@
         "transferType",
         "iconUrls",
         "remoteTokens",
-        "tokenManagerAddress",
+        "tokenManager",
         "tokenManagerType"
       ],
       "additionalProperties": false
@@ -69,8 +69,8 @@
         "tokenAddress": {
           "$ref": "#/definitions/interchainToken/properties/tokenAddress"
         },
-        "tokenManagerAddress": {
-          "$ref": "#/definitions/interchainToken/properties/tokenManagerAddress"
+        "tokenManager": {
+          "$ref": "#/definitions/interchainToken/properties/tokenManager"
         },
         "tokenManagerType": {
           "$ref": "#/definitions/interchainToken/properties/tokenManagerType"
@@ -79,7 +79,7 @@
       "required": [
         "axelarChainId",
         "tokenAddress",
-        "tokenManagerAddress",
+        "tokenManager",
         "tokenManagerType"
       ],
       "additionalProperties": false
