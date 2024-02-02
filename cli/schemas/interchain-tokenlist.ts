@@ -13,9 +13,9 @@ export const remoteToken = z.object({
 export const interchainToken = z.object({
   tokenId: hash,
   tokenAddress: address,
-  tokenManagerAddress: address,
-  deployerAddress: address,
-  originalMinterAddress: address,
+  tokenManager: address,
+  deployer: address,
+  originalMinter: address,
   tokenManagerType: z.string(),
   symbol: z.string(),
   prettySymbol: z.string(),
