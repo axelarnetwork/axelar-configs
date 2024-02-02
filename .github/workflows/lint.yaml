@@ -16,7 +16,7 @@ jobs:
         run: bun install
 
       - name: Format files
-        run: bun run format
+        run: prettier --write cli registry scripts
 
       - name: Check for changes
         run: |
