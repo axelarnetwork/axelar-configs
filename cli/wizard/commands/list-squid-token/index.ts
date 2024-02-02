@@ -185,7 +185,7 @@ function parseAsInterchainTokenConfig(
     iconUrls: {
       svg: `${BASE_REPO_URL}/images/tokens/${data.tokenSymbol.toLowerCase()}.svg`,
     },
-    remoteTokens: data.remoteTokens.map((token) => ({
+    chains: data.remoteTokens.map((token) => ({
       axelarChainId: token.axelarChainId,
       tokenAddress: address.parse(token.tokenAddress),
       tokenManagerAddress: address.parse(token.tokenManagerAddress),
