@@ -80,7 +80,6 @@ export async function listSquidToken() {
         ...tokens,
         [newTokenConfig.tokenId]: newTokenConfig,
       }),
-      // tokens: (tokens) => [...(tokens ?? []), newTokenConfig],
     },
     {
       isDuplicate: (config) =>
