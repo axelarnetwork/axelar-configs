@@ -76,15 +76,15 @@ export async function listSquidToken() {
   await patchConfig<InterchainTokenListConfig, InterchainTokenListConfig>(
     relativePath,
     {
-      tokens: (tokens) => [...(tokens ?? []), newTokenConfig],
+      tokens: (tokens) => ({
+        ...tokens,
+        [newTokenConfig.tokenId]: newTokenConfig,
+      }),
+      // tokens: (tokens) => [...(tokens ?? []), newTokenConfig],
     },
     {
       isDuplicate: (config) =>
-        config.tokens.some(
-          (token) =>
-            token.tokenAddress === newTokenConfig.tokenAddress ||
-            token.tokenId === newTokenConfig.tokenId
-        ),
+        config.tokens[newTokenConfig.tokenId] !== undefined,
     }
   );
 
@@ -170,7 +170,6 @@ export type InterchainTokenDetails = {
 function parseAsInterchainTokenConfig(
   data: InterchainTokenDetails
 ): InterchainTokenConfig {
-  console.log({ data });
   return {
     tokenId: hash.parse(data.tokenId),
     tokenAddress: address.parse(data.tokenAddress),

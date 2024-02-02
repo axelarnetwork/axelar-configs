@@ -43,7 +43,7 @@ const interchainTokenList = z.object({
     .regex(/^(?:\.\.\/)+schemas\/interchain-tokenlist\.schema\.json$/),
   name: z.string(),
   version,
-  tokens: z.array(interchainToken),
+  tokens: z.record(z.string(), interchainToken),
 });
 
 export default interchainTokenList;

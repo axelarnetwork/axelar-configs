@@ -6,8 +6,8 @@
     "minor": 1,
     "patch": 0
   },
-  "tokens": [
-    {
+  "tokens": {
+    "0xb689de707e78469c6a115fdcfd9a0c2db9f8e7ce5ade7b29526d63f4e01d77fb": {
       "tokenId": "0xb689de707e78469c6a115fdcfd9a0c2db9f8e7ce5ade7b29526d63f4e01d77fb",
       "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
       "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
@@ -21,32 +21,39 @@
       "iconUrls": {
         "svg": "/images/tokens/rmrk.svg"
       },
-      "remoteTokens": [
+      "salt": "0x",
+      "chains": [
+        {
+          "axelarChainId": "moonbeam",
+          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
+          "tokenManagerAddress": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "tokenManagerType": "mintBurn"
+        },
         {
           "axelarChainId": "polygon",
           "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
           "tokenManagerAddress": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
-          "tokenManagerType": "mint_burn"
+          "tokenManagerType": "mintBurn"
         },
         {
           "axelarChainId": "ethereum",
           "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
           "tokenManagerAddress": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
-          "tokenManagerType": "mint_burn"
+          "tokenManagerType": "mintBurn"
         },
         {
           "axelarChainId": "base",
           "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
           "tokenManagerAddress": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
-          "tokenManagerType": "mint_burn"
+          "tokenManagerType": "mintBurn"
         },
         {
           "axelarChainId": "binance",
           "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
           "tokenManagerAddress": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
-          "tokenManagerType": "mint_burn"
+          "tokenManagerType": "mintBurn"
         }
       ]
     }
-  ]
+  }
 }
