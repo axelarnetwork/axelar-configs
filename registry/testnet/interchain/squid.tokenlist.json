@@ -6,5 +6,55 @@
     "minor": 1,
     "patch": 0
   },
-  "tokens": {}
+  "tokens": {
+    "0xad3a8666cbb964e76419d7ff3930d4095c99f5c7df74480875dc69f25e612a0f": {
+      "tokenId": "0xad3a8666cbb964e76419d7ff3930d4095c99f5c7df74480875dc69f25e612a0f",
+      "tokenAddress": "0x45A8773a47869dF7e8Eb7BcEe1769aEC1b6D1664",
+      "tokenManager": "0xAa7F142bF55F39F0DdC39241D26c679Eef3F807f",
+      "tokenManagerType": "mintBurn",
+      "originalMinter": "0xB8Cd93C83A974649D76B1c19f311f639e62272BC",
+      "symbol": "TDBG19",
+      "prettySymbol": "TDBG19",
+      "decimals": 18,
+      "name": "Test Debug 19",
+      "originAxelarChainId": "avalanche",
+      "transferType": "interchain",
+      "salt": "0xdf5bdd98a44080731aafeb46094337ae904888adb884617397fa1670cb054b6c",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/images/tokens/tdbg19.svg"
+      },
+      "chains": [
+        {
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0x45A8773a47869dF7e8Eb7BcEe1769aEC1b6D1664",
+          "tokenManager": "0xAa7F142bF55F39F0DdC39241D26c679Eef3F807f",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "axelarChainId": "celo",
+          "tokenAddress": "0x45A8773a47869dF7e8Eb7BcEe1769aEC1b6D1664",
+          "tokenManager": "0xAa7F142bF55F39F0DdC39241D26c679Eef3F807f",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "axelarChainId": "base",
+          "tokenAddress": "0x45A8773a47869dF7e8Eb7BcEe1769aEC1b6D1664",
+          "tokenManager": "0xAa7F142bF55F39F0DdC39241D26c679Eef3F807f",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x45A8773a47869dF7e8Eb7BcEe1769aEC1b6D1664",
+          "tokenManager": "0xAa7F142bF55F39F0DdC39241D26c679Eef3F807f",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "axelarChainId": "binance",
+          "tokenAddress": "0x45A8773a47869dF7e8Eb7BcEe1769aEC1b6D1664",
+          "tokenManager": "0xAa7F142bF55F39F0DdC39241D26c679Eef3F807f",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    }
+  }
 }
