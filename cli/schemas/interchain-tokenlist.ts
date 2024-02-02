@@ -24,11 +24,12 @@ export const interchainToken = z.object({
   decimals: z.number().int(),
   name: z.string(),
   originAxelarChainId: z.string(),
-  transferType: z.string(),
+  tokenType: z.string(),
   iconUrls: IconUrlsSchema,
   salt: z.string(),
   chains: z.array(chains),
   coinGeckoId: z.string().optional(),
+  srcTxHash: hash,
 });
 
 export const version = z.object({

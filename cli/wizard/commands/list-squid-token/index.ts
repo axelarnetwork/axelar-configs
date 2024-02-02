@@ -162,7 +162,7 @@ export type InterchainTokenDetails = {
   originalMinterAddress: string;
   axelarChainId: string;
   tokenId: string;
-  deploymentTxHash: string;
+  deploymentMessageId: string;
   deployer: string;
   remoteTokens: RemoteInterchainToken[];
 };
@@ -185,11 +185,12 @@ function parseAsInterchainTokenConfig(
     decimals: data.tokenDecimals,
     name: data.tokenName,
     originAxelarChainId: data.axelarChainId,
-    transferType: data.kind,
+    tokenType: data.kind,
     salt: data.salt,
     iconUrls: {
       svg: `${BASE_REPO_URL}/images/tokens/${data.tokenSymbol.toLowerCase()}.svg`,
     },
+    srcTxHash: data.deploymentMessageId?.split("-")[0] ?? "",
     chains: [
       ...[
         {
