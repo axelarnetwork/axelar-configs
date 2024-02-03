@@ -27,31 +27,31 @@
         {
           "axelarChainId": "moonbeam",
           "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
-          "tokenManagerAddress": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
           "tokenManagerType": "mintBurn"
         },
         {
           "axelarChainId": "polygon",
           "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
-          "tokenManagerAddress": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
           "tokenManagerType": "mintBurn"
         },
         {
           "axelarChainId": "ethereum",
           "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
-          "tokenManagerAddress": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
           "tokenManagerType": "mintBurn"
         },
         {
           "axelarChainId": "base",
           "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
-          "tokenManagerAddress": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
           "tokenManagerType": "mintBurn"
         },
         {
           "axelarChainId": "binance",
           "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
-          "tokenManagerAddress": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
           "tokenManagerType": "mintBurn"
         }
       ]

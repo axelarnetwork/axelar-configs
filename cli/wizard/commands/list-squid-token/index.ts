@@ -125,7 +125,7 @@ export async function listSquidToken() {
 export type InterchainTokenInfo = {
   tokenId: string;
   tokenAddress: string;
-  tokenManagerAddress: string;
+  tokenManager: string;
   tokenManagerType: string;
   isOriginToken: boolean;
   isRegistered: boolean;
@@ -143,7 +143,7 @@ export type InterchainTokenSearchResult = InterchainTokenInfo & {
 export type RemoteInterchainToken = {
   axelarChainId: string;
   tokenAddress: string;
-  tokenManagerAddress: string;
+  tokenManager: string;
   tokenManagerType: string;
   deploymentStatus: string;
   deploymentTxHash: string;
@@ -156,7 +156,7 @@ export type InterchainTokenDetails = {
   tokenSymbol: string;
   tokenDecimals: number;
   tokenAddress: string;
-  tokenManagerAddress: string;
+  tokenManager: string;
   tokenManagerType: string;
   originalMinterAddress: string;
   axelarChainId: string;
@@ -172,7 +172,7 @@ function parseAsInterchainTokenConfig(
   return {
     tokenId: hash.parse(data.tokenId),
     tokenAddress: address.parse(data.tokenAddress),
-    tokenManager: address.parse(data.tokenManagerAddress),
+    tokenManager: address.parse(data.tokenManager),
     tokenManagerType: convertCase(
       "CONSTANT_CASE",
       "camelCase"
@@ -195,7 +195,7 @@ function parseAsInterchainTokenConfig(
         {
           axelarChainId: data.axelarChainId,
           tokenAddress: address.parse(data.tokenAddress),
-          tokenManager: address.parse(data.tokenManagerAddress),
+          tokenManager: address.parse(data.tokenManager),
           tokenManagerType: convertCase(
             "CONSTANT_CASE",
             "camelCase"
@@ -205,7 +205,7 @@ function parseAsInterchainTokenConfig(
       ...data.remoteTokens.map((token) => ({
         axelarChainId: token.axelarChainId,
         tokenAddress: address.parse(token.tokenAddress),
-        tokenManager: address.parse(token.tokenManagerAddress),
+        tokenManager: address.parse(token.tokenManager),
         tokenManagerType: convertCase(
           "CONSTANT_CASE",
           "camelCase"
