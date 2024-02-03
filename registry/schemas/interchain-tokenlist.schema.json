@@ -42,7 +42,7 @@
         "name": { "type": "string" },
         "originAxelarChainId": { "type": "string" },
         "tokenType": { "type": "string" },
-        "srcTxHash": { "type": "string" },
+        "deploymentTxHash": { "type": "string" },
         "iconUrls": { "$ref": "#/definitions/IconUrlsSchema" },
         "chains": {
           "type": "array",
@@ -66,7 +66,7 @@
         "tokenType",
         "iconUrls",
         "chains",
-        "srcTxHash",
+        "deploymentTxHash",
         "tokenManager",
         "tokenManagerType"
       ],

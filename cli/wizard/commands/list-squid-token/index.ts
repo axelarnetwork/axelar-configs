@@ -189,7 +189,7 @@ function parseAsInterchainTokenConfig(
     iconUrls: {
       svg: `${BASE_REPO_URL}/images/tokens/${data.tokenSymbol.toLowerCase()}.svg`,
     },
-    srcTxHash: data.deploymentMessageId?.split("-")[0] ?? "",
+    deploymentTxHash: data.deploymentMessageId?.split("-")[0] ?? "",
     chains: [
       ...[
         {

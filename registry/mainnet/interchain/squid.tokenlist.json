@@ -22,7 +22,7 @@
         "svg": "/images/tokens/rmrk.svg"
       },
       "salt": "0x",
-      "srcTxHash": "",
+      "deploymentTxHash": "",
       "chains": [
         {
           "axelarChainId": "moonbeam",
