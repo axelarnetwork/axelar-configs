@@ -11,12 +11,14 @@ jobs:
 
       - name: Setup bun
         uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
 
       - name: Install dependencies
         run: bun install
 
       - name: Format files
-        run: prettier --write cli registry scripts
+        run: bun format
 
       - name: Check for changes
         run: |
