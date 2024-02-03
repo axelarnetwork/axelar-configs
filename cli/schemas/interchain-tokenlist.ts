@@ -26,7 +26,7 @@ export const interchainToken = z.object({
   originAxelarChainId: z.string(),
   tokenType: z.string(),
   iconUrls: IconUrlsSchema,
-  salt: z.string(),
+  deploySalt: z.string(),
   chains: z.array(chains),
   coinGeckoId: z.string().optional(),
   deploymentTxHash: hash,

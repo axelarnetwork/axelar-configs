@@ -21,7 +21,7 @@
       "iconUrls": {
         "svg": "/images/tokens/rmrk.svg"
       },
-      "salt": "0x",
+      "deploySalt": "0x",
       "deploymentTxHash": "",
       "chains": [
         {

@@ -125,7 +125,7 @@ export async function listSquidToken() {
 export type InterchainTokenInfo = {
   tokenId: string;
   tokenAddress: string;
-  tokenManager: string;
+  tokenManagerAddress: string;
   tokenManagerType: string;
   isOriginToken: boolean;
   isRegistered: boolean;
@@ -156,7 +156,7 @@ export type InterchainTokenDetails = {
   tokenSymbol: string;
   tokenDecimals: number;
   tokenAddress: string;
-  tokenManager: string;
+  tokenManagerAddress: string;
   tokenManagerType: string;
   originalMinterAddress: string;
   axelarChainId: string;
@@ -172,7 +172,7 @@ function parseAsInterchainTokenConfig(
   return {
     tokenId: hash.parse(data.tokenId),
     tokenAddress: address.parse(data.tokenAddress),
-    tokenManager: address.parse(data.tokenManager),
+    tokenManager: address.parse(data.tokenManagerAddress),
     tokenManagerType: convertCase(
       "CONSTANT_CASE",
       "camelCase"
@@ -185,7 +185,7 @@ function parseAsInterchainTokenConfig(
     name: data.tokenName,
     originAxelarChainId: data.axelarChainId,
     tokenType: data.kind,
-    salt: data.salt,
+    tokenSalt: data.salt,
     iconUrls: {
       svg: `${BASE_REPO_URL}/images/tokens/${data.tokenSymbol.toLowerCase()}.svg`,
     },
@@ -195,7 +195,7 @@ function parseAsInterchainTokenConfig(
         {
           axelarChainId: data.axelarChainId,
           tokenAddress: address.parse(data.tokenAddress),
-          tokenManager: address.parse(data.tokenManager),
+          tokenManager: address.parse(data.tokenManagerAddress),
           tokenManagerType: convertCase(
             "CONSTANT_CASE",
             "camelCase"
