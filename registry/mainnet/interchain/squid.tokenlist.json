@@ -19,10 +19,12 @@
       "originAxelarChainId": "moonbeam",
       "tokenType": "interchain",
       "iconUrls": {
-        "svg": "/images/tokens/rmrk.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/rmrk.svg"
       },
+      "deployer": "0x0000000000000000000000000000000000000000",
+      "originalMinter": "0x0000000000000000000000000000000000000000",
       "deploySalt": "0x",
-      "deploymentTxHash": "",
+      "deploymentTxHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
       "chains": [
         {
           "axelarChainId": "moonbeam",

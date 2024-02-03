@@ -15,10 +15,10 @@ describe("InterchainTokenList Configs", async () => {
       const result = validate(config, schema);
 
       if (!result.valid) {
-        console.log({ errors: result.errors });
+        console.log({ errors: result.errors.map((x) => x.message) });
       }
 
-      expect(result.valid).toBe(true);
+      expect(result.errors).toEqual([]);
     });
   }
 });

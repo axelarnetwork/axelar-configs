@@ -185,7 +185,7 @@ function parseAsInterchainTokenConfig(
     name: data.tokenName,
     originAxelarChainId: data.axelarChainId,
     tokenType: data.kind,
-    tokenSalt: data.salt,
+    deploySalt: data.salt,
     iconUrls: {
       svg: `${BASE_REPO_URL}/images/tokens/${data.tokenSymbol.toLowerCase()}.svg`,
     },
