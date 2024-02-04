@@ -31,13 +31,17 @@
         "tokenManager": {
           "$ref": "#/definitions/chains/properties/tokenAddress"
         },
-        "tokenManagerType": { "type": "string" }
+        "tokenManagerType": { "type": "string" },
+        "name": { "type": "string" },
+        "symbol": { "type": "string" }
       },
       "required": [
         "axelarChainId",
         "tokenAddress",
         "tokenManager",
-        "tokenManagerType"
+        "tokenManagerType",
+        "name",
+        "symbol"
       ],
       "additionalProperties": false
     },
@@ -45,18 +49,10 @@
       "type": "object",
       "properties": {
         "tokenId": { "type": "string", "pattern": "^0x[a-fA-F0-9]{64}$" },
-        "tokenAddress": {
-          "$ref": "#/definitions/chains/properties/tokenAddress"
-        },
-        "tokenManager": {
-          "$ref": "#/definitions/chains/properties/tokenAddress"
-        },
         "deployer": { "$ref": "#/definitions/chains/properties/tokenAddress" },
         "originalMinter": {
           "$ref": "#/definitions/chains/properties/tokenAddress"
         },
-        "tokenManagerType": { "type": "string" },
-        "symbol": { "type": "string" },
         "prettySymbol": { "type": "string" },
         "decimals": { "type": "integer" },
         "name": { "type": "string" },
@@ -75,15 +71,10 @@
       },
       "required": [
         "tokenId",
-        "tokenAddress",
-        "tokenManager",
         "deployer",
         "originalMinter",
-        "tokenManagerType",
-        "symbol",
         "prettySymbol",
         "decimals",
-        "name",
         "originAxelarChainId",
         "tokenType",
         "iconUrls",

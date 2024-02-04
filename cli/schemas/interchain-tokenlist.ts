@@ -10,19 +10,16 @@ export const chains = z.object({
   tokenAddress: address,
   tokenManager: address,
   tokenManagerType: z.string(),
+  symbol: z.string(),
+  name: z.string(),
 });
 
 export const interchainToken = z.object({
   tokenId: hash,
-  tokenAddress: address,
-  tokenManager: address,
   deployer: address,
   originalMinter: address,
-  tokenManagerType: z.string(),
-  symbol: z.string(),
   prettySymbol: z.string(),
   decimals: z.number().int(),
-  name: z.string(),
   originAxelarChainId: z.string(),
   tokenType: z.string(),
   iconUrls: IconUrlsSchema,
