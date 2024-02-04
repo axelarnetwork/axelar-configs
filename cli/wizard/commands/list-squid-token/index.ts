@@ -122,7 +122,7 @@ export async function listSquidToken() {
   });
 }
 
-export type InterchainTokenInfo = {
+export type InterchainTokenInfoBaseAPIResponse = {
   tokenId: string;
   tokenAddress: string;
   tokenManagerAddress: string;
@@ -136,8 +136,8 @@ export type InterchainTokenInfo = {
   kind: "canonical" | "interchain" | "customInterchain";
 };
 
-export type InterchainTokenSearchResult = InterchainTokenInfo & {
-  matchingTokens: InterchainTokenInfo[];
+export type InterchainTokenSearchResult = InterchainTokenInfoBaseAPIResponse & {
+  matchingTokens: InterchainTokenInfoBaseAPIResponse[];
 };
 
 export type RemoteInterchainTokenApiResponse = {
