@@ -6,37 +6,62 @@
     "minor": 1,
     "patch": 0
   },
-  "tokens": [
-    {
+  "tokens": {
+    "0xb689de707e78469c6a115fdcfd9a0c2db9f8e7ce5ade7b29526d63f4e01d77fb": {
       "tokenId": "0xb689de707e78469c6a115fdcfd9a0c2db9f8e7ce5ade7b29526d63f4e01d77fb",
-      "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
-      "symbol": "RMRK",
       "prettySymbol": "RMRK",
       "decimals": 18,
-      "name": "RMRK",
       "originAxelarChainId": "moonbeam",
-      "transferType": "interchain",
+      "tokenType": "customInterchain",
       "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/images/tokens/rmrk.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/rmrk.svg"
       },
-      "remoteTokens": [
+      "deployer": "0x0000000000000000000000000000000000000000",
+      "originalMinter": "0x0000000000000000000000000000000000000000",
+      "deploySalt": "0x",
+      "deploymentMessageId": "0x0000000000000000000000000000000000000000000000000000000000000000-0",
+      "chains": [
+        {
+          "axelarChainId": "moonbeam",
+          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
+          "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "tokenManagerType": "mintBurn",
+          "symbol": "RMRK",
+          "name": "RMRK"
+        },
         {
           "axelarChainId": "polygon",
-          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
+          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
+          "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "tokenManagerType": "mintBurn",
+          "symbol": "RMRK",
+          "name": "RMRK"
         },
         {
           "axelarChainId": "ethereum",
-          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
+          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
+          "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "tokenManagerType": "mintBurn",
+          "symbol": "RMRK",
+          "name": "RMRK"
         },
         {
           "axelarChainId": "base",
-          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
+          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
+          "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "tokenManagerType": "mintBurn",
+          "symbol": "RMRK",
+          "name": "RMRK"
         },
         {
           "axelarChainId": "binance",
-          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
+          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
+          "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "tokenManagerType": "mintBurn",
+          "symbol": "RMRK",
+          "name": "RMRK"
         }
       ]
     }
-  ]
+  }
 }

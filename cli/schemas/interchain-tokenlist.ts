@@ -5,23 +5,28 @@ export const IconUrlsSchema = z.object({
   svg: z.string().url(),
 });
 
-export const remoteToken = z.object({
+export const chains = z.object({
   axelarChainId: z.string(),
   tokenAddress: address,
+  tokenManager: address,
+  tokenManagerType: z.string(),
+  symbol: z.string(),
+  name: z.string(),
 });
 
 export const interchainToken = z.object({
   tokenId: hash,
-  tokenAddress: address,
-  symbol: z.string(),
+  deployer: address,
+  originalMinter: address,
   prettySymbol: z.string(),
   decimals: z.number().int(),
-  name: z.string(),
   originAxelarChainId: z.string(),
-  transferType: z.string(),
+  tokenType: z.string(),
   iconUrls: IconUrlsSchema,
-  remoteTokens: z.array(remoteToken),
+  deploySalt: z.string(),
+  chains: z.array(chains),
   coinGeckoId: z.string().optional(),
+  deploymentMessageId: z.string(),
 });
 
 export const version = z.object({
@@ -36,7 +41,7 @@ const interchainTokenList = z.object({
     .regex(/^(?:\.\.\/)+schemas\/interchain-tokenlist\.schema\.json$/),
   name: z.string(),
   version,
-  tokens: z.array(interchainToken),
+  tokens: z.record(z.string(), interchainToken),
 });
 
 export default interchainTokenList;

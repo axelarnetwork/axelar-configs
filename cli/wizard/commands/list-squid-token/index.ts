@@ -1,6 +1,7 @@
 import { input, confirm } from "@inquirer/prompts";
 import chalk from "chalk";
 import { $, fs, path, spinner } from "zx";
+import { convertCase } from "@axelarjs/utils";
 
 import {
   InterchainTokenConfig,
@@ -57,7 +58,7 @@ export async function listSquidToken() {
     () =>
       fetch(detailsApiUrl)
         .then((res) => res.json())
-        .catch(() => ({})) as Promise<InterchainTokenDetails>
+        .catch(() => ({})) as Promise<InterchainTokenDetailsApiResponse>
   );
 
   const newTokenConfig = parseAsInterchainTokenConfig(tokenDetails);
@@ -75,15 +76,14 @@ export async function listSquidToken() {
   await patchConfig<InterchainTokenListConfig, InterchainTokenListConfig>(
     relativePath,
     {
-      tokens: (tokens) => [...(tokens ?? []), newTokenConfig],
+      tokens: (tokens) => ({
+        ...tokens,
+        [newTokenConfig.tokenId]: newTokenConfig,
+      }),
     },
     {
       isDuplicate: (config) =>
-        config.tokens.some(
-          (token) =>
-            token.tokenAddress === newTokenConfig.tokenAddress ||
-            token.tokenId === newTokenConfig.tokenId
-        ),
+        config.tokens[newTokenConfig.tokenId] !== undefined,
     }
   );
 
@@ -92,7 +92,7 @@ export async function listSquidToken() {
     process.cwd(),
     "images",
     "tokens",
-    `${newTokenConfig.symbol.toLowerCase()}.svg`
+    `${newTokenConfig.prettySymbol.toLowerCase()}.svg`
   );
   const tokenIconContent = await fs.readFile(
     path.resolve(process.cwd(), "images", "tokens", "axl.svg"),
@@ -115,69 +115,95 @@ export async function listSquidToken() {
   const tokenListPath = path.resolve(process.cwd(), ...relativePath);
 
   await spinner("Creating PR...", async () => {
-    await $`git checkout -b feat/add-${newTokenConfig.symbol}-token`;
+    await $`git checkout -b feat/add-${newTokenConfig.prettySymbol}-token`;
     await $`git add ${tokenListPath}`;
-    await $`git commit -m "feat: add ${newTokenConfig.symbol} token"`;
+    await $`git commit -m "feat: add ${newTokenConfig.prettySymbol} token"`;
     await $`git push -u origin HEAD`;
   });
 }
 
-export type InterchainTokenInfo = {
+export type InterchainTokenInfoBaseAPIResponse = {
   tokenId: string;
   tokenAddress: string;
+  tokenManagerAddress: string;
+  tokenManagerType: string;
   isOriginToken: boolean;
   isRegistered: boolean;
   chainId: number;
   axelarChainId: string;
   chainName: string;
   wasDeployedByAccount?: boolean;
-  kind: "canonical" | "standardized";
+  kind: "canonical" | "interchain" | "customInterchain";
 };
 
-export type InterchainTokenSearchResult = InterchainTokenInfo & {
-  matchingTokens: InterchainTokenInfo[];
+export type InterchainTokenSearchResult = InterchainTokenInfoBaseAPIResponse & {
+  matchingTokens: InterchainTokenInfoBaseAPIResponse[];
 };
 
-export type RemoteInterchainToken = {
+export type RemoteInterchainTokenApiResponse = {
+  name: string;
+  symbol: string;
   axelarChainId: string;
   tokenAddress: string;
+  tokenManagerAddress: string;
+  tokenManagerType: string;
   deploymentStatus: string;
-  deploymentTxHash: string;
+  deploymentMessageId: string;
 };
 
-export type InterchainTokenDetails = {
+export type InterchainTokenDetailsApiResponse = {
   kind: string;
   salt: string;
   tokenName: string;
   tokenSymbol: string;
   tokenDecimals: number;
   tokenAddress: string;
+  tokenManagerAddress: string;
+  tokenManagerType: string;
+  originalMinterAddress: string;
   axelarChainId: string;
   tokenId: string;
-  deploymentTxHash: string;
-  deployerAddress: string;
-  remoteTokens: RemoteInterchainToken[];
+  deploymentMessageId: string;
+  deployer: string;
+  remoteTokens: RemoteInterchainTokenApiResponse[];
 };
 
 function parseAsInterchainTokenConfig(
-  data: InterchainTokenDetails
+  data: InterchainTokenDetailsApiResponse
 ): InterchainTokenConfig {
   return {
     tokenId: hash.parse(data.tokenId),
-    tokenAddress: address.parse(data.tokenAddress),
-    symbol: data.tokenSymbol,
+    deployer: data.deployer,
+    originalMinter: data.originalMinterAddress,
     prettySymbol: data.tokenSymbol,
     decimals: data.tokenDecimals,
-    name: data.tokenName,
     originAxelarChainId: data.axelarChainId,
-    transferType: data.kind,
+    tokenType: data.kind,
+    deploySalt: data.salt,
     iconUrls: {
       svg: `${BASE_REPO_URL}/images/tokens/${data.tokenSymbol.toLowerCase()}.svg`,
     },
-    remoteTokens: data.remoteTokens.map((token) => ({
-      axelarChainId: token.axelarChainId,
-      tokenAddress: address.parse(token.tokenAddress),
-    })),
+    deploymentMessageId: data.deploymentMessageId ?? "",
+    chains: [
+      ...[
+        {
+          symbol: data.tokenSymbol,
+          name: data.tokenName,
+          axelarChainId: data.axelarChainId,
+          tokenAddress: address.parse(data.tokenAddress),
+          tokenManager: address.parse(data.tokenManagerAddress),
+          tokenManagerType: convertToCamelCase(data.tokenManagerType),
+        },
+      ],
+      ...data.remoteTokens.map((token) => ({
+        symbol: data.tokenSymbol,
+        name: data.tokenName,
+        axelarChainId: token.axelarChainId,
+        tokenAddress: address.parse(token.tokenAddress),
+        tokenManager: address.parse(token.tokenManagerAddress),
+        tokenManagerType: convertToCamelCase(token.tokenManagerType),
+      })),
+    ],
   };
 }
 
@@ -185,4 +211,8 @@ function getEnvironmentFromUrl(tokenDetailsUrl: string) {
   return tokenDetailsUrl.startsWith("https://interchain.axelar.dev")
     ? "mainnet"
     : "testnet";
+}
+
+function convertToCamelCase(input: string) {
+  return convertCase("CONSTANT_CASE", "camelCase")(input ?? "unknown");
 }

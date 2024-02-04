@@ -10,8 +10,8 @@
     "name": { "type": "string" },
     "version": { "$ref": "#/definitions/version" },
     "tokens": {
-      "type": "array",
-      "items": { "$ref": "#/definitions/interchainToken" }
+      "type": "object",
+      "additionalProperties": { "$ref": "#/definitions/interchainToken" }
     }
   },
   "required": ["$schema", "name", "version", "tokens"],
@@ -23,47 +23,63 @@
       "required": ["svg"],
       "additionalProperties": false
     },
+    "chains": {
+      "type": "object",
+      "properties": {
+        "axelarChainId": { "type": "string" },
+        "tokenAddress": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
+        "tokenManager": {
+          "$ref": "#/definitions/chains/properties/tokenAddress"
+        },
+        "tokenManagerType": { "type": "string" },
+        "name": { "type": "string" },
+        "symbol": { "type": "string" }
+      },
+      "required": [
+        "axelarChainId",
+        "tokenAddress",
+        "tokenManager",
+        "tokenManagerType",
+        "name",
+        "symbol"
+      ],
+      "additionalProperties": false
+    },
     "interchainToken": {
       "type": "object",
       "properties": {
         "tokenId": { "type": "string", "pattern": "^0x[a-fA-F0-9]{64}$" },
-        "tokenAddress": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
-        "symbol": { "type": "string" },
+        "deployer": { "$ref": "#/definitions/chains/properties/tokenAddress" },
+        "originalMinter": {
+          "$ref": "#/definitions/chains/properties/tokenAddress"
+        },
         "prettySymbol": { "type": "string" },
         "decimals": { "type": "integer" },
         "name": { "type": "string" },
         "originAxelarChainId": { "type": "string" },
-        "transferType": { "type": "string" },
+        "tokenType": { "type": "string" },
         "iconUrls": { "$ref": "#/definitions/IconUrlsSchema" },
-        "remoteTokens": {
+        "deploySalt": { "type": "string" },
+        "chains": {
           "type": "array",
-          "items": { "$ref": "#/definitions/remoteToken" }
+          "items": { "$ref": "#/definitions/chains" }
         },
-        "coinGeckoId": { "type": "string" }
+        "coinGeckoId": { "type": "string" },
+        "deploymentMessageId": { "type": "string" }
       },
       "required": [
         "tokenId",
-        "tokenAddress",
-        "symbol",
+        "deployer",
+        "originalMinter",
         "prettySymbol",
         "decimals",
-        "name",
         "originAxelarChainId",
-        "transferType",
+        "tokenType",
         "iconUrls",
-        "remoteTokens"
+        "deploySalt",
+        "chains",
+        "deploymentMessageId"
       ],
-      "additionalProperties": false
-    },
-    "remoteToken": {
-      "type": "object",
-      "properties": {
-        "axelarChainId": { "type": "string" },
-        "tokenAddress": {
-          "$ref": "#/definitions/interchainToken/properties/tokenAddress"
-        }
-      },
-      "required": ["axelarChainId", "tokenAddress"],
       "additionalProperties": false
     },
     "version": {
