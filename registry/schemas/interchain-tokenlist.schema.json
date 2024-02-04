@@ -65,9 +65,7 @@
           "items": { "$ref": "#/definitions/chains" }
         },
         "coinGeckoId": { "type": "string" },
-        "deploymentTxHash": {
-          "$ref": "#/definitions/interchainToken/properties/tokenId"
-        }
+        "deploymentMessageId": { "type": "string" }
       },
       "required": [
         "tokenId",
@@ -80,7 +78,7 @@
         "iconUrls",
         "deploySalt",
         "chains",
-        "deploymentTxHash"
+        "deploymentMessageId"
       ],
       "additionalProperties": false
     },

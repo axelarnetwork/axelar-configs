@@ -148,7 +148,7 @@ export type RemoteInterchainTokenApiResponse = {
   tokenManagerAddress: string;
   tokenManagerType: string;
   deploymentStatus: string;
-  deploymentTxHash: string;
+  deploymentMessageId: string;
 };
 
 export type InterchainTokenDetailsApiResponse = {
@@ -183,7 +183,7 @@ function parseAsInterchainTokenConfig(
     iconUrls: {
       svg: `${BASE_REPO_URL}/images/tokens/${data.tokenSymbol.toLowerCase()}.svg`,
     },
-    deploymentTxHash: data.deploymentMessageId?.split("-")[0] ?? "",
+    deploymentMessageId: data.deploymentMessageId ?? "",
     chains: [
       ...[
         {
