@@ -208,9 +208,7 @@ function parseAsInterchainTokenConfig(
 }
 
 function getEnvironmentFromUrl(tokenDetailsUrl: string) {
-  return tokenDetailsUrl.startsWith("https://interchain.axelar.dev")
-    ? "mainnet"
-    : "testnet";
+  return tokenDetailsUrl?.includes("testnet") ? "testnet" : "mainnet";
 }
 
 function convertToCamelCase(input: string) {
