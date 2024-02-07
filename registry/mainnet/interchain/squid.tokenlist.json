@@ -63,6 +63,46 @@
           "name": "RMRK"
         }
       ]
+    },
+    "0x6dac9057eb38cc61358b1b25453e3eb68a0dce959d8549dd4b8e58f357be0f66": {
+      "tokenId": "0x6dac9057eb38cc61358b1b25453e3eb68a0dce959d8549dd4b8e58f357be0f66",
+      "deployer": "0x6E2A0A942Eaa01B7EB2639B8B65D1D2768a87BAc",
+      "originalMinter": null,
+      "prettySymbol": "FS",
+      "decimals": 18,
+      "originAxelarChainId": "fantom",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/images/tokens/fs.svg"
+      },
+      "deploymentMessageId": "0x52677f8c4559d9c3357b650bdc2f9b832bf6c0b7535aa8411a4c64a95acfb3f9-0",
+      "chains": [
+        {
+          "symbol": "FS",
+          "name": "FantomStarter",
+          "axelarChainId": "fantom",
+          "tokenAddress": "0xc758295cd1a564cdb020a78a681a838cf8e0627d",
+          "tokenManager": "0x26b48Cc92c33a6c239C5f8306251ebAD76Fbd34D",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "FS",
+          "name": "FantomStarter",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xa1a020D3B354D6460EE3c272976F213160BD6B1C",
+          "tokenManager": "0x26b48Cc92c33a6c239C5f8306251ebAD76Fbd34D",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "FS",
+          "name": "FantomStarter",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xa1a020D3B354D6460EE3c272976F213160BD6B1C",
+          "tokenManager": "0x26b48Cc92c33a6c239C5f8306251ebAD76Fbd34D",
+          "tokenManagerType": "lockUnlock"
+        }
+      ]
     }
   }
 }
