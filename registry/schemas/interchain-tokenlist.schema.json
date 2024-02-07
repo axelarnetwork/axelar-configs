@@ -51,7 +51,12 @@
         "tokenId": { "type": "string", "pattern": "^0x[a-fA-F0-9]{64}$" },
         "deployer": { "$ref": "#/definitions/chains/properties/tokenAddress" },
         "originalMinter": {
-          "$ref": "#/definitions/chains/properties/tokenAddress"
+          "anyOf": [
+            {
+              "$ref": "#/definitions/chains/properties/tokenAddress"
+            },
+            { "type": "null" }
+          ]
         },
         "prettySymbol": { "type": "string" },
         "decimals": { "type": "integer" },

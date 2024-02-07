@@ -16,6 +16,17 @@ const BASE_REPO_URL =
 export async function listSquidToken() {
   console.log(chalk.blue("\nGenerating token listing config...\n"));
 
+  const didFork = await confirm({
+    message:
+      "Are you running this wizard from a forked repository in your own Github organization?",
+    default: false,
+  });
+
+  if (!didFork) {
+    console.log(chalk.red("\nPlease fork this repository before continuing\n"));
+    process.exit(1);
+  }
+
   const didRegisterViaPortal = await confirm({
     message: "Did you register your token via ITS portal?",
     default: false,
@@ -164,7 +175,7 @@ export type InterchainTokenDetailsApiResponse = {
   axelarChainId: string;
   tokenId: string;
   deploymentMessageId: string;
-  deployer: string;
+  deployerAddress: string;
   remoteTokens: RemoteInterchainTokenApiResponse[];
 };
 
@@ -173,7 +184,7 @@ function parseAsInterchainTokenConfig(
 ): InterchainTokenConfig {
   return {
     tokenId: hash.parse(data.tokenId),
-    deployer: data.deployer,
+    deployer: data.deployerAddress,
     originalMinter: data.originalMinterAddress,
     prettySymbol: data.tokenSymbol,
     decimals: data.tokenDecimals,
