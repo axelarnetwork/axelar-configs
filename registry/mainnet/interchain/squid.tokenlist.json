@@ -16,10 +16,10 @@
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/rmrk.svg"
       },
-      "deployer": "0x0000000000000000000000000000000000000000",
-      "originalMinter": "0x0000000000000000000000000000000000000000",
-      "deploySalt": "0x",
-      "deploymentMessageId": "0x0000000000000000000000000000000000000000000000000000000000000000-0",
+      "deployer": "0xCD7A0D098E3A750126b0fec54BE401476812cfc0",
+      "originalMinter": null,
+      "deploySalt": "0xe9c75fa9c7805091c052847cecd5ddea427e25da47e6ae773d043ebfc17060e9",
+      "deploymentMessageId": "",
       "chains": [
         {
           "axelarChainId": "moonbeam",
