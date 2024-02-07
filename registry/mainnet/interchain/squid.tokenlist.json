@@ -7,60 +7,36 @@
     "patch": 0
   },
   "tokens": {
-    "0xb689de707e78469c6a115fdcfd9a0c2db9f8e7ce5ade7b29526d63f4e01d77fb": {
-      "tokenId": "0xb689de707e78469c6a115fdcfd9a0c2db9f8e7ce5ade7b29526d63f4e01d77fb",
-      "prettySymbol": "RMRK",
+    "0xcdfa00beaa4081a94fe69c9d9275e980f6051f4b7265094d51bbf166b54cc5da": {
+      "tokenId": "0xcdfa00beaa4081a94fe69c9d9275e980f6051f4b7265094d51bbf166b54cc5da",
+      "prettySymbol": "GRAIN",
       "decimals": 18,
-      "originAxelarChainId": "moonbeam",
+      "originAxelarChainId": "arbitrum",
       "tokenType": "customInterchain",
       "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/rmrk.svg"
+        "svg": "https://www.grain.sale/GrainIcon.svg"
       },
-      "coinGeckoId": "rmrk",
-      "deployer": "0xCD7A0D098E3A750126b0fec54BE401476812cfc0",
+      "coinGeckoId": "granary",
+      "deployer": "0x4F8B86ff37c5Cdb8Df2Bfacd481266Cb91eDd975",
       "originalMinter": null,
-      "deploySalt": "0xe9c75fa9c7805091c052847cecd5ddea427e25da47e6ae773d043ebfc17060e9",
+      "deploySalt": "0xa9aeb55924a9ba9d7b8caaca8f22084c8a36526031776682d2d42c9010ae5f7e",
       "deploymentMessageId": "",
       "chains": [
         {
-          "axelarChainId": "moonbeam",
-          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
-          "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x80bB30D62a16e1F2084dEAE84dc293531c3AC3A1",
+          "tokenManager": "0x7e347c01Ab0Cbbae25615Fa9f56287D2aA7Bd36C",
           "tokenManagerType": "mintBurn",
-          "symbol": "RMRK",
-          "name": "RMRK"
+          "symbol": "GRAIN",
+          "name": "Granary Token"
         },
         {
-          "axelarChainId": "polygon",
-          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
-          "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0xfD389Dc9533717239856190F42475d3f263a270d",
+          "tokenManager": "0x7e347c01Ab0Cbbae25615Fa9f56287D2aA7Bd36C",
           "tokenManagerType": "mintBurn",
-          "symbol": "RMRK",
-          "name": "RMRK"
-        },
-        {
-          "axelarChainId": "ethereum",
-          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
-          "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
-          "tokenManagerType": "mintBurn",
-          "symbol": "RMRK",
-          "name": "RMRK"
-        },
-        {
-          "axelarChainId": "base",
-          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
-          "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
-          "tokenManagerType": "mintBurn",
-          "symbol": "RMRK",
-          "name": "RMRK"
-        },
-        {
-          "axelarChainId": "binance",
-          "tokenAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3",
-          "tokenManager": "0x5F53895484af488e27fd33CE70a3dbD745aeAA52",
-          "tokenManagerType": "mintBurn",
-          "symbol": "RMRK",
-          "name": "RMRK"
+          "symbol": "GRAIN",
+          "name": "Granary Token"
         }
       ]
     }
