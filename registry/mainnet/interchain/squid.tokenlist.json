@@ -63,6 +63,38 @@
           "name": "RMRK"
         }
       ]
+    },
+    "0xb992c83e5ef8b2d4d84bb62eca09ea0e34ea5c1aad77645c4b2c849b42ebafac": {
+      "tokenId": "0xb992c83e5ef8b2d4d84bb62eca09ea0e34ea5c1aad77645c4b2c849b42ebafac",
+      "deployer": "0x47Ab6A57Fbf2D3Fa89CB36ADb872B1dA861283AB",
+      "originalMinter": null,
+      "prettySymbol": "CHRP",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/images/tokens/chrp.svg"
+      },
+      "deploymentMessageId": "0x9e9ee1f374730fc7eacc12a2c62fcf9aadb772c75958259d1b73bb341978ba12-0",
+      "chains": [
+        {
+          "symbol": "CHRP",
+          "name": "Chirpley Token",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xeD00Fc7D48B57B81FE65D1cE71c0985e4CF442CB",
+          "tokenManager": "0x10Ac6220C77Fd64715c72e7A30f00DFd4e534925",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "CHRP",
+          "name": "Chirpley Token",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x70Bc0DC6414EB8974BC70685F798838a87d8CCe4",
+          "tokenManager": "0x10Ac6220C77Fd64715c72e7A30f00DFd4e534925",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
