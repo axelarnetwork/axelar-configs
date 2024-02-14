@@ -11,7 +11,7 @@ import { address, hash } from "../../../schemas/common";
 import { patchConfig } from "../../utils";
 
 const BASE_REPO_URL =
-  "https://raw.githubusercontent.com/axelarnetwork/axelar-configs";
+  "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main";
 
 export async function listSquidToken() {
   console.log(chalk.blue("\nGenerating token listing config...\n"));
