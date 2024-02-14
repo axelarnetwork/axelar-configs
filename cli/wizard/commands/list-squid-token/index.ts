@@ -203,7 +203,7 @@ function parseAsInterchainTokenConfig(
           axelarChainId: data.axelarChainId,
           tokenAddress: address.parse(data.tokenAddress),
           tokenManager: address.parse(data.tokenManagerAddress),
-          tokenManagerType: convertToCamelCase(data.tokenManagerType),
+          tokenManagerType: snakeToCamelCase(data.tokenManagerType),
         },
       ],
       ...data.remoteTokens.map((token) => ({
@@ -212,7 +212,7 @@ function parseAsInterchainTokenConfig(
         axelarChainId: token.axelarChainId,
         tokenAddress: address.parse(token.tokenAddress),
         tokenManager: address.parse(token.tokenManagerAddress),
-        tokenManagerType: convertToCamelCase(token.tokenManagerType),
+        tokenManagerType: snakeToCamelCase(token.tokenManagerType),
       })),
     ],
   };
@@ -222,6 +222,4 @@ function getEnvironmentFromUrl(tokenDetailsUrl: string) {
   return tokenDetailsUrl?.includes("testnet") ? "testnet" : "mainnet";
 }
 
-function convertToCamelCase(input: string) {
-  return convertCase("CONSTANT_CASE", "camelCase")(input ?? "unknown");
-}
+const snakeToCamelCase = convertCase("snake_case", "camelCase");
