@@ -63,6 +63,38 @@
           "name": "RMRK"
         }
       ]
+    },
+    "0x41fdc19610c6cd2c489e6cbb00881d871e14f6acfca798f2b4c99d6d7556fa95": {
+      "tokenId": "0x41fdc19610c6cd2c489e6cbb00881d871e14f6acfca798f2b4c99d6d7556fa95",
+      "deployer": "0x5E335399DEeaD358Fb893f6594F2A1eDC91C340f",
+      "originalMinter": null,
+      "prettySymbol": "CONK",
+      "decimals": 18,
+      "originAxelarChainId": "fantom",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/conk.svg"
+      },
+      "deploymentMessageId": "0xb1f9d57448f5f84739e7bb1383b94e18dc71b103f31d10bbafa445a31d6bd094-0",
+      "chains": [
+        {
+          "symbol": "CONK",
+          "name": "ShibaPoconkToken",
+          "axelarChainId": "fantom",
+          "tokenAddress": "0xb715F8DcE2F0E9b894c753711bd55eE3C04dcA4E",
+          "tokenManager": "0x7BdEb4E1D52E997439f5F79ae3974B74d7BAB68b",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "CONK",
+          "name": "ShibaPoconkToken",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x8dA366956b59042D1476d2d398C28cC6c0941053",
+          "tokenManager": "0x7BdEb4E1D52E997439f5F79ae3974B74d7BAB68b",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
