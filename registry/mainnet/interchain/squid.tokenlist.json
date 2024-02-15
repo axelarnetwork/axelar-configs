@@ -73,7 +73,7 @@
       "tokenType": "canonical",
       "deploySalt": "0x",
       "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/images/tokens/conk.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/conk.svg"
       },
       "deploymentMessageId": "0xb1f9d57448f5f84739e7bb1383b94e18dc71b103f31d10bbafa445a31d6bd094-0",
       "chains": [
@@ -91,7 +91,7 @@
           "axelarChainId": "ethereum",
           "tokenAddress": "0x8dA366956b59042D1476d2d398C28cC6c0941053",
           "tokenManager": "0x7BdEb4E1D52E997439f5F79ae3974B74d7BAB68b",
-          "tokenManagerType": "lockUnlock"
+          "tokenManagerType": "mintBurn"
         }
       ]
     }
