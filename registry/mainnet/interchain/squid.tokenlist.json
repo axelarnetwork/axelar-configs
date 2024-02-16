@@ -135,6 +135,46 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x9f25cb1fa8328de2fdfcbb16ed3e0d2bb65ee3ce573a8a0d855c6589b96d8d04": {
+      "tokenId": "0x9f25cb1fa8328de2fdfcbb16ed3e0d2bb65ee3ce573a8a0d855c6589b96d8d04",
+      "deployer": "0x4126Bb708458fe7C9126DD7854255F57ac3e1d67",
+      "originalMinter": null,
+      "prettySymbol": "MVX",
+      "decimals": 18,
+      "originAxelarChainId": "polygon",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mvx.svg"
+      },
+      "deploymentMessageId": "0x3ded15b65b96d044274c284b8d2621dd79e0a69ad78c49f2e58f0ae3051b92fd-63",
+      "chains": [
+        {
+          "symbol": "MVX",
+          "name": "Metavault Trade",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x2760e46d9bb43dafcbecaad1f64b93207f9f0ed7",
+          "tokenManager": "0x7569B178CcF8709E6850b3b0873Be5380e04668b",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "MVX",
+          "name": "Metavault Trade",
+          "axelarChainId": "linea",
+          "tokenAddress": "0x0018D96C579121a94307249d47F053E2D687b5e7",
+          "tokenManager": "0x7569B178CcF8709E6850b3b0873Be5380e04668b",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MVX",
+          "name": "Metavault Trade",
+          "axelarChainId": "scroll",
+          "tokenAddress": "0x0018D96C579121a94307249d47F053E2D687b5e7",
+          "tokenManager": "0x7569B178CcF8709E6850b3b0873Be5380e04668b",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
