@@ -64,6 +64,78 @@
         }
       ]
     },
+    "0x41fdc19610c6cd2c489e6cbb00881d871e14f6acfca798f2b4c99d6d7556fa95": {
+      "tokenId": "0x41fdc19610c6cd2c489e6cbb00881d871e14f6acfca798f2b4c99d6d7556fa95",
+      "deployer": "0x5E335399DEeaD358Fb893f6594F2A1eDC91C340f",
+      "originalMinter": null,
+      "prettySymbol": "CONK",
+      "decimals": 18,
+      "originAxelarChainId": "fantom",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/conk.svg"
+      },
+      "deploymentMessageId": "0xb1f9d57448f5f84739e7bb1383b94e18dc71b103f31d10bbafa445a31d6bd094-0",
+      "chains": [
+        {
+          "symbol": "CONK",
+          "name": "ShibaPoconkToken",
+          "axelarChainId": "fantom",
+          "tokenAddress": "0xb715F8DcE2F0E9b894c753711bd55eE3C04dcA4E",
+          "tokenManager": "0x7BdEb4E1D52E997439f5F79ae3974B74d7BAB68b",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "CONK",
+          "name": "ShibaPoconkToken",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x8dA366956b59042D1476d2d398C28cC6c0941053",
+          "tokenManager": "0x7BdEb4E1D52E997439f5F79ae3974B74d7BAB68b",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x6dac9057eb38cc61358b1b25453e3eb68a0dce959d8549dd4b8e58f357be0f66": {
+      "tokenId": "0x6dac9057eb38cc61358b1b25453e3eb68a0dce959d8549dd4b8e58f357be0f66",
+      "deployer": "0x6E2A0A942Eaa01B7EB2639B8B65D1D2768a87BAc",
+      "originalMinter": null,
+      "prettySymbol": "FS",
+      "decimals": 18,
+      "originAxelarChainId": "fantom",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/fs.svg"
+      },
+      "deploymentMessageId": "0x52677f8c4559d9c3357b650bdc2f9b832bf6c0b7535aa8411a4c64a95acfb3f9-0",
+      "chains": [
+        {
+          "symbol": "FS",
+          "name": "FantomStarter",
+          "axelarChainId": "fantom",
+          "tokenAddress": "0xc758295cd1a564cdb020a78a681a838cf8e0627d",
+          "tokenManager": "0x26b48Cc92c33a6c239C5f8306251ebAD76Fbd34D",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "FS",
+          "name": "FantomStarter",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xa1a020D3B354D6460EE3c272976F213160BD6B1C",
+          "tokenManager": "0x26b48Cc92c33a6c239C5f8306251ebAD76Fbd34D",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "FS",
+          "name": "FantomStarter",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xa1a020D3B354D6460EE3c272976F213160BD6B1C",
+          "tokenManager": "0x26b48Cc92c33a6c239C5f8306251ebAD76Fbd34D",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0x9f25cb1fa8328de2fdfcbb16ed3e0d2bb65ee3ce573a8a0d855c6589b96d8d04": {
       "tokenId": "0x9f25cb1fa8328de2fdfcbb16ed3e0d2bb65ee3ce573a8a0d855c6589b96d8d04",
       "deployer": "0x4126Bb708458fe7C9126DD7854255F57ac3e1d67",
@@ -74,7 +146,7 @@
       "tokenType": "canonical",
       "deploySalt": "0x",
       "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/images/tokens/mvx.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mvx.svg"
       },
       "deploymentMessageId": "0x3ded15b65b96d044274c284b8d2621dd79e0a69ad78c49f2e58f0ae3051b92fd-63",
       "chains": [
@@ -92,7 +164,7 @@
           "axelarChainId": "linea",
           "tokenAddress": "0x0018D96C579121a94307249d47F053E2D687b5e7",
           "tokenManager": "0x7569B178CcF8709E6850b3b0873Be5380e04668b",
-          "tokenManagerType": "unknown"
+          "tokenManagerType": "mintBurn"
         },
         {
           "symbol": "MVX",
@@ -100,7 +172,7 @@
           "axelarChainId": "scroll",
           "tokenAddress": "0x0018D96C579121a94307249d47F053E2D687b5e7",
           "tokenManager": "0x7569B178CcF8709E6850b3b0873Be5380e04668b",
-          "tokenManagerType": "lockUnlock"
+          "tokenManagerType": "mintBurn"
         }
       ]
     }
