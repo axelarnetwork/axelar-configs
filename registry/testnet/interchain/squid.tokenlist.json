@@ -17,7 +17,7 @@
       "tokenType": "interchain",
       "deploySalt": "0x7a71c517e9782dcb798591899dc5ee04a0cd836e06ecd7edc7df5ba4ad658e14",
       "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/images/tokens/yslc.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/yslc.svg"
       },
       "deploymentMessageId": "0xa415b4a4c28c71b37c59c49c3def35e447a6fce9c4f230cff8800ebd550a9faf-0",
       "chains": [
