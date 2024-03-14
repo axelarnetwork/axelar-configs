@@ -1,6 +1,6 @@
 import { input, select, checkbox } from "@inquirer/prompts";
 import chalk from "chalk";
-import { confirmPrompt, validators } from "./utils";
+import { confirmPrompt, defaultBech32Config, validators } from "./utils";
 
 export const commonPrompts = {
   configKind: () =>
@@ -115,44 +115,15 @@ export const cosmosChainPrompts = {
     }),
   bip44: () =>
     input({
-      message: "What is the BIP44 path?",
+      message: "What is the BIP44 coinType?",
       validate: validators.nonEmpty,
     }),
-  bech32Config: () =>
+  bech32Prefix: () =>
     input({
-      message: "What is the Bech32 config?",
+      message: "What is the Bech32 prefix?",
       validate: validators.nonEmpty,
     }),
-  bech32PrefixAccAddr: () =>
-    input({
-      message: "What is the Bech32 prefix for account addresses?",
-      validate: validators.nonEmpty,
-    }),
-  bech32PrefixAccPub: () =>
-    input({
-      message: "What is the Bech32 prefix for account public keys?",
-      validate: validators.nonEmpty,
-    }),
-  bech32PrefixValAddr: () =>
-    input({
-      message: "What is the Bech32 prefix for validator addresses?",
-      validate: validators.nonEmpty,
-    }),
-  bech32PrefixValPub: () =>
-    input({
-      message: "What is the Bech32 prefix for validator public keys?",
-      validate: validators.nonEmpty,
-    }),
-  bech32PrefixConsAddr: () =>
-    input({
-      message: "What is the Bech32 prefix for consensus addresses?",
-      validate: validators.nonEmpty,
-    }),
-  bech32PrefixConsPub: () =>
-    input({
-      message: "What is the Bech32 prefix for consensus public keys?",
-      validate: validators.nonEmpty,
-    }),
+
   features: () =>
     checkbox({
       message: "What features does this chain support?",
@@ -160,10 +131,6 @@ export const cosmosChainPrompts = {
         {
           name: "IBC transfers",
           value: "ibc-transfer",
-        },
-        {
-          name: "IBC go",
-          value: "ibc-go",
         },
         {
           name: "Stargate",
@@ -179,11 +146,7 @@ export const cosmosChainPrompts = {
         },
         {
           name: "Fee Grant",
-          value: "feegrant",
-        },
-        {
-          name: "No legacy stdTx support",
-          value: "no-legacy-stdTx",
+          value: "fee_grant",
         },
       ],
     }),
