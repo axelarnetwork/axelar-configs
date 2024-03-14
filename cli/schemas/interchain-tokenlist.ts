@@ -17,7 +17,7 @@ export const chains = z.object({
 export const interchainToken = z.object({
   tokenId: hash,
   deployer: address,
-  originalMinter: address,
+  originalMinter: address.nullable(),
   prettySymbol: z.string(),
   decimals: z.number().int(),
   originAxelarChainId: z.string(),
