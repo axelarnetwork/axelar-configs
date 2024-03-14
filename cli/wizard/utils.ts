@@ -120,11 +120,12 @@ export const slugify = (str: string) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
 
-export const defaultBech32Config = (prefix: string) => ({
-  bech32PrefixAccAddr: `${prefix}`,
-  bech32PrefixAccPub: `${prefix}pub`,
-  bech32PrefixValAddr: `${prefix}valoper`,
-  bech32PrefixValPub: `${prefix}valoperpub`,
-  bech32PrefixConsAddr: `${prefix}valcons`,
-  bech32PrefixConsPub: `${prefix}valconspu`,
-});
+export const defaultBech32Config = (prefix: string) =>
+  ({
+    bech32PrefixAccAddr: `${prefix}`,
+    bech32PrefixAccPub: `${prefix}pub`,
+    bech32PrefixValAddr: `${prefix}valoper`,
+    bech32PrefixValPub: `${prefix}valoperpub`,
+    bech32PrefixConsAddr: `${prefix}valcons`,
+    bech32PrefixConsPub: `${prefix}valconspub`,
+  } as const);
