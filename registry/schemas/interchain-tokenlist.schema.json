@@ -32,16 +32,16 @@
           "$ref": "#/definitions/chains/properties/tokenAddress"
         },
         "tokenManagerType": { "type": "string" },
-        "name": { "type": "string" },
-        "symbol": { "type": "string" }
+        "symbol": { "type": "string" },
+        "name": { "type": "string" }
       },
       "required": [
         "axelarChainId",
         "tokenAddress",
         "tokenManager",
         "tokenManagerType",
-        "name",
-        "symbol"
+        "symbol",
+        "name"
       ],
       "additionalProperties": false
     },
@@ -51,16 +51,10 @@
         "tokenId": { "type": "string", "pattern": "^0x[a-fA-F0-9]{64}$" },
         "deployer": { "$ref": "#/definitions/chains/properties/tokenAddress" },
         "originalMinter": {
-          "anyOf": [
-            {
-              "$ref": "#/definitions/chains/properties/tokenAddress"
-            },
-            { "type": "null" }
-          ]
+          "$ref": "#/definitions/chains/properties/tokenAddress"
         },
         "prettySymbol": { "type": "string" },
         "decimals": { "type": "integer" },
-        "name": { "type": "string" },
         "originAxelarChainId": { "type": "string" },
         "tokenType": { "type": "string" },
         "iconUrls": { "$ref": "#/definitions/IconUrlsSchema" },
