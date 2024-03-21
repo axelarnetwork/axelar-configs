@@ -1,7 +1,14 @@
-import { buildChainConfig, cosmosChainPrompts } from "../../prompts";
-import { patchConfig, slugify } from "../../utils";
+import { CosmosChainConfig } from "../../../schemas/cosmos-chain";
+import {
+  PromptsResult,
+  buildChainConfig,
+  cosmosChainPrompts,
+} from "../../prompts";
+import { defaultBech32Config, patchConfig, slugify } from "../../utils";
 
 import { fs, path } from "zx";
+
+type PromptResult = PromptsResult<typeof cosmosChainPrompts>;
 
 export async function addCosmosChain() {
   const draftConfig = await buildChainConfig(cosmosChainPrompts);
@@ -31,29 +38,36 @@ export async function addCosmosChain() {
 
   await patchConfig(relativePath, draftConfig, {
     isDuplicate: (config) => config.chainId === draftConfig.chainId,
-    transformConfig: (config) => ({
-      ...config,
-      ...draftConfig,
-    }),
+    transformConfig: () => toJsonSchemaFormat(draftConfig as PromptResult),
   });
+}
 
-  // const shouldIncludeAssetlist = await select({
-  //   message: "Would you like to generate an assetlist for this chain?",
-  //   choices: [
-  //     {
-  //       name: "Yes",
-  //       value: true,
-  //     },
-  //     {
-  //       name: "No",
-  //       value: false,
-  //     },
-  //   ],
-  // });
+type Output = CosmosChainConfig & {
+  $schema: string;
+};
 
-  // console.log(chalk.blue("\nGenerating Cosmos chain config...\n"));
+function toJsonSchemaFormat(draft: PromptResult): Output {
+  const stakeCurrency = {
+    coinDenom: draft.stakeCurrencySymbol,
+    coinMinimalDenom: draft.stakeCurrencySymbol.toLowerCase(),
+    coinDecimals: Number(draft.stakeCurrencyDecimals),
+  };
 
-  // if (shouldIncludeAssetlist) {
-  //   console.log(chalk.blue("\nGenerating Cosmos assetlist...\n"));
-  // }
+  return {
+    $schema: "../../schemas/cosmos-chain.schema.json",
+    rpc: draft.rpc,
+    rest: draft.rest,
+    chainId: draft.chainId,
+    bech32Config: defaultBech32Config(draft.bech32Prefix),
+    chainName: draft.chainName,
+    currencies: [stakeCurrency],
+    feeCurrencies: [stakeCurrency],
+    stakeCurrency: stakeCurrency,
+    bip44: {
+      coinType: Number(draft.bip44),
+    },
+    chainIconUrl: `/images/chains/${slugify(draft.chainName)}.svg`,
+    features: draft.features as CosmosChainConfig["features"],
+    walletUrlForStaking: draft.walletUrlForStaking,
+  };
 }
