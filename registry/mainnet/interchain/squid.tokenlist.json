@@ -367,6 +367,46 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xebc412fc86eedb69ed8d9d7717d9e24d4fc685f5dd6d0b9000f20ea6357ef361": {
+      "tokenId": "0xebc412fc86eedb69ed8d9d7717d9e24d4fc685f5dd6d0b9000f20ea6357ef361",
+      "deployer": "0x2711d768bDcD1BC5e55dE74B694a8038857e82A1",
+      "originalMinter": null,
+      "prettySymbol": "MUNITY",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/munity.svg"
+      },
+      "deploymentMessageId": "0x911bf4931c2816628a4a8345a26dd3bcdade18045af143aa0ea3306b310ce42b-99",
+      "chains": [
+        {
+          "symbol": "MUNITY",
+          "name": "Metahorse Unity Token",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xe97f6dde78b11b58cb3e394f15ab592cb2acd290",
+          "tokenManager": "0x017F3C8da9652b2cE935A7795f5fcda0951d27b8",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "MUNITY",
+          "name": "Metahorse Unity Token",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x5283aF37d473eF7c185A1F8a2042d427cD9C83c4",
+          "tokenManager": "0x017F3C8da9652b2cE935A7795f5fcda0951d27b8",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MUNITY",
+          "name": "Metahorse Unity Token",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x5283aF37d473eF7c185A1F8a2042d427cD9C83c4",
+          "tokenManager": "0x017F3C8da9652b2cE935A7795f5fcda0951d27b8",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
