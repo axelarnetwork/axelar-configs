@@ -367,6 +367,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x8db1376ff549ab32fd30917c0e8c51e89a3bbc3e246c1e95d5f69c4117d3bd40": {
+      "tokenId": "0x8db1376ff549ab32fd30917c0e8c51e89a3bbc3e246c1e95d5f69c4117d3bd40",
+      "deployer": "0x5aA4e90DC2452195a5E5654F549DF0f2bC5d9996",
+      "originalMinter": null,
+      "prettySymbol": "RBX",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/rbx.svg"
+      },
+      "deploymentMessageId": "0x415f699585761bf21acbbce50fb55225783db3aea1c453372a1d596eebd1c6d9-100",
+      "chains": [
+        {
+          "symbol": "RBX",
+          "name": "RabbitX",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x3ba925fdeae6b46d0bb4d424d829982cb2f7309e",
+          "tokenManager": "0xC5aefA9a08907fD2bcD24E83E761e4Bc65BCC9f4",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "RBX",
+          "name": "RabbitX",
+          "axelarChainId": "blast",
+          "tokenAddress": "0x236bb48fcF61ce996B2C8C196a9258c176100c7d",
+          "tokenManager": "0xC5aefA9a08907fD2bcD24E83E761e4Bc65BCC9f4",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
