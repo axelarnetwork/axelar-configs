@@ -367,6 +367,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xf02e2a56a9e33e5b284a2e63ce319f8f93cbfcbb9a84acce39be449317c1184c": {
+      "tokenId": "0xf02e2a56a9e33e5b284a2e63ce319f8f93cbfcbb9a84acce39be449317c1184c",
+      "deployer": "0xa2f8ae5AF7Bd75d54ED172B3b9E557d104D3913C",
+      "originalMinter": null,
+      "prettySymbol": "SATOSHI",
+      "decimals": 9,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/satoshi.svg"
+      },
+      "deploymentMessageId": "0x426514d8e9a428b34ebbe16e7b86dc27f925ea206efcc1f9f9ae8fb85fbf4a24-132",
+      "chains": [
+        {
+          "symbol": "SATOSHI",
+          "name": "Satoshi Nakamoto",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xCBF4D5efa82e32a9187385480A7c74cB062b956C",
+          "tokenManager": "0xD304Be5856330D3497d51Ea2EA7a198B3f167835",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "SATOSHI",
+          "name": "Satoshi Nakamoto",
+          "axelarChainId": "base",
+          "tokenAddress": "0x45e7EAEdb8E3360f850c963c5419a5236e451217",
+          "tokenManager": "0xD304Be5856330D3497d51Ea2EA7a198B3f167835",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
