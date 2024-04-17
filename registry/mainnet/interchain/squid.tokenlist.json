@@ -367,6 +367,78 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x8bcf14dbf109aa6f96fdf0452276c7bc536e66375c1d4dd694b2a161613d599b": {
+      "tokenId": "0x8bcf14dbf109aa6f96fdf0452276c7bc536e66375c1d4dd694b2a161613d599b",
+      "deployer": "0xe1581C10EE235F0DEbb655EA365100bCBD84BAD2",
+      "originalMinter": null,
+      "prettySymbol": "QUACK",
+      "decimals": 18,
+      "originAxelarChainId": "base",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/quack.svg"
+      },
+      "deploymentMessageId": "0xaaa33a5c365f14778cd0f903d90c1ad7af8995a6573f27cd252406772b6f64db-0",
+      "chains": [
+        {
+          "symbol": "QUACK",
+          "name": "Quack Token",
+          "axelarChainId": "base",
+          "tokenAddress": "0x639C0D019C257966C4907bD4E68E3F349bB58109",
+          "tokenManager": "0x0931a75fc2800d969FFddd1248335c4DAe2fe3A6",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "QUACK",
+          "name": "Quack Token",
+          "axelarChainId": "linea",
+          "tokenAddress": "0x59DEBED8D46a0cB823D8BE8b957adD987eAd39aa",
+          "tokenManager": "0x0931a75fc2800d969FFddd1248335c4DAe2fe3A6",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "QUACK",
+          "name": "Quack Token",
+          "axelarChainId": "blast",
+          "tokenAddress": "0x59DEBED8D46a0cB823D8BE8b957adD987eAd39aa",
+          "tokenManager": "0x0931a75fc2800d969FFddd1248335c4DAe2fe3A6",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "QUACK",
+          "name": "Quack Token",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x59DEBED8D46a0cB823D8BE8b957adD987eAd39aa",
+          "tokenManager": "0x0931a75fc2800d969FFddd1248335c4DAe2fe3A6",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "QUACK",
+          "name": "Quack Token",
+          "axelarChainId": "scroll",
+          "tokenAddress": "0x59DEBED8D46a0cB823D8BE8b957adD987eAd39aa",
+          "tokenManager": "0x0931a75fc2800d969FFddd1248335c4DAe2fe3A6",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "QUACK",
+          "name": "Quack Token",
+          "axelarChainId": "mantle",
+          "tokenAddress": "0x59DEBED8D46a0cB823D8BE8b957adD987eAd39aa",
+          "tokenManager": "0x0931a75fc2800d969FFddd1248335c4DAe2fe3A6",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "QUACK",
+          "name": "Quack Token",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0x59DEBED8D46a0cB823D8BE8b957adD987eAd39aa",
+          "tokenManager": "0x0931a75fc2800d969FFddd1248335c4DAe2fe3A6",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
