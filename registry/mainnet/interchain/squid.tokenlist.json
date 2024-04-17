@@ -76,6 +76,7 @@
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/conk.svg"
       },
+      "coinGeckoId": "shibapoconk",
       "deploymentMessageId": "0xb1f9d57448f5f84739e7bb1383b94e18dc71b103f31d10bbafa445a31d6bd094-0",
       "chains": [
         {
@@ -108,6 +109,7 @@
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/fs.svg"
       },
+      "coinGeckoId": "fantomstarter",
       "deploymentMessageId": "0x52677f8c4559d9c3357b650bdc2f9b832bf6c0b7535aa8411a4c64a95acfb3f9-0",
       "chains": [
         {
@@ -148,6 +150,7 @@
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mvx.svg"
       },
+      "coinGeckoId": "metavault-trade",
       "deploymentMessageId": "0x3ded15b65b96d044274c284b8d2621dd79e0a69ad78c49f2e58f0ae3051b92fd-63",
       "chains": [
         {
@@ -188,6 +191,7 @@
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/bava.svg"
       },
+      "coinGeckoId": "baklava",
       "deploymentMessageId": "0xcb0184fa576aa27deaadcb6ecf938b5332173107b45bea650ac199c28c5a31b6-0",
       "chains": [
         {
@@ -228,6 +232,7 @@
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/ai.svg"
       },
+      "coinGeckoId": "any-inu",
       "deploymentMessageId": "0xfd12d26df4f6a5a681bcf8eba1e416446b8e2d3804d1b6cc247a284456c2b1d2-0",
       "chains": [
         {
