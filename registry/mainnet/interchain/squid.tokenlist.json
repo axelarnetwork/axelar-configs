@@ -370,6 +370,7 @@
       },
       "0xc5732d51934f41dba117ae77c628754853cbdf7655baa4cc9f863e575464e907": {
       "tokenId": "0xc5732d51934f41dba117ae77c628754853cbdf7655baa4cc9f863e575464e907",
+      "coinGeckoId": "grok-2",
       "deployer": "0x4207b21744413D37831833184559D46c49063656",
       "originalMinter": null,
       "prettySymbol": "GROK",
