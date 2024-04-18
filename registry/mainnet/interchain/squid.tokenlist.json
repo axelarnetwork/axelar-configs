@@ -367,6 +367,54 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xfea30beb17bde60c46f626db1cf7c73d33e16ad69c3c8daba637511249f6b32f": {
+      "tokenId": "0xfea30beb17bde60c46f626db1cf7c73d33e16ad69c3c8daba637511249f6b32f",
+      "deployer": "0x01e198818a895f01562E0A087595E5b1C7bb8d5c",
+      "originalMinter": null,
+      "prettySymbol": "XAV",
+      "decimals": 18,
+      "originAxelarChainId": "avalanche",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/xav.svg"
+      },
+      "deploymentMessageId": "0x336b326b92a91cab232d43756a813b683cf46189fef898c4bf554f34ed453212-0",
+      "chains": [
+        {
+          "symbol": "XAV",
+          "name": "Xave Token",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0x913C61ec3573E5E4ee6488552535Fb1be84FF2AC",
+          "tokenManager": "0x1f957e5515f3d9933e2ba6acebD993fc2949ebdF",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "XAV",
+          "name": "Xave Token",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x1dB06f39c14d813d7b1CCB275A93f5b052DE1cac",
+          "tokenManager": "0x1f957e5515f3d9933e2ba6acebD993fc2949ebdF",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "XAV",
+          "name": "Xave Token",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x1dB06f39c14d813d7b1CCB275A93f5b052DE1cac",
+          "tokenManager": "0x1f957e5515f3d9933e2ba6acebD993fc2949ebdF",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "XAV",
+          "name": "Xave Token",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x1dB06f39c14d813d7b1CCB275A93f5b052DE1cac",
+          "tokenManager": "0x1f957e5515f3d9933e2ba6acebD993fc2949ebdF",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
