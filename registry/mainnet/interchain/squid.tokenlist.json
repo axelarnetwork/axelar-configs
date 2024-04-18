@@ -367,6 +367,54 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+      },
+    "0x9cf96c037c554ccc8b33716a683fcaef470266fa195674e898399647bb442dd3": {
+      "tokenId": "0x9cf96c037c554ccc8b33716a683fcaef470266fa195674e898399647bb442dd3",
+      "deployer": "0x0E198545147fa12e3c6cb2cfc5876ee3c5840f27",
+      "originalMinter": null,
+      "prettySymbol": "IMP",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/imp.svg"
+      },
+      "deploymentMessageId": "0xa025140ed9c21b88ffad968d18d79d00a1b8390ae3ee8a6bf2a20d2eb6642001-28",
+      "chains": [
+        {
+          "symbol": "IMP",
+          "name": "Imperial Obelisk",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x2d5c73f3597b07f23c2bb3f2422932e67eca4543",
+          "tokenManager": "0x0724ec194a43A9D9d8179500eA684C21bD05721C",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "IMP",
+          "name": "Imperial Obelisk",
+          "axelarChainId": "base",
+          "tokenAddress": "0x010dF9d29d0B4603a5561872ed13542b511e35b7",
+          "tokenManager": "0x0724ec194a43A9D9d8179500eA684C21bD05721C",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "IMP",
+          "name": "Imperial Obelisk",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x010dF9d29d0B4603a5561872ed13542b511e35b7",
+          "tokenManager": "0x0724ec194a43A9D9d8179500eA684C21bD05721C",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "IMP",
+          "name": "Imperial Obelisk",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x010dF9d29d0B4603a5561872ed13542b511e35b7",
+          "tokenManager": "0x0724ec194a43A9D9d8179500eA684C21bD05721C",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
