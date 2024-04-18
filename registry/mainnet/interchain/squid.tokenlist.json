@@ -370,6 +370,7 @@
        },
     "0x4fa517c76b2ab20bc7ceb0171b4d9dbba274528a285a3c6d2a0ac0f8b12ec458": {
       "tokenId": "0x4fa517c76b2ab20bc7ceb0171b4d9dbba274528a285a3c6d2a0ac0f8b12ec458",
+      "coinGeckoId": "hokkaido-inu"
       "deployer": "0xF439F013Ef719B52787820B494b968e038b50255",
       "originalMinter": null,
       "prettySymbol": "HOKK",
