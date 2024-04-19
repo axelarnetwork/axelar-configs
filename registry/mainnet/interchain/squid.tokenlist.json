@@ -479,6 +479,70 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x5aca573fecee810545fa147f1b2192e8625a17f6f87b4582ed58da83bc37c826": {
+      "tokenId": "0x5aca573fecee810545fa147f1b2192e8625a17f6f87b4582ed58da83bc37c826",
+      "deployer": "0x12Ef1015744c88798c125CffDB40084B05d71C2a",
+      "originalMinter": null,
+      "prettySymbol": "RSTK",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/rstk.svg"
+      },
+      "deploymentMessageId": "0x625e12d7a1ae6baff5e63ce9761f8f621106232e175127e2f7bb90b04749b9e1-181",
+      "chains": [
+        {
+          "symbol": "RSTK",
+          "name": "Restake Finance",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x12eF10A4fc6e1Ea44B4ca9508760fF51c647BB71",
+          "tokenManager": "0x971e85340e831Dd874f56179c16E112c880a224c",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "RSTK",
+          "name": "Restake Finance",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xecEb8927FED5f612879F79d7D3AF2E39C7fd168B",
+          "tokenManager": "0x971e85340e831Dd874f56179c16E112c880a224c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "RSTK",
+          "name": "Restake Finance",
+          "axelarChainId": "blast",
+          "tokenAddress": "0xecEb8927FED5f612879F79d7D3AF2E39C7fd168B",
+          "tokenManager": "0x971e85340e831Dd874f56179c16E112c880a224c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "RSTK",
+          "name": "Restake Finance",
+          "axelarChainId": "base",
+          "tokenAddress": "0xecEb8927FED5f612879F79d7D3AF2E39C7fd168B",
+          "tokenManager": "0x971e85340e831Dd874f56179c16E112c880a224c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "RSTK",
+          "name": "Restake Finance",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0xecEb8927FED5f612879F79d7D3AF2E39C7fd168B",
+          "tokenManager": "0x971e85340e831Dd874f56179c16E112c880a224c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "RSTK",
+          "name": "Restake Finance",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0xecEb8927FED5f612879F79d7D3AF2E39C7fd168B",
+          "tokenManager": "0x971e85340e831Dd874f56179c16E112c880a224c",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
