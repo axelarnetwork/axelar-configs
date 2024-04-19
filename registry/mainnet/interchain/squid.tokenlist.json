@@ -684,6 +684,39 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xc5732d51934f41dba117ae77c628754853cbdf7655baa4cc9f863e575464e907": {
+      "tokenId": "0xc5732d51934f41dba117ae77c628754853cbdf7655baa4cc9f863e575464e907",
+      "coinGeckoId": "grok-2",
+      "deployer": "0x4207b21744413D37831833184559D46c49063656",
+      "originalMinter": null,
+      "prettySymbol": "GROK",
+      "decimals": 9,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/GROK.svg"
+      },
+      "deploymentMessageId": "0xddd588103557704fd368d22c93af5619511c8a1288a51c9d094ea53bbbb8ce94-7",
+      "chains": [
+        {
+          "symbol": "GROK",
+          "name": "GROK",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x8390a1da07e376ef7add4be859ba74fb83aa02d5",
+          "tokenManager": "0x21CA58936A6f5dFB2069d883dED099e39DA281eb",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "GROK",
+          "name": "GROK",
+          "axelarChainId": "base",
+          "tokenAddress": "0x4dB7ddE583D07E478a59503C5bd053eDb739d091",
+          "tokenManager": "0x21CA58936A6f5dFB2069d883dED099e39DA281eb",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
