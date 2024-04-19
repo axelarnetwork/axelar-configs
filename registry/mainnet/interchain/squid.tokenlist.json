@@ -415,6 +415,70 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xf5ddb0c04985ee286ca7930c8dc38bcb5e71f123027cb8886b0dd834578120bd": {
+      "tokenId": "0xf5ddb0c04985ee286ca7930c8dc38bcb5e71f123027cb8886b0dd834578120bd",
+      "deployer": "0xFbfF4df52bD43D7AbC1fD9c5a9A29b856c4866c5",
+      "originalMinter": null,
+      "prettySymbol": "MOON",
+      "decimals": 18,
+      "originAxelarChainId": "polygon",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/moon.svg"
+      },
+      "deploymentMessageId": "0x3b760fc4679bcfc6739399d89d3a6d533e34ca2fec60c55566a1bb41ffda5b21-62",
+      "chains": [
+        {
+          "symbol": "MOON",
+          "name": "Moonflow",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x7AEfff599570dEC2F3DbBc2ACe3cb1F8206749eB",
+          "tokenManager": "0xd1FBdF706396576b3c425bDfC28cb4f4Ce5A3B44",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "MOON",
+          "name": "Moonflow",
+          "axelarChainId": "blast",
+          "tokenAddress": "0x7C8DbFdB185C088E73999770C93b885295805739",
+          "tokenManager": "0xd1FBdF706396576b3c425bDfC28cb4f4Ce5A3B44",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOON",
+          "name": "Moonflow",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x7C8DbFdB185C088E73999770C93b885295805739",
+          "tokenManager": "0xd1FBdF706396576b3c425bDfC28cb4f4Ce5A3B44",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOON",
+          "name": "Moonflow",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0x7C8DbFdB185C088E73999770C93b885295805739",
+          "tokenManager": "0xd1FBdF706396576b3c425bDfC28cb4f4Ce5A3B44",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOON",
+          "name": "Moonflow",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x7C8DbFdB185C088E73999770C93b885295805739",
+          "tokenManager": "0xd1FBdF706396576b3c425bDfC28cb4f4Ce5A3B44",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOON",
+          "name": "Moonflow",
+          "axelarChainId": "base",
+          "tokenAddress": "0x7C8DbFdB185C088E73999770C93b885295805739",
+          "tokenManager": "0xd1FBdF706396576b3c425bDfC28cb4f4Ce5A3B44",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
