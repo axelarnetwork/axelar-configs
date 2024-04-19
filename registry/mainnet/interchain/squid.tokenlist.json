@@ -368,6 +368,222 @@
         }
       ]
     },
+    "0xfea30beb17bde60c46f626db1cf7c73d33e16ad69c3c8daba637511249f6b32f": {
+      "tokenId": "0xfea30beb17bde60c46f626db1cf7c73d33e16ad69c3c8daba637511249f6b32f",
+      "deployer": "0x01e198818a895f01562E0A087595E5b1C7bb8d5c",
+      "originalMinter": null,
+      "prettySymbol": "XAV",
+      "decimals": 18,
+      "originAxelarChainId": "avalanche",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/xav.svg"
+      },
+      "deploymentMessageId": "0x336b326b92a91cab232d43756a813b683cf46189fef898c4bf554f34ed453212-0",
+      "chains": [
+        {
+          "symbol": "XAV",
+          "name": "Xave Token",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0x913C61ec3573E5E4ee6488552535Fb1be84FF2AC",
+          "tokenManager": "0x1f957e5515f3d9933e2ba6acebD993fc2949ebdF",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "XAV",
+          "name": "Xave Token",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x1dB06f39c14d813d7b1CCB275A93f5b052DE1cac",
+          "tokenManager": "0x1f957e5515f3d9933e2ba6acebD993fc2949ebdF",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "XAV",
+          "name": "Xave Token",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x1dB06f39c14d813d7b1CCB275A93f5b052DE1cac",
+          "tokenManager": "0x1f957e5515f3d9933e2ba6acebD993fc2949ebdF",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "XAV",
+          "name": "Xave Token",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x1dB06f39c14d813d7b1CCB275A93f5b052DE1cac",
+          "tokenManager": "0x1f957e5515f3d9933e2ba6acebD993fc2949ebdF",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xf5ddb0c04985ee286ca7930c8dc38bcb5e71f123027cb8886b0dd834578120bd": {
+      "tokenId": "0xf5ddb0c04985ee286ca7930c8dc38bcb5e71f123027cb8886b0dd834578120bd",
+      "deployer": "0xFbfF4df52bD43D7AbC1fD9c5a9A29b856c4866c5",
+      "originalMinter": null,
+      "prettySymbol": "MOON",
+      "decimals": 18,
+      "originAxelarChainId": "polygon",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/moon.svg"
+      },
+      "deploymentMessageId": "0x3b760fc4679bcfc6739399d89d3a6d533e34ca2fec60c55566a1bb41ffda5b21-62",
+      "chains": [
+        {
+          "symbol": "MOON",
+          "name": "Moonflow",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x7AEfff599570dEC2F3DbBc2ACe3cb1F8206749eB",
+          "tokenManager": "0xd1FBdF706396576b3c425bDfC28cb4f4Ce5A3B44",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "MOON",
+          "name": "Moonflow",
+          "axelarChainId": "blast",
+          "tokenAddress": "0x7C8DbFdB185C088E73999770C93b885295805739",
+          "tokenManager": "0xd1FBdF706396576b3c425bDfC28cb4f4Ce5A3B44",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOON",
+          "name": "Moonflow",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x7C8DbFdB185C088E73999770C93b885295805739",
+          "tokenManager": "0xd1FBdF706396576b3c425bDfC28cb4f4Ce5A3B44",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOON",
+          "name": "Moonflow",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0x7C8DbFdB185C088E73999770C93b885295805739",
+          "tokenManager": "0xd1FBdF706396576b3c425bDfC28cb4f4Ce5A3B44",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOON",
+          "name": "Moonflow",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x7C8DbFdB185C088E73999770C93b885295805739",
+          "tokenManager": "0xd1FBdF706396576b3c425bDfC28cb4f4Ce5A3B44",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOON",
+          "name": "Moonflow",
+          "axelarChainId": "base",
+          "tokenAddress": "0x7C8DbFdB185C088E73999770C93b885295805739",
+          "tokenManager": "0xd1FBdF706396576b3c425bDfC28cb4f4Ce5A3B44",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x5aca573fecee810545fa147f1b2192e8625a17f6f87b4582ed58da83bc37c826": {
+      "tokenId": "0x5aca573fecee810545fa147f1b2192e8625a17f6f87b4582ed58da83bc37c826",
+      "deployer": "0x12Ef1015744c88798c125CffDB40084B05d71C2a",
+      "originalMinter": null,
+      "prettySymbol": "RSTK",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/rstk.svg"
+      },
+      "deploymentMessageId": "0x625e12d7a1ae6baff5e63ce9761f8f621106232e175127e2f7bb90b04749b9e1-181",
+      "chains": [
+        {
+          "symbol": "RSTK",
+          "name": "Restake Finance",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x12eF10A4fc6e1Ea44B4ca9508760fF51c647BB71",
+          "tokenManager": "0x971e85340e831Dd874f56179c16E112c880a224c",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "RSTK",
+          "name": "Restake Finance",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xecEb8927FED5f612879F79d7D3AF2E39C7fd168B",
+          "tokenManager": "0x971e85340e831Dd874f56179c16E112c880a224c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "RSTK",
+          "name": "Restake Finance",
+          "axelarChainId": "blast",
+          "tokenAddress": "0xecEb8927FED5f612879F79d7D3AF2E39C7fd168B",
+          "tokenManager": "0x971e85340e831Dd874f56179c16E112c880a224c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "RSTK",
+          "name": "Restake Finance",
+          "axelarChainId": "base",
+          "tokenAddress": "0xecEb8927FED5f612879F79d7D3AF2E39C7fd168B",
+          "tokenManager": "0x971e85340e831Dd874f56179c16E112c880a224c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "RSTK",
+          "name": "Restake Finance",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0xecEb8927FED5f612879F79d7D3AF2E39C7fd168B",
+          "tokenManager": "0x971e85340e831Dd874f56179c16E112c880a224c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "RSTK",
+          "name": "Restake Finance",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0xecEb8927FED5f612879F79d7D3AF2E39C7fd168B",
+          "tokenManager": "0x971e85340e831Dd874f56179c16E112c880a224c",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xebc412fc86eedb69ed8d9d7717d9e24d4fc685f5dd6d0b9000f20ea6357ef361": {
+      "tokenId": "0xebc412fc86eedb69ed8d9d7717d9e24d4fc685f5dd6d0b9000f20ea6357ef361",
+      "deployer": "0x2711d768bDcD1BC5e55dE74B694a8038857e82A1",
+      "originalMinter": null,
+      "prettySymbol": "MUNITY",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/munity.svg"
+      },
+      "deploymentMessageId": "0x911bf4931c2816628a4a8345a26dd3bcdade18045af143aa0ea3306b310ce42b-99",
+      "chains": [
+        {
+          "symbol": "MUNITY",
+          "name": "Metahorse Unity Token",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xe97f6dde78b11b58cb3e394f15ab592cb2acd290",
+          "tokenManager": "0x017F3C8da9652b2cE935A7795f5fcda0951d27b8",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "MUNITY",
+          "name": "Metahorse Unity Token",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x5283aF37d473eF7c185A1F8a2042d427cD9C83c4",
+          "tokenManager": "0x017F3C8da9652b2cE935A7795f5fcda0951d27b8",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MUNITY",
+          "name": "Metahorse Unity Token",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x5283aF37d473eF7c185A1F8a2042d427cD9C83c4",
+          "tokenManager": "0x017F3C8da9652b2cE935A7795f5fcda0951d27b8",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0x656e70ee467547c0885d38e816b3037496be5f91bb75ba786efe597a81f06bd9": {
       "tokenId": "0x656e70ee467547c0885d38e816b3037496be5f91bb75ba786efe597a81f06bd9",
       "deployer": "0xB6Af19068482ec5feb4c4ef7f81a4dFdFa0BbAD2",
