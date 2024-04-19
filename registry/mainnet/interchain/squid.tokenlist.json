@@ -583,6 +583,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x656e70ee467547c0885d38e816b3037496be5f91bb75ba786efe597a81f06bd9": {
+      "tokenId": "0x656e70ee467547c0885d38e816b3037496be5f91bb75ba786efe597a81f06bd9",
+      "deployer": "0xB6Af19068482ec5feb4c4ef7f81a4dFdFa0BbAD2",
+      "originalMinter": null,
+      "prettySymbol": "GQ",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "customInterchain",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/gq.svg"
+      },
+      "deploymentMessageId": "0x5151fd5e7cdee9ba00154b354116f69f7e0659fecf8c7261ab0b964224fac81f-0",
+      "chains": [
+        {
+          "symbol": "GQ",
+          "name": "Galactic Quadrant",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xF700D4c708C2be1463E355F337603183D20E0808",
+          "tokenManager": "0x2173c795941Abf2eabCF1f283c0d241A7d3574d9",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "GQ",
+          "name": "Galactic Quadrant",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x30FD3a82790506578842f0E3Ac0e2470B485C6aF",
+          "tokenManager": "0x2173c795941Abf2eabCF1f283c0d241A7d3574d9",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
