@@ -416,7 +416,7 @@
         }
       ]
     },
-    "0xf5ddb0c04985ee286ca7930c8dc38bcb5e71f123027cb8886b0dd834578120bd": {
+    { "0xf5ddb0c04985ee286ca7930c8dc38bcb5e71f123027cb8886b0dd834578120bd": {
       "tokenId": "0xf5ddb0c04985ee286ca7930c8dc38bcb5e71f123027cb8886b0dd834578120bd",
       "deployer": "0xFbfF4df52bD43D7AbC1fD9c5a9A29b856c4866c5",
       "originalMinter": null,
