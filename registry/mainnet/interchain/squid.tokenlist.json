@@ -765,6 +765,39 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x4fa517c76b2ab20bc7ceb0171b4d9dbba274528a285a3c6d2a0ac0f8b12ec458": {
+      "tokenId": "0x4fa517c76b2ab20bc7ceb0171b4d9dbba274528a285a3c6d2a0ac0f8b12ec458",
+      "coinGeckoId": "hokkaido-inu",
+      "deployer": "0xF439F013Ef719B52787820B494b968e038b50255",
+      "originalMinter": null,
+      "prettySymbol": "HOKK",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/hokk.svg"
+      },
+      "deploymentMessageId": "0xd496350e041edbc8c02bd3db8d27de24b447e4eab0078e85832abc3fdb005cfb-7",
+      "chains": [
+        {
+          "symbol": "HOKK",
+          "name": "Hokkaidu Inu",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xc40af1e4fecfa05ce6bab79dcd8b373d2e436c4e",
+          "tokenManager": "0x3a498521c8ca81a86784170Ba49FeAf9ef5F9209",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "HOKK",
+          "name": "Hokkaidu Inu",
+          "axelarChainId": "base",
+          "tokenAddress": "0xd857af86A2c5b4F46fc7cb8032BD4F5625577EeB",
+          "tokenManager": "0x3a498521c8ca81a86784170Ba49FeAf9ef5F9209",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
