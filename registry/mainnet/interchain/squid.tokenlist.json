@@ -615,6 +615,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x6858f161eaf7d16620a79a6ceae7929751fd4042654d93282d9ffdadef5e0bb0": {
+      "tokenId": "0x6858f161eaf7d16620a79a6ceae7929751fd4042654d93282d9ffdadef5e0bb0",
+      "deployer": "0x0f9d8ECEcE119ee6cAda90D48cD605E17250796c",
+      "originalMinter": null,
+      "prettySymbol": "ESE",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "interchain",
+      "deploySalt": "0x995a55595fc39f20e6d834eb236646d1e95ffc43a4a9548e743c31a4c8d4bcff",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/ese.svg"
+      },
+      "deploymentMessageId": "0xa3317aa43eaeae5aa4112f76e50d6fe094820142d9b88561b7ff1163fbb90ca0-7",
+      "chains": [
+        {
+          "symbol": "ESE",
+          "name": "eesee",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x908dDb096BFb3AcB19e2280aAD858186ea4935C4",
+          "tokenManager": "0x75cF562F7f6088161d10e69f546AB5d3560dd7e6",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "ESE",
+          "name": "eesee",
+          "axelarChainId": "blast",
+          "tokenAddress": "0x491e6DE43b55c8EAE702EDC263E32339da42f58c",
+          "tokenManager": "0x75cF562F7f6088161d10e69f546AB5d3560dd7e6",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
