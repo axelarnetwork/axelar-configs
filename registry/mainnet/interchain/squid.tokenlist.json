@@ -418,6 +418,7 @@
     },
     "0xdc30a9bd9048b5a833e3f90ea281f70ae77e82018fa5b96831d3a1f563e38aaf": {
       "tokenId": "0xdc30a9bd9048b5a833e3f90ea281f70ae77e82018fa5b96831d3a1f563e38aaf",
+      "coinGeckoId": "klima-dao",
       "deployer": "0xDdfF75A29EB4BFEcF65380de9a75ad08C140eA49",
       "originalMinter": null,
       "prettySymbol": "KLIMA",
