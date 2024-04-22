@@ -381,6 +381,7 @@
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/cdfi.svg"
       },
       "deploymentMessageId": "0x18014c09a6a07655183333bd6925b6a0c3ece93d28606573e485efa8db937286-170",
+      "coinGeckoId": "cedefiai",
       "chains": [
         {
           "symbol": "CDFi",
