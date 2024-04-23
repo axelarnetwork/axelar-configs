@@ -798,6 +798,39 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xdc30a9bd9048b5a833e3f90ea281f70ae77e82018fa5b96831d3a1f563e38aaf": {
+      "tokenId": "0xdc30a9bd9048b5a833e3f90ea281f70ae77e82018fa5b96831d3a1f563e38aaf",
+      "coinGeckoId": "klima-dao",
+      "deployer": "0xDdfF75A29EB4BFEcF65380de9a75ad08C140eA49",
+      "originalMinter": null,
+      "prettySymbol": "KLIMA",
+      "decimals": 9,
+      "originAxelarChainId": "polygon",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/klima.svg"
+      },
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "KLIMA",
+          "name": "Klima DAO",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x4e78011Ce80ee02d2c3e649Fb657E45898257815",
+          "tokenManager": "0xDA13CEc4FBA742E123b5093DFD00B9e020D1Be24",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "KLIMA",
+          "name": "Klima DAO",
+          "axelarChainId": "base",
+          "tokenAddress": "0xDCEFd8C8fCc492630B943ABcaB3429F12Ea9Fea2",
+          "tokenManager": "0xDA13CEc4FBA742E123b5093DFD00B9e020D1Be24",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
