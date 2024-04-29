@@ -848,7 +848,7 @@
           "chains": [
             {
               "symbol": "LINU",
-              "name": "Luna Inu,
+              "name": "Luna Inu",
               "axelarChainId": "ethereum",
               "tokenAddress": "0x78132543d8e20d2417d8a07d9ae199d458a0d581",
               "tokenManager": "0xe91d0C10058879b4aa62Ea0B03529842934229bE",
@@ -864,9 +864,7 @@
             }
           ]          
         }
-      ]
-    }
-        }
+      }      
       ]
     }
   }
