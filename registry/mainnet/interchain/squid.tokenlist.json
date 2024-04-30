@@ -831,6 +831,79 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x7cf9544bb0523e2ddc4c0382011f75a26de333e97dfc4d0dddedbf05e105ec52": {
+      "tokenId": "0x7cf9544bb0523e2ddc4c0382011f75a26de333e97dfc4d0dddedbf05e105ec52",
+      "coinGeckoId": "granary",
+      "deployer": "0x63701b759EaFDcDC0817d0721603151f93e2Cffd",
+      "originalMinter": null,
+      "prettySymbol": "GRAIN",
+      "decimals": 18,
+      "originAxelarChainId": "Avalanche",
+      "tokenType": "customInterchain",
+      "iconUrls": {
+        "svg": "https://www.grain.sale/GrainIcon.svg"
+      },
+      "deploySalt": "0x01a651c9a6a7dab6238777bf5753ed9aff2f69968bd01827c81fb240efe8c1ce",
+      "chains": [
+        {
+          "symbol": "GRAIN",
+          "name": "Granary Token",
+          "axelarChainId": "Avalanche",
+          "tokenAddress": "0x9df4Ac62F9E435DbCD85E06c990a7f0ea32739a9",
+          "tokenManager": "0xeA2f056e1EC23e9077b08a40D8D7480a02f4453c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "GRAIN",
+          "name": "Granary Token",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x80bB30D62a16e1F2084dEAE84dc293531c3AC3A1",
+          "tokenManager": "0xeA2f056e1EC23e9077b08a40D8D7480a02f4453c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "GRAIN",
+          "name": "Granary Token",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0xfD389Dc9533717239856190F42475d3f263a270d",
+          "tokenManager": "0xeA2f056e1EC23e9077b08a40D8D7480a02f4453c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "GRAIN",
+          "name": "Granary Token",
+          "axelarChainId": "Polygon",
+          "tokenAddress": "0x8429d0AFade80498EAdb9919E41437A14d45A00B",
+          "tokenManager": "0xeA2f056e1EC23e9077b08a40D8D7480a02f4453c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "GRAIN",
+          "name": "Granary Token",
+          "axelarChainId": "Fantom",
+          "tokenAddress": "0x02838746d9E1413E07EE064fcBada57055417f21",
+          "tokenManager": "0xeA2f056e1EC23e9077b08a40D8D7480a02f4453c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "GRAIN",
+          "name": "Granary Token",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xF88Baf18FAB7e330fa0C4F83949E23F52FECECce",
+          "tokenManager": "0xeA2f056e1EC23e9077b08a40D8D7480a02f4453c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "GRAIN",
+          "name": "Granary Token",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x8F87A7d376821c7B2658a005aAf190Ec778BF37A",
+          "tokenManager": "0xeA2f056e1EC23e9077b08a40D8D7480a02f4453c",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "deploymentMessageId": ""
     }
   }
 }
