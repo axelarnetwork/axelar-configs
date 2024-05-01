@@ -1121,6 +1121,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xd493b4843797fb662a7a4217ffb9ae547cb09562f06edf1b746ccaa2caf8a17f": {
+      "tokenId": "0xd493b4843797fb662a7a4217ffb9ae547cb09562f06edf1b746ccaa2caf8a17f",
+      "deployer": "0xE4EBB2c42Cb98E88cFBeA55406bEEb933F3a3E61",
+      "originalMinter": null,
+      "prettySymbol": "BTCB",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/btcb.svg"
+      },
+      "deploymentMessageId": "0x6498ad73240f1a7942a18eedf2cfffff038925500811b3d14d3f68542897b788-55",
+      "chains": [
+        {
+          "symbol": "BTCB",
+          "name": "BTCB Token",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+          "tokenManager": "0xed5264d5f93f040CE83d4BD979A39B06cf6644E5",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "BTCB",
+          "name": "BTCB Token",
+          "axelarChainId": "kava",
+          "tokenAddress": "0x94FC70EF7791EE857A1f420B9A471a55F32382be",
+          "tokenManager": "0xed5264d5f93f040CE83d4BD979A39B06cf6644E5",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
