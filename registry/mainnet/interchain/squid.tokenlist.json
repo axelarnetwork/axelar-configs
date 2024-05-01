@@ -1121,6 +1121,55 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x68f8bb1ff2d56bdee31dd9c92db74b79819738e6315f72f5c70e7a3a4297d65f": {
+      "tokenId": "0x68f8bb1ff2d56bdee31dd9c92db74b79819738e6315f72f5c70e7a3a4297d65f",
+      "coinGeckoId": "genius-ai",
+      "deployer": "0x1804dECa63705e18edf04f242b325bCd54a8b463",
+      "originalMinter": null,
+      "prettySymbol": "GNUS",
+      "decimals": 18,
+      "originAxelarChainId": "polygon",
+      "tokenType": "customInterchain",
+      "deploySalt": "0xcfc395feb9a6f5c4c8e7854a8a989719d2b001d848a960cc9c052266a051bcad",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/gnus.svg"
+      },
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "GNUS",
+          "name": "Genius Token & NFT Collections",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x127E47abA094a9a87D084a3a93732909Ff031419",
+          "tokenManager": "0x8c10c2867384c87d5a555e4f96C7036336b575C6",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "GNUS",
+          "name": "Genius Token & NFT Collections",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x614577036F0a024DBC1C88BA616b394DD65d105a",
+          "tokenManager": "0x8c10c2867384c87d5a555e4f96C7036336b575C6",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "GNUS",
+          "name": "Genius Token & NFT Collections",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x614577036F0a024DBC1C88BA616b394DD65d105a",
+          "tokenManager": "0x8c10c2867384c87d5a555e4f96C7036336b575C6",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "GNUS",
+          "name": "Genius Token & NFT Collections",
+          "axelarChainId": "base",
+          "tokenAddress": "0x614577036F0a024DBC1C88BA616b394DD65d105a",
+          "tokenManager": "0x8c10c2867384c87d5a555e4f96C7036336b575C6",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
