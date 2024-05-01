@@ -831,6 +831,47 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x2c0750c34da5c9c247905e00ab868ebd7cfca098836eea019f0d0703426eac1b": {
+      "tokenId": "0x2c0750c34da5c9c247905e00ab868ebd7cfca098836eea019f0d0703426eac1b",
+      "coinGeckoId": "yup",
+      "deployer": "0x944023a42a90218E9Ca029f0BBcA4da5AF2163Bf",
+      "originalMinter": null,
+      "prettySymbol": "YUP",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "customInterchain",
+      "deploySalt": "0x8ce04dc419a3d2e84a12809ac2f300930c393bd8023e8abc08fbebfcebe799ab",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/yup.svg"
+      },
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "YUP",
+          "name": "Yup",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x086373fad3447f7f86252fb59d56107e9e0faafa",
+          "tokenManager": "0x479F48155da401A5AfE9B7C8aB0a1Aa3775A30Cb",
+          "tokenManagerType": "mintBurnFrom"
+        },
+        {
+          "symbol": "YUP",
+          "name": "Yup",
+          "axelarChainId": "base",
+          "tokenAddress": "0x01CCF4941298a0b5AC4714c0E1799a2dF8387048",
+          "tokenManager": "0x479F48155da401A5AfE9B7C8aB0a1Aa3775A30Cb",
+          "tokenManagerType": "mintBurnFrom"
+        },
+        {
+          "symbol": "YUP",
+          "name": "Yup",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x69bBC3F8787d573F1BBDd0a5f40C7bA0Aee9BCC9",
+          "tokenManager": "0x479F48155da401A5AfE9B7C8aB0a1Aa3775A30Cb",
+          "tokenManagerType": "mintBurnFrom"
+        }
+      ]
     }
   }
 }
