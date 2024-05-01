@@ -904,6 +904,38 @@
         }
       ],
       "deploymentMessageId": ""
+    },
+    "0xc189770360203020598a18eda8dac05199212ebccbe9f65f3d058a22ad8405e7": {
+      "tokenId": "0xc189770360203020598a18eda8dac05199212ebccbe9f65f3d058a22ad8405e7",
+      "deployer": "0x69367459A962FDF55a6aF0f9D5aB969548bc2b30",
+      "originalMinter": null,
+      "prettySymbol": "G3",
+      "decimals": 18,
+      "originAxelarChainId": "arbitrum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/g3.svg"
+      },
+      "deploymentMessageId": "0xbd5d0441e546d3e321585234e03828b6c41633f87da2df559f98d5242b1f881f-5",
+      "chains": [
+        {
+          "symbol": "G3",
+          "name": "GAM3S.GG",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xc24A365A870821EB83Fd216c9596eDD89479d8d7",
+          "tokenManager": "0xe4d475614359D25847252d2c55B867A58A14f281",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "G3",
+          "name": "GAM3S.GG",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xCF67815ccE72E682Eb4429eCa46843bed81Ca739",
+          "tokenManager": "0xe4d475614359D25847252d2c55B867A58A14f281",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
