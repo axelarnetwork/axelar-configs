@@ -834,6 +834,7 @@
     },
     "0xe070387fdb3d2c48f6f75a48aca517852a37b0c5ff5e825d8b222eac67369329": {
       "tokenId": "0xe070387fdb3d2c48f6f75a48aca517852a37b0c5ff5e825d8b222eac67369329",
+      "coinGeckoId": "dackieswap",
       "deployer": "0xe1581C10EE235F0DEbb655EA365100bCBD84BAD2",
       "originalMinter": null,
       "prettySymbol": "DACKIE",
@@ -906,6 +907,7 @@
     },
     "0x8bcf14dbf109aa6f96fdf0452276c7bc536e66375c1d4dd694b2a161613d599b": {
       "tokenId": "0x8bcf14dbf109aa6f96fdf0452276c7bc536e66375c1d4dd694b2a161613d599b",
+      "coinGeckoId": "quack-token",
       "deployer": "0xe1581C10EE235F0DEbb655EA365100bCBD84BAD2",
       "originalMinter": null,
       "prettySymbol": "QUACK",
