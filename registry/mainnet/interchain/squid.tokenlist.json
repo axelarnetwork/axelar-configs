@@ -939,6 +939,223 @@
         }
       ],
       "deploymentMessageId": ""
+    },
+    "0xc189770360203020598a18eda8dac05199212ebccbe9f65f3d058a22ad8405e7": {
+      "tokenId": "0xc189770360203020598a18eda8dac05199212ebccbe9f65f3d058a22ad8405e7",
+      "deployer": "0x69367459A962FDF55a6aF0f9D5aB969548bc2b30",
+      "originalMinter": null,
+      "prettySymbol": "G3",
+      "decimals": 18,
+      "originAxelarChainId": "arbitrum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/g3.svg"
+      },
+      "deploymentMessageId": "0xbd5d0441e546d3e321585234e03828b6c41633f87da2df559f98d5242b1f881f-5",
+      "chains": [
+        {
+          "symbol": "G3",
+          "name": "GAM3S.GG",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xc24A365A870821EB83Fd216c9596eDD89479d8d7",
+          "tokenManager": "0xe4d475614359D25847252d2c55B867A58A14f281",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "G3",
+          "name": "GAM3S.GG",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xCF67815ccE72E682Eb4429eCa46843bed81Ca739",
+          "tokenManager": "0xe4d475614359D25847252d2c55B867A58A14f281",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xf02e2a56a9e33e5b284a2e63ce319f8f93cbfcbb9a84acce39be449317c1184c": {
+      "tokenId": "0xf02e2a56a9e33e5b284a2e63ce319f8f93cbfcbb9a84acce39be449317c1184c",
+      "deployer": "0xa2f8ae5AF7Bd75d54ED172B3b9E557d104D3913C",
+      "originalMinter": null,
+      "prettySymbol": "SATOSHI",
+      "decimals": 9,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/satoshi.svg"
+      },
+      "deploymentMessageId": "0x426514d8e9a428b34ebbe16e7b86dc27f925ea206efcc1f9f9ae8fb85fbf4a24-132",
+      "chains": [
+        {
+          "symbol": "SATOSHI",
+          "name": "Satoshi Nakamoto",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xCBF4D5efa82e32a9187385480A7c74cB062b956C",
+          "tokenManager": "0xD304Be5856330D3497d51Ea2EA7a198B3f167835",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "SATOSHI",
+          "name": "Satoshi Nakamoto",
+          "axelarChainId": "base",
+          "tokenAddress": "0x45e7EAEdb8E3360f850c963c5419a5236e451217",
+          "tokenManager": "0xD304Be5856330D3497d51Ea2EA7a198B3f167835",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x74b8c31990023340e665f7238b52690845cd8b0019d190a32a19828701d1dc69": {
+      "tokenId": "0x74b8c31990023340e665f7238b52690845cd8b0019d190a32a19828701d1dc69",
+      "deployer": "0x0046a6aF250d32C35811464B53E448820B7e888a",
+      "originalMinter": null,
+      "prettySymbol": "CDFi",
+      "decimals": 18,
+      "originAxelarChainId": "polygon",
+      "tokenType": "interchain",
+      "deploySalt": "0x7d03e360de78c62f4b9aedb646cd27c39125ddaee3a0a4852ec167f734d99d91",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/cdfi.svg"
+      },
+      "deploymentMessageId": "0x18014c09a6a07655183333bd6925b6a0c3ece93d28606573e485efa8db937286-170",
+      "coinGeckoId": "cedefiai",
+      "chains": [
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "fraxtal",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "base",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "blast",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "kava",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "linea",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "mantle",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "moonbeam",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "filecoin",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "fantom",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "celo",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CDFi",
+          "name": "CeDeFiAi",
+          "axelarChainId": "scroll",
+          "tokenAddress": "0x527856315a4bCD2F428EA7fA05ea251f7e96A50A",
+          "tokenManager": "0x86c7e571301A919088350aE49b93b6FE75567328",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
