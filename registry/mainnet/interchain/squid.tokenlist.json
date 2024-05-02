@@ -1121,6 +1121,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x459c90c3e7f5c4b7fc79b202c010814fec130e46f3ee1a398877b0d9aa5ea2bc": {
+      "tokenId": "0x459c90c3e7f5c4b7fc79b202c010814fec130e46f3ee1a398877b0d9aa5ea2bc",
+      "deployer": "0xE4EBB2c42Cb98E88cFBeA55406bEEb933F3a3E61",
+      "originalMinter": null,
+      "prettySymbol": "XRP",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/xrp.svg"
+      },
+      "deploymentMessageId": "0x509cfd2637c385d4eb16df55ae0b3fc5df3c86278edf4380279d0218222e6025-27",
+      "chains": [
+        {
+          "symbol": "XRP",
+          "name": "XRP Token",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE",
+          "tokenManager": "0x4077dC1E7DC1F91De370620B6b6F5D316F28ae09",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "XRP",
+          "name": "XRP Token",
+          "axelarChainId": "kava",
+          "tokenAddress": "0x8e20A0a1B4664D1ae5d18cc48bA6FAD4d9569406",
+          "tokenManager": "0x4077dC1E7DC1F91De370620B6b6F5D316F28ae09",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
