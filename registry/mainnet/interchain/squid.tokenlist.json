@@ -1135,6 +1135,7 @@
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/btcb.svg"
       },
       "deploymentMessageId": "0x6498ad73240f1a7942a18eedf2cfffff038925500811b3d14d3f68542897b788-55",
+      "coinGeckoId": "binance-bitcoin",
       "chains": [
         {
           "symbol": "BTCB",
