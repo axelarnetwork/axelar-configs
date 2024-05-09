@@ -1231,6 +1231,7 @@
     },
     "0x0d63c47f94b9ea669bb70e03790632d7d358b4ce3ffa275d429f0c3d8a283b8f": {
       "tokenId": "0x0d63c47f94b9ea669bb70e03790632d7d358b4ce3ffa275d429f0c3d8a283b8f",
+      "coinGeckoId": "unvest",
       "deployer": "0x758E6608122B5da9c40B81b928e8d0e518630134",
       "originalMinter": null,
       "prettySymbol": "UNV",
