@@ -1229,6 +1229,87 @@
         }
       ]
     },
+    "0x0d63c47f94b9ea669bb70e03790632d7d358b4ce3ffa275d429f0c3d8a283b8f": {
+      "tokenId": "0x0d63c47f94b9ea669bb70e03790632d7d358b4ce3ffa275d429f0c3d8a283b8f",
+      "coinGeckoId": "unvest",
+      "deployer": "0x758E6608122B5da9c40B81b928e8d0e518630134",
+      "originalMinter": null,
+      "prettySymbol": "UNV",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/unv.svg"
+      },
+      "deploymentMessageId": "0x69d05c6f3cd2182106721590c581744e81ab56ab8cdb57be3657d9dc1925a6f1-41",
+      "chains": [
+        {
+          "symbol": "UNV",
+          "name": "Unvest",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xdcb2fa7eab2507613417bb9762efa73093fc6b65",
+          "tokenManager": "0x5F68e0cc8885Ec7d37B644463C591A8F68E76529",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "UNV",
+          "name": "Unvest",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x51707DC661630F8FD624b985FA6eF4f1d4D919Db",
+          "tokenManager": "0x5F68e0cc8885Ec7d37B644463C591A8F68E76529",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "UNV",
+          "name": "Unvest",
+          "axelarChainId": "blast",
+          "tokenAddress": "0x51707DC661630F8FD624b985FA6eF4f1d4D919Db",
+          "tokenManager": "0x5F68e0cc8885Ec7d37B644463C591A8F68E76529",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "UNV",
+          "name": "Unvest",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x51707DC661630F8FD624b985FA6eF4f1d4D919Db",
+          "tokenManager": "0x5F68e0cc8885Ec7d37B644463C591A8F68E76529",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "UNV",
+          "name": "Unvest",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0x51707DC661630F8FD624b985FA6eF4f1d4D919Db",
+          "tokenManager": "0x5F68e0cc8885Ec7d37B644463C591A8F68E76529",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "UNV",
+          "name": "Unvest",
+          "axelarChainId": "base",
+          "tokenAddress": "0x51707DC661630F8FD624b985FA6eF4f1d4D919Db",
+          "tokenManager": "0x5F68e0cc8885Ec7d37B644463C591A8F68E76529",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "UNV",
+          "name": "Unvest",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x51707DC661630F8FD624b985FA6eF4f1d4D919Db",
+          "tokenManager": "0x5F68e0cc8885Ec7d37B644463C591A8F68E76529",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "UNV",
+          "name": "Unvest",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0x51707DC661630F8FD624b985FA6eF4f1d4D919Db",
+          "tokenManager": "0x5F68e0cc8885Ec7d37B644463C591A8F68E76529",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0xe070387fdb3d2c48f6f75a48aca517852a37b0c5ff5e825d8b222eac67369329": {
       "tokenId": "0xe070387fdb3d2c48f6f75a48aca517852a37b0c5ff5e825d8b222eac67369329",
       "coinGeckoId": "dackieswap",
