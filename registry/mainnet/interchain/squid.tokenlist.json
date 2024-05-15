@@ -1309,6 +1309,152 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xe070387fdb3d2c48f6f75a48aca517852a37b0c5ff5e825d8b222eac67369329": {
+      "tokenId": "0xe070387fdb3d2c48f6f75a48aca517852a37b0c5ff5e825d8b222eac67369329",
+      "coinGeckoId": "dackieswap",
+      "deployer": "0xe1581C10EE235F0DEbb655EA365100bCBD84BAD2",
+      "originalMinter": null,
+      "prettySymbol": "DACKIE",
+      "decimals": 18,
+      "originAxelarChainId": "base",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/dackie.svg"
+      },
+      "deploymentMessageId": "0xea9f766c7d99ae37f0fd1b0dc2fabe9cfee3b9ba36aa81e13c95d180104f8d70-0",
+      "chains": [
+        {
+          "symbol": "DACKIE",
+          "name": "Dackie Token",
+          "axelarChainId": "base",
+          "tokenAddress": "0xc2BC7A73613B9bD5F373FE10B55C59a69F4D617B",
+          "tokenManager": "0x2Bb22C76916EEE1E7901a7F91C10A6E94A11A07D",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "DACKIE",
+          "name": "Dackie Token",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x47C337Bd5b9344a6F3D6f58C474D9D8cd419D8cA",
+          "tokenManager": "0x2Bb22C76916EEE1E7901a7F91C10A6E94A11A07D",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "DACKIE",
+          "name": "Dackie Token",
+          "axelarChainId": "scroll",
+          "tokenAddress": "0x47C337Bd5b9344a6F3D6f58C474D9D8cd419D8cA",
+          "tokenManager": "0x2Bb22C76916EEE1E7901a7F91C10A6E94A11A07D",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "DACKIE",
+          "name": "Dackie Token",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0x47C337Bd5b9344a6F3D6f58C474D9D8cd419D8cA",
+          "tokenManager": "0x2Bb22C76916EEE1E7901a7F91C10A6E94A11A07D",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "DACKIE",
+          "name": "Dackie Token",
+          "axelarChainId": "blast",
+          "tokenAddress": "0x47C337Bd5b9344a6F3D6f58C474D9D8cd419D8cA",
+          "tokenManager": "0x2Bb22C76916EEE1E7901a7F91C10A6E94A11A07D",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "DACKIE",
+          "name": "Dackie Token",
+          "axelarChainId": "mantle",
+          "tokenAddress": "0x47C337Bd5b9344a6F3D6f58C474D9D8cd419D8cA",
+          "tokenManager": "0x2Bb22C76916EEE1E7901a7F91C10A6E94A11A07D",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "DACKIE",
+          "name": "Dackie Token",
+          "axelarChainId": "linea",
+          "tokenAddress": "0x47C337Bd5b9344a6F3D6f58C474D9D8cd419D8cA",
+          "tokenManager": "0x2Bb22C76916EEE1E7901a7F91C10A6E94A11A07D",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x8bcf14dbf109aa6f96fdf0452276c7bc536e66375c1d4dd694b2a161613d599b": {
+      "tokenId": "0x8bcf14dbf109aa6f96fdf0452276c7bc536e66375c1d4dd694b2a161613d599b",
+      "coinGeckoId": "quack-token",
+      "deployer": "0xe1581C10EE235F0DEbb655EA365100bCBD84BAD2",
+      "originalMinter": null,
+      "prettySymbol": "QUACK",
+      "decimals": 18,
+      "originAxelarChainId": "base",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/quack.svg"
+      },
+      "deploymentMessageId": "0xaaa33a5c365f14778cd0f903d90c1ad7af8995a6573f27cd252406772b6f64db-0",
+      "chains": [
+        {
+          "symbol": "QUACK",
+          "name": "Quack Token",
+          "axelarChainId": "base",
+          "tokenAddress": "0x639C0D019C257966C4907bD4E68E3F349bB58109",
+          "tokenManager": "0x0931a75fc2800d969FFddd1248335c4DAe2fe3A6",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "QUACK",
+          "name": "Quack Token",
+          "axelarChainId": "linea",
+          "tokenAddress": "0x59DEBED8D46a0cB823D8BE8b957adD987eAd39aa",
+          "tokenManager": "0x0931a75fc2800d969FFddd1248335c4DAe2fe3A6",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "QUACK",
+          "name": "Quack Token",
+          "axelarChainId": "blast",
+          "tokenAddress": "0x59DEBED8D46a0cB823D8BE8b957adD987eAd39aa",
+          "tokenManager": "0x0931a75fc2800d969FFddd1248335c4DAe2fe3A6",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "QUACK",
+          "name": "Quack Token",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x59DEBED8D46a0cB823D8BE8b957adD987eAd39aa",
+          "tokenManager": "0x0931a75fc2800d969FFddd1248335c4DAe2fe3A6",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "QUACK",
+          "name": "Quack Token",
+          "axelarChainId": "scroll",
+          "tokenAddress": "0x59DEBED8D46a0cB823D8BE8b957adD987eAd39aa",
+          "tokenManager": "0x0931a75fc2800d969FFddd1248335c4DAe2fe3A6",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "QUACK",
+          "name": "Quack Token",
+          "axelarChainId": "mantle",
+          "tokenAddress": "0x59DEBED8D46a0cB823D8BE8b957adD987eAd39aa",
+          "tokenManager": "0x0931a75fc2800d969FFddd1248335c4DAe2fe3A6",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "QUACK",
+          "name": "Quack Token",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0x59DEBED8D46a0cB823D8BE8b957adD987eAd39aa",
+          "tokenManager": "0x0931a75fc2800d969FFddd1248335c4DAe2fe3A6",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
