@@ -58,13 +58,16 @@ jobs:
           token: ${{ secrets.CHAINS_PAT }}
 
       - name: Install jq
+        if: env.NETWORK != 'none'
         run: sudo apt-get install -y jq
 
       - name: Setup Branch Name
+        if: env.NETWORK != 'none'
         id: branch-name
         run: echo "::set-output name=branch::feat/config-update-$(date +'%Y-%m-%d-%H-%M-%S')"
 
       - name: Create branch and generate config
+        if: env.NETWORK != 'none'
         run: |
           cd ${{ secrets.EXTERNAL_REPO }}
           curl -sSL https://install.python-poetry.org | python3 -
@@ -78,6 +81,7 @@ jobs:
           git push --set-upstream origin ${{ steps.branch-name.outputs.branch }}
 
       - name: Create Pull Request
+        if: env.NETWORK != 'none'
         id: create_pr
         run: |
           cd ${{ secrets.EXTERNAL_REPO }}
@@ -94,6 +98,7 @@ jobs:
           echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_ENV
 
       - name: Merge Pull Request
+        if: env.NETWORK != 'none'
         run: |
           PR_NUMBER=${{ env.PR_NUMBER }}
           PR_TITLE="feat: update configurations for ${{ env.NETWORK }}"
