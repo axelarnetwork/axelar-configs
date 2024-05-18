@@ -1468,6 +1468,7 @@
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/chrp.svg"
       },
+      "coinGeckoId": "chirpley",
       "deploymentMessageId": "0x9e9ee1f374730fc7eacc12a2c62fcf9aadb772c75958259d1b73bb341978ba12-0",
       "chains": [
         {
