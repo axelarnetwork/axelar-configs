@@ -1229,6 +1229,38 @@
         }
       ]
     },
+    "0x6b116e16be90df311f4c410dbb0a9934ba5fc6dbd3852e09caf07a43e9c5c304": {
+      "tokenId": "0x6b116e16be90df311f4c410dbb0a9934ba5fc6dbd3852e09caf07a43e9c5c304",
+      "deployer": "0xA57ADCE1d2fE72949E4308867D894CD7E7DE0ef2",
+      "originalMinter": null,
+      "prettySymbol": "XDEFI",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/xdefi.svg"
+      },
+      "deploymentMessageId": "0xca4b53e54b352d48ce233e872a7aefc3b89e88da3efdaffea5705ee8d9b2b487-208",
+      "chains": [
+        {
+          "symbol": "XDEFI",
+          "name": "XDEFI",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x72b886d09c117654ab7da13a14d603001de0b777",
+          "tokenManager": "0x1bdd9674B0ad54906CAA662CcD4D946Ae37Cd048",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "XDEFI",
+          "name": "XDEFI",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x180F7cF38805d1be95C7632F653E26B0838e2969",
+          "tokenManager": "0x1bdd9674B0ad54906CAA662CcD4D946Ae37Cd048",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0x0d63c47f94b9ea669bb70e03790632d7d358b4ce3ffa275d429f0c3d8a283b8f": {
       "tokenId": "0x0d63c47f94b9ea669bb70e03790632d7d358b4ce3ffa275d429f0c3d8a283b8f",
       "coinGeckoId": "unvest",
