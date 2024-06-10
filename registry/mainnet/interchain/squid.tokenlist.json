@@ -1592,34 +1592,35 @@
         }
       ]
     },
-    "0xa6a5108f54b61c42f2f585d271c18148f73a85ff0023ec81f370ead51cfb8fe1": {
-      "tokenId": "0xa6a5108f54b61c42f2f585d271c18148f73a85ff0023ec81f370ead51cfb8fe1",
+    "0x4058bb4fc449a7add596e5fa965fe6d6f7c939d63296c74dea8c7df1a7e2a263": {
+      "tokenId": "0x4058bb4fc449a7add596e5fa965fe6d6f7c939d63296c74dea8c7df1a7e2a263",
+      "coinGeckoId": "omnikingdoms-gold",
       "deployer": "0x2429EB38cB9b456160937e11aefc80879a2d2712",
       "originalMinter": null,
       "prettySymbol": "OMKG",
       "decimals": 18,
       "originAxelarChainId": "scroll",
-      "tokenType": "canonical",
-      "deploySalt": "0x",
+      "tokenType": "customInterchain",
+      "deploySalt": "0x4790491d5c832e619896cd2725e306ba9366acd5b5d7c063a32b0d64d2f731e0",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/omkg.svg"
       },
-      "deploymentMessageId": "0xdeb430bc589bf83e17fc09f9ef397acb63e34c757cd568e00017f29bc20c7b38-1",
+      "deploymentMessageId": "",
       "chains": [
         {
           "symbol": "OMKG",
           "name": "OmniKingdoms Gold",
           "axelarChainId": "scroll",
           "tokenAddress": "0x6B7d1c9d519DFc3A5D8D1B7c15d4E5bbe8DdE1cF",
-          "tokenManager": "0x07eedcBfEa88028535c253B3f859a25EC426054A",
-          "tokenManagerType": "lockUnlock"
+          "tokenManager": "0xb292cFf2729F066BeDdde77DCc72628D4E0D7780",
+          "tokenManagerType": "mintBurn"
         },
         {
           "symbol": "OMKG",
           "name": "OmniKingdoms Gold",
           "axelarChainId": "base",
-          "tokenAddress": "0xF9dC41a83267BDcE7ad5f70E0E36171ac0287194",
-          "tokenManager": "0x07eedcBfEa88028535c253B3f859a25EC426054A",
+          "tokenAddress": "0xA9f52545C16Efc3050f5eC65C7929fcbbD16A295",
+          "tokenManager": "0xb292cFf2729F066BeDdde77DCc72628D4E0D7780",
           "tokenManagerType": "mintBurn"
         }
       ]
