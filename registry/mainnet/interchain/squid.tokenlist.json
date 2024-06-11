@@ -1490,6 +1490,7 @@
     },
     "0xb953b62b0795e135704bbd00d9f30b8ece2a1b7a2af186a17035972101b12e2c": {
       "tokenId": "0xb953b62b0795e135704bbd00d9f30b8ece2a1b7a2af186a17035972101b12e2c",
+      "coinGeckoId": "pstake-finance",
       "deployer": "0xc45398444B83183b2018e0224B3D332b42D492Af",
       "originalMinter": null,
       "prettySymbol": "PSTAKE",
