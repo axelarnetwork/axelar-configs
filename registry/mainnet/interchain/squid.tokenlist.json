@@ -1591,6 +1591,39 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x88f7d4d3c179fc145b10300e6e4ee078f32ec3cd3bcb80ca98f2fa7a719f330b": {
+      "tokenId": "0x88f7d4d3c179fc145b10300e6e4ee078f32ec3cd3bcb80ca98f2fa7a719f330b",
+      "coinGeckoId": "aethir",
+      "deployer": "0x9B161655d18f1D89a6bb25ab7087dea3aFe49180",
+      "originalMinter": null,
+      "prettySymbol": "ATH",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/ath.svg"
+      },
+      "deploymentMessageId": "0x71f16fe605da1fbbdb5e2905b721e45c092a0f4d602102133d2796cff9c5c4f0-0",
+      "chains": [
+        {
+          "symbol": "ATH",
+          "name": "Aethir Token",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xbe0Ed4138121EcFC5c0E56B40517da27E6c5226B",
+          "tokenManager": "0x148F010746c2999Abc3fD5533746632AD9771948",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "ATH",
+          "name": "Aethir Token",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xc87B37a581ec3257B734886d9d3a581F5A9d056c",
+          "tokenManager": "0x148F010746c2999Abc3fD5533746632AD9771948",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
