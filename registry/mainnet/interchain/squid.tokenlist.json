@@ -1488,6 +1488,143 @@
         }
       ]
     },
+    "0x1bcc071fa6e0b54f91db021fc09249cd748ddbd478e6f178aee355723373bfab": {
+      "tokenId": "0x1bcc071fa6e0b54f91db021fc09249cd748ddbd478e6f178aee355723373bfab",
+      "deployer": "0x8F92aAEE7705Cd24967EbaC10702f444a5b0978e",
+      "originalMinter": null,
+      "prettySymbol": "Speed",
+      "decimals": 18,
+      "originAxelarChainId": "base",
+      "tokenType": "interchain",
+      "deploySalt": "0xb9e139aaa1a7bb7ef80b9c4b968d7004edf374e45ba926c1933e2560e5861b82",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/speed.svg"
+      },
+      "deploymentMessageId": "0xc1ac33213036e36faeb28b894f21da038b31c88d037264c0e12356703639c9f1-30",
+      "chains": [
+        {
+          "symbol": "Speed",
+          "name": "LightSpeed",
+          "axelarChainId": "base",
+          "tokenAddress": "0xB01CF1bE9568f09449382a47Cd5bF58e2A9D5922",
+          "tokenManager": "0xeae2A6C248722E38C8544474c257CA97d381669c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "Speed",
+          "name": "LightSpeed",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xB01CF1bE9568f09449382a47Cd5bF58e2A9D5922",
+          "tokenManager": "0xeae2A6C248722E38C8544474c257CA97d381669c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "Speed",
+          "name": "LightSpeed",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0xB01CF1bE9568f09449382a47Cd5bF58e2A9D5922",
+          "tokenManager": "0xeae2A6C248722E38C8544474c257CA97d381669c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "Speed",
+          "name": "LightSpeed",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0xB01CF1bE9568f09449382a47Cd5bF58e2A9D5922",
+          "tokenManager": "0xeae2A6C248722E38C8544474c257CA97d381669c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "Speed",
+          "name": "LightSpeed",
+          "axelarChainId": "fantom",
+          "tokenAddress": "0xB01CF1bE9568f09449382a47Cd5bF58e2A9D5922",
+          "tokenManager": "0xeae2A6C248722E38C8544474c257CA97d381669c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "Speed",
+          "name": "LightSpeed",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xB01CF1bE9568f09449382a47Cd5bF58e2A9D5922",
+          "tokenManager": "0xeae2A6C248722E38C8544474c257CA97d381669c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "Speed",
+          "name": "LightSpeed",
+          "axelarChainId": "mantle",
+          "tokenAddress": "0xB01CF1bE9568f09449382a47Cd5bF58e2A9D5922",
+          "tokenManager": "0xeae2A6C248722E38C8544474c257CA97d381669c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "Speed",
+          "name": "LightSpeed",
+          "axelarChainId": "blast",
+          "tokenAddress": "0xB01CF1bE9568f09449382a47Cd5bF58e2A9D5922",
+          "tokenManager": "0xeae2A6C248722E38C8544474c257CA97d381669c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "Speed",
+          "name": "LightSpeed",
+          "axelarChainId": "linea",
+          "tokenAddress": "0xB01CF1bE9568f09449382a47Cd5bF58e2A9D5922",
+          "tokenManager": "0xeae2A6C248722E38C8544474c257CA97d381669c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "Speed",
+          "name": "LightSpeed",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xB01CF1bE9568f09449382a47Cd5bF58e2A9D5922",
+          "tokenManager": "0xeae2A6C248722E38C8544474c257CA97d381669c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "Speed",
+          "name": "LightSpeed",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0xB01CF1bE9568f09449382a47Cd5bF58e2A9D5922",
+          "tokenManager": "0xeae2A6C248722E38C8544474c257CA97d381669c",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x88f7d4d3c179fc145b10300e6e4ee078f32ec3cd3bcb80ca98f2fa7a719f330b": {
+      "tokenId": "0x88f7d4d3c179fc145b10300e6e4ee078f32ec3cd3bcb80ca98f2fa7a719f330b",
+      "coinGeckoId": "aethir",
+      "deployer": "0x9B161655d18f1D89a6bb25ab7087dea3aFe49180",
+      "originalMinter": null,
+      "prettySymbol": "ATH",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/ath.svg"
+      },
+      "deploymentMessageId": "0x71f16fe605da1fbbdb5e2905b721e45c092a0f4d602102133d2796cff9c5c4f0-0",
+      "chains": [
+        {
+          "symbol": "ATH",
+          "name": "Aethir Token",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xbe0Ed4138121EcFC5c0E56B40517da27E6c5226B",
+          "tokenManager": "0x148F010746c2999Abc3fD5533746632AD9771948",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "ATH",
+          "name": "Aethir Token",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xc87B37a581ec3257B734886d9d3a581F5A9d056c",
+          "tokenManager": "0x148F010746c2999Abc3fD5533746632AD9771948",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0xb992c83e5ef8b2d4d84bb62eca09ea0e34ea5c1aad77645c4b2c849b42ebafac": {
       "tokenId": "0xb992c83e5ef8b2d4d84bb62eca09ea0e34ea5c1aad77645c4b2c849b42ebafac",
       "deployer": "0x47Ab6A57Fbf2D3Fa89CB36ADb872B1dA861283AB",
