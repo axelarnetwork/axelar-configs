@@ -1657,6 +1657,63 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xb953b62b0795e135704bbd00d9f30b8ece2a1b7a2af186a17035972101b12e2c": {
+      "tokenId": "0xb953b62b0795e135704bbd00d9f30b8ece2a1b7a2af186a17035972101b12e2c",
+      "coinGeckoId": "pstake-finance",
+      "deployer": "0xc45398444B83183b2018e0224B3D332b42D492Af",
+      "originalMinter": null,
+      "prettySymbol": "PSTAKE",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/pstake.svg"
+      },
+      "deploymentMessageId": "0xe9cbc8e44c4d6aa41d1cc700e3a25bd0cd9e9730b7a02fb9e84b62445403ebd1-203",
+      "chains": [
+        {
+          "symbol": "PSTAKE",
+          "name": "pSTAKE Finance",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
+          "tokenManager": "0x7fd2998966B18555fc873B4EE48eD2506BB1d1B7",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "PSTAKE",
+          "name": "pSTAKE Finance",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x4C882ec256823eE773B25b414d36F92ef58a7c0C",
+          "tokenManager": "0x7fd2998966B18555fc873B4EE48eD2506BB1d1B7",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "PSTAKE",
+          "name": "pSTAKE Finance",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0x023550ADDe4FA2F90D63a41D9282BEE0294c04cD",
+          "tokenManager": "0x7fd2998966B18555fc873B4EE48eD2506BB1d1B7",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "PSTAKE",
+          "name": "pSTAKE Finance",
+          "axelarChainId": "base",
+          "tokenAddress": "0x38815A4455921667d673B4cb3d48F0383eE93400",
+          "tokenManager": "0x7fd2998966B18555fc873B4EE48eD2506BB1d1B7",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "PSTAKE",
+          "name": "pSTAKE Finance",
+          "axelarChainId": "blast",
+          "tokenAddress": "0xcbf7b47e9da345812e3bd732e3ee369a7203b5ae",
+          "tokenManager": "0x7fd2998966B18555fc873B4EE48eD2506BB1d1B7",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
