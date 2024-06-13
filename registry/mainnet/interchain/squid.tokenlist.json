@@ -1749,26 +1749,34 @@
       ]
     },
     "0x0075b004990624261c354bb8f7d7d70b7352c04b9175662f1632d14ffec5dd06": {
-      "tokenId": "0x0075b004990624261c354bb8f7d7d70b7352c04b9175662f1632d14ffec5dd06",
-      "deployer": "0xf65bAD48CDd21004883fe8025c5B1b3C6958Dc62",
+      "tokenId": "0x7c243a698c3657343236a0a93eafe98f745a1eb7d9c6a4c2644c4a6142b1585d",
+      "deployer": "0x0A0A53335988802a864F7299109E57714a656FeA",
       "originalMinter": null,
       "prettySymbol": "axlUSDM",
       "decimals": 18,
       "originAxelarChainId": "arbitrum",
-      "tokenType": "canonical",
-      "deploySalt": "0x",
+      "tokenType": "customInterchain",
+      "deploySalt": "0x011d35c63740f74d5ed279504bc45de62eb61e1c3a2c581100ee8f011f5437b8",
       "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/axlusdm.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdm.svg"
       },
-      "deploymentMessageId": "0xba00125b7b929982a68beae7d871c8ca76bffefc6345e81eb8ffac01278df68b-10",
+      "deploymentMessageId": "",
       "chains": [
         {
           "symbol": "axlUSDM",
           "name": "Axelar USDM",
           "axelarChainId": "arbitrum",
           "tokenAddress": "0x4b5707450E2188a7D4EB856400C171632f89725c",
-          "tokenManager": "0xB96a2394CefC032D49ebbd3EF7329F2e18006692",
-          "tokenManagerType": "lockUnlock"
+          "tokenManager": "0x68f2fdE55c9d4E33fd13931F7F08eC9bEc20964a",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "axlUSDM",
+          "name": "Axelar USDM",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xa3A681FDe44310D5Bbb7c5f1F91240B37Be06D86",
+          "tokenManager": "0x68f2fdE55c9d4E33fd13931F7F08eC9bEc20964a",
+          "tokenManagerType": "mintBurn"
         }
       ]
     }
