@@ -1747,6 +1747,30 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x0075b004990624261c354bb8f7d7d70b7352c04b9175662f1632d14ffec5dd06": {
+      "tokenId": "0x0075b004990624261c354bb8f7d7d70b7352c04b9175662f1632d14ffec5dd06",
+      "deployer": "0xf65bAD48CDd21004883fe8025c5B1b3C6958Dc62",
+      "originalMinter": null,
+      "prettySymbol": "axlUSDM",
+      "decimals": 18,
+      "originAxelarChainId": "arbitrum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/axlusdm.svg"
+      },
+      "deploymentMessageId": "0xba00125b7b929982a68beae7d871c8ca76bffefc6345e81eb8ffac01278df68b-10",
+      "chains": [
+        {
+          "symbol": "axlUSDM",
+          "name": "Axelar USDM",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x4b5707450E2188a7D4EB856400C171632f89725c",
+          "tokenManager": "0xB96a2394CefC032D49ebbd3EF7329F2e18006692",
+          "tokenManagerType": "lockUnlock"
+        }
+      ]
     }
   }
 }
