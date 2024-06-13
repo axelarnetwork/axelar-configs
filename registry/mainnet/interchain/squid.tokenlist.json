@@ -1758,7 +1758,7 @@
       "tokenType": "customInterchain",
       "deploySalt": "0x011d35c63740f74d5ed279504bc45de62eb61e1c3a2c581100ee8f011f5437b8",
       "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdm.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/axlusdm.svg"
       },
       "deploymentMessageId": "",
       "chains": [
@@ -1773,7 +1773,7 @@
         {
           "symbol": "axlUSDM",
           "name": "Axelar USDM",
-          "axelarChainId": "arbitrum",
+          "axelarChainId": "fantom",
           "tokenAddress": "0xa3A681FDe44310D5Bbb7c5f1F91240B37Be06D86",
           "tokenManager": "0x68f2fdE55c9d4E33fd13931F7F08eC9bEc20964a",
           "tokenManagerType": "mintBurn"
