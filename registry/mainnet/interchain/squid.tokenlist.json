@@ -842,7 +842,7 @@
       "originAxelarChainId": "Avalanche",
       "tokenType": "customInterchain",
       "iconUrls": {
-        "svg": "https://www.grain.sale/GrainIcon.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/grain.svg"
       },
       "deploySalt": "0x01a651c9a6a7dab6238777bf5753ed9aff2f69968bd01827c81fb240efe8c1ce",
       "chains": [
