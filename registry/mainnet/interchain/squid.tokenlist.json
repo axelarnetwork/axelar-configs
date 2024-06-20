@@ -1792,6 +1792,7 @@
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/off.svg"
       },
+      "coinGeckoId": "blastoff",
       "deploymentMessageId": "0x1f277cdd0ad5676fe54c78fe35675521741db5d66aa51886209214730f7d94c9-15",
       "chains": [
         {
