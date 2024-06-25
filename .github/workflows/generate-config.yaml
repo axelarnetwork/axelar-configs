@@ -1,8 +1,12 @@
 name: Update config
 
 on:
-  pull_request:
+  pull_request_target:
     types: [closed]
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   update-config:
@@ -17,7 +21,7 @@ jobs:
       - name: Checkout axelar-configs repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2  
+          fetch-depth: 2
 
       - name: Check if PR was merged
         id: check_if_merged
@@ -106,7 +110,7 @@ jobs:
             -H "Authorization: token ${{ secrets.CHAINS_PAT }}" \
             -H "Accept: application/vnd.github.v3+json" \
             https://api.github.com/repos/axelarnetwork/${{ secrets.EXTERNAL_REPO }}/pulls/$PR_NUMBER/merge \
-            -d "{\"commit_title\":\"Merge PR #$PR_NUMBER: $PR_TITLE\",\"merge_method\":\"merge\"}"
+            -d "{\"commit_title\":\"Merge PR #$PR_NUMBER: $PR_TITLE\",\"merge_method\":\"squash\"}"
 
       - name: Publish configuration
         if: env.NETWORK != 'none'
