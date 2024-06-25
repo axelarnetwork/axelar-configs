@@ -7,7 +7,6 @@ on:
 permissions:
   contents: write
   pull-requests: write
-    
 
 jobs:
   update-config:
@@ -22,7 +21,7 @@ jobs:
       - name: Checkout axelar-configs repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2  
+          fetch-depth: 2
 
       - name: Check if PR was merged
         id: check_if_merged
