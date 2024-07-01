@@ -842,7 +842,7 @@
       "originAxelarChainId": "Avalanche",
       "tokenType": "customInterchain",
       "iconUrls": {
-        "svg": "https://www.grain.sale/GrainIcon.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/grain.svg"
       },
       "deploySalt": "0x01a651c9a6a7dab6238777bf5753ed9aff2f69968bd01827c81fb240efe8c1ce",
       "chains": [
@@ -1776,6 +1776,280 @@
           "axelarChainId": "fantom",
           "tokenAddress": "0xa3A681FDe44310D5Bbb7c5f1F91240B37Be06D86",
           "tokenManager": "0x68f2fdE55c9d4E33fd13931F7F08eC9bEc20964a",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x4073bc25781abce32f9121b1dffe99f1f9e3ddc19792066276e0597f8a7c0b56": {
+      "tokenId": "0x4073bc25781abce32f9121b1dffe99f1f9e3ddc19792066276e0597f8a7c0b56",
+      "deployer": "0x83E6475b7Ed08b76E65E0915EC85c516316D3672",
+      "originalMinter": null,
+      "prettySymbol": "TBH",
+      "decimals": 18,
+      "originAxelarChainId": "base",
+      "tokenType": "interchain",
+      "deploySalt": "0x20240609abcdefabcdefabcdef42042042042042042042042069696969696969",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/tbh.svg"
+      },
+      "deploymentMessageId": "0xe600ca708f7d054bcb9bbc42e52695169b2ed901ca66a340d51a1751399a795e-50",
+      "chains": [
+        {
+          "symbol": "TBH",
+          "name": "Tbh Creature Yippee",
+          "axelarChainId": "base",
+          "tokenAddress": "0xEBde02166CF5e9CE2DBf27895AFF3FFD0055b873",
+          "tokenManager": "0x215b1eea5704488B6d85B0C2aE484c319CFd151e",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "TBH",
+          "name": "Tbh Creature Yippee",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xEBde02166CF5e9CE2DBf27895AFF3FFD0055b873",
+          "tokenManager": "0x215b1eea5704488B6d85B0C2aE484c319CFd151e",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "TBH",
+          "name": "Tbh Creature Yippee",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xEBde02166CF5e9CE2DBf27895AFF3FFD0055b873",
+          "tokenManager": "0x215b1eea5704488B6d85B0C2aE484c319CFd151e",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "TBH",
+          "name": "Tbh Creature Yippee",
+          "axelarChainId": "blast",
+          "tokenAddress": "0xEBde02166CF5e9CE2DBf27895AFF3FFD0055b873",
+          "tokenManager": "0x215b1eea5704488B6d85B0C2aE484c319CFd151e",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "TBH",
+          "name": "Tbh Creature Yippee",
+          "axelarChainId": "linea",
+          "tokenAddress": "0xEBde02166CF5e9CE2DBf27895AFF3FFD0055b873",
+          "tokenManager": "0x215b1eea5704488B6d85B0C2aE484c319CFd151e",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "TBH",
+          "name": "Tbh Creature Yippee",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0xEBde02166CF5e9CE2DBf27895AFF3FFD0055b873",
+          "tokenManager": "0x215b1eea5704488B6d85B0C2aE484c319CFd151e",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "TBH",
+          "name": "Tbh Creature Yippee",
+          "axelarChainId": "fantom",
+          "tokenAddress": "0xEBde02166CF5e9CE2DBf27895AFF3FFD0055b873",
+          "tokenManager": "0x215b1eea5704488B6d85B0C2aE484c319CFd151e",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "TBH",
+          "name": "Tbh Creature Yippee",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0xEBde02166CF5e9CE2DBf27895AFF3FFD0055b873",
+          "tokenManager": "0x215b1eea5704488B6d85B0C2aE484c319CFd151e",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "TBH",
+          "name": "Tbh Creature Yippee",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xEBde02166CF5e9CE2DBf27895AFF3FFD0055b873",
+          "tokenManager": "0x215b1eea5704488B6d85B0C2aE484c319CFd151e",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x95b85f453b77f18d60576c5d34d3a6438041c496f2713f1d0baf4607cbe42f45": {
+      "tokenId": "0x95b85f453b77f18d60576c5d34d3a6438041c496f2713f1d0baf4607cbe42f45",
+      "deployer": "0x65Bd1d37C5C54822B17229633A8026Ff27473c0f",
+      "originalMinter": null,
+      "prettySymbol": "OFF",
+      "decimals": 18,
+      "originAxelarChainId": "blast",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/off.svg"
+      },
+      "coinGeckoId": "blastoff",
+      "deploymentMessageId": "0x1f277cdd0ad5676fe54c78fe35675521741db5d66aa51886209214730f7d94c9-15",
+      "chains": [
+        {
+          "symbol": "OFF",
+          "name": "OFF",
+          "axelarChainId": "blast",
+          "tokenAddress": "0xd55edfc79c0d14084260d16f38bda75e28abfb6a",
+          "tokenManager": "0xBEa830Ec59a36A07aFc5912a26Bdc76779B2Cb86",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "OFF",
+          "name": "OFF",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0xa1068f2c8aE2597f1B6865fD26412f409328D329",
+          "tokenManager": "0xBEa830Ec59a36A07aFc5912a26Bdc76779B2Cb86",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xfb2246226560067e3f2ebe5fe8a92dda88f9de5c961bc9807d85207519cc37c5": {
+      "tokenId": "0xfb2246226560067e3f2ebe5fe8a92dda88f9de5c961bc9807d85207519cc37c5",
+      "coinGeckoId": "goddog",
+      "deployer": "0xB05Cf01231cF2fF99499682E64D3780d57c80FdD",
+      "originalMinter": null,
+      "prettySymbol": "oooOOO",
+      "decimals": 18,
+      "originAxelarChainId": "base",
+      "tokenType": "customInterchain",
+      "deploySalt": "",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/oooooo.svg"
+      },
+      "deploymentMessageId": "0xe0a56577096b325125c903ab73c8b5069618197d9e635511542b7d390b405733-60",
+      "chains": [
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "fraxtal",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "base",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "blast",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "kava",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "linea",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "mantle",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "moonbeam",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "filecoin",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "fantom",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "celo",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oooOOO",
+          "name": "GODDOG",
+          "axelarChainId": "scroll",
+          "tokenAddress": "0xDDf7d080C82b8048BAAe54e376a3406572429b4e",
+          "tokenManager": "0x82b857854bB80eCE54f6bE4C0499Bb51781C7109",
           "tokenManagerType": "mintBurn"
         }
       ]
