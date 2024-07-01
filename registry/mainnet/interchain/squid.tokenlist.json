@@ -2053,6 +2053,39 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xedbe1ec8d0780aedb33c72b604e42200421de40907882be81b6b5d8244930346": {
+      "tokenId": "0xd204999e30637de0289ac8ae6800708578f813054751ac07f6e73cb11ab40aa5",
+      "deployer": "0xdCbc991ed111442617FA422764dc2D1997495AEB",
+      "originalMinter": null,
+      "prettySymbol": "ALVA",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/alva.svg"
+      },
+      "deploymentMessageId": "",
+      "coinGeckoId": "alvara-protocol",
+      "chains": [
+        {
+          "symbol": "ALVA",
+          "name": "Alvara",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x8e729198d1C59B82bd6bBa579310C40d740A11C2",
+          "tokenManager": "0x94f829bD79879a879E3F7bf31851eF1853Cc140B",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "ALVA",
+          "name": "Alvara",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0xd18555A6C2FDa350069735419900478eec4Abd96",
+          "tokenManager": "0x94f829bD79879a879E3F7bf31851eF1853Cc140B",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
