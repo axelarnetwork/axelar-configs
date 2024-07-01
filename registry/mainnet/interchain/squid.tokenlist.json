@@ -1914,6 +1914,7 @@
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/alva.svg"
       },
       "deploymentMessageId": "",
+      "coinGeckoId": "alvara-protocol",
       "chains": [
         {
           "symbol": "ALVA",
