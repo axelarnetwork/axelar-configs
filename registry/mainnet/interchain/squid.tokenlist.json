@@ -2127,6 +2127,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x93f3a4415ef12c704550981df35f2ea0139435b2f0c53ec5c226d76258b74739": {
+      "tokenId": "0x93f3a4415ef12c704550981df35f2ea0139435b2f0c53ec5c226d76258b74739",
+      "deployer": "0xDdfF75A29EB4BFEcF65380de9a75ad08C140eA49",
+      "originalMinter": null,
+      "prettySymbol": "BCT",
+      "decimals": 18,
+      "originAxelarChainId": "polygon",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/bct.svg"
+      },
+      "deploymentMessageId": "0x79699847bd10b3a5e1867b1c8c990bfac9181bba00ed856d1c5b7938e45b21b7-89",
+      "chains": [
+        {
+          "symbol": "BCT",
+          "name": "Base Carbon Tonne",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x2F800Db0fdb5223b3C3f354886d907A671414A7F",
+          "tokenManager": "0xd07075DF617d3BBb66798b8Db5682eC0765226F5",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "BCT",
+          "name": "Base Carbon Tonne",
+          "axelarChainId": "base",
+          "tokenAddress": "0x576Bca23DcB6d94fF8E537D88b0d3E1bEaD444a2",
+          "tokenManager": "0xd07075DF617d3BBb66798b8Db5682eC0765226F5",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
