@@ -2127,6 +2127,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xcfae646920c8c4b7e4875ce0a6480bd51443533ca40ca2ce6e27862e4b44b4ef": {
+      "tokenId": "0xcfae646920c8c4b7e4875ce0a6480bd51443533ca40ca2ce6e27862e4b44b4ef",
+      "deployer": "0x5C0386aF2f44d9c9048DA6285738684759Fad652",
+      "originalMinter": null,
+      "prettySymbol": "XT",
+      "decimals": 18,
+      "originAxelarChainId": "polygon",
+      "tokenType": "interchain",
+      "deploySalt": "0x34300906fd8db32ac2da0e8c1b55efd59bbd827a3d32ff91be7e9600f0a3aaea",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/xt.svg"
+      },
+      "deploymentMessageId": "0x3ba4f54e89d5e592cc4c0f992b890290121f969dc44f590cf66b9ab21fa79a95-77",
+      "chains": [
+        {
+          "symbol": "XT",
+          "name": "XToken",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x52Ca799DfE5712e5102f9939d26ADe0B3f52454f",
+          "tokenManager": "0xa0D0f040997326ED25D073b3114f31898D0507f8",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "XT",
+          "name": "XToken",
+          "axelarChainId": "base",
+          "tokenAddress": "0x52Ca799DfE5712e5102f9939d26ADe0B3f52454f",
+          "tokenManager": "0xa0D0f040997326ED25D073b3114f31898D0507f8",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
