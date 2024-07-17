@@ -2127,6 +2127,54 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x665e8ab7d9f26668a507e07fca152f95ee897d33c18119db0a03561b47bf8434": {
+      "tokenId": "0x665e8ab7d9f26668a507e07fca152f95ee897d33c18119db0a03561b47bf8434",
+      "deployer": "0x321fB1002DD7fa1e8D2Ad5F697ADCdD6dFA6da13",
+      "originalMinter": null,
+      "prettySymbol": "BSW",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/bsw.svg"
+      },
+      "deploymentMessageId": "0x6b62a2c864bad1820fcb94f6f162df7edb0e14d50e618d9b2b3874e9fc73744a-33",
+      "chains": [
+        {
+          "symbol": "BSW",
+          "name": "Biswap",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x965f527d9159dce6288a2219db51fc6eef120dd1",
+          "tokenManager": "0x29ffC25D0039fab31D1158c69364F50E9F82e7aD",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "BSW",
+          "name": "Biswap",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x66e09ec17629574A0CC8abc480b0c2572fcd6985",
+          "tokenManager": "0x29ffC25D0039fab31D1158c69364F50E9F82e7aD",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "BSW",
+          "name": "Biswap",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x66e09ec17629574A0CC8abc480b0c2572fcd6985",
+          "tokenManager": "0x29ffC25D0039fab31D1158c69364F50E9F82e7aD",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "BSW",
+          "name": "Biswap",
+          "axelarChainId": "base",
+          "tokenAddress": "0x66e09ec17629574A0CC8abc480b0c2572fcd6985",
+          "tokenManager": "0x29ffC25D0039fab31D1158c69364F50E9F82e7aD",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
