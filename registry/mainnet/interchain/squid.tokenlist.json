@@ -2141,6 +2141,7 @@
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/bct.svg"
       },
       "deploymentMessageId": "0x79699847bd10b3a5e1867b1c8c990bfac9181bba00ed856d1c5b7938e45b21b7-89",
+      "coinGeckoId": "base-carbon-tonne",
       "chains": [
         {
           "symbol": "BCT",
