@@ -2138,7 +2138,7 @@
       "tokenType": "canonical",
       "deploySalt": "0x",
       "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/bsw.svg"
+        "svg": "https://biswap.org/logoBSW.svg"
       },
       "coinGeckoId": "biswap",
       "deploymentMessageId": "0x6b62a2c864bad1820fcb94f6f162df7edb0e14d50e618d9b2b3874e9fc73744a-33",
