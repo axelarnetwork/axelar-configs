@@ -2127,6 +2127,120 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x465e682cc077217e2b373ff31992c899e36521f5e64547287c1604f349165a09": {
+      "tokenId": "0x465e682cc077217e2b373ff31992c899e36521f5e64547287c1604f349165a09",
+      "coinGeckoId": "wrapped-pfil",
+      "deployer": "0x46bEE5F8aF3dcff4D6C97993b815785E27cAE80c",
+      "originalMinter": null,
+      "prettySymbol": "wpFIL",
+      "decimals": 18,
+      "originAxelarChainId": "filecoin",
+      "tokenType": "customInterchain",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://salmon-official-albatross-254.mypinata.cloud/ipfs/QmavDMZbdN4gd32MaMXawkhuUaNDueGCTqpWiQGQdk7SuB"
+      },
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "wpFIL",
+          "name": "wrapped pFIL",
+          "axelarChainId": "filecoin",
+          "tokenAddress": "0x57E3BB9F790185Cfe70Cc2C15Ed5d6B84dCf4aDb",
+          "tokenManager": "0x5439E34a50d7E2330cA6B881365C61A6455eC7a4",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "wpFIL",
+          "name": "wrapped pFIL",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0xBDbA1194775B9a76498a7f690EAE41B059A06DFC",
+          "tokenManager": "0x5439E34a50d7E2330cA6B881365C61A6455eC7a4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "wpFIL",
+          "name": "wrapped pFIL",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xBDbA1194775B9a76498a7f690EAE41B059A06DFC",
+          "tokenManager": "0x5439E34a50d7E2330cA6B881365C61A6455eC7a4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "wpFIL",
+          "name": "wrapped pFIL",
+          "axelarChainId": "base",
+          "tokenAddress": "0xBDbA1194775B9a76498a7f690EAE41B059A06DFC",
+          "tokenManager": "0x5439E34a50d7E2330cA6B881365C61A6455eC7a4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "wpFIL",
+          "name": "wrapped pFIL",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xBDbA1194775B9a76498a7f690EAE41B059A06DFC",
+          "tokenManager": "0x5439E34a50d7E2330cA6B881365C61A6455eC7a4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "wpFIL",
+          "name": "wrapped pFIL",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0xBDbA1194775B9a76498a7f690EAE41B059A06DFC",
+          "tokenManager": "0x5439E34a50d7E2330cA6B881365C61A6455eC7a4",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x665e8ab7d9f26668a507e07fca152f95ee897d33c18119db0a03561b47bf8434": {
+      "tokenId": "0x665e8ab7d9f26668a507e07fca152f95ee897d33c18119db0a03561b47bf8434",
+      "deployer": "0x321fB1002DD7fa1e8D2Ad5F697ADCdD6dFA6da13",
+      "originalMinter": null,
+      "prettySymbol": "BSW",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://biswap.org/logoBSW.svg"
+      },
+      "coinGeckoId": "biswap",
+      "deploymentMessageId": "0x6b62a2c864bad1820fcb94f6f162df7edb0e14d50e618d9b2b3874e9fc73744a-33",
+      "chains": [
+        {
+          "symbol": "BSW",
+          "name": "Biswap",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x965f527d9159dce6288a2219db51fc6eef120dd1",
+          "tokenManager": "0x29ffC25D0039fab31D1158c69364F50E9F82e7aD",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "BSW",
+          "name": "Biswap",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x66e09ec17629574A0CC8abc480b0c2572fcd6985",
+          "tokenManager": "0x29ffC25D0039fab31D1158c69364F50E9F82e7aD",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "BSW",
+          "name": "Biswap",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x66e09ec17629574A0CC8abc480b0c2572fcd6985",
+          "tokenManager": "0x29ffC25D0039fab31D1158c69364F50E9F82e7aD",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "BSW",
+          "name": "Biswap",
+          "axelarChainId": "base",
+          "tokenAddress": "0x66e09ec17629574A0CC8abc480b0c2572fcd6985",
+          "tokenManager": "0x29ffC25D0039fab31D1158c69364F50E9F82e7aD",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
