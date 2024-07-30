@@ -375,7 +375,7 @@
     },
     "0xfea30beb17bde60c46f626db1cf7c73d33e16ad69c3c8daba637511249f6b32f": {
       "tokenId": "0xfea30beb17bde60c46f626db1cf7c73d33e16ad69c3c8daba637511249f6b32f",
-      "coinGeckoId": "xave",
+      "coinGeckoId": "xave-token",
       "deployer": "0x01e198818a895f01562E0A087595E5b1C7bb8d5c",
       "originalMinter": null,
       "prettySymbol": "XAV",
@@ -910,7 +910,7 @@
     },
     "0xc189770360203020598a18eda8dac05199212ebccbe9f65f3d058a22ad8405e7": {
       "tokenId": "0xc189770360203020598a18eda8dac05199212ebccbe9f65f3d058a22ad8405e7",
-      "coinGeckoId": "gam3s-gg",
+      "coinGeckoId": "game-2",
       "deployer": "0x69367459A962FDF55a6aF0f9D5aB969548bc2b30",
       "originalMinter": null,
       "prettySymbol": "G3",
@@ -2249,7 +2249,7 @@
     },
     "0x93f3a4415ef12c704550981df35f2ea0139435b2f0c53ec5c226d76258b74739": {
       "tokenId": "0x93f3a4415ef12c704550981df35f2ea0139435b2f0c53ec5c226d76258b74739",
-      "coinGeckoId": "base-carbon-tonne",
+      "coinGeckoId": "toucan-protocol-base-carbon-tonne",
       "deployer": "0xDdfF75A29EB4BFEcF65380de9a75ad08C140eA49",
       "originalMinter": null,
       "prettySymbol": "BCT",
