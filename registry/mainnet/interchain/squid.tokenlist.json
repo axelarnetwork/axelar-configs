@@ -2274,6 +2274,86 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xa66dd543123ccc4047825d5f7e78d2814100c95a55250eea45420087817e8149": {
+      "tokenId": "0xa66dd543123ccc4047825d5f7e78d2814100c95a55250eea45420087817e8149",
+      "deployer": "0xd38f4e84aFe6cc9C0d645eA4480b03E978C10483",
+      "originalMinter": null,
+      "prettySymbol": "MOLLARS",
+      "decimals": 9,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mollars.svg"
+      },
+      "deploymentMessageId": "0x7c060bc794ed6740c42e160b31bf08fff46b86cf065a1c87b5cae43bd304961a-33",
+      "chains": [
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x385d65ed9241e415cfc689c3e0bcf5ab2f0505c2",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0xD2D0A80fE1DA849ee817494bC2Df7EE4367e61f6",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0xD2D0A80fE1DA849ee817494bC2Df7EE4367e61f6",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xD2D0A80fE1DA849ee817494bC2Df7EE4367e61f6",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xD2D0A80fE1DA849ee817494bC2Df7EE4367e61f6",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0xD2D0A80fE1DA849ee817494bC2Df7EE4367e61f6",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "base",
+          "tokenAddress": "0xD2D0A80fE1DA849ee817494bC2Df7EE4367e61f6",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "fantom",
+          "tokenAddress": "0xD2D0A80fE1DA849ee817494bC2Df7EE4367e61f6",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
