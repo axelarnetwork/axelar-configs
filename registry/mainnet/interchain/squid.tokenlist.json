@@ -2431,6 +2431,39 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x4a8027cd9f30938d02d74aa1f64fb79eab137106dd3d4a5c83b816604af6cc86": {
+      "tokenId": "0x4a8027cd9f30938d02d74aa1f64fb79eab137106dd3d4a5c83b816604af6cc86",
+      "deployer": "0x31C75F2754eB8153a7eba63752D5589503b4c1a1",
+      "originalMinter": null,
+      "prettySymbol": "MIRAI",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0xb82db0668294533ab68096060f6ff4e1a6b88eb44045e12fdba7fe07e9d35394",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mirai.svg"
+      },
+      "coinGeckoId": "mirai-2",
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "MIRAI",
+          "name": "MIRAI",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x42c83a91B3a79dE5488CD9280A4dF564e13A79EE",
+          "tokenManager": "0x7D2585629Aa2609a50467575D6B82B44e092BD56",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MIRAI",
+          "name": "MIRAI",
+          "axelarChainId": "base",
+          "tokenAddress": "0x42c83a91B3a79dE5488CD9280A4dF564e13A79EE",
+          "tokenManager": "0x7D2585629Aa2609a50467575D6B82B44e092BD56",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
