@@ -2434,6 +2434,7 @@
     },
     "0x4a8027cd9f30938d02d74aa1f64fb79eab137106dd3d4a5c83b816604af6cc86": {
       "tokenId": "0x4a8027cd9f30938d02d74aa1f64fb79eab137106dd3d4a5c83b816604af6cc86",
+      "coinGeckoId": "mirai-2",
       "deployer": "0x31C75F2754eB8153a7eba63752D5589503b4c1a1",
       "originalMinter": null,
       "prettySymbol": "MIRAI",
@@ -2444,7 +2445,6 @@
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mirai.svg"
       },
-      "coinGeckoId": "mirai-2",
       "deploymentMessageId": "",
       "chains": [
         {
