@@ -2144,7 +2144,7 @@
       "tokenType": "customInterchain",
       "deploySalt": "0x",
       "iconUrls": {
-        "svg": "https://salmon-official-albatross-254.mypinata.cloud/ipfs/QmavDMZbdN4gd32MaMXawkhuUaNDueGCTqpWiQGQdk7SuB"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/wpfil.svg"
       },
       "deploymentMessageId": "",
       "chains": [
