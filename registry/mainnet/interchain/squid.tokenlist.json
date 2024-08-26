@@ -2431,6 +2431,39 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xa8909369d16e7a45e4c8a680ad43a7ab9eb03843d1218659b0f2846d45308d0f": {
+      "tokenId": "0xa8909369d16e7a45e4c8a680ad43a7ab9eb03843d1218659b0f2846d45308d0f",
+      "deployer": "0x7270b20603FbB3dF0921381670fbd62b9991aDa4",
+      "originalMinter": null,
+      "prettySymbol": "CFG",
+      "decimals": 18,
+      "originAxelarChainId": "centrifuge",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/centrifuge.svg"
+      },
+      "deploymentMessageId": "",
+      "coinGeckoId": "centrifuge",
+      "chains": [
+        {
+          "symbol": "CFG",
+          "name": "Centrifuge",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xc221b7e65ffc80de234bbb6667abdd46593d34f0",
+          "tokenManager": "0x2ad2ae091e91431304D406B9c14a7Ea37E2a387d",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CFG",
+          "name": "Centrifuge",
+          "axelarChainId": "base",
+          "tokenAddress": "0x2b51E2Ec9551F9B87B321f63b805871f1c81ba97",
+          "tokenManager": "0x2ad2ae091e91431304D406B9c14a7Ea37E2a387d",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
