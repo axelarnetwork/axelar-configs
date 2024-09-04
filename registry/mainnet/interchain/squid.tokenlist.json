@@ -2471,7 +2471,7 @@
       "originalMinter": null,
       "prettySymbol": "CFG",
       "decimals": 18,
-      "originAxelarChainId": "centrifuge",
+      "originAxelarChainId": "ethereum",
       "tokenType": "custom",
       "deploySalt": "0x38a835532c2f53812b20282c76ce54b3af6ceed73b13eccd9bc21a3d52b7f9d4",
       "iconUrls": {
