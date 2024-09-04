@@ -592,6 +592,7 @@
     },
     "0x656e70ee467547c0885d38e816b3037496be5f91bb75ba786efe597a81f06bd9": {
       "tokenId": "0x656e70ee467547c0885d38e816b3037496be5f91bb75ba786efe597a81f06bd9",
+      "coinGeckoId": "outer-ring",
       "deployer": "0xB6Af19068482ec5feb4c4ef7f81a4dFdFa0BbAD2",
       "originalMinter": null,
       "prettySymbol": "GQ",
@@ -943,6 +944,7 @@
     },
     "0xf02e2a56a9e33e5b284a2e63ce319f8f93cbfcbb9a84acce39be449317c1184c": {
       "tokenId": "0xf02e2a56a9e33e5b284a2e63ce319f8f93cbfcbb9a84acce39be449317c1184c",
+      "coinGeckoId": "satoshi-nakamoto",
       "deployer": "0xa2f8ae5AF7Bd75d54ED172B3b9E557d104D3913C",
       "originalMinter": null,
       "prettySymbol": "SATOSHI",
@@ -2282,6 +2284,7 @@
     },
     "0x06cf29ba710ac6ade3f1b0ca6fbce28ac5c14bcd34f47a51c650b220f4cfb233": {
       "tokenId": "0x06cf29ba710ac6ade3f1b0ca6fbce28ac5c14bcd34f47a51c650b220f4cfb233",
+      "coinGeckoId": "catecoin",
       "deployer": "0x59b0588eCc89fb6AE2011691734c9bb734cD131a",
       "originalMinter": null,
       "prettySymbol": "CATE",
@@ -2354,6 +2357,7 @@
     },
     "0xa66dd543123ccc4047825d5f7e78d2814100c95a55250eea45420087817e8149": {
       "tokenId": "0xa66dd543123ccc4047825d5f7e78d2814100c95a55250eea45420087817e8149",
+      "coinGeckoId": "mollarstoken",
       "deployer": "0xd38f4e84aFe6cc9C0d645eA4480b03E978C10483",
       "originalMinter": null,
       "prettySymbol": "MOLLARS",
