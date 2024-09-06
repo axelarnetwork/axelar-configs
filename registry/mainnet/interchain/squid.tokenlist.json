@@ -2501,6 +2501,54 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x291401f2645b4a6a6439323c4db76a820439ace0a5ad7637e10a3f5adfdd7c33": {
+      "tokenId": "0x291401f2645b4a6a6439323c4db76a820439ace0a5ad7637e10a3f5adfdd7c33",
+      "deployer": "0xfb311Eb413a49389a2078284B57C8BEFeF6aFF67",
+      "originalMinter": null,
+      "prettySymbol": "DeAl",
+      "decimals": 18,
+      "originAxelarChainId": "base",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/deal.svg"
+      },
+      "deploymentMessageId": "0x0ae9387c3e0005cd0bfce571d74416e9887cd93a9d530401bb25f85015989c94-67",
+      "chains": [
+        {
+          "symbol": "DeAl",
+          "name": "DeAl",
+          "axelarChainId": "base",
+          "tokenAddress": "0x88a60E1cd5d857973f399Ce6f5B1750381a8160F",
+          "tokenManager": "0x68dC1A5bf0eF43245Dc25a9290aF4716c23f4a3A",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "DeAl",
+          "name": "DeAl",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0x281755B639BE38528c19E1114434BDe3357890BE",
+          "tokenManager": "0x68dC1A5bf0eF43245Dc25a9290aF4716c23f4a3A",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "DeAl",
+          "name": "DeAl",
+          "axelarChainId": "blast",
+          "tokenAddress": "0x281755B639BE38528c19E1114434BDe3357890BE",
+          "tokenManager": "0x68dC1A5bf0eF43245Dc25a9290aF4716c23f4a3A",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "DeAl",
+          "name": "DeAl",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x281755B639BE38528c19E1114434BDe3357890BE",
+          "tokenManager": "0x68dC1A5bf0eF43245Dc25a9290aF4716c23f4a3A",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
