@@ -375,6 +375,7 @@
     },
     "0xfea30beb17bde60c46f626db1cf7c73d33e16ad69c3c8daba637511249f6b32f": {
       "tokenId": "0xfea30beb17bde60c46f626db1cf7c73d33e16ad69c3c8daba637511249f6b32f",
+      "coinGeckoId": "xave-token",
       "deployer": "0x01e198818a895f01562E0A087595E5b1C7bb8d5c",
       "originalMinter": null,
       "prettySymbol": "XAV",
@@ -591,6 +592,7 @@
     },
     "0x656e70ee467547c0885d38e816b3037496be5f91bb75ba786efe597a81f06bd9": {
       "tokenId": "0x656e70ee467547c0885d38e816b3037496be5f91bb75ba786efe597a81f06bd9",
+      "coinGeckoId": "outer-ring",
       "deployer": "0xB6Af19068482ec5feb4c4ef7f81a4dFdFa0BbAD2",
       "originalMinter": null,
       "prettySymbol": "GQ",
@@ -623,6 +625,7 @@
     },
     "0x6858f161eaf7d16620a79a6ceae7929751fd4042654d93282d9ffdadef5e0bb0": {
       "tokenId": "0x6858f161eaf7d16620a79a6ceae7929751fd4042654d93282d9ffdadef5e0bb0",
+      "coinGeckoId": "eesee",
       "deployer": "0x0f9d8ECEcE119ee6cAda90D48cD605E17250796c",
       "originalMinter": null,
       "prettySymbol": "ESE",
@@ -655,6 +658,7 @@
     },
     "0x8db1376ff549ab32fd30917c0e8c51e89a3bbc3e246c1e95d5f69c4117d3bd40": {
       "tokenId": "0x8db1376ff549ab32fd30917c0e8c51e89a3bbc3e246c1e95d5f69c4117d3bd40",
+      "coinGeckoId": "rabbitx",
       "deployer": "0x5aA4e90DC2452195a5E5654F549DF0f2bC5d9996",
       "originalMinter": null,
       "prettySymbol": "RBX",
@@ -907,6 +911,7 @@
     },
     "0xc189770360203020598a18eda8dac05199212ebccbe9f65f3d058a22ad8405e7": {
       "tokenId": "0xc189770360203020598a18eda8dac05199212ebccbe9f65f3d058a22ad8405e7",
+      "coinGeckoId": "game-2",
       "deployer": "0x69367459A962FDF55a6aF0f9D5aB969548bc2b30",
       "originalMinter": null,
       "prettySymbol": "G3",
@@ -939,6 +944,7 @@
     },
     "0xf02e2a56a9e33e5b284a2e63ce319f8f93cbfcbb9a84acce39be449317c1184c": {
       "tokenId": "0xf02e2a56a9e33e5b284a2e63ce319f8f93cbfcbb9a84acce39be449317c1184c",
+      "coinGeckoId": "satoshi-nakamoto",
       "deployer": "0xa2f8ae5AF7Bd75d54ED172B3b9E557d104D3913C",
       "originalMinter": null,
       "prettySymbol": "SATOSHI",
@@ -1231,6 +1237,7 @@
     },
     "0x6b116e16be90df311f4c410dbb0a9934ba5fc6dbd3852e09caf07a43e9c5c304": {
       "tokenId": "0x6b116e16be90df311f4c410dbb0a9934ba5fc6dbd3852e09caf07a43e9c5c304",
+      "coinGeckoId": "xdefi",
       "deployer": "0xA57ADCE1d2fE72949E4308867D894CD7E7DE0ef2",
       "originalMinter": null,
       "prettySymbol": "XDEFI",
@@ -2139,7 +2146,7 @@
       "tokenType": "customInterchain",
       "deploySalt": "0x",
       "iconUrls": {
-        "svg": "https://salmon-official-albatross-254.mypinata.cloud/ipfs/QmavDMZbdN4gd32MaMXawkhuUaNDueGCTqpWiQGQdk7SuB"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/wpfil.svg"
       },
       "deploymentMessageId": "",
       "chains": [
@@ -2271,6 +2278,226 @@
           "axelarChainId": "base",
           "tokenAddress": "0x576Bca23DcB6d94fF8E537D88b0d3E1bEaD444a2",
           "tokenManager": "0xd07075DF617d3BBb66798b8Db5682eC0765226F5",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x06cf29ba710ac6ade3f1b0ca6fbce28ac5c14bcd34f47a51c650b220f4cfb233": {
+      "tokenId": "0x06cf29ba710ac6ade3f1b0ca6fbce28ac5c14bcd34f47a51c650b220f4cfb233",
+      "coinGeckoId": "catecoin",
+      "deployer": "0x59b0588eCc89fb6AE2011691734c9bb734cD131a",
+      "originalMinter": null,
+      "prettySymbol": "CATE",
+      "decimals": 9,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/cate.svg"
+      },
+      "deploymentMessageId": "0x2db1f8ed61bfc6083ded8f2ea9b8c42bf84ffd4ff814084283339829c2d7e52d-5",
+      "chains": [
+        {
+          "symbol": "CATE",
+          "name": "CateCoin",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xe4fae3faa8300810c835970b9187c268f55d998f",
+          "tokenManager": "0x08DA6252c62545133fb41F15BD8C2C3F1a03776A",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "CATE",
+          "name": "CateCoin",
+          "axelarChainId": "base",
+          "tokenAddress": "0x051fb509e4A775FABd257611eeA1efaed8F91359",
+          "tokenManager": "0x08DA6252c62545133fb41F15BD8C2C3F1a03776A",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CATE",
+          "name": "CateCoin",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x051fb509e4A775FABd257611eeA1efaed8F91359",
+          "tokenManager": "0x08DA6252c62545133fb41F15BD8C2C3F1a03776A",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CATE",
+          "name": "CateCoin",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0x051fb509e4A775FABd257611eeA1efaed8F91359",
+          "tokenManager": "0x08DA6252c62545133fb41F15BD8C2C3F1a03776A",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CATE",
+          "name": "CateCoin",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x051fb509e4A775FABd257611eeA1efaed8F91359",
+          "tokenManager": "0x08DA6252c62545133fb41F15BD8C2C3F1a03776A",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CATE",
+          "name": "CateCoin",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0x051fb509e4A775FABd257611eeA1efaed8F91359",
+          "tokenManager": "0x08DA6252c62545133fb41F15BD8C2C3F1a03776A",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CATE",
+          "name": "CateCoin",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x051fb509e4A775FABd257611eeA1efaed8F91359",
+          "tokenManager": "0x08DA6252c62545133fb41F15BD8C2C3F1a03776A",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xa66dd543123ccc4047825d5f7e78d2814100c95a55250eea45420087817e8149": {
+      "tokenId": "0xa66dd543123ccc4047825d5f7e78d2814100c95a55250eea45420087817e8149",
+      "coinGeckoId": "mollarstoken",
+      "deployer": "0xd38f4e84aFe6cc9C0d645eA4480b03E978C10483",
+      "originalMinter": null,
+      "prettySymbol": "MOLLARS",
+      "decimals": 9,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mollars.svg"
+      },
+      "deploymentMessageId": "0x7c060bc794ed6740c42e160b31bf08fff46b86cf065a1c87b5cae43bd304961a-33",
+      "chains": [
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x385d65ed9241e415cfc689c3e0bcf5ab2f0505c2",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0xD2D0A80fE1DA849ee817494bC2Df7EE4367e61f6",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0xD2D0A80fE1DA849ee817494bC2Df7EE4367e61f6",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xD2D0A80fE1DA849ee817494bC2Df7EE4367e61f6",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xD2D0A80fE1DA849ee817494bC2Df7EE4367e61f6",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0xD2D0A80fE1DA849ee817494bC2Df7EE4367e61f6",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "base",
+          "tokenAddress": "0xD2D0A80fE1DA849ee817494bC2Df7EE4367e61f6",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MOLLARS",
+          "name": "MollarsToken",
+          "axelarChainId": "fantom",
+          "tokenAddress": "0xD2D0A80fE1DA849ee817494bC2Df7EE4367e61f6",
+          "tokenManager": "0xCD05480E437B2C09278d7a9C02cd1Eb3271b41c4",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x4a8027cd9f30938d02d74aa1f64fb79eab137106dd3d4a5c83b816604af6cc86": {
+      "tokenId": "0x4a8027cd9f30938d02d74aa1f64fb79eab137106dd3d4a5c83b816604af6cc86",
+      "coinGeckoId": "mirai-2",
+      "deployer": "0x31C75F2754eB8153a7eba63752D5589503b4c1a1",
+      "originalMinter": null,
+      "prettySymbol": "MIRAI",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0xb82db0668294533ab68096060f6ff4e1a6b88eb44045e12fdba7fe07e9d35394",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mirai.svg"
+      },
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "MIRAI",
+          "name": "MIRAI",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x42c83a91B3a79dE5488CD9280A4dF564e13A79EE",
+          "tokenManager": "0x7D2585629Aa2609a50467575D6B82B44e092BD56",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MIRAI",
+          "name": "MIRAI",
+          "axelarChainId": "base",
+          "tokenAddress": "0x42c83a91B3a79dE5488CD9280A4dF564e13A79EE",
+          "tokenManager": "0x7D2585629Aa2609a50467575D6B82B44e092BD56",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x526c3812e992e0a293ca6f7214f23625acb240e7132eb98e36c11d1428f5a961": {
+      "tokenId": "0x526c3812e992e0a293ca6f7214f23625acb240e7132eb98e36c11d1428f5a961",
+      "deployer": "0x7270b20603FbB3dF0921381670fbd62b9991aDa4",
+      "originalMinter": null,
+      "prettySymbol": "CFG",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "custom",
+      "deploySalt": "0x38a835532c2f53812b20282c76ce54b3af6ceed73b13eccd9bc21a3d52b7f9d4",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/cvg.svg"
+      },
+      "deploymentMessageId": "0x0d91014FFC62b40C17180fD6cf962332cfba9f08",
+      "coinGeckoId": "wrapped-centrifuge",
+      "chains": [
+        {
+          "symbol": "CFG",
+          "name": "Centrifuge",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xc221b7e65ffc80de234bbb6667abdd46593d34f0",
+          "tokenManager": "0x0d91014FFC62b40C17180fD6cf962332cfba9f08",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CFG",
+          "name": "Centrifuge",
+          "axelarChainId": "base",
+          "tokenAddress": "0x2b51E2Ec9551F9B87B321f63b805871f1c81ba97",
+          "tokenManager": "0x0d91014FFC62b40C17180fD6cf962332cfba9f08",
           "tokenManagerType": "mintBurn"
         }
       ]
