@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="396px" height="396px" viewBox="0 0 396 396" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Shape</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="stargaze_star_black" fill="#DB2877" fill-rule="nonzero">
-            <path d="M198,396 C145.1,396 95.4,375.4 58,338 C20.6,300.6 0,250.9 0,198 C0,145.1 20.6,95.4 58,58 C95.4,20.6 145.1,0 198,0 C250.9,0 300.6,20.6 338,58 C375.4,95.4 396,145.1 396,198 C396,250.9 375.4,300.6 338,338 C300.6,375.4 250.9,396 198,396 Z M198,16.1 C97.7,16.1 16.1,97.7 16.1,198 C16.1,298.3 97.7,379.9 198,379.9 C298.3,379.9 379.9,298.3 379.9,198 C379.9,97.7 298.3,16.1 198,16.1 Z M174.4,140 L58.8,111.4 L135.6,202.5 L72.6,303.7 L183,258.8 L259.8,349.9 L251.2,231.1 L361.6,186.2 L246,157.6 L237.4,38.8 L174.4,140 Z" id="Shape"></path>
-        </g>
-    </g>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1499.4 1499.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Nova_amostra_de_gradiente_1);
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: url(#Nova_amostra_de_gradiente_1-2);
+      }
+    </style>
+    <linearGradient id="Nova_amostra_de_gradiente_1" data-name="Nova amostra de gradiente 1" x1="0" y1="749.7" x2="1499.4" y2="749.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcf29f"/>
+      <stop offset=".64" stop-color="#91cec7"/>
+      <stop offset="1" stop-color="#6f98d0"/>
+    </linearGradient>
+    <linearGradient id="Nova_amostra_de_gradiente_1-2" data-name="Nova amostra de gradiente 1" x1="257.65" y1="736.83" x2="1327.64" y2="736.83" xlink:href="#Nova_amostra_de_gradiente_1"/>
+  </defs>
+  <circle cx="748.53" cy="753.43" r="703.34"/>
+  <g>
+    <path class="cls-1" d="m749.7,1432.76c377.24,0,683.06-305.82,683.06-683.06S1126.94,66.64,749.7,66.64,66.64,372.46,66.64,749.7s305.82,683.06,683.06,683.06Zm749.7-683.06c0,414.05-335.65,749.7-749.7,749.7S0,1163.75,0,749.7,335.65,0,749.7,0s749.7,335.65,749.7,749.7Z"/>
+    <path class="cls-2" d="m888.73,187.18l30.24,419.92,408.67,100.96-390.01,158.52,30.24,419.92-271.22-321.96-390.01,158.6,222.33-357.52-271.31-321.96,408.67,101.04,222.41-357.52Z"/>
+  </g>
 </svg>
