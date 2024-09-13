@@ -76,7 +76,7 @@
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mss.svg"
       },
-      "coinGeckoId": "mss",
+      "coinGeckoId": "mintstakeshare",
       "deploymentMessageId": "",
       "chains": [
         {
