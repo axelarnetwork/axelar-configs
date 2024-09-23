@@ -1,38 +1,12 @@
-import * as fs from "fs";
-import { ethers } from "ethers";
-import axios from "axios";
+const fs = require("fs");
+const ethers = require("ethers");
+const axios = require("axios");
+
 /*
  * =============================
- * Section: Types and Constants
+ * Section: Constants
  * =============================
  */
-interface ChainInfo {
-  symbol: string;
-  name: string;
-  axelarChainId: string;
-  tokenAddress: string;
-  tokenManager: string;
-  tokenManagerType: TokenManagerType;
-}
-interface TokenInfo {
-  tokenId: string;
-  deployer: string;
-  originalMinter: string | null;
-  prettySymbol: string;
-  decimals: number;
-  originAxelarChainId: string;
-  tokenType: string;
-  deploySalt: string;
-  iconUrls: {
-    svg: string;
-  };
-  deploymentMessageId: string;
-  coinGeckoId: string;
-  chains: ChainInfo[];
-}
-type TokenManagerType = (typeof tokenManagerTypes)[number];
-
-// Constants
 const tokenManagerTypes = [
   "nativeInterchainToken",
   "mintBurnFrom",
@@ -40,7 +14,7 @@ const tokenManagerTypes = [
   "lockUnlockFee",
   "mintBurn",
   "gateway",
-] as const;
+];
 const ITSAddress = "0xB5FB4BE02232B1bBA4dC8f81dc24C26980dE9e3C";
 const TOKEN_FILE_ROUTE = "./new_tokens.json";
 const COINGECKO_API_KEY = "CG-3VGxh1K3Qk7jAvpt4DJA3LvB";
@@ -115,20 +89,18 @@ async function getAxelarChains() {
   return data.chains;
 }
 
-async function getRpcUrl(axelarChainId: string): Promise<string> {
+async function getRpcUrl(axelarChainId) {
   try {
     const chains = await getAxelarChains();
     return chains[axelarChainId].config.rpc[0];
   } catch (error) {
     throw new Error(
-      `Error fetching chain configs for chain '${axelarChainId}':\n ${
-        (error as Error).message
-      }`
+      `Error fetching chain configs for chain '${axelarChainId}':\n ${error.message}`
     );
   }
 }
 
-function exitWitheError(errorMessage: string) {
+function exitWithError(errorMessage) {
   console.error(errorMessage);
   fs.writeFileSync("validation_errors.txt", errorMessage);
   process.exit(1);
@@ -139,9 +111,7 @@ function exitWitheError(errorMessage: string) {
  * Section: Validation Functions
  * =============================
  */
-async function validateTokenInfo(
-  tokenInfo: Record<string, TokenInfo>
-): Promise<void> {
+async function validateTokenInfo(tokenInfo) {
   for (const [tokenId, info] of Object.entries(tokenInfo)) {
     console.log(`\nValidating token: ${tokenId}...`);
     try {
@@ -151,24 +121,18 @@ async function validateTokenInfo(
       await validateOriginChain(info);
       await validateDeployerAndSalt(tokenId, info);
     } catch (error) {
-      exitWitheError((error as Error).message);
+      exitWithError(error.message);
     }
   }
 }
 
-async function validateTokenId(
-  tokenId: string,
-  info: TokenInfo
-): Promise<void> {
+async function validateTokenId(tokenId, info) {
   if (tokenId !== info.tokenId) {
     throw new Error(`Mismatch in tokenId: ${tokenId} vs ${info.tokenId}`);
   }
 }
 
-async function validateCoinGeckoId(
-  tokenId: string,
-  { coinGeckoId, prettySymbol }: TokenInfo
-): Promise<void> {
+async function validateCoinGeckoId(tokenId, { coinGeckoId, prettySymbol }) {
   if (!coinGeckoId)
     throw new Error(`CoinGecko ID is missing for token ${tokenId}`);
 
@@ -197,14 +161,12 @@ async function validateCoinGeckoId(
       );
     }
     throw new Error(
-      `Error fetching data from CoinGecko for token ${tokenId}: ${
-        (error as Error).message
-      }`
+      `Error fetching data from CoinGecko for token ${tokenId}: ${error.message}`
     );
   }
 }
 
-async function validateChains(info: TokenInfo): Promise<void> {
+async function validateChains(info) {
   for (const chain of info.chains) {
     console.log(`Validating for ${chain.axelarChainId}...`);
 
@@ -217,10 +179,7 @@ async function validateChains(info: TokenInfo): Promise<void> {
   }
 }
 
-async function validateTokenAddress(
-  chain: ChainInfo,
-  provider: ethers.JsonRpcProvider
-): Promise<void> {
+async function validateTokenAddress(chain, provider) {
   const tokenCode = await provider.getCode(chain.tokenAddress);
   if (tokenCode === "0x")
     throw new Error(
@@ -229,10 +188,10 @@ async function validateTokenAddress(
 }
 
 async function validateTokenDetails(
-  chain: ChainInfo,
-  { originAxelarChainId, prettySymbol, decimals }: TokenInfo,
-  provider: ethers.JsonRpcProvider
-): Promise<void> {
+  chain,
+  { originAxelarChainId, prettySymbol, decimals },
+  provider
+) {
   const tokenContract = new ethers.Contract(
     chain.tokenAddress,
     ERC20ABI,
@@ -263,10 +222,7 @@ async function validateTokenDetails(
   }
 }
 
-async function validateTokenManager(
-  chain: ChainInfo,
-  provider: ethers.JsonRpcProvider
-): Promise<void> {
+async function validateTokenManager(chain, provider) {
   const managerCode = await provider.getCode(chain.tokenManager);
   if (managerCode === "0x") {
     throw new Error(
@@ -299,10 +255,7 @@ async function validateTokenManager(
     );
 }
 
-async function validateOriginChain({
-  chains,
-  originAxelarChainId,
-}: TokenInfo): Promise<void> {
+async function validateOriginChain({ chains, originAxelarChainId }) {
   const originChain = chains.find(
     (chain) => chain.axelarChainId === originAxelarChainId
   );
@@ -313,9 +266,9 @@ async function validateOriginChain({
 }
 
 async function validateDeployerAndSalt(
-  tokenId: string,
-  { originAxelarChainId, deployer, deploySalt }: TokenInfo
-): Promise<void> {
+  tokenId,
+  { originAxelarChainId, deployer, deploySalt }
+) {
   const rpcUrl = await getRpcUrl(originAxelarChainId);
   const provider = new ethers.JsonRpcProvider(rpcUrl);
   const itsContract = new ethers.Contract(ITSAddress, ITSABI, provider);
@@ -347,12 +300,10 @@ async function validateDeployerAndSalt(
 async function main() {
   try {
     // Read new token configurations from file
-    const newTokens: Record<string, TokenInfo> = JSON.parse(
-      fs.readFileSync(TOKEN_FILE_ROUTE, "utf8")
-    );
+    const newTokens = JSON.parse(fs.readFileSync(TOKEN_FILE_ROUTE, "utf8"));
     await validateTokenInfo(newTokens);
   } catch (error) {
-    exitWitheError((error as Error).message);
+    exitWithError(error.message);
   }
   console.log("Validation successful!");
 }
