@@ -30,7 +30,7 @@ jobs:
           echo "Raw diff:"
           echo "$DIFF"
           echo "Extracting JSON:"
-          NEW_TOKENS=$(echo "$DIFF" | sed -n '/^+\s*"0x/,/^+\s*}/p' | sed 's/^+//g' | sed 's/^},$/}/' | jq -s '.')
+          NEW_TOKENS=$(echo "$DIFF" | sed -n '/^+/s/^+//p' | sed '1s/^/{\n/' | sed '$s/$/\n}/' | jq '.')
           echo "$NEW_TOKENS"
           echo "$NEW_TOKENS" > new_tokens.json
           node validate-token-configs.js
