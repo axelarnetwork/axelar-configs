@@ -26,8 +26,12 @@ jobs:
       - name: Extract and validate new tokens
         run: |
           git fetch origin main:main
-          DIFF=$(git diff main...HEAD -- registry/mainnet/interchain/squid.tokenlist.json | grep '^+' | grep -v '+++')
-          NEW_TOKENS=$(echo "$DIFF" | sed -n '/"0x/,/]/{/]/q;p}' | jq -s 'reduce .[] as $item ({}; . + ($item | fromjson))')
+          DIFF=$(git diff main...HEAD -- registry/mainnet/interchain/squid.tokenlist.json)
+          echo "Raw diff:"
+          echo "$DIFF"
+          echo "Extracting JSON:"
+          NEW_TOKENS=$(echo "$DIFF" | sed -n '/^+/,/^+\s*}$/p' | sed 's/^+//g' | jq -s 'add')
+          echo "$NEW_TOKENS"
           echo "$NEW_TOKENS" > new_tokens.json
           node validate-token-configs.js
 
