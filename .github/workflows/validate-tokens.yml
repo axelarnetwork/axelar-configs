@@ -18,22 +18,15 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install -g typescript
           npm install ethers@5.7.2
-          npm install viem
           npm install axios
-          npm install fs
-          npm install @types/node
-
-      - name: Compile TypeScript
-        run: tsc validate-token-configs.ts
 
       - name: Extract and validate new tokens
         run: |
           DIFF=$(git diff origin/${{ github.base_ref }} -- registry/mainnet/interchain/squid.tokenlist.json | grep '^+' | grep -v '+++')
           NEW_TOKENS=$(echo "$DIFF" | sed -n '/"0x/,/]/{/]/q;p}' | jq -s 'reduce .[] as $item ({}; . + ($item | fromjson))')
           echo "$NEW_TOKENS" > new_tokens.json
-          node validate-token-configs.ts
+          node scripts/validate-token-configs.js
 
       - name: Check validation results
         run: |
