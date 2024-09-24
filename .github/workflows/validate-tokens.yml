@@ -39,13 +39,3 @@ jobs:
           EOF
 
           bun run scripts/validate-token-configs.ts
-
-      - name: Check validation results
-        run: |
-          if [ -f validation_errors.txt ]; then
-            echo "Validation errors found:"
-            cat validation_errors.txt
-            exit 1
-          else
-            echo "All new token configurations are valid."
-          fi

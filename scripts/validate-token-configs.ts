@@ -165,7 +165,6 @@ async function getRpcUrls(axelarChainId: string): Promise<string[]> {
 
 function exitWithError(errorMessage: string) {
   console.error(errorMessage);
-  fs.writeFileSync("validation_errors.txt", errorMessage);
   process.exit(1);
 }
 
