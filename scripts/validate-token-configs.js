@@ -116,10 +116,10 @@ async function validateTokenInfo(tokenInfo) {
     console.log(`\nValidating token: ${tokenId}...`);
     try {
       await validateTokenId(tokenId, info);
-      await validateCoinGeckoId(tokenId, info);
       await validateChains(info);
       await validateOriginChain(info);
       await validateDeployerAndSalt(tokenId, info);
+      await validateCoinGeckoId(tokenId, info);
     } catch (error) {
       exitWithError(error.message);
     }
@@ -301,7 +301,6 @@ async function main() {
   try {
     // Read new token configurations from file
     const newTokens = JSON.parse(fs.readFileSync(TOKEN_FILE_ROUTE, "utf8"));
-    console.log("newTokens", newTokens);
     await validateTokenInfo(newTokens);
   } catch (error) {
     exitWithError(error.message);
