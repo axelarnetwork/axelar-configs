@@ -110,6 +110,7 @@ const tokenManagerABI = [
  * =============================
  */
 
+// Get the tokens to be validated
 async function getInputTokens() {
   const chunks: any[] = [];
   for await (const chunk of process.stdin) chunks.push(chunk);
@@ -128,7 +129,7 @@ async function getProvider(axelarChainId: string) {
   for (let attempt = 0; attempt < rpcUrls.length; attempt++) {
     try {
       const rpcURL = rpcUrls[attempt];
-      provider = await new ethers.JsonRpcProvider(rpcURL);
+      provider = new ethers.JsonRpcProvider(rpcURL);
 
       // Test the provider with a simple call
       await provider.getNetwork();

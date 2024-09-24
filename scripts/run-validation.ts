@@ -1,5 +1,5 @@
 import { readFile } from "fs/promises";
-import { execSync, spawnSync } from "child_process";
+import { execSync, spawn } from "child_process";
 import path from "path";
 
 const tokenListPath = "registry/mainnet/interchain/squid.tokenlist.json";
@@ -26,21 +26,30 @@ async function main() {
       .reduce((obj, [id, token]) => ({ ...obj, [id]: token }), {});
 
     // Run validation script with new tokens as parameter
-    const result = spawnSync(
+    const validationProcess = spawn(
       "bun",
       ["run", "scripts/validate-token-configs.ts"],
-      {
-        input: JSON.stringify(newTokens),
-        encoding: "utf-8",
-        stdio: ["pipe", "inherit", "inherit"],
-      }
+      { stdio: ["pipe", "inherit", "inherit"] }
     );
 
-    if (result.status !== 0) {
-      throw new Error(`Validation script exited with status ${result.status}`);
-    }
+    validationProcess.stdin.setDefaultEncoding("utf-8");
+    validationProcess.stdin.write(JSON.stringify(newTokens));
+    validationProcess.stdin.end();
 
-    console.log("All new token configurations are valid.");
+    await new Promise((resolve, reject) => {
+      validationProcess.on("close", (code) => {
+        if (code === 0) {
+          console.log("All new token configurations are valid.");
+          resolve(null);
+        } else {
+          reject(new Error(`Validation script exited with status ${code}`));
+        }
+      });
+
+      validationProcess.on("error", (error) => {
+        reject(new Error(`Validation process error: ${error.message}`));
+      });
+    });
   } catch (error) {
     console.error("Validation failed:", (error as Error).message);
     process.exit(1);
