@@ -98,6 +98,8 @@ async function getProvider(axelarChainId) {
       const rpcUrl = await getRpcUrl(axelarChainId, attempt);
       provider = new ethers.JsonRpcProvider(rpcUrl);
 
+      console.log("network -", network);
+      console.log("retry -", attempt);
       // Test the provider with a simple call
       const network = await provider.getNetwork();
       console.log("network", network);
@@ -203,6 +205,7 @@ async function validateChains(info) {
     console.log(`Validating for ${chain.axelarChainId}...`);
 
     const provider = getProvider(chain.axelarChainId);
+    console.log("provider", provider);
 
     await validateTokenAddress(chain, provider);
     await validateTokenDetails(chain, info, provider);
