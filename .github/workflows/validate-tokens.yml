@@ -9,19 +9,17 @@ jobs:
   validate-tokens:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: Use Node.js
-        uses: actions/setup-node@v2
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
         with:
-          node-version: "20"
+          bun-version: latest
 
       - name: Install dependencies
-        run: |
-          npm install ethers@6.13.2
-          npm install axios
+        run: bun install
 
       - name: Extract and validate new tokens
         run: |
@@ -29,17 +27,18 @@ jobs:
           git show origin/${{ github.base_ref }}:registry/mainnet/interchain/squid.tokenlist.json > base_file.json
           cp registry/mainnet/interchain/squid.tokenlist.json current_file.json
 
-          node -e "
-            const fs = require('fs');
-            const base = JSON.parse(fs.readFileSync('base_file.json', 'utf8'));
-            const current = JSON.parse(fs.readFileSync('current_file.json', 'utf8'));
-            const newTokens = Object.entries(current.tokens)
-              .filter(([id, token]) => !base.tokens[id])
-              .reduce((obj, [id, token]) => ({ ...obj, [id]: token }), {});
-            fs.writeFileSync('new_tokens.json', JSON.stringify(newTokens, null, 2));
-          "
+          bun run - <<EOF
+          import * as fs from 'fs/promises';
 
-          node scripts/validate-token-configs.js
+          const base = JSON.parse(await fs.readFile('base_file.json', 'utf8'));
+          const current = JSON.parse(await fs.readFile('current_file.json', 'utf8'));
+          const newTokens = Object.entries(current.tokens)
+            .filter(([id, token]) => !base.tokens[id])
+            .reduce((obj, [id, token]) => ({ ...obj, [id]: token }), {});
+          await fs.writeFile('new_tokens.json', JSON.stringify(newTokens, null, 2));
+          EOF
+
+          bun run scripts/validate-token-configs.ts
 
       - name: Check validation results
         run: |
