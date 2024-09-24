@@ -1,4 +1,3 @@
-import * as fs from "fs";
 import { ethers } from "ethers";
 import axios from "axios";
 
@@ -43,7 +42,6 @@ const tokenManagerTypes = [
   "gateway",
 ];
 const ITSAddress = "0xB5FB4BE02232B1bBA4dC8f81dc24C26980dE9e3C";
-const TOKEN_FILE_ROUTE = "./new_tokens.json";
 const COINGECKO_API_KEY = "CG-3VGxh1K3Qk7jAvpt4DJA3LvB";
 const COINGECKO_URL = "https://api.coingecko.com/api/v3/coins/";
 const CHAIN_CONFIGS_URL =
@@ -111,6 +109,13 @@ const tokenManagerABI = [
  * Section: Helper Functions
  * =============================
  */
+
+async function getInputTokens() {
+  const chunks: any[] = [];
+  for await (const chunk of process.stdin) chunks.push(chunk);
+  return JSON.parse(Buffer.concat(chunks).toString("utf8"));
+}
+
 async function getAxelarChains() {
   const { data } = await axios.get(CHAIN_CONFIGS_URL);
   return data.chains;
@@ -374,7 +379,7 @@ async function validateDeployerAndSalt(
 async function main() {
   try {
     // Read new token configurations from file
-    const newTokens = JSON.parse(fs.readFileSync(TOKEN_FILE_ROUTE, "utf8"));
+    const newTokens = await getInputTokens();
     await validateTokenInfo(newTokens);
   } catch (error) {
     exitWithError((error as Error).message);

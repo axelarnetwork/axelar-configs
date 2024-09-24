@@ -21,21 +21,5 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      - name: Extract and validate new tokens
-        run: |
-          git fetch origin ${{ github.base_ref }}
-          git show origin/${{ github.base_ref }}:registry/mainnet/interchain/squid.tokenlist.json > base_file.json
-          cp registry/mainnet/interchain/squid.tokenlist.json current_file.json
-
-          bun run - <<EOF
-          import * as fs from 'fs/promises';
-
-          const base = JSON.parse(await fs.readFile('base_file.json', 'utf8'));
-          const current = JSON.parse(await fs.readFile('current_file.json', 'utf8'));
-          const newTokens = Object.entries(current.tokens)
-            .filter(([id, token]) => !base.tokens[id])
-            .reduce((obj, [id, token]) => ({ ...obj, [id]: token }), {});
-          await fs.writeFile('new_tokens.json', JSON.stringify(newTokens, null, 2));
-          EOF
-
-          bun run scripts/validate-token-configs.ts
+      - name: Run validation
+        run: bun run scripts/run-validation.ts
