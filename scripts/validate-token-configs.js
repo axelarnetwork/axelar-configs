@@ -21,7 +21,7 @@ const COINGECKO_API_KEY = "CG-3VGxh1K3Qk7jAvpt4DJA3LvB";
 const COINGECKO_URL = "https://api.coingecko.com/api/v3/coins/";
 const CHAIN_CONFIGS_URL =
   "https://axelar-mainnet.s3.us-east-2.amazonaws.com/configs/mainnet-config-1.x.json";
-const MAX_RETRIES = 3;
+const MAX_RETRIES = 10;
 const ERC20ABI = [
   {
     constant: true,
