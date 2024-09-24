@@ -301,6 +301,7 @@ async function main() {
   try {
     // Read new token configurations from file
     const newTokens = JSON.parse(fs.readFileSync(TOKEN_FILE_ROUTE, "utf8"));
+    console.log("newTokens", newTokens);
     await validateTokenInfo(newTokens);
   } catch (error) {
     exitWithError(error.message);
