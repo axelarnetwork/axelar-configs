@@ -2554,7 +2554,7 @@
       "tokenId": "0x1ac831937426660d5952bc9ae0dc7c895a3c3f5f159d3518813df30181404be6",
       "deployer": "0x7AAd74b7f0d60D5867B59dbD377a71783425af47",
       "originalMinter": null,
-      "prettySymbol": "agETH",
+      "prettySymbol": "agETH.axl",
       "decimals": 18,
       "originAxelarChainId": "ethereum",
       "tokenType": "canonical",
