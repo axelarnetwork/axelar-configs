@@ -21,7 +21,6 @@ const COINGECKO_API_KEY = "CG-3VGxh1K3Qk7jAvpt4DJA3LvB";
 const COINGECKO_URL = "https://api.coingecko.com/api/v3/coins/";
 const CHAIN_CONFIGS_URL =
   "https://axelar-mainnet.s3.us-east-2.amazonaws.com/configs/mainnet-config-1.x.json";
-const MAX_RETRIES = 10;
 const ERC20ABI = [
   {
     constant: true,
@@ -94,11 +93,7 @@ async function getProvider(axelarChainId) {
   // Create rpc provider with backup urls
   const rpcUrls = await getRpcUrls(axelarChainId);
   let provider;
-  for (
-    let attempt = 0;
-    attempt < MAX_RETRIES || attempt === rpcUrls.length + 1;
-    attempt++
-  ) {
+  for (let attempt = 0; attempt === rpcUrls.length + 1; attempt++) {
     try {
       provider = await new ethers.JsonRpcProvider(rpcUrls[attempt]);
 
@@ -112,7 +107,7 @@ async function getProvider(axelarChainId) {
         } failed to initialize provider for ${axelarChainId}: ${error.message}`
       );
 
-      if (attempt === MAX_RETRIES - 1 || attempt === rpcUrls.length - 1) {
+      if (attempt === rpcUrls.length - 1) {
         // If this was the last attempt, we throw the error
         throw new Error(
           `Failed to initialize provider for ${axelarChainId} after ${
