@@ -6,7 +6,7 @@ const tokenListPath = "registry/mainnet/interchain/squid.tokenlist.json";
 
 async function main() {
   try {
-    // Fetching latest changes from main branch
+    // Fetch latest changes from main branch
     execSync("git fetch origin main", { stdio: "inherit" });
     const mainContent = execSync(`git show "origin/main":${tokenListPath}`, {
       encoding: "utf-8",
