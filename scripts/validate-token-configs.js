@@ -92,17 +92,17 @@ async function getAxelarChains() {
 
 async function getProvider(axelarChainId) {
   // Create rpc provider with backup urls
+  let provider;
   for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
     try {
       const rpcUrl = await getRpcUrl(axelarChainId, attempt);
-      const provider = new ethers.JsonRpcProvider(rpcUrl);
+      provider = new ethers.JsonRpcProvider(rpcUrl);
 
       // Test the provider with a simple call
       const network = await provider.getNetwork();
       console.log("network", network);
       console.log("retry", attempt);
-
-      return provider;
+      break;
     } catch (error) {
       console.error(
         `Attempt ${
@@ -118,6 +118,7 @@ async function getProvider(axelarChainId) {
       }
     }
   }
+  return provider;
 }
 
 async function getRpcUrl(axelarChainId, retry = 0) {
