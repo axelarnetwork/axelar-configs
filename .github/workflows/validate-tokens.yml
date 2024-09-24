@@ -39,7 +39,7 @@ jobs:
             fs.writeFileSync('new_tokens.json', JSON.stringify(newTokens, null, 2));
           "
 
-          node validate-token-configs.js
+          node scripts/validate-token-configs.js
 
       - name: Check validation results
         run: |
