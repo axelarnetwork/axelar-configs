@@ -92,11 +92,15 @@ async function getAxelarChains() {
 
 async function getProvider(axelarChainId) {
   // Create rpc provider with backup urls
+  const rpcUrls = await getRpcUrls(axelarChainId);
   let provider;
-  for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
+  for (
+    let attempt = 0;
+    attempt < MAX_RETRIES || attempt === rpcUrls.length + 1;
+    attempt++
+  ) {
     try {
-      const rpcUrl = await getRpcUrl(axelarChainId, attempt);
-      provider = await new ethers.JsonRpcProvider(rpcUrl);
+      provider = await new ethers.JsonRpcProvider(rpcUrls[attempt]);
 
       // Test the provider with a simple call
       await provider.getNetwork();
@@ -108,10 +112,12 @@ async function getProvider(axelarChainId) {
         } failed to initialize provider for ${axelarChainId}: ${error.message}`
       );
 
-      if (attempt === MAX_RETRIES - 1) {
+      if (attempt === MAX_RETRIES - 1 || attempt === rpcUrls.length - 1) {
         // If this was the last attempt, we throw the error
         throw new Error(
-          `Failed to initialize provider for ${axelarChainId} after ${MAX_RETRIES} attempts: ${error.message}`
+          `Failed to initialize provider for ${axelarChainId} after ${
+            attempt + 1
+          } attempts: ${error.message}`
         );
       }
     }
@@ -119,10 +125,10 @@ async function getProvider(axelarChainId) {
   return provider;
 }
 
-async function getRpcUrl(axelarChainId, retry = 0) {
+async function getRpcUrls(axelarChainId) {
   try {
     const chains = await getAxelarChains();
-    return chains[axelarChainId].config.rpc[retry];
+    return chains[axelarChainId].config.rpc;
   } catch (error) {
     throw new Error(
       `Error fetching chain configs for chain '${axelarChainId}':\n ${error.message}`
