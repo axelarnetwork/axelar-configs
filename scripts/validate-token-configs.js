@@ -98,7 +98,6 @@ async function getProvider(axelarChainId) {
       const rpcUrl = await getRpcUrl(axelarChainId, attempt);
       provider = await new ethers.JsonRpcProvider(rpcUrl);
 
-      console.log("network -", network);
       console.log("retry -", attempt);
       // Test the provider with a simple call
       const network = await provider.getNetwork();
