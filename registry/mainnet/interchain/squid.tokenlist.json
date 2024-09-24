@@ -2531,7 +2531,7 @@
           "axelarChainId": "polygon",
           "tokenAddress": "0x1bD0Fe8E92a157D3ef66C9FB9e38621252b407c2",
           "tokenManager": "0xa526eDa85A1CF901E77a33493852B0aFD910Ed0d",
-          "tokenManagerType": "mintBurn"
+          "tokenManagerType": "nativeInterchainToken"
         },
         {
           "symbol": "agETH",
