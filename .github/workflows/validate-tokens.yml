@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install ethers@5.7.2
+          npm install ethers@6.13.2
           npm install axios
 
       - name: Extract and validate new tokens

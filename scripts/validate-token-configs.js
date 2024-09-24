@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import ethers from "ethers";
+import { ethers } from "ethers";
 import axios from "axios";
 
 /*
