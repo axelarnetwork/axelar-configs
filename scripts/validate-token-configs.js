@@ -204,7 +204,7 @@ async function validateChains(info) {
   for (const chain of info.chains) {
     console.log(`Validating for ${chain.axelarChainId}...`);
 
-    const provider = getProvider(chain.axelarChainId);
+    const provider = await getProvider(chain.axelarChainId);
     console.log("provider", provider);
 
     await validateTokenAddress(chain, provider);
@@ -303,7 +303,7 @@ async function validateDeployerAndSalt(
   tokenId,
   { originAxelarChainId, deployer, deploySalt }
 ) {
-  const provider = getProvider(originAxelarChainId);
+  const provider = await getProvider(originAxelarChainId);
   const itsContract = new ethers.Contract(ITSAddress, ITSABI, provider);
 
   if (!ethers.isAddress(deployer))
