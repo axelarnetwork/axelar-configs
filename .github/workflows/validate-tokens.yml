@@ -26,19 +26,19 @@ jobs:
       - name: Extract and validate new tokens
         run: |
           git fetch origin ${{ github.base_ref }}
-          BASE_FILE=$(git show origin/${{ github.base_ref }}:registry/mainnet/interchain/squid.tokenlist.json)
-          CURRENT_FILE=$(cat registry/mainnet/interchain/squid.tokenlist.json)
+          git show origin/${{ github.base_ref }}:registry/mainnet/interchain/squid.tokenlist.json > base_file.json
+          cp registry/mainnet/interchain/squid.tokenlist.json current_file.json
 
-          NEW_TOKENS=$(node -e "
-            const base = JSON.parse('$BASE_FILE');
-            const current = JSON.parse('$CURRENT_FILE');
+          node -e "
+            const fs = require('fs');
+            const base = JSON.parse(fs.readFileSync('base_file.json', 'utf8'));
+            const current = JSON.parse(fs.readFileSync('current_file.json', 'utf8'));
             const newTokens = Object.entries(current.tokens)
               .filter(([id, token]) => !base.tokens[id])
               .reduce((obj, [id, token]) => ({ ...obj, [id]: token }), {});
-            console.log(JSON.stringify(newTokens, null, 2));
-          ")
+            fs.writeFileSync('new_tokens.json', JSON.stringify(newTokens, null, 2));
+          "
 
-          echo "$NEW_TOKENS" > new_tokens.json
           node validate-token-configs.js
 
       - name: Check validation results
