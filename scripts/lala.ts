@@ -1,12 +1,38 @@
 import * as fs from "fs";
 import { ethers } from "ethers";
 import axios from "axios";
-
 /*
  * =============================
- * Section: Constants
+ * Section: Types and Constants
  * =============================
  */
+interface ChainInfo {
+  symbol: string;
+  name: string;
+  axelarChainId: string;
+  tokenAddress: string;
+  tokenManager: string;
+  tokenManagerType: TokenManagerType;
+}
+interface TokenInfo {
+  tokenId: string;
+  deployer: string;
+  originalMinter: string | null;
+  prettySymbol: string;
+  decimals: number;
+  originAxelarChainId: string;
+  tokenType: string;
+  deploySalt: string;
+  iconUrls: {
+    svg: string;
+  };
+  deploymentMessageId: string;
+  coinGeckoId: string;
+  chains: ChainInfo[];
+}
+type TokenManagerType = (typeof tokenManagerTypes)[number];
+
+// Constants
 const tokenManagerTypes = [
   "nativeInterchainToken",
   "mintBurnFrom",
@@ -14,7 +40,7 @@ const tokenManagerTypes = [
   "lockUnlockFee",
   "mintBurn",
   "gateway",
-];
+] as const;
 const ITSAddress = "0xB5FB4BE02232B1bBA4dC8f81dc24C26980dE9e3C";
 const TOKEN_FILE_ROUTE = "./new_tokens.json";
 const COINGECKO_API_KEY = "CG-3VGxh1K3Qk7jAvpt4DJA3LvB";
@@ -89,50 +115,20 @@ async function getAxelarChains() {
   return data.chains;
 }
 
-async function getProvider(axelarChainId) {
-  // Create rpc provider with backup urls
-  const rpcUrls = await getRpcUrls(axelarChainId);
-  let provider;
-  for (let attempt = 0; attempt < rpcUrls.length; attempt++) {
-    try {
-      const rpcURL = rpcUrls[attempt];
-      provider = await new ethers.JsonRpcProvider(rpcURL);
-
-      // Test the provider with a simple call
-      await provider.getNetwork();
-      break;
-    } catch (error) {
-      console.error(
-        `Attempt ${
-          attempt + 1
-        } failed to initialize provider for ${axelarChainId}: ${error.message}`
-      );
-
-      if (attempt === rpcUrls.length - 1) {
-        // If this was the last attempt, we throw the error
-        throw new Error(
-          `Failed to initialize provider for ${axelarChainId} after ${
-            attempt + 1
-          } attempts: ${error.message}`
-        );
-      }
-    }
-  }
-  return provider;
-}
-
-async function getRpcUrls(axelarChainId) {
+async function getRpcUrl(axelarChainId: string): Promise<string> {
   try {
     const chains = await getAxelarChains();
-    return chains[axelarChainId].config.rpc;
+    return chains[axelarChainId].config.rpc[0];
   } catch (error) {
     throw new Error(
-      `Error fetching chain configs for chain '${axelarChainId}':\n ${error.message}`
+      `Error fetching chain configs for chain '${axelarChainId}':\n ${
+        (error as Error).message
+      }`
     );
   }
 }
 
-function exitWithError(errorMessage) {
+function exitWitheError(errorMessage: string) {
   console.error(errorMessage);
   fs.writeFileSync("validation_errors.txt", errorMessage);
   process.exit(1);
@@ -143,28 +139,36 @@ function exitWithError(errorMessage) {
  * Section: Validation Functions
  * =============================
  */
-async function validateTokenInfo(tokenInfo) {
+async function validateTokenInfo(
+  tokenInfo: Record<string, TokenInfo>
+): Promise<void> {
   for (const [tokenId, info] of Object.entries(tokenInfo)) {
     console.log(`\nValidating token: ${tokenId}...`);
     try {
       await validateTokenId(tokenId, info);
+      await validateCoinGeckoId(tokenId, info);
       await validateChains(info);
       await validateOriginChain(info);
       await validateDeployerAndSalt(tokenId, info);
-      await validateCoinGeckoId(tokenId, info);
     } catch (error) {
-      exitWithError(error.message);
+      exitWitheError((error as Error).message);
     }
   }
 }
 
-async function validateTokenId(tokenId, info) {
+async function validateTokenId(
+  tokenId: string,
+  info: TokenInfo
+): Promise<void> {
   if (tokenId !== info.tokenId) {
     throw new Error(`Mismatch in tokenId: ${tokenId} vs ${info.tokenId}`);
   }
 }
 
-async function validateCoinGeckoId(tokenId, { coinGeckoId, prettySymbol }) {
+async function validateCoinGeckoId(
+  tokenId: string,
+  { coinGeckoId, prettySymbol }: TokenInfo
+): Promise<void> {
   if (!coinGeckoId)
     throw new Error(`CoinGecko ID is missing for token ${tokenId}`);
 
@@ -193,16 +197,19 @@ async function validateCoinGeckoId(tokenId, { coinGeckoId, prettySymbol }) {
       );
     }
     throw new Error(
-      `Error fetching data from CoinGecko for token ${tokenId}: ${error.message}`
+      `Error fetching data from CoinGecko for token ${tokenId}: ${
+        (error as Error).message
+      }`
     );
   }
 }
 
-async function validateChains(info) {
+async function validateChains(info: TokenInfo): Promise<void> {
   for (const chain of info.chains) {
     console.log(`Validating for ${chain.axelarChainId}...`);
 
-    const provider = await getProvider(chain.axelarChainId);
+    const rpcUrl = await getRpcUrl(chain.axelarChainId);
+    const provider = new ethers.JsonRpcProvider(rpcUrl);
 
     await validateTokenAddress(chain, provider);
     await validateTokenDetails(chain, info, provider);
@@ -210,7 +217,10 @@ async function validateChains(info) {
   }
 }
 
-async function validateTokenAddress(chain, provider) {
+async function validateTokenAddress(
+  chain: ChainInfo,
+  provider: ethers.JsonRpcProvider
+): Promise<void> {
   const tokenCode = await provider.getCode(chain.tokenAddress);
   if (tokenCode === "0x")
     throw new Error(
@@ -219,10 +229,10 @@ async function validateTokenAddress(chain, provider) {
 }
 
 async function validateTokenDetails(
-  chain,
-  { originAxelarChainId, prettySymbol, decimals },
-  provider
-) {
+  chain: ChainInfo,
+  { originAxelarChainId, prettySymbol, decimals }: TokenInfo,
+  provider: ethers.JsonRpcProvider
+): Promise<void> {
   const tokenContract = new ethers.Contract(
     chain.tokenAddress,
     ERC20ABI,
@@ -253,7 +263,10 @@ async function validateTokenDetails(
   }
 }
 
-async function validateTokenManager(chain, provider) {
+async function validateTokenManager(
+  chain: ChainInfo,
+  provider: ethers.JsonRpcProvider
+): Promise<void> {
   const managerCode = await provider.getCode(chain.tokenManager);
   if (managerCode === "0x") {
     throw new Error(
@@ -286,7 +299,10 @@ async function validateTokenManager(chain, provider) {
     );
 }
 
-async function validateOriginChain({ chains, originAxelarChainId }) {
+async function validateOriginChain({
+  chains,
+  originAxelarChainId,
+}: TokenInfo): Promise<void> {
   const originChain = chains.find(
     (chain) => chain.axelarChainId === originAxelarChainId
   );
@@ -297,10 +313,11 @@ async function validateOriginChain({ chains, originAxelarChainId }) {
 }
 
 async function validateDeployerAndSalt(
-  tokenId,
-  { originAxelarChainId, deployer, deploySalt }
-) {
-  const provider = await getProvider(originAxelarChainId);
+  tokenId: string,
+  { originAxelarChainId, deployer, deploySalt }: TokenInfo
+): Promise<void> {
+  const rpcUrl = await getRpcUrl(originAxelarChainId);
+  const provider = new ethers.JsonRpcProvider(rpcUrl);
   const itsContract = new ethers.Contract(ITSAddress, ITSABI, provider);
 
   if (!ethers.isAddress(deployer))
@@ -330,10 +347,12 @@ async function validateDeployerAndSalt(
 async function main() {
   try {
     // Read new token configurations from file
-    const newTokens = JSON.parse(fs.readFileSync(TOKEN_FILE_ROUTE, "utf8"));
+    const newTokens: Record<string, TokenInfo> = JSON.parse(
+      fs.readFileSync(TOKEN_FILE_ROUTE, "utf8")
+    );
     await validateTokenInfo(newTokens);
   } catch (error) {
-    exitWithError(error.message);
+    exitWitheError((error as Error).message);
   }
   console.log("Validation successful!");
 }
