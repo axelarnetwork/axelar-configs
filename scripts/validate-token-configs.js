@@ -21,6 +21,7 @@ const COINGECKO_API_KEY = "CG-3VGxh1K3Qk7jAvpt4DJA3LvB";
 const COINGECKO_URL = "https://api.coingecko.com/api/v3/coins/";
 const CHAIN_CONFIGS_URL =
   "https://axelar-mainnet.s3.us-east-2.amazonaws.com/configs/mainnet-config-1.x.json";
+const MAX_RETRIES = 3;
 const ERC20ABI = [
   {
     constant: true,
@@ -89,10 +90,38 @@ async function getAxelarChains() {
   return data.chains;
 }
 
-async function getRpcUrl(axelarChainId) {
+async function getProvider(axelarChainId) {
+  // Create rpc provider with backup urls
+  for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
+    try {
+      const rpcUrl = await getRpcUrl(axelarChainId, attempt);
+      const provider = new ethers.JsonRpcProvider(rpcUrl);
+
+      // Test the provider with a simple call
+      await provider.getNetwork();
+
+      return provider;
+    } catch (error) {
+      console.error(
+        `Attempt ${attempt + 1} failed to initialize provider for ${
+          chain.axelarChainId
+        }: ${error.message}`
+      );
+
+      if (attempt === MAX_RETRIES - 1) {
+        // If this was the last attempt, we throw the error
+        throw new Error(
+          `Failed to initialize provider for ${chain.axelarChainId} after ${MAX_RETRIES} attempts: ${error.message}`
+        );
+      }
+    }
+  }
+}
+
+async function getRpcUrl(axelarChainId, retry = 0) {
   try {
     const chains = await getAxelarChains();
-    return chains[axelarChainId].config.rpc[0];
+    return chains[axelarChainId].config.rpc[retry];
   } catch (error) {
     throw new Error(
       `Error fetching chain configs for chain '${axelarChainId}':\n ${error.message}`
@@ -170,8 +199,7 @@ async function validateChains(info) {
   for (const chain of info.chains) {
     console.log(`Validating for ${chain.axelarChainId}...`);
 
-    const rpcUrl = await getRpcUrl(chain.axelarChainId);
-    const provider = new ethers.JsonRpcProvider(rpcUrl);
+    const provider = getProvider(chain.axelarChainId);
 
     await validateTokenAddress(chain, provider);
     await validateTokenDetails(chain, info, provider);
@@ -269,8 +297,7 @@ async function validateDeployerAndSalt(
   tokenId,
   { originAxelarChainId, deployer, deploySalt }
 ) {
-  const rpcUrl = await getRpcUrl(originAxelarChainId);
-  const provider = new ethers.JsonRpcProvider(rpcUrl);
+  const provider = getProvider(originAxelarChainId);
   const itsContract = new ethers.Contract(ITSAddress, ITSABI, provider);
 
   if (!ethers.isAddress(deployer))
