@@ -103,15 +103,15 @@ async function getProvider(axelarChainId) {
       return provider;
     } catch (error) {
       console.error(
-        `Attempt ${attempt + 1} failed to initialize provider for ${
-          chain.axelarChainId
-        }: ${error.message}`
+        `Attempt ${
+          attempt + 1
+        } failed to initialize provider for ${axelarChainId}: ${error.message}`
       );
 
       if (attempt === MAX_RETRIES - 1) {
         // If this was the last attempt, we throw the error
         throw new Error(
-          `Failed to initialize provider for ${chain.axelarChainId} after ${MAX_RETRIES} attempts: ${error.message}`
+          `Failed to initialize provider for ${axelarChainId} after ${MAX_RETRIES} attempts: ${error.message}`
         );
       }
     }
