@@ -1,6 +1,6 @@
-const fs = require("fs");
-const ethers = require("ethers");
-const axios = require("axios");
+import * as fs from "fs";
+import { ethers } from "ethers";
+import axios from "axios";
 
 /*
  * =============================
