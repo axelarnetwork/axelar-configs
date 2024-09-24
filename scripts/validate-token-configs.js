@@ -93,7 +93,7 @@ async function getProvider(axelarChainId) {
   // Create rpc provider with backup urls
   const rpcUrls = await getRpcUrls(axelarChainId);
   let provider;
-  for (let attempt = 0; attempt === rpcUrls.length + 1; attempt++) {
+  for (let attempt = 0; attempt < rpcUrls.length; attempt++) {
     try {
       provider = await new ethers.JsonRpcProvider(rpcUrls[attempt]);
 
