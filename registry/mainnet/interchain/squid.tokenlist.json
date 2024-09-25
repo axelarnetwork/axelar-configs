@@ -2549,6 +2549,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x6ce7a978114b2d34ee7b776ef36ee49c18752e35b7507c16994d5928332a6426": {
+      "tokenId": "0x6ce7a978114b2d34ee7b776ef36ee49c18752e35b7507c16994d5928332a6426",
+      "deployer": "0x87e1237074760F57b424121edcA06F082700dBC2",
+      "originalMinter": null,
+      "prettySymbol": "NFTL",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "interchain",
+      "deploySalt": "0xdeead7ca2bddea93a28a9a71a5b53be2c9439b691fcaebf02fbf41f4ae78a528",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/nftl.svg"
+      },
+      "deploymentMessageId": "0x19f1e3cb4ce6c8e2a54764c86fe49bca583bbc2b4772190318445a2167121216-343",
+      "chains": [
+        {
+          "symbol": "NFTL",
+          "name": "Nifty League",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x3c8D2FCE49906e11e71cB16Fa0fFeB2B16C29638",
+          "tokenManager": "0x3150A2bA908A11eBE137B977C54c19bf971bb6c7",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "NFTL",
+          "name": "Nifty League",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0xB0d7e9Ff5fb8E739c4990f7920d8047AcfAe4884",
+          "tokenManager": "0x3150A2bA908A11eBE137B977C54c19bf971bb6c7",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
