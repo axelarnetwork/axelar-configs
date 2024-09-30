@@ -2552,12 +2552,13 @@
     },
     "0x6ce7a978114b2d34ee7b776ef36ee49c18752e35b7507c16994d5928332a6426": {
       "tokenId": "0x6ce7a978114b2d34ee7b776ef36ee49c18752e35b7507c16994d5928332a6426",
+      "coinGeckoId": "nifty-league",
       "deployer": "0x87e1237074760F57b424121edcA06F082700dBC2",
       "originalMinter": null,
       "prettySymbol": "NFTL",
       "decimals": 18,
       "originAxelarChainId": "ethereum",
-      "tokenType": "interchain",
+      "tokenType": "customInterchain",
       "deploySalt": "0xdeead7ca2bddea93a28a9a71a5b53be2c9439b691fcaebf02fbf41f4ae78a528",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/nftl.svg"
