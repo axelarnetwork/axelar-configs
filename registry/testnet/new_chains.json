@@ -1,0 +1,256 @@
+{
+  "core-avalanche": {
+    "name": "Avalanche Fuji",
+    "id": "core-avalanche",
+    "axelarId": "core-avalanche",
+    "chainId": 43113,
+    "rpc": "https://avalanche-fuji-c-chain-rpc.publicnode.com",
+    "tokenSymbol": "AVAX",
+    "confirmations": 1,
+    "chainType": "evm",
+    "contracts": {
+      "ConstAddressDeployer": {
+        "address": "0x98B2920D53612483F91F12Ed7754E51b4A77919e"
+      },
+      "Create3Deployer": {
+        "address": "0x6513Aedb4D1593BA12e50644401D976aebDc90d8"
+      },
+      "Operators": {
+        "address": "0x60607ebAE692cfD36af19b4779b72AC2f1Ca2798"
+      },
+      "AxelarGasService": {
+        "address": "0x5F80274696D9414a148E9D64822a42846AFFE2DC"
+      }
+    }
+  },
+  "core-ethereum": {
+    "name": "Ethereum Sepolia",
+    "id": "core-ethereum",
+    "axelarId": "core-ethereum",
+    "chainId": 11155111,
+    "rpc": "https://eth-sepolia-public.unifra.io",
+    "tokenSymbol": "ETH",
+    "confirmations": 1,
+    "chainType": "evm",
+    "contracts": {
+      "ConstAddressDeployer": {
+        "address": "0x98B2920D53612483F91F12Ed7754E51b4A77919e"
+      },
+      "Create3Deployer": {
+        "address": "0x6513Aedb4D1593BA12e50644401D976aebDc90d8"
+      },
+      "Operators": {
+        "address": "0x60607ebAE692cfD36af19b4779b72AC2f1Ca2798"
+      },
+      "AxelarGasService": {
+        "address": "0x5F80274696D9414a148E9D64822a42846AFFE2DC"
+      }
+    }
+  },
+  "core-optimism": {
+    "name": "Optimism Sepolia",
+    "id": "core-optimism",
+    "axelarId": "core-optimism",
+    "chainId": 11155420,
+    "rpc": "https://sepolia.optimism.io",
+    "tokenSymbol": "ETH",
+    "confirmations": 1,
+    "chainType": "evm",
+    "contracts": {
+      "ConstAddressDeployer": {
+        "address": "0x98B2920D53612483F91F12Ed7754E51b4A77919e"
+      },
+      "Create3Deployer": {
+        "address": "0x6513Aedb4D1593BA12e50644401D976aebDc90d8"
+      },
+      "Operators": {
+        "address": "0x60607ebAE692cfD36af19b4779b72AC2f1Ca2798"
+      },
+      "AxelarGasService": {
+        "address": "0x5F80274696D9414a148E9D64822a42846AFFE2DC"
+      }
+    }
+  },
+  "avalanche-fuji": {
+    "name": "Avalanche Fuji",
+    "id": "avalanche-fuji",
+    "axelarId": "avalanche-fuji",
+    "chainId": 43113,
+    "rpc": "https://avalanche-fuji-c-chain-rpc.publicnode.com",
+    "tokenSymbol": "AVAX",
+    "confirmations": 1,
+    "chainType": "evm",
+    "contracts": {
+      "AxelarGateway": {
+        "address": "0xF128c84c3326727c3e155168daAa4C0156B87AD1"
+      },
+      "ConstAddressDeployer": {
+        "address": "0x98B2920D53612483F91F12Ed7754E51b4A77919e"
+      },
+      "Create3Deployer": {
+        "address": "0x6513Aedb4D1593BA12e50644401D976aebDc90d8"
+      },
+      "InterchainGovernance": {
+        "address": "0xba76c6980428A0b10CFC5d8ccb61949677A61233"
+      },
+      "AxelarGasService": {
+        "address": "0x1179d44e69ba5252B7478a8602617d5EEeb2F377"
+      },
+      "Operators": {
+        "address": "0x505381EEd15c828b3158836d0196bC2E6B51c49f"
+      },
+      "InterchainTokenService": {
+        "address": "0x144c3d7A5f5198EF3B46A8258b35E903cf197A66"
+      },
+      "InterchainTokenFactory": {
+        "address": "0x6Ae8C8498d5FDA930e6ABeB0E15E5A00471702a7"
+      }
+    },
+    "amplifierContracts": {
+      "MultisigProver": {
+        "address": "axelar1p22kz5jr7a9ruu8ypg40smual0uagl64dwvz5xt042vu8fa7l7dsl3wx8q"
+      },
+      "VotingVerifier": {
+        "address": "axelar1252ahkw208d08ls64atp2pql4cnl9naxy7ahhq3lrthvq3spseys26l8xj"
+      },
+      "Gateway": {
+        "address": "axelar1agyunp32jwynnkrf92wuvac2xa7cvgthtk5yr3wh7jypg59zjjqqsqf36s"
+      }
+    }
+  },
+  "eth-sepolia": {
+    "name": "Ethereum Sepolia",
+    "id": "eth-sepolia",
+    "axelarId": "eth-sepolia",
+    "chainId": 11155111,
+    "rpc": "https://1rpc.io/sepolia",
+    "tokenSymbol": "ETH",
+    "confirmations": 1,
+    "chainType": "evm",
+    "contracts": {
+      "AxelarGateway": {
+        "address": "0xF128c84c3326727c3e155168daAa4C0156B87AD1"
+      },
+      "ConstAddressDeployer": {
+        "address": "0x98B2920D53612483F91F12Ed7754E51b4A77919e"
+      },
+      "Create3Deployer": {
+        "address": "0x6513Aedb4D1593BA12e50644401D976aebDc90d8"
+      },
+      "InterchainGovernance": {
+        "address": "0xba76c6980428A0b10CFC5d8ccb61949677A61233"
+      },
+      "AxelarGasService": {
+        "address": "0x1179d44e69ba5252B7478a8602617d5EEeb2F377"
+      },
+      "Operators": {
+        "address": "0x505381EEd15c828b3158836d0196bC2E6B51c49f"
+      },
+      "InterchainTokenService": {
+        "address": "0x144c3d7A5f5198EF3B46A8258b35E903cf197A66"
+      },
+      "InterchainTokenFactory": {
+        "address": "0x6Ae8C8498d5FDA930e6ABeB0E15E5A00471702a7"
+      }
+    },
+    "amplifierContracts": {
+      "MultisigProver": {
+        "address": "axelar15ra7d5uvnmc6ety6sqxsvsfz4t34ud6lc5gmt39res0c5thkqp2qdwj4af"
+      },
+      "VotingVerifier": {
+        "address": "axelar16swl5eh3vspnyzddwltuf93hc65nwju7498u0zyq33u4cj8rxy4sgxx30m"
+      },
+      "Gateway": {
+        "address": "axelar18zrymnzgdmutdjhqlfsslzy4yvzw8uylysjwqlq4uk4muq3qx30qde39qz"
+      }
+    }
+  },
+  "optimism-sepolia": {
+    "name": "Optimism Sepolia",
+    "id": "optimism-sepolia",
+    "axelarId": "optimism-sepolia",
+    "chainId": 11155420,
+    "rpc": "https://sepolia.optimism.io",
+    "tokenSymbol": "ETH",
+    "confirmations": 1,
+    "chainType": "evm",
+    "contracts": {
+      "AxelarGateway": {
+        "address": "0xF128c84c3326727c3e155168daAa4C0156B87AD1"
+      },
+      "ConstAddressDeployer": {
+        "address": "0x98B2920D53612483F91F12Ed7754E51b4A77919e"
+      },
+      "Create3Deployer": {
+        "address": "0x6513Aedb4D1593BA12e50644401D976aebDc90d8"
+      },
+      "InterchainGovernance": {
+        "address": "0xba76c6980428A0b10CFC5d8ccb61949677A61233"
+      },
+      "AxelarGasService": {
+        "address": "0x1179d44e69ba5252B7478a8602617d5EEeb2F377"
+      },
+      "Operators": {
+        "address": "0x505381EEd15c828b3158836d0196bC2E6B51c49f"
+      },
+      "InterchainTokenService": {
+        "address": "0x144c3d7A5f5198EF3B46A8258b35E903cf197A66"
+      },
+      "InterchainTokenFactory": {
+        "address": "0x6Ae8C8498d5FDA930e6ABeB0E15E5A00471702a7"
+      }
+    },
+    "amplifierContracts": {
+      "MultisigProver": {
+        "address": "axelar1p0yyfy7f70zdc0ludh6kffjzs8mvun5prdf7nh7s2cgq74g67nmsjcw7t4"
+      },
+      "VotingVerifier": {
+        "address": "axelar1qtg2es55w6zp539a2xh9mnajxqq2rsqghf604muyw85vrn0ky97qyu795s"
+      },
+      "Gateway": {
+        "address": "axelar16wd6350f575t5cts9sduqmt7nsw9kc822ltf6dcn46rvejmmg8cqrq4ara"
+      }
+    }
+  },
+  "flow": {
+    "name": "Flow",
+    "id": "flow",
+    "axelarId": "flow",
+    "chainId": 545,
+    "rpc": "https://testnet.evm.nodes.onflow.org",
+    "tokenSymbol": "FLOW",
+    "confirmations": 1,
+    "chainType": "evm",
+    "contracts": {
+      "ConstAddressDeployer": {
+        "address": "0x98B2920D53612483F91F12Ed7754E51b4A77919e"
+      },
+      "Create3Deployer": {
+        "address": "0x6513Aedb4D1593BA12e50644401D976aebDc90d8"
+      },
+      "AxelarGateway": {
+        "address": "0xF128c84c3326727c3e155168daAa4C0156B87AD1"
+      },
+      "InterchainGovernance": {
+        "address": "0xba76c6980428A0b10CFC5d8ccb61949677A61233"
+      },
+      "Operators": {
+        "address": "0x505381EEd15c828b3158836d0196bC2E6B51c49f"
+      },
+      "AxelarGasService": {
+        "address": "0xD7C77eEA2aF147D351f189eF9eC17EfDf609a3c8"
+      }
+    },
+    "amplifierContracts": {
+      "MultisigProver": {
+        "address": "axelar19ukamzyhhaw4algkqch5relyg0h972smhj8zge2usjp8z7yaezrquc475f"
+      },
+      "VotingVerifier": {
+        "address": "axelar1hn4hf23pqy2s2yacs4cuzjqe72hxn0rtxugy2vq485l7cngtcavqu9d0zq"
+      },
+      "Gateway": {
+        "address": "axelar10w5sqgun0q3m0vkz29vh55ujug57m0t54cue04aesrg45rqcgf6sjv4wwh"
+      }
+    }
+  }
+}
