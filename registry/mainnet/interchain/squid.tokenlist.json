@@ -179,6 +179,39 @@
         }
       ]
     },
+    "0x9a5bc86777a762c62e10efda1e8dc056372041a65bcca0e07023e4a1d92dc713": {
+      "tokenId": "0x9a5bc86777a762c62e10efda1e8dc056372041a65bcca0e07023e4a1d92dc713",
+      "deployer": "0x2347bA6939476B0BE50f4E8Ba7C2419555555225",
+      "originalMinter": null,
+      "prettySymbol": "MSS",
+      "decimals": 18,
+      "deploySalt": "0x7d64bcaf22652092665df135db0713e700c7452410b1768d2b0366e6c258672e",
+      "originAxelarChainId": "binance",
+      "tokenType": "customInterchain",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mss.svg"
+      },
+      "coinGeckoId": "mintstakeshare",
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "MSS",
+          "name": "MintStakeShare",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x7C3b00CB3B40Cc77d88329A58574E29cFA3cb9E2",
+          "tokenManager": "0x5BF37a8c18A8497Da7D7D99c98419704413Fae5d",
+          "tokenManagerType": "mintBurnFrom"
+        },
+        {
+          "symbol": "MSS",
+          "name": "MintStakeShare",
+          "axelarChainId": "base",
+          "tokenAddress": "0x4b556f3a476b58be7F35DF77EdD68FbE5076F706",
+          "tokenManager": "0x5BF37a8c18A8497Da7D7D99c98419704413Fae5d",
+          "tokenManagerType": "mintBurnFrom"
+        }
+      ]
+    },
     "0x3142a7a57b61fb7f81629fe9c8953504cdbebec9d3ab83d9c893e41bd5c15a67": {
       "tokenId": "0x3142a7a57b61fb7f81629fe9c8953504cdbebec9d3ab83d9c893e41bd5c15a67",
       "deployer": "0x4e3DA49cc22694D53F4a71e4d4BfdFB2BF272887",
