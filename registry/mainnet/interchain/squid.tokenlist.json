@@ -2662,6 +2662,39 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x80335fcf9220680d74609ecbefab46d73f9dbd149d42a4e0a0ff1de25bc0e12a": {
+      "tokenId": "0x80335fcf9220680d74609ecbefab46d73f9dbd149d42a4e0a0ff1de25bc0e12a",
+      "coinGeckoId": "funfair",
+      "deployer": "0x53Ea9Fc07Bd45966f02fABD2Df47D1B68Aa26713",
+      "originalMinter": null,
+      "prettySymbol": "FUN",
+      "decimals": 8,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/fun.svg"
+      },
+      "deploymentMessageId": "0x861e926a58c176addd743a6b218a24a795beef1e02a9b66262bc26f07549b6c1-61",
+      "chains": [
+        {
+          "symbol": "FUN",
+          "name": "FUNToken",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x419D0d8BdD9aF5e606Ae2232ed285Aff190E711b",
+          "tokenManager": "0xd5AccFFb581d87CF6Fe4b74f42f9FC415988fd1D",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "FUN",
+          "name": "FUNToken",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x8343828EFc1c618f631055BB27d7cd1919F536Cc",
+          "tokenManager": "0xd5AccFFb581d87CF6Fe4b74f42f9FC415988fd1D",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
