@@ -2737,10 +2737,11 @@
       "decimals": 9,
       "originAxelarChainId": "ethereum",
       "tokenType": "canonical",
-      "deploySalt": "0x",
+      "deploySalt": "0x5A1D9D229D60019372FC72391EB26FBA30FE36EABA97BA172FD1716454DAC962",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/neiro.svg"
       },
+      "coinGeckoId": "neiro-on-eth",
       "deploymentMessageId": "0x0754376aeb71ba57ebd65015a3b281357fddc48812a4317ad1d0927581f05482-7",
       "chains": [
         {
