@@ -2728,6 +2728,46 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x502cc5499ba98b2c5f0f7d7090d6db2a4730dabe1450f744ea292d2a27ff870e": {
+      "tokenId": "0x502cc5499ba98b2c5f0f7d7090d6db2a4730dabe1450f744ea292d2a27ff870e",
+      "deployer": "0xA82FB9067Be18a56A841AE314D3b88dee89Bbfa6",
+      "originalMinter": null,
+      "prettySymbol": "NEIRO",
+      "decimals": 9,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/neiro.svg"
+      },
+      "deploymentMessageId": "0x0754376aeb71ba57ebd65015a3b281357fddc48812a4317ad1d0927581f05482-7",
+      "chains": [
+        {
+          "symbol": "NEIRO",
+          "name": "Neiro",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xee2a03aa6dacf51c18679c516ad5283d8e7c2637",
+          "tokenManager": "0x9E12A832325BD8Eaf001704D16038D3CF7799500",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "NEIRO",
+          "name": "Neiro",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x2545D6738E3f072c430Af027B94b62847234cE3D",
+          "tokenManager": "0x9E12A832325BD8Eaf001704D16038D3CF7799500",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "NEIRO",
+          "name": "Neiro",
+          "axelarChainId": "base",
+          "tokenAddress": "0x2545D6738E3f072c430Af027B94b62847234cE3D",
+          "tokenManager": "0x9E12A832325BD8Eaf001704D16038D3CF7799500",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
