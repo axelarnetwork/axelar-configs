@@ -2780,7 +2780,7 @@
       "tokenType": "canonical",
       "deploySalt": "0x",
       "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/quack.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/richquack.svg"
       },
       "deploymentMessageId": "0x12d07c5d39e08fbd0f2932a4d6353e7f0d23275654adcfcd952ca390dd3a7787-160",
       "chains": [
