@@ -2770,230 +2770,35 @@
         }
       ]
     },
-    "0xf41dba8aea15eeaf6c5d48e4e2e499b9bb6c3bcf84d7cf98c07e0028254ffcac": {
-      "tokenId": "0xf41dba8aea15eeaf6c5d48e4e2e499b9bb6c3bcf84d7cf98c07e0028254ffcac",
-      "deployer": "0xB978d07C836fa41c8d001FEb246D3ceDA9202934",
+    "0xbfb7fa2e6db295bee3e0a98a9fb98c4076237496eb41bb2e15825618e4d98a74": {
+      "tokenId": "0xbfb7fa2e6db295bee3e0a98a9fb98c4076237496eb41bb2e15825618e4d98a74",
+      "deployer": "0x91aD7E7CB734Af5ECa9BAa6f4803411FB6279237",
       "originalMinter": null,
-      "prettySymbol": "QUACK",
-      "decimals": 9,
-      "originAxelarChainId": "binance",
-      "tokenType": "canonical",
-      "deploySalt": "0x",
-      "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/richquack.svg"
-      },
-      "deploymentMessageId": "0x12d07c5d39e08fbd0f2932a4d6353e7f0d23275654adcfcd952ca390dd3a7787-160",
-      "chains": [
-        {
-          "symbol": "QUACK",
-          "name": "RichQUACK.com",
-          "axelarChainId": "binance",
-          "tokenAddress": "0xd74b782e05aa25c50e7330af541d46e18f36661c",
-          "tokenManager": "0x0F5C153437b5eD9a1a268F42b803DA4b2E88EB01",
-          "tokenManagerType": "lockUnlock"
-        },
-        {
-          "symbol": "QUACK",
-          "name": "RichQUACK.com",
-          "axelarChainId": "blast",
-          "tokenAddress": "0xBE6d04Af5AF2A2267818Aadd9fC285a539185aFF",
-          "tokenManager": "0x0F5C153437b5eD9a1a268F42b803DA4b2E88EB01",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "QUACK",
-          "name": "RichQUACK.com",
-          "axelarChainId": "base",
-          "tokenAddress": "0xBE6d04Af5AF2A2267818Aadd9fC285a539185aFF",
-          "tokenManager": "0x0F5C153437b5eD9a1a268F42b803DA4b2E88EB01",
-          "tokenManagerType": "mintBurn"
-        }
-      ]
-    },
-    "0x0c5366be136c8a820aeb9ebb380a307a1cfd521af5772161dd3994d9828caeb7": {
-      "tokenId": "0x0c5366be136c8a820aeb9ebb380a307a1cfd521af5772161dd3994d9828caeb7",
-      "deployer": "0x1b75C2C0158B9A41b864836b1F0474DeEa3EbB55",
-      "originalMinter": null,
-      "prettySymbol": "DOGE",
+      "prettySymbol": "CAI",
       "decimals": 18,
       "originAxelarChainId": "ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
-      "coinGeckoId": "department-of-gov-efficiency",
       "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/doge.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/cai.svg"
       },
-      "deploymentMessageId": "0x7c65dba4805f3ea73ed464f8853e41a92cc74e15871c29252a002192f9180196-44",
+      "deploymentMessageId": "0x8b866515fb24e4dc36dc434401b6f7d2c148d3d476cb831a24b636a1d454455a-30",
       "chains": [
         {
-          "symbol": "DOGE",
-          "name": "Department Of Government Efficiency",
+          "symbol": "CAI",
+          "name": "ChasmAI",
           "axelarChainId": "ethereum",
-          "tokenAddress": "0x1121AcC14c63f3C872BFcA497d10926A6098AAc5",
-          "tokenManager": "0x301db234167c4f6834DcE3f274B18D759D7edDC9",
+          "tokenAddress": "0x19247618D79E3fc4d4866169789E4B8eEDef52E6",
+          "tokenManager": "0x924368213A53cDa40b38E8931459bb7113465576",
           "tokenManagerType": "lockUnlock"
         },
         {
-          "symbol": "DOGE",
-          "name": "Department Of Government Efficiency",
-          "axelarChainId": "base",
-          "tokenAddress": "0x67f0870BB897F5E1c369976b4A2962d527B9562c",
-          "tokenManager": "0x301db234167c4f6834DcE3f274B18D759D7edDC9",
+          "symbol": "CAI",
+          "name": "ChasmAI",
+          "axelarChainId": "mantle",
+          "tokenAddress": "0xF793Ac038E7688Aa3220005852836108cdDB065c",
+          "tokenManager": "0x924368213A53cDa40b38E8931459bb7113465576",
           "tokenManagerType": "mintBurn"
-        }
-      ]
-    },
-    "0x188ca79eaa83cc4d76b71eda77b843636ca03164d1c3a986b545b0695681ec9a": {
-      "tokenId": "0x188ca79eaa83cc4d76b71eda77b843636ca03164d1c3a986b545b0695681ec9a",
-      "deployer": "0x20E0CB3f865661daeE1Cc5D48E7d1440fF0A45Cc",
-      "originalMinter": null,
-      "prettySymbol": "KATA",
-      "decimals": 18,
-      "originAxelarChainId": "ethereum",
-      "tokenType": "canonical",
-      "deploySalt": "0x97bd0e6da71ad5eb879f1c6d5e2a53322afa8638e432d4809d7540045429d5b5",
-      "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/kata.svg"
-      },
-      "deploymentMessageId": "0x982c86c5c6feca210b44f1dde12b3c7ee893002f355131cb3fb3e7fdbeb5a446-16",
-      "chains": [
-        {
-          "symbol": "KATA",
-          "name": "Katana Inu",
-          "axelarChainId": "ethereum",
-          "tokenAddress": "0x2e85ae1C47602f7927bCabc2Ff99C40aA222aE15",
-          "tokenManager": "0x036DDe7F8B827C58d03c42bf6E454eC2E5C183c7",
-          "tokenManagerType": "lockUnlock"
-        },
-        {
-          "symbol": "KATA",
-          "name": "Katana Inu",
-          "axelarChainId": "avalanche",
-          "tokenAddress": "0x02454a97A8372f3A760A033DBb39E67D73BD6d87",
-          "tokenManager": "0x036DDe7F8B827C58d03c42bf6E454eC2E5C183c7",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "KATA",
-          "name": "Katana Inu",
-          "axelarChainId": "base",
-          "tokenAddress": "0x02454a97A8372f3A760A033DBb39E67D73BD6d87",
-          "tokenManager": "0x036DDe7F8B827C58d03c42bf6E454eC2E5C183c7",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "KATA",
-          "name": "Katana Inu",
-          "axelarChainId": "polygon",
-          "tokenAddress": "0x02454a97A8372f3A760A033DBb39E67D73BD6d87",
-          "tokenManager": "0x036DDe7F8B827C58d03c42bf6E454eC2E5C183c7",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "KATA",
-          "name": "Katana Inu",
-          "axelarChainId": "linea",
-          "tokenAddress": "0x02454a97A8372f3A760A033DBb39E67D73BD6d87",
-          "tokenManager": "0x036DDe7F8B827C58d03c42bf6E454eC2E5C183c7",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "KATA",
-          "name": "Katana Inu",
-          "axelarChainId": "immutable",
-          "tokenAddress": "0x02454a97A8372f3A760A033DBb39E67D73BD6d87",
-          "tokenManager": "0x036DDe7F8B827C58d03c42bf6E454eC2E5C183c7",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "KATA",
-          "name": "Katana Inu",
-          "axelarChainId": "arbitrum",
-          "tokenAddress": "0x02454a97A8372f3A760A033DBb39E67D73BD6d87",
-          "tokenManager": "0x036DDe7F8B827C58d03c42bf6E454eC2E5C183c7",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "KATA",
-          "name": "Katana Inu",
-          "axelarChainId": "optimism",
-          "tokenAddress": "0x02454a97A8372f3A760A033DBb39E67D73BD6d87",
-          "tokenManager": "0x036DDe7F8B827C58d03c42bf6E454eC2E5C183c7",
-          "tokenManagerType": "mintBurn"
-        }
-      ]
-    },
-    "0x01d4c1188c91b7f01b3fde9c7a6a7db482e5099112497292034ed7864b32e746": {
-      "tokenId": "0x01d4c1188c91b7f01b3fde9c7a6a7db482e5099112497292034ed7864b32e746",
-      "deployer": "0x0F4C032369b33740F1Fc77a4cE84655124CbcC73",
-      "originalMinter": null,
-      "prettySymbol": "ELDA",
-      "decimals": 18,
-      "originAxelarChainId": "binance",
-      "tokenType": "canonical",
-      "deploySalt": "0x",
-      "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/elda.svg"
-      },
-      "deploymentMessageId": "0x8aecdb791900b3a2806b69ef6ade3536cfa40f0fc4fd6a7dcfc0b4c62058bfa6-62",
-      "coinGeckoId": "eldarune",
-      "chains": [
-        {
-          "symbol": "ELDA",
-          "name": "Eldarune",
-          "axelarChainId": "binance",
-          "tokenAddress": "0xab2ed911BDbeA001FD3B29AdbC35d8a76E68aAe4",
-          "tokenManager": "0xDad86D111Eb33d1a16e1862ef8d2C410A2CFf6d5",
-          "tokenManagerType": "lockUnlock"
-        },
-        {
-          "symbol": "ELDA",
-          "name": "Eldarune",
-          "axelarChainId": "avalanche",
-          "tokenAddress": "0x2fAa209247c0f7641fEF0c73ad6b44607A92DD3a",
-          "tokenManager": "0xDad86D111Eb33d1a16e1862ef8d2C410A2CFf6d5",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "ELDA",
-          "name": "Eldarune",
-          "axelarChainId": "arbitrum",
-          "tokenAddress": "0x2fAa209247c0f7641fEF0c73ad6b44607A92DD3a",
-          "tokenManager": "0xDad86D111Eb33d1a16e1862ef8d2C410A2CFf6d5",
-          "tokenManagerType": "mintBurn"
-        }
-      ]
-    },
-    "0x7d83dcafeb4405de148aaf9acdac6ee67dfb1cad85e34f1a1c1b3125a1158d99": {
-      "tokenId": "0x7d83dcafeb4405de148aaf9acdac6ee67dfb1cad85e34f1a1c1b3125a1158d99",
-      "coinGeckoId": "yieldbricks",
-      "deployer": "0xc7Dc9Eb80d1Cc41ce57360DB8e9954b3c396CD56",
-      "originalMinter": null,
-      "prettySymbol": "YBR",
-      "decimals": 18,
-      "deploymentMessageId": "",
-      "originAxelarChainId": "arbitrum",
-      "tokenType": "customInterchain",
-      "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/yieldbricks.svg"
-      },
-      "deploySalt": "0x7969656c64627269636b73",
-      "chains": [
-        {
-          "symbol": "YBR",
-          "name": "Yieldbricks",
-          "axelarChainId": "arbitrum",
-          "tokenAddress": "0x11920f139a3121c2836e01551d43f95b3c31159c",
-          "tokenManager": "0xe05f286D397a8D1fB89f421944E36E55F7B8e968",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "YBR",
-          "name": "Yieldbricks",
-          "axelarChainId": "Ethereum",
-          "tokenAddress": "0x9d9535dae62f5f12ab83f1183dca1ead244b0db3",
-          "tokenManager": "0xe05f286D397a8D1fB89f421944E36E55F7B8e968",
-          "tokenManagerType": "lockUnlock"
         }
       ]
     }
