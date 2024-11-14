@@ -2770,6 +2770,46 @@
         }
       ]
     },
+    "0xf41dba8aea15eeaf6c5d48e4e2e499b9bb6c3bcf84d7cf98c07e0028254ffcac": {
+      "tokenId": "0xf41dba8aea15eeaf6c5d48e4e2e499b9bb6c3bcf84d7cf98c07e0028254ffcac",
+      "deployer": "0xB978d07C836fa41c8d001FEb246D3ceDA9202934",
+      "originalMinter": null,
+      "prettySymbol": "QUACK",
+      "decimals": 9,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/richquack.svg"
+      },
+      "deploymentMessageId": "0x12d07c5d39e08fbd0f2932a4d6353e7f0d23275654adcfcd952ca390dd3a7787-160",
+      "chains": [
+        {
+          "symbol": "QUACK",
+          "name": "RichQUACK.com",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xd74b782e05aa25c50e7330af541d46e18f36661c",
+          "tokenManager": "0x0F5C153437b5eD9a1a268F42b803DA4b2E88EB01",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "QUACK",
+          "name": "RichQUACK.com",
+          "axelarChainId": "blast",
+          "tokenAddress": "0xBE6d04Af5AF2A2267818Aadd9fC285a539185aFF",
+          "tokenManager": "0x0F5C153437b5eD9a1a268F42b803DA4b2E88EB01",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "QUACK",
+          "name": "RichQUACK.com",
+          "axelarChainId": "base",
+          "tokenAddress": "0xBE6d04Af5AF2A2267818Aadd9fC285a539185aFF",
+          "tokenManager": "0x0F5C153437b5eD9a1a268F42b803DA4b2E88EB01",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0xbfb7fa2e6db295bee3e0a98a9fb98c4076237496eb41bb2e15825618e4d98a74": {
       "tokenId": "0xbfb7fa2e6db295bee3e0a98a9fb98c4076237496eb41bb2e15825618e4d98a74",
       "deployer": "0x91aD7E7CB734Af5ECa9BAa6f4803411FB6279237",
