@@ -2936,6 +2936,7 @@
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/elda.svg"
       },
       "deploymentMessageId": "0x8aecdb791900b3a2806b69ef6ade3536cfa40f0fc4fd6a7dcfc0b4c62058bfa6-62",
+      "coinGeckoId": "eldarune",
       "chains": [
         {
           "symbol": "ELDA",
