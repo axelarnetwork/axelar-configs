@@ -2819,6 +2819,7 @@
       "originAxelarChainId": "ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "department-of-gov-efficiency",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/doge.svg"
       },
