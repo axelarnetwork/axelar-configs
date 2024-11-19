@@ -2809,6 +2809,39 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x0c5366be136c8a820aeb9ebb380a307a1cfd521af5772161dd3994d9828caeb7": {
+      "tokenId": "0x0c5366be136c8a820aeb9ebb380a307a1cfd521af5772161dd3994d9828caeb7",
+      "deployer": "0x1b75C2C0158B9A41b864836b1F0474DeEa3EbB55",
+      "originalMinter": null,
+      "prettySymbol": "DOGE",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "department-of-gov-efficiency",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/doge.svg"
+      },
+      "deploymentMessageId": "0x7c65dba4805f3ea73ed464f8853e41a92cc74e15871c29252a002192f9180196-44",
+      "chains": [
+        {
+          "symbol": "DOGE",
+          "name": "Department Of Government Efficiency",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x1121AcC14c63f3C872BFcA497d10926A6098AAc5",
+          "tokenManager": "0x301db234167c4f6834DcE3f274B18D759D7edDC9",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "DOGE",
+          "name": "Department Of Government Efficiency",
+          "axelarChainId": "base",
+          "tokenAddress": "0x67f0870BB897F5E1c369976b4A2962d527B9562c",
+          "tokenManager": "0x301db234167c4f6834DcE3f274B18D759D7edDC9",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
