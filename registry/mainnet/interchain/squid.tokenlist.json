@@ -2859,39 +2859,7 @@
         {
           "symbol": "KATA",
           "name": "Katana Inu",
-          "axelarChainId": "fantom",
-          "tokenAddress": "0x02454a97A8372f3A760A033DBb39E67D73BD6d87",
-          "tokenManager": "0x036DDe7F8B827C58d03c42bf6E454eC2E5C183c7",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "KATA",
-          "name": "Katana Inu",
           "axelarChainId": "linea",
-          "tokenAddress": "0x02454a97A8372f3A760A033DBb39E67D73BD6d87",
-          "tokenManager": "0x036DDe7F8B827C58d03c42bf6E454eC2E5C183c7",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "KATA",
-          "name": "Katana Inu",
-          "axelarChainId": "celo",
-          "tokenAddress": "0x02454a97A8372f3A760A033DBb39E67D73BD6d87",
-          "tokenManager": "0x036DDe7F8B827C58d03c42bf6E454eC2E5C183c7",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "KATA",
-          "name": "Katana Inu",
-          "axelarChainId": "mantle",
-          "tokenAddress": "0x02454a97A8372f3A760A033DBb39E67D73BD6d87",
-          "tokenManager": "0x036DDe7F8B827C58d03c42bf6E454eC2E5C183c7",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "KATA",
-          "name": "Katana Inu",
-          "axelarChainId": "filecoin",
           "tokenAddress": "0x02454a97A8372f3A760A033DBb39E67D73BD6d87",
           "tokenManager": "0x036DDe7F8B827C58d03c42bf6E454eC2E5C183c7",
           "tokenManagerType": "mintBurn"
