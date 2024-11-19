@@ -2818,7 +2818,7 @@
       "decimals": 18,
       "originAxelarChainId": "ethereum",
       "tokenType": "canonical",
-      "deploySalt": "0x",
+      "deploySalt": "0x97bd0e6da71ad5eb879f1c6d5e2a53322afa8638e432d4809d7540045429d5b5",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/kata.svg"
       },
