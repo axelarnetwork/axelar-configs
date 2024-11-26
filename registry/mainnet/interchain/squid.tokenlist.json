@@ -2963,6 +2963,39 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x7d83dcafeb4405de148aaf9acdac6ee67dfb1cad85e34f1a1c1b3125a1158d99": {
+      "tokenId": "0x7d83dcafeb4405de148aaf9acdac6ee67dfb1cad85e34f1a1c1b3125a1158d99",
+      "coinGeckoId": "yieldbricks",
+      "deployer": "0xc7Dc9Eb80d1Cc41ce57360DB8e9954b3c396CD56",
+      "originalMinter": null,
+      "prettySymbol": "YBR",
+      "decimals": 18,
+      "deploymentMessageId": "",
+      "originAxelarChainId": "arbitrum",
+      "tokenType": "customInterchain",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/yieldbricks.svg"
+      },
+      "deploySalt": "0x7969656c64627269636b73",
+      "chains": [
+        {
+          "symbol": "YBR",
+          "name": "Yieldbricks",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x11920f139a3121c2836e01551d43f95b3c31159c",
+          "tokenManager": "0xe05f286D397a8D1fB89f421944E36E55F7B8e968",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "YBR",
+          "name": "Yieldbricks",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x9d9535dae62f5f12ab83f1183dca1ead244b0db3",
+          "tokenManager": "0xe05f286D397a8D1fB89f421944E36E55F7B8e968",
+          "tokenManagerType": "lockUnlock"
+        }
+      ]
     }
   }
 }
