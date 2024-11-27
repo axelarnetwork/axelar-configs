@@ -2944,7 +2944,7 @@
           "axelarChainId": "binance",
           "tokenAddress": "0xab2ed911BDbeA001FD3B29AdbC35d8a76E68aAe4",
           "tokenManager": "0xDad86D111Eb33d1a16e1862ef8d2C410A2CFf6d5",
-          "tokenManagerType": "lockUnlock"
+          "tokenManagerType": "mintBurn"
         },
         {
           "symbol": "ELDA",
@@ -2952,7 +2952,7 @@
           "axelarChainId": "avalanche",
           "tokenAddress": "0x2fAa209247c0f7641fEF0c73ad6b44607A92DD3a",
           "tokenManager": "0xDad86D111Eb33d1a16e1862ef8d2C410A2CFf6d5",
-          "tokenManagerType": "lockUnlock"
+          "tokenManagerType": "mintBurn"
         },
         {
           "symbol": "ELDA",
