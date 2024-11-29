@@ -2996,6 +2996,38 @@
           "tokenManagerType": "lockUnlock"
         }
       ]
+    },
+    "0xbfb7fa2e6db295bee3e0a98a9fb98c4076237496eb41bb2e15825618e4d98a74": {
+      "tokenId": "0xbfb7fa2e6db295bee3e0a98a9fb98c4076237496eb41bb2e15825618e4d98a74",
+      "deployer": "0x91aD7E7CB734Af5ECa9BAa6f4803411FB6279237",
+      "originalMinter": null,
+      "prettySymbol": "CAI",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/cai.svg"
+      },
+      "deploymentMessageId": "0x8b866515fb24e4dc36dc434401b6f7d2c148d3d476cb831a24b636a1d454455a-30",
+      "chains": [
+        {
+          "symbol": "CAI",
+          "name": "ChasmAI",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x19247618D79E3fc4d4866169789E4B8eEDef52E6",
+          "tokenManager": "0x924368213A53cDa40b38E8931459bb7113465576",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "CAI",
+          "name": "ChasmAI",
+          "axelarChainId": "mantle",
+          "tokenAddress": "0xF793Ac038E7688Aa3220005852836108cdDB065c",
+          "tokenManager": "0x924368213A53cDa40b38E8931459bb7113465576",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
