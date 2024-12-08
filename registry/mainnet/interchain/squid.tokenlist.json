@@ -3310,6 +3310,30 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x4373f265c4d680dec5635152187b505f3820570ad4d8bbf811ff93ae826323ed": {
+      "tokenId": "0x4373f265c4d680dec5635152187b505f3820570ad4d8bbf811ff93ae826323ed",
+      "deployer": "0xcE6084118756Da652F793fd52b45D6FCd48b52D8",
+      "originalMinter": null,
+      "prettySymbol": "CATBOY",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/catboy.svg"
+      },
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "CATBOY",
+          "name": "Catboy",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xcA9b8D6df0729D85DCfc8eF8Bb18af1aD1990786",
+          "tokenManager": "0x09DB780F75f73C6a580D21d4ab5D71bAF860c2D2",
+          "tokenManagerType": "lockUnlock"
+        }
+      ]
     }
   }
 }
