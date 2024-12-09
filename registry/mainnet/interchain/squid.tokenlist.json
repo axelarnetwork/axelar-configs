@@ -3310,6 +3310,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x5986148511c576f71beeae03234af8faf081001bd48103861efb016f1878f2de": {
+      "tokenId": "0x5986148511c576f71beeae03234af8faf081001bd48103861efb016f1878f2de",
+      "deployer": "0x6229E0ddDBE2EC81Dd745C99659d52688a5BaE0f",
+      "originalMinter": null,
+      "prettySymbol": "USDX",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdx.svg"
+      },
+      "deploymentMessageId": "0x1603fd94b63ec0e040750cd315dc120f2c6a7b1c2e1bc1b75af097ba72076158-84",
+      "chains": [
+        {
+          "symbol": "USDX",
+          "name": "USDX",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
+          "tokenManager": "0x52f91CeBd7c6313d3f0db5bc203f5cf8f642c683",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "USDX",
+          "name": "USDX",
+          "axelarChainId": "base",
+          "tokenAddress": "0x020B6f7b56c2Ff3D506214732f83214c1AfC9a6F",
+          "tokenManager": "0x52f91CeBd7c6313d3f0db5bc203f5cf8f642c683",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
