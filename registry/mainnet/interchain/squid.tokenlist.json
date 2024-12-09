@@ -3320,6 +3320,7 @@
       "originAxelarChainId": "binance",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "usdx-money-usdx",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdx.svg"
       },
