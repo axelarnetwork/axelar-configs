@@ -3313,6 +3313,7 @@
     },
     "0x4d64b2c35985a7632040ded77658ace40a91437a6025f8e578c9c676b5efb22e": {
       "tokenId": "0x4d64b2c35985a7632040ded77658ace40a91437a6025f8e578c9c676b5efb22e",
+      "coinGeckoId": "kip",
       "deployer": "0xa4d35e5aA6ADCB04CDD84C40f9E1F2a9b5C6d5A7",
       "originalMinter": null,
       "prettySymbol": "KIP",
