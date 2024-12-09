@@ -3310,6 +3310,47 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x4d64b2c35985a7632040ded77658ace40a91437a6025f8e578c9c676b5efb22e": {
+      "tokenId": "0x4d64b2c35985a7632040ded77658ace40a91437a6025f8e578c9c676b5efb22e",
+      "coinGeckoId": "kip",
+      "deployer": "0xa4d35e5aA6ADCB04CDD84C40f9E1F2a9b5C6d5A7",
+      "originalMinter": null,
+      "prettySymbol": "KIP",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/kip.svg"
+      },
+      "deploymentMessageId": "0xf5c98a3419e248072f9e8f2d6183cc64305a57cc4a9b4d7cf7ec74317984b4e3-109",
+      "chains": [
+        {
+          "symbol": "KIP",
+          "name": "KIP Protocol",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x946fb08103b400d1c79e07acCCDEf5cfd26cd374",
+          "tokenManager": "0x08EF516c5Eb9159C6Bea5B87FB902b3B1CDabAf5",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "KIP",
+          "name": "KIP Protocol",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xF63b14F5eE5574e3F337b2796Bbdf6dcfB4E2CB7",
+          "tokenManager": "0x08EF516c5Eb9159C6Bea5B87FB902b3B1CDabAf5",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "KIP",
+          "name": "KIP Protocol",
+          "axelarChainId": "base",
+          "tokenAddress": "0xF63b14F5eE5574e3F337b2796Bbdf6dcfB4E2CB7",
+          "tokenManager": "0x08EF516c5Eb9159C6Bea5B87FB902b3B1CDabAf5",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
