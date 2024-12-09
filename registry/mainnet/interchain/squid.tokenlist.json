@@ -3319,7 +3319,7 @@
       "decimals": 18,
       "originAxelarChainId": "ethereum",
       "tokenType": "canonical",
-      "deploySalt": "0x",
+      "deploySalt": "0x471d7f0a41930192e43649b15320fc5073d482e251a8f95e81e12b554fa828b4",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/catboy.svg"
       },
