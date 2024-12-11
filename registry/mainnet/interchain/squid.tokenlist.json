@@ -620,6 +620,14 @@
           "tokenAddress": "0x5283aF37d473eF7c185A1F8a2042d427cD9C83c4",
           "tokenManager": "0x017F3C8da9652b2cE935A7795f5fcda0951d27b8",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MUNITY",
+          "name": "Metahorse Unity Token",
+          "axelarChainId": "base",
+          "tokenAddress": "0x5283aF37d473eF7c185A1F8a2042d427cD9C83c4",
+          "tokenManager": "0x017F3C8da9652b2cE935A7795f5fcda0951d27b8",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
