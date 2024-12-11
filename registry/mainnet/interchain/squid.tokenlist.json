@@ -620,6 +620,14 @@
           "tokenAddress": "0x5283aF37d473eF7c185A1F8a2042d427cD9C83c4",
           "tokenManager": "0x017F3C8da9652b2cE935A7795f5fcda0951d27b8",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MUNITY",
+          "name": "Metahorse Unity Token",
+          "axelarChainId": "base",
+          "tokenAddress": "0x5283aF37d473eF7c185A1F8a2042d427cD9C83c4",
+          "tokenManager": "0x017F3C8da9652b2cE935A7795f5fcda0951d27b8",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
@@ -3311,7 +3319,81 @@
         }
       ]
     },
-    "0x4373f265c4d680dec5635152187b505f3820570ad4d8bbf811ff93ae826323ed": {
+    "0x4d64b2c35985a7632040ded77658ace40a91437a6025f8e578c9c676b5efb22e": {
+      "tokenId": "0x4d64b2c35985a7632040ded77658ace40a91437a6025f8e578c9c676b5efb22e",
+      "coinGeckoId": "kip",
+      "deployer": "0xa4d35e5aA6ADCB04CDD84C40f9E1F2a9b5C6d5A7",
+      "originalMinter": null,
+      "prettySymbol": "KIP",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/kip.svg"
+      },
+      "deploymentMessageId": "0xf5c98a3419e248072f9e8f2d6183cc64305a57cc4a9b4d7cf7ec74317984b4e3-109",
+      "chains": [
+        {
+          "symbol": "KIP",
+          "name": "KIP Protocol",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x946fb08103b400d1c79e07acCCDEf5cfd26cd374",
+          "tokenManager": "0x08EF516c5Eb9159C6Bea5B87FB902b3B1CDabAf5",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "KIP",
+          "name": "KIP Protocol",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xF63b14F5eE5574e3F337b2796Bbdf6dcfB4E2CB7",
+          "tokenManager": "0x08EF516c5Eb9159C6Bea5B87FB902b3B1CDabAf5",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "KIP",
+          "name": "KIP Protocol",
+          "axelarChainId": "base",
+          "tokenAddress": "0xF63b14F5eE5574e3F337b2796Bbdf6dcfB4E2CB7",
+          "tokenManager": "0x08EF516c5Eb9159C6Bea5B87FB902b3B1CDabAf5",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x5986148511c576f71beeae03234af8faf081001bd48103861efb016f1878f2de": {
+      "tokenId": "0x5986148511c576f71beeae03234af8faf081001bd48103861efb016f1878f2de",
+      "deployer": "0x6229E0ddDBE2EC81Dd745C99659d52688a5BaE0f",
+      "originalMinter": null,
+      "prettySymbol": "USDX",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "usdx-money-usdx",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdx.svg"
+      },
+      "deploymentMessageId": "0x1603fd94b63ec0e040750cd315dc120f2c6a7b1c2e1bc1b75af097ba72076158-84",
+      "chains": [
+        {
+          "symbol": "USDX",
+          "name": "USDX",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
+          "tokenManager": "0x52f91CeBd7c6313d3f0db5bc203f5cf8f642c683",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "USDX",
+          "name": "USDX",
+          "axelarChainId": "base",
+          "tokenAddress": "0x020B6f7b56c2Ff3D506214732f83214c1AfC9a6F",
+          "tokenManager": "0x52f91CeBd7c6313d3f0db5bc203f5cf8f642c683",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+       "0x4373f265c4d680dec5635152187b505f3820570ad4d8bbf811ff93ae826323ed": {
       "tokenId": "0x4373f265c4d680dec5635152187b505f3820570ad4d8bbf811ff93ae826323ed",
       "deployer": "0xcE6084118756Da652F793fd52b45D6FCd48b52D8",
       "originalMinter": null,
@@ -3332,8 +3414,7 @@
           "tokenAddress": "0xcA9b8D6df0729D85DCfc8eF8Bb18af1aD1990786",
           "tokenManager": "0x09DB780F75f73C6a580D21d4ab5D71bAF860c2D2",
           "tokenManagerType": "lockUnlock"
-        }
+           }
       ]
-    }
   }
 }
