@@ -3413,7 +3413,15 @@
           "axelarChainId": "ethereum",
           "tokenAddress": "0xcA9b8D6df0729D85DCfc8eF8Bb18af1aD1990786",
           "tokenManager": "0x09DB780F75f73C6a580D21d4ab5D71bAF860c2D2",
-          "tokenManagerType": "lockUnlock"
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CATBOY",
+          "name": "Catboy",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xcA9b8D6df0729D85DCfc8eF8Bb18af1aD1990786",
+          "tokenManager": "0x09DB780F75f73C6a580D21d4ab5D71bAF860c2D2",
+          "tokenManagerType": "mintBurn"
         }
       ]
     }
