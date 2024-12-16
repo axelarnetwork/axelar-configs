@@ -10,7 +10,7 @@
   "iconUrls": {
     "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/aetx.svg"
   },
-  "deploymentMessageId": "0x3642137482885727c6d0ef758e258b45b62196013d7c50b54bfde90b938b23f2-47", 
+  "deploymentMessageId": "0x3642137482885727c6d0ef758e258b45b62196013d7c50b54bfde90b938b23f2-47",
   "chains": [
     {
       "symbol": "AETX",
@@ -23,7 +23,39 @@
     {
       "symbol": "AETX",
       "name": "AetherX",
+      "axelarChainId": "arbitrum",
+      "tokenAddress": "0x323BAe8Ea748A3c3E48B544063fEbc0e7424C04a",
+      "tokenManager": "0xB1C9555488243EFc5D0F6f69a028ff7a4f57878C",
+      "tokenManagerType": "mintBurn"
+    },
+    {
+      "symbol": "AETX",
+      "name": "AetherX",
       "axelarChainId": "binance",
+      "tokenAddress": "0x323BAe8Ea748A3c3E48B544063fEbc0e7424C04a",
+      "tokenManager": "0xB1C9555488243EFc5D0F6f69a028ff7a4f57878C",
+      "tokenManagerType": "mintBurn"
+    },
+    {
+      "symbol": "AETX",
+      "name": "AetherX",
+      "axelarChainId": "fantom",
+      "tokenAddress": "0x323BAe8Ea748A3c3E48B544063fEbc0e7424C04a",
+      "tokenManager": "0xB1C9555488243EFc5D0F6f69a028ff7a4f57878C",
+      "tokenManagerType": "mintBurn"
+    },
+    {
+      "symbol": "AETX",
+      "name": "AetherX",
+      "axelarChainId": "moonbeam",
+      "tokenAddress": "0x323BAe8Ea748A3c3E48B544063fEbc0e7424C04a",
+      "tokenManager": "0xB1C9555488243EFc5D0F6f69a028ff7a4f57878C",
+      "tokenManagerType": "mintBurn"
+    },
+    {
+      "symbol": "AETX",
+      "name": "AetherX",
+      "axelarChainId": "avalanche",
       "tokenAddress": "0x323BAe8Ea748A3c3E48B544063fEbc0e7424C04a",
       "tokenManager": "0xB1C9555488243EFc5D0F6f69a028ff7a4f57878C",
       "tokenManagerType": "mintBurn"
@@ -40,6 +72,78 @@
       "symbol": "AETX",
       "name": "AetherX",
       "axelarChainId": "optimism",
+      "tokenAddress": "0x323BAe8Ea748A3c3E48B544063fEbc0e7424C04a",
+      "tokenManager": "0xB1C9555488243EFc5D0F6f69a028ff7a4f57878C",
+      "tokenManagerType": "mintBurn"
+    },
+    {
+      "symbol": "AETX",
+      "name": "AetherX",
+      "axelarChainId": "linea",
+      "tokenAddress": "0x323BAe8Ea748A3c3E48B544063fEbc0e7424C04a",
+      "tokenManager": "0xB1C9555488243EFc5D0F6f69a028ff7a4f57878C",
+      "tokenManagerType": "mintBurn"
+    },
+    {
+      "symbol": "AETX",
+      "name": "AetherX",
+      "axelarChainId": "fraxtal",
+      "tokenAddress": "0x323BAe8Ea748A3c3E48B544063fEbc0e7424C04a",
+      "tokenManager": "0xB1C9555488243EFc5D0F6f69a028ff7a4f57878C",
+      "tokenManagerType": "mintBurn"
+    },
+    {
+      "symbol": "AETX",
+      "name": "AetherX",
+      "axelarChainId": "celo",
+      "tokenAddress": "0x323BAe8Ea748A3c3E48B544063fEbc0e7424C04a",
+      "tokenManager": "0xB1C9555488243EFc5D0F6f69a028ff7a4f57878C",
+      "tokenManagerType": "mintBurn"
+    },
+    {
+      "symbol": "AETX",
+      "name": "AetherX",
+      "axelarChainId": "scroll",
+      "tokenAddress": "0x323BAe8Ea748A3c3E48B544063fEbc0e7424C04a",
+      "tokenManager": "0xB1C9555488243EFc5D0F6f69a028ff7a4f57878C",
+      "tokenManagerType": "mintBurn"
+    },
+    {
+      "symbol": "AETX",
+      "name": "AetherX",
+      "axelarChainId": "immutable",
+      "tokenAddress": "0x323BAe8Ea748A3c3E48B544063fEbc0e7424C04a",
+      "tokenManager": "0xB1C9555488243EFc5D0F6f69a028ff7a4f57878C",
+      "tokenManagerType": "mintBurn"
+    },
+    {
+      "symbol": "AETX",
+      "name": "AetherX",
+      "axelarChainId": "kava",
+      "tokenAddress": "0x323BAe8Ea748A3c3E48B544063fEbc0e7424C04a",
+      "tokenManager": "0xB1C9555488243EFc5D0F6f69a028ff7a4f57878C",
+      "tokenManagerType": "mintBurn"
+    },
+    {
+      "symbol": "AETX",
+      "name": "AetherX",
+      "axelarChainId": "filecoin",
+      "tokenAddress": "0x323BAe8Ea748A3c3E48B544063fEbc0e7424C04a",
+      "tokenManager": "0xB1C9555488243EFc5D0F6f69a028ff7a4f57878C",
+      "tokenManagerType": "mintBurn"
+    },
+    {
+      "symbol": "AETX",
+      "name": "AetherX",
+      "axelarChainId": "blast",
+      "tokenAddress": "0x323BAe8Ea748A3c3E48B544063fEbc0e7424C04a",
+      "tokenManager": "0xB1C9555488243EFc5D0F6f69a028ff7a4f57878C",
+      "tokenManagerType": "mintBurn"
+    },
+    {
+      "symbol": "AETX",
+      "name": "AetherX",
+      "axelarChainId": "mantle",
       "tokenAddress": "0x323BAe8Ea748A3c3E48B544063fEbc0e7424C04a",
       "tokenManager": "0xB1C9555488243EFc5D0F6f69a028ff7a4f57878C",
       "tokenManagerType": "mintBurn"
