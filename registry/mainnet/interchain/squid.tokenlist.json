@@ -3392,6 +3392,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x8a389d95a7c7cbb117524f5d8eaf65a77a089b9e2bfa1e9a16e385bba543b02b": {
+      "tokenId": "0x8a389d95a7c7cbb117524f5d8eaf65a77a089b9e2bfa1e9a16e385bba543b02b",
+      "deployer": "0xdf9574d2B031882ea999220F3F7C87c4Ce10846a",
+      "originalMinter": null,
+      "prettySymbol": "OXYZ",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/oxyz.svg"
+      },
+      "deploymentMessageId": "0x38b11f13932af2d52edf930756deabd6233e5611834d9ac8f19d7bf1c2f3dd11-5",
+      "chains": [
+        {
+          "symbol": "OXYZ",
+          "name": "Oxya Origin",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xD0623da373F754C4B6762209EA77De59B21DD667",
+          "tokenManager": "0x9275229D6Bd6Ed0b3B11525D72e4fd9D178A933E",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "OXYZ",
+          "name": "Oxya Origin",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0x5178fb04a0F469C7d309144B439640c9c1EBa11c",
+          "tokenManager": "0x9275229D6Bd6Ed0b3B11525D72e4fd9D178A933E",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
