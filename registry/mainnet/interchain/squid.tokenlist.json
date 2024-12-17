@@ -3393,6 +3393,145 @@
         }
       ]
     },
+    "0xb4fb1599d657d031e9e527a1ddd684ca4e2cafd7a4cfc9d02ef68cb559d7a470": {
+      "tokenId": "0xb4fb1599d657d031e9e527a1ddd684ca4e2cafd7a4cfc9d02ef68cb559d7a470",
+      "deployer": "0x1b75C2C0158B9A41b864836b1F0474DeEa3EbB55",
+      "originalMinter": null,
+      "prettySymbol": "FLOKI",
+      "decimals": 9,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "floki-inu",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/floki.svg"
+      },
+      "deploymentMessageId": "0x18d6859ebfb458d5003bea3e191a7f5b015185168e3141b4b19370583d5621b5-58",
+      "chains": [
+        {
+          "symbol": "FLOKI",
+          "name": "FLOKI",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xfb5B838b6cfEEdC2873aB27866079AC55363D37E",
+          "tokenManager": "0xe6b941387304b493528b4Bb724bf7eF8ec4E8187",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "FLOKI",
+          "name": "FLOKI",
+          "axelarChainId": "base",
+          "tokenAddress": "0xa1c188Bd19d6339a7B4f0a216486431920465739",
+          "tokenManager": "0xe6b941387304b493528b4Bb724bf7eF8ec4E8187",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xd23edb4f5170fe8a3aa4329a8e6fc0d09645ee18845273ec83c9e79695610f51": {
+      "tokenId": "0xd23edb4f5170fe8a3aa4329a8e6fc0d09645ee18845273ec83c9e79695610f51",
+      "deployer": "0x1EE9c3cf33aF4D5De1be5a20693Cf2e87587b2A4",
+      "originalMinter": null,
+      "prettySymbol": "MEGALAND",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "metagalaxy-land",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/megaland.svg"
+      },
+      "deploymentMessageId": "0xe0e6d077797082039070f382389e6a0f156163cf292362c62a858f85a4dafa42-75",
+      "chains": [
+        {
+          "symbol": "MEGALAND",
+          "name": "METAGALAXY LAND",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xcAb1fd29D6FD64bB63471B666e8dbfC1915bF90E",
+          "tokenManager": "0xEc7be54343939c65b736A67d0ADf2767F1314cF3",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "MEGALAND",
+          "name": "METAGALAXY LAND",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0x4541561CF67EAE3993218Ab3fdAD2e85E0707C14",
+          "tokenManager": "0xEc7be54343939c65b736A67d0ADf2767F1314cF3",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MEGALAND",
+          "name": "METAGALAXY LAND",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x4541561CF67EAE3993218Ab3fdAD2e85E0707C14",
+          "tokenManager": "0xEc7be54343939c65b736A67d0ADf2767F1314cF3",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MEGALAND",
+          "name": "METAGALAXY LAND",
+          "axelarChainId": "blast",
+          "tokenAddress": "0x4541561CF67EAE3993218Ab3fdAD2e85E0707C14",
+          "tokenManager": "0xEc7be54343939c65b736A67d0ADf2767F1314cF3",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MEGALAND",
+          "name": "METAGALAXY LAND",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x4541561CF67EAE3993218Ab3fdAD2e85E0707C14",
+          "tokenManager": "0xEc7be54343939c65b736A67d0ADf2767F1314cF3",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MEGALAND",
+          "name": "METAGALAXY LAND",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0x4541561CF67EAE3993218Ab3fdAD2e85E0707C14",
+          "tokenManager": "0xEc7be54343939c65b736A67d0ADf2767F1314cF3",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MEGALAND",
+          "name": "METAGALAXY LAND",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x4541561CF67EAE3993218Ab3fdAD2e85E0707C14",
+          "tokenManager": "0xEc7be54343939c65b736A67d0ADf2767F1314cF3",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xdd4f9814323a28405b77bac431126593d3f1a234beab10f1f15413e1d5a36229": {
+      "tokenId": "0xdd4f9814323a28405b77bac431126593d3f1a234beab10f1f15413e1d5a36229",
+      "deployer": "0x1b75C2C0158B9A41b864836b1F0474DeEa3EbB55",
+      "originalMinter": null,
+      "prettySymbol": "Boop",
+      "decimals": 18,
+      "originAxelarChainId": "arbitrum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "boop",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/boop.svg"
+      },
+      "deploymentMessageId": "0xdc47117b38f0755bb302a5e055dacb616a18d9b80bea7d434b7ced3be175d60d-3",
+      "chains": [
+        {
+          "symbol": "Boop",
+          "name": "Boop",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x13A7DeDb7169a17bE92B0E3C7C2315B46f4772B3",
+          "tokenManager": "0x8952807805Ec6F661B531EA5EfCcbD507a3Af5EF",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "Boop",
+          "name": "Boop",
+          "axelarChainId": "base",
+          "tokenAddress": "0x0596b2A89acbBEa7E63410EDaE62cbfbfCc341f6",
+          "tokenManager": "0x8952807805Ec6F661B531EA5EfCcbD507a3Af5EF",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0x4373f265c4d680dec5635152187b505f3820570ad4d8bbf811ff93ae826323ed": {
       "tokenId": "0x4373f265c4d680dec5635152187b505f3820570ad4d8bbf811ff93ae826323ed",
       "deployer": "0xcE6084118756Da652F793fd52b45D6FCd48b52D8",
