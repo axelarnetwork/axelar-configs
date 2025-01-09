@@ -3868,6 +3868,137 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xa2e14ae8fa42c49d8262d0977218a34666d75fb3f4a21baaab46dbe9175c6f20": {
+      "tokenId": "0xa2e14ae8fa42c49d8262d0977218a34666d75fb3f4a21baaab46dbe9175c6f20",
+      "deployer": "0x8aEfFD47C417aD32e08E03d6278922A533010619",
+      "originalMinter": null,
+      "prettySymbol": "ITHACA",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "ithaca-protocol",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/ithaca.svg"
+      },
+      "deploymentMessageId": "0xa3726888ad7e36850d2de0499826f47b500a1181964b15e0c033305cb7af2971-1",
+      "chains": [
+        {
+          "symbol": "ITHACA",
+          "name": "Ithaca Protocol",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x49f1d4db3ea1a64390e990c6debeac88eac007ca",
+          "tokenManager": "0x560BbFb1ce46D4480D2EE4F444983e392E680880",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "ITHACA",
+          "name": "Ithaca Protocol",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x1095AE55B62174D9EA3Bc6A4136acacaD461d7ce",
+          "tokenManager": "0x560BbFb1ce46D4480D2EE4F444983e392E680880",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x7eefd97f441561b4b4b75c8496d9444eb17e7a212077391d1bc6a0ad205e80f7": {
+      "tokenId": "0x7eefd97f441561b4b4b75c8496d9444eb17e7a212077391d1bc6a0ad205e80f7",
+      "deployer": "0x1b75C2C0158B9A41b864836b1F0474DeEa3EbB55",
+      "originalMinter": null,
+      "prettySymbol": "MSTR",
+      "decimals": 9,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "monsterra",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mstr.svg"
+      },
+      "deploymentMessageId": "0xe4d1a9b27b83124d41197ff36533e13da42e466534dd7d46d333d87bffe02401-88",
+      "chains": [
+        {
+          "symbol": "MSTR",
+          "name": "MSTR2100",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x42069026eac8eee0fd9b5f7adfa4f6e6d69a2b39",
+          "tokenManager": "0xc4a369f7DEF741ca3bba6212d5F3e361B1fBCB0B",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "MSTR",
+          "name": "MSTR2100",
+          "axelarChainId": "base",
+          "tokenAddress": "0x0064a0A352CC40908CA7D012EA6C0D384e699a37",
+          "tokenManager": "0xc4a369f7DEF741ca3bba6212d5F3e361B1fBCB0B",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x30d8ab9090c0023672a2543c6124d7ed10744e382419d2382e6a47d860f75560": {
+      "tokenId": "0x30d8ab9090c0023672a2543c6124d7ed10744e382419d2382e6a47d860f75560",
+      "deployer": "0x546063d50190A2a00069Bbb184607C4E062817DE",
+      "originalMinter": null,
+      "prettySymbol": "ACP",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/acp.svg"
+      },
+      "deploymentMessageId": "0xf50890c71dac5f25be393a6448925d546cc8491db8b3e98478bf504e9564d11c-69",
+      "chains": [
+        {
+          "symbol": "ACP",
+          "name": "Arena Of Faith",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x104E363Ac6521E55a24AE724855362acEC3fEBe6",
+          "tokenManager": "0x816307dd7770915bA3d9eB465c2aeF4680700C69",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "ACP",
+          "name": "Arena Of Faith",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0x30071c0091Cfc893bCfCF53B5457055Eb05249b3",
+          "tokenManager": "0x816307dd7770915bA3d9eB465c2aeF4680700C69",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xc198abbb228acd5af89a2f14d142c3afe62dde4e28fdeecb9e5690fd7da90305": {
+      "tokenId": "0xc198abbb228acd5af89a2f14d142c3afe62dde4e28fdeecb9e5690fd7da90305",
+      "deployer": "0x1b75C2C0158B9A41b864836b1F0474DeEa3EbB55",
+      "originalMinter": null,
+      "prettySymbol": "AITECH",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "solidus-aitech",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/aitech.svg"
+      },
+      "deploymentMessageId": "0x83b60027b4de1226f1391998ce99d3ba2a0efc4e03f919acce6a915f6dfe1476-26",
+      "chains": [
+        {
+          "symbol": "AITECH",
+          "name": "AITECH",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x2d060ef4d6bf7f9e5edde373ab735513c0e4f944",
+          "tokenManager": "0x17c251Da8679ba23020cA166D5d6f5635214c9DB",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "AITECH",
+          "name": "AITECH",
+          "axelarChainId": "base",
+          "tokenAddress": "0x7782951A52387B24735De001930e8E369AbB08CD",
+          "tokenManager": "0x17c251Da8679ba23020cA166D5d6f5635214c9DB",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
