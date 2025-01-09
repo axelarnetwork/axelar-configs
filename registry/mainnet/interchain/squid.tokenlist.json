@@ -3878,6 +3878,7 @@
       "originAxelarChainId": "binance",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "ithaca-protocol",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/ithaca.svg"
       },
@@ -3910,6 +3911,7 @@
       "originAxelarChainId": "ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "monsterra",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mstr.svg"
       },
@@ -3974,6 +3976,7 @@
       "originAxelarChainId": "binance",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "solidus-aitech",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/aitech.svg"
       },
