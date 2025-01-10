@@ -3999,6 +3999,39 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x354931b9f1ec978dd4c474017982be103dad4faabb035d2e62fd005c9b2be9ee": {
+      "tokenId": "0x354931b9f1ec978dd4c474017982be103dad4faabb035d2e62fd005c9b2be9ee",
+      "deployer": "0xCe51D260F3c17256d18EeBaB9e5cFFC5870a3ee3",
+      "originalMinter": null,
+      "prettySymbol": "NUT",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "nutcoin-meme",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/nut.svg"
+      },
+      "deploymentMessageId": "0x27d06c9aced77ac67877cd403effc932368e8e1e333db52c0dfae71d87aa4e90-32",
+      "chains": [
+        {
+          "symbol": "NUT",
+          "name": "Nutcoin",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x473f4068073cd5b2ab0e4cc8e146f9edc6fb52cc",
+          "tokenManager": "0x385158146a7a6428f9B423Eaa642E334D0c1a9F0",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "NUT",
+          "name": "Nutcoin",
+          "axelarChainId": "base",
+          "tokenAddress": "0x6A9431b9ecce9dDe3f7a32391d5b61C5AD11e4A0",
+          "tokenManager": "0x385158146a7a6428f9B423Eaa642E334D0c1a9F0",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
