@@ -4009,7 +4009,7 @@
       "originAxelarChainId": "ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
-      "coingeckoId": "nutcoin-meme",
+      "coinGeckoId": "nutcoin-meme",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/nut.svg"
       },
