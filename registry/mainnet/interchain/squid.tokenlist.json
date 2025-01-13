@@ -4032,6 +4032,78 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xaaeeb2f83a7d90a8b58c6a3c0c3abbec394838a86732ca1617dc30839c101ec0": {
+      "tokenId": "0xaaeeb2f83a7d90a8b58c6a3c0c3abbec394838a86732ca1617dc30839c101ec0",
+      "deployer": "0xeA2ffaa47FBdD4C5E6A6D37Ee372f9c3CE539065",
+      "originalMinter": null,
+      "prettySymbol": "MIL",
+      "decimals": 18,
+      "originAxelarChainId": "base",
+      "tokenType": "interchain",
+      "deploySalt": "0x65aab053b211219991fef672da5997ca0784138c18ccfc0f86233a44db535062",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mil.svg"
+      },
+      "deploymentMessageId": "0xbffed0942aa3d6670df99846fe214fc01de03f1d84f48d212b4718bbfcbe4479-80",
+      "chains": [
+        {
+          "symbol": "MIL",
+          "name": "The MILLION Token",
+          "axelarChainId": "base",
+          "tokenAddress": "0x0EE340ddDaCb0C90A93bC4A0802B21DAb53fa5F1",
+          "tokenManager": "0xB824Cf22E25079071451a22CBD40fca294ECC036",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MIL",
+          "name": "The MILLION Token",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x0EE340ddDaCb0C90A93bC4A0802B21DAb53fa5F1",
+          "tokenManager": "0xB824Cf22E25079071451a22CBD40fca294ECC036",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MIL",
+          "name": "The MILLION Token",
+          "axelarChainId": "celo",
+          "tokenAddress": "0x0EE340ddDaCb0C90A93bC4A0802B21DAb53fa5F1",
+          "tokenManager": "0xB824Cf22E25079071451a22CBD40fca294ECC036",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MIL",
+          "name": "The MILLION Token",
+          "axelarChainId": "fraxtal",
+          "tokenAddress": "0x0EE340ddDaCb0C90A93bC4A0802B21DAb53fa5F1",
+          "tokenManager": "0xB824Cf22E25079071451a22CBD40fca294ECC036",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MIL",
+          "name": "The MILLION Token",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x0EE340ddDaCb0C90A93bC4A0802B21DAb53fa5F1",
+          "tokenManager": "0xB824Cf22E25079071451a22CBD40fca294ECC036",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MIL",
+          "name": "The MILLION Token",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0x0EE340ddDaCb0C90A93bC4A0802B21DAb53fa5F1",
+          "tokenManager": "0xB824Cf22E25079071451a22CBD40fca294ECC036",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MIL",
+          "name": "The MILLION Token",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x0EE340ddDaCb0C90A93bC4A0802B21DAb53fa5F1",
+          "tokenManager": "0xB824Cf22E25079071451a22CBD40fca294ECC036",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
