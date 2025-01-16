@@ -4040,6 +4040,102 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xdf00cfa0e97e2266a2d06bb6ed285239a85d727dcd83d97a9952ccc2890297da": {
+      "tokenId": "0xdf00cfa0e97e2266a2d06bb6ed285239a85d727dcd83d97a9952ccc2890297da",
+      "deployer": "0xEAF9830bB7a38A3CEbcaCa3Ff9F626C424F3fB55",
+      "originalMinter": null,
+      "prettySymbol": "ENSURE",
+      "decimals": 18,
+      "originAxelarChainId": "base",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/ensure.svg"
+      },
+      "deploymentMessageId": "0x21cbb273451127480f79dc6695450362cf892c9945d0c5e16a2a33e5140c2c1e-66",
+      "chains": [
+        {
+          "symbol": "ENSURE",
+          "name": "ensure",
+          "axelarChainId": "base",
+          "tokenAddress": "0x0c66d591d1ff5944A44aebB65c33f6B6e82a124F",
+          "tokenManager": "0xF29D33e99F770caC53Aad2CE125711329804A76a",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "ENSURE",
+          "name": "ensure",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x0ea010dCB1DfBE5c9d1AC475901a59642bad90f4",
+          "tokenManager": "0xF29D33e99F770caC53Aad2CE125711329804A76a",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "ENSURE",
+          "name": "ensure",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x0ea010dCB1DfBE5c9d1AC475901a59642bad90f4",
+          "tokenManager": "0xF29D33e99F770caC53Aad2CE125711329804A76a",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "ENSURE",
+          "name": "ensure",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x0ea010dCB1DfBE5c9d1AC475901a59642bad90f4",
+          "tokenManager": "0xF29D33e99F770caC53Aad2CE125711329804A76a",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "ENSURE",
+          "name": "ensure",
+          "axelarChainId": "celo",
+          "tokenAddress": "0x0ea010dCB1DfBE5c9d1AC475901a59642bad90f4",
+          "tokenManager": "0xF29D33e99F770caC53Aad2CE125711329804A76a",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "ENSURE",
+          "name": "ensure",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0x0ea010dCB1DfBE5c9d1AC475901a59642bad90f4",
+          "tokenManager": "0xF29D33e99F770caC53Aad2CE125711329804A76a",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "ENSURE",
+          "name": "ensure",
+          "axelarChainId": "filecoin",
+          "tokenAddress": "0x0ea010dCB1DfBE5c9d1AC475901a59642bad90f4",
+          "tokenManager": "0xF29D33e99F770caC53Aad2CE125711329804A76a",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "ENSURE",
+          "name": "ensure",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0x0ea010dCB1DfBE5c9d1AC475901a59642bad90f4",
+          "tokenManager": "0xF29D33e99F770caC53Aad2CE125711329804A76a",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "ENSURE",
+          "name": "ensure",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0x0ea010dCB1DfBE5c9d1AC475901a59642bad90f4",
+          "tokenManager": "0xF29D33e99F770caC53Aad2CE125711329804A76a",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "ENSURE",
+          "name": "ensure",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x0ea010dCB1DfBE5c9d1AC475901a59642bad90f4",
+          "tokenManager": "0xF29D33e99F770caC53Aad2CE125711329804A76a",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
