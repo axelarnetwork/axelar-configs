@@ -1748,24 +1748,8 @@
         {
           "symbol": "PSTAKE",
           "name": "pSTAKE Finance",
-          "axelarChainId": "binance",
-          "tokenAddress": "0x4C882ec256823eE773B25b414d36F92ef58a7c0C",
-          "tokenManager": "0x7fd2998966B18555fc873B4EE48eD2506BB1d1B7",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "PSTAKE",
-          "name": "pSTAKE Finance",
           "axelarChainId": "optimism",
           "tokenAddress": "0x023550ADDe4FA2F90D63a41D9282BEE0294c04cD",
-          "tokenManager": "0x7fd2998966B18555fc873B4EE48eD2506BB1d1B7",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "PSTAKE",
-          "name": "pSTAKE Finance",
-          "axelarChainId": "base",
-          "tokenAddress": "0x38815A4455921667d673B4cb3d48F0383eE93400",
           "tokenManager": "0x7fd2998966B18555fc873B4EE48eD2506BB1d1B7",
           "tokenManagerType": "mintBurn"
         },
