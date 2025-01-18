@@ -4343,6 +4343,10 @@
           "axelarChainId": "scroll",
           "tokenAddress": "0x5120DAf6f323E03b70EFa289f1EDF0e5019d5436",
           "tokenManager": "0xe7c4dD18E24bdEa9886a96D780F3Fa2B7252Cc85",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0xdf00cfa0e97e2266a2d06bb6ed285239a85d727dcd83d97a9952ccc2890297da": {
       "tokenId": "0xdf00cfa0e97e2266a2d06bb6ed285239a85d727dcd83d97a9952ccc2890297da",
       "deployer": "0xEAF9830bB7a38A3CEbcaCa3Ff9F626C424F3fB55",
