@@ -4120,6 +4120,54 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x2c94f50469714d746c99779696eb5ef99317841ed93de8df2d01baf31ee4ff16": {
+      "tokenId": "0x2c94f50469714d746c99779696eb5ef99317841ed93de8df2d01baf31ee4ff16",
+      "deployer": "0xFB232F53e40F3EcbEad986E922A8Abe1Ff3AA146",
+      "originalMinter": null,
+      "prettySymbol": "PELL",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "customInterchain",
+      "deploySalt": "0xc6293789674a64b26f1dadda9bab7e9beada0bc7a2c9a37df6a16fa5b70f2bf7",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/pell.svg"
+      },
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "PELL",
+          "name": "PELL Network Token",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xC65d8d96cddDB31328186EFA113a460b0Af9Ec63",
+          "tokenManager": "0x60686085D75B490c6D5C0d2243e6Db710Ae36EaB",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "PELL",
+          "name": "PELL Network Token",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xC65d8d96cddDB31328186EFA113a460b0Af9Ec63",
+          "tokenManager": "0x60686085D75B490c6D5C0d2243e6Db710Ae36EaB",
+          "tokenManagerType": "mintBurnFrom"
+        },
+        {
+          "symbol": "PELL",
+          "name": "PELL Network Token",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xC65d8d96cddDB31328186EFA113a460b0Af9Ec63",
+          "tokenManager": "0x60686085D75B490c6D5C0d2243e6Db710Ae36EaB",
+          "tokenManagerType": "mintBurnFrom"
+        },
+        {
+          "symbol": "PELL",
+          "name": "PELL Network Token",
+          "axelarChainId": "mantle",
+          "tokenAddress": "0xC65d8d96cddDB31328186EFA113a460b0Af9Ec63",
+          "tokenManager": "0x60686085D75B490c6D5C0d2243e6Db710Ae36EaB",
+          "tokenManagerType": "mintBurnFrom"
+        }
+      ]
     }
   }
 }
