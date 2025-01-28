@@ -4130,7 +4130,7 @@
       "originAxelarChainId": "ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
-      "coingeckoId": "usdfi",
+      "coinGeckoId": "usdfi",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdfi.svg"
       },
@@ -4291,7 +4291,7 @@
       "originAxelarChainId": "ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
-      "coingeckoId": "usdfi-stable",
+      "coinGeckoId": "usdfi-stable",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/stable.svg"
       },
