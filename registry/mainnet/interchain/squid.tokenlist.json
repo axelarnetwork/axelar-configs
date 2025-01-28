@@ -702,6 +702,14 @@
           "tokenAddress": "0x491e6DE43b55c8EAE702EDC263E32339da42f58c",
           "tokenManager": "0x75cF562F7f6088161d10e69f546AB5d3560dd7e6",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "ESE",
+          "name": "eesee",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x491e6DE43b55c8EAE702EDC263E32339da42f58c",
+          "tokenManager": "0x75cF562F7f6088161d10e69f546AB5d3560dd7e6",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
