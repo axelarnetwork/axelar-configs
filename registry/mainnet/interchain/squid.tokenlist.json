@@ -689,7 +689,7 @@
       "chains": [
         {
           "symbol": "ESE",
-          "name": "eesee",
+          "name": "Eesee",
           "axelarChainId": "ethereum",
           "tokenAddress": "0x908dDb096BFb3AcB19e2280aAD858186ea4935C4",
           "tokenManager": "0x75cF562F7f6088161d10e69f546AB5d3560dd7e6",
@@ -697,7 +697,7 @@
         },
         {
           "symbol": "ESE",
-          "name": "eesee",
+          "name": "Eesee",
           "axelarChainId": "blast",
           "tokenAddress": "0x491e6DE43b55c8EAE702EDC263E32339da42f58c",
           "tokenManager": "0x75cF562F7f6088161d10e69f546AB5d3560dd7e6",
@@ -705,7 +705,7 @@
         },
         {
           "symbol": "ESE",
-          "name": "eesee",
+          "name": "Eesee",
           "axelarChainId": "binance",
           "tokenAddress": "0x491e6DE43b55c8EAE702EDC263E32339da42f58c",
           "tokenManager": "0x75cF562F7f6088161d10e69f546AB5d3560dd7e6",
