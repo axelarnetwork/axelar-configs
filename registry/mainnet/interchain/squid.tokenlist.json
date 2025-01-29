@@ -3360,39 +3360,6 @@
         }
       ]
     },
-    "0x5986148511c576f71beeae03234af8faf081001bd48103861efb016f1878f2de": {
-      "tokenId": "0x5986148511c576f71beeae03234af8faf081001bd48103861efb016f1878f2de",
-      "deployer": "0x6229E0ddDBE2EC81Dd745C99659d52688a5BaE0f",
-      "originalMinter": null,
-      "prettySymbol": "USDX",
-      "decimals": 18,
-      "originAxelarChainId": "binance",
-      "tokenType": "canonical",
-      "deploySalt": "0x",
-      "coinGeckoId": "usdx-money-usdx",
-      "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdx.svg"
-      },
-      "deploymentMessageId": "0x1603fd94b63ec0e040750cd315dc120f2c6a7b1c2e1bc1b75af097ba72076158-84",
-      "chains": [
-        {
-          "symbol": "USDX",
-          "name": "USDX",
-          "axelarChainId": "binance",
-          "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
-          "tokenManager": "0x52f91CeBd7c6313d3f0db5bc203f5cf8f642c683",
-          "tokenManagerType": "lockUnlock"
-        },
-        {
-          "symbol": "USDX",
-          "name": "USDX",
-          "axelarChainId": "base",
-          "tokenAddress": "0x020B6f7b56c2Ff3D506214732f83214c1AfC9a6F",
-          "tokenManager": "0x52f91CeBd7c6313d3f0db5bc203f5cf8f642c683",
-          "tokenManagerType": "mintBurn"
-        }
-      ]
-    },
     "0xb4fb1599d657d031e9e527a1ddd684ca4e2cafd7a4cfc9d02ef68cb559d7a470": {
       "tokenId": "0xb4fb1599d657d031e9e527a1ddd684ca4e2cafd7a4cfc9d02ef68cb559d7a470",
       "deployer": "0x1b75C2C0158B9A41b864836b1F0474DeEa3EbB55",
@@ -4495,6 +4462,113 @@
           "axelarChainId": "mantle",
           "tokenAddress": "0xC65d8d96cddDB31328186EFA113a460b0Af9Ec63",
           "tokenManager": "0x60686085D75B490c6D5C0d2243e6Db710Ae36EaB",
+          "tokenManagerType": "mintBurnFrom"
+        }
+      ]
+    },
+    "0xcde4c974c805c402d2efd786de1f5e271a7864e865edce2299314541d46014bf": {
+      "tokenId": "0xcde4c974c805c402d2efd786de1f5e271a7864e865edce2299314541d46014bf",
+      "deployer": "0x5a9002F24cD619c0C183a5B7f9223846d6bd3911",
+      "originalMinter": null,
+      "prettySymbol": "sUSDX",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "customInterchain",
+      "deploySalt": "0x2c53e91c50ba95d6f8b7a9003827838fbbf46b3f8bdadb1d94e760a5cc8d8329",
+      "coinGeckoId": "usdx-money-staked-usdx",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/susdx.svg"
+      },
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "sUSDX",
+          "name": "Staked USDX",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x7788A3538C5fc7F9c7C8A74EAC4c898fC8d87d92",
+          "tokenManager": "0x902a8FD72e30A9F0010611CB56321334b5d725E4",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "sUSDX",
+          "name": "Wrapped sUSDX",
+          "axelarChainId": "base",
+          "tokenAddress": "0x7788A3538C5fc7F9c7C8A74EAC4c898fC8d87d92",
+          "tokenManager": "0x902a8FD72e30A9F0010611CB56321334b5d725E4",
+          "tokenManagerType": "mintBurnFrom"
+        }
+      ]
+    },
+    "0x1026c0f2bf3239b03eb002ee28ade538d0aa3772d9c9576cf400a395301ef173": {
+      "tokenId": "0x1026c0f2bf3239b03eb002ee28ade538d0aa3772d9c9576cf400a395301ef173",
+      "deployer": "0x5a9002F24cD619c0C183a5B7f9223846d6bd3911",
+      "originalMinter": null,
+      "prettySymbol": "USDX",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "customInterchain",
+      "deploySalt": "0xb1c089efc0ec4e421a43ec68fe66c5b1c97b581452ee230e5298556380eced92",
+      "coinGeckoId": "usdx-money-usdx",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdx.svg"
+      },
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "USDX",
+          "name": "USDX",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
+          "tokenManager": "0x902a8FD72e30A9F0010611CB56321334b5d725E4",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "USDX",
+          "name": "Wrapped USDX",
+          "axelarChainId": "base",
+          "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
+          "tokenManager": "0x902a8FD72e30A9F0010611CB56321334b5d725E4",
+          "tokenManagerType": "mintBurnFrom"
+        }
+      ]
+    },
+    "0x8d80350129e734038babbe3bd0330fdf900938027655a0ff3eb4861ccc5fb3b1": {
+      "tokenId": "0x8d80350129e734038babbe3bd0330fdf900938027655a0ff3eb4861ccc5fb3b1",
+      "deployer": "0x5a9002F24cD619c0C183a5B7f9223846d6bd3911",
+      "originalMinter": null,
+      "prettySymbol": "USDX",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "customInterchain",
+      "deploySalt": "0x18d20f9bfb864ef584dd555abd4c1e5120880d0ec360910c2d5db092fbb6668f",
+      "coinGeckoId": "usdx-money-usdx",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdx.svg"
+      },
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "USDX",
+          "name": "USDX",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
+          "tokenManager": "0x8c580947B3f4540Aa641EaeD623121BFf68383ee",
+          "tokenManagerType": "mintBurnFrom"
+        },
+        {
+          "symbol": "USDX",
+          "name": "Wrapped USDX",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
+          "tokenManager": "0x902a8FD72e30A9F0010611CB56321334b5d725E4",
+          "tokenManagerType": "mintBurnFrom"
+        },
+        {
+          "symbol": "USDX",
+          "name": "Wrapped USDX",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
+          "tokenManager": "0x902a8FD72e30A9F0010611CB56321334b5d725E4",
           "tokenManagerType": "mintBurnFrom"
         }
       ]
