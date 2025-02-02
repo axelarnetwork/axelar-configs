@@ -4427,6 +4427,7 @@
       "originAxelarChainId": "ethereum",
       "tokenType": "customInterchain",
       "deploySalt": "0xc6293789674a64b26f1dadda9bab7e9beada0bc7a2c9a37df6a16fa5b70f2bf7",
+      "coinGeckoId": "pell-network-token",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/pell.svg"
       },
