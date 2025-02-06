@@ -1,0 +1,81 @@
+{
+  "id": "test-sepolia",
+  "displayName": "test-Sepolia",
+  "chainType": "evm",
+  "externalChainId": "11155111",
+  "iconUrl": "/images/chains/test-sepolia.svg",
+  "nativeCurrency": {
+    "name": "test-Sepolia",
+    "symbol": "ETH",
+    "decimals": 18,
+    "iconUrl": "/images/tokens/eth.svg"
+  },
+  "blockExplorers": [
+    {
+      "name": "Ethersan",
+      "url": "https://sepolia.etherscan.io"
+    }
+  ],
+  "config": {
+    "finality": "finalized",
+    "approxFinalityWaitTime": 40,
+    "contracts": {
+      "ConstAddressDeployer": {
+        "address": "0x98B2920D53612483F91F12Ed7754E51b4A77919e"
+      },
+      "Create3Deployer": {
+        "address": "0x6513Aedb4D1593BA12e50644401D976aebDc90d8"
+      },
+      "AxelarGateway": {
+        "address": "0x14213B104d2D897cFeE3767F24277771C8e6B702"
+      },
+      "Multisig": {
+        "address": "0xCC940AE49C78F20E3F13F3cF37e996b98Ac3EC68"
+      },
+      "Operators": {
+        "address": "0x6D37Ca166d05132e632C78882391031a3B5b6cE8"
+      },
+      "AxelarGasService": {
+        "address": "0xbcfcF78b4a695c9f9569f7EfFD9B759A7a82F25E"
+      }
+    },
+    "amplifier_contracts": {
+      "MultisigProver": {
+        "governanceAddress": "axelar10d07y265gmmuvt4z0w9aw880jnsr700j7v9daj",
+        "adminAddress": "axelar17qafmnc4hrfa96cq37wg5l68sxh354pj6eky35",
+        "signingThreshold": ["51", "100"],
+        "serviceName": "amplifier",
+        "verifierSetDiffThreshold": 0,
+        "encoder": "abi",
+        "keyType": "ecdsa",
+        "domainSeparator": "0xba2c562b33e107ee4817b6d9f9a160fed81afb7712cd379293731cfe1b65d8a4",
+        "address": "axelar1u7qt6kz34ljjx6c94444e2v57uzt2tdlgxc6qjkvu4c5phncca8qakejex"
+      },
+      "Gateway": {
+        "address": "axelar17hcsrrluv5zsrrt725wmscs3ma98hrg5f0t0ukmjxuyt2k7cwr3saxuwjc",
+        "storeCodeProposalId": "106",
+        "storeCodeProposalCodeHash": "eae97caf40ae6b5eea1e145eec27a59e73aa6f9de389fa9ca0cfc9354a3b68ac",
+        "codeId": 11
+      },
+      "VotingVerifier": {
+        "governanceAddress": "axelar10d07y265gmmuvt4z0w9aw880jnsr700j7v9daj",
+        "serviceName": "amplifier",
+        "sourceGatewayAddress": "0x14213B104d2D897cFeE3767F24277771C8e6B702",
+        "votingThreshold": ["51", "100"],
+        "blockExpiry": 10,
+        "confirmationHeight": 100000,
+        "msgIdFormat": "hex_tx_hash_and_event_index",
+        "addressFormat": "eip55",
+        "address": "axelar1r4rmvn83vrfj4evy5l8cv2nat2v0whm36ds3crn2mhlq8ufmhvts9467zz",
+        "storeCodeProposalId": "105",
+        "storeCodeProposalCodeHash": "e256445185284a52fc0ca4163c5ffd02d7f605890fb5882d01d540966957465b",
+        "codeId": 10
+      }
+    },
+    "gasPricingAssumptions": {
+      "gatewayApprovalCost": 250000,
+      "gasPriceGwei": 50.0
+    },
+    "rpc": ["https://rpc.ankr.com/eth_sepolia"]
+  }
+}
