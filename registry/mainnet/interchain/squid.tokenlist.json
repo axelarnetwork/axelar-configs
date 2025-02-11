@@ -4572,6 +4572,70 @@
           "tokenManagerType": "mintBurnFrom"
         }
       ]
+    },
+    "0x4e713577e144411a01d8af0d3dfce506e7cb9d0f372639162efd5318f9e1c14c": {
+      "tokenId": "0x4e713577e144411a01d8af0d3dfce506e7cb9d0f372639162efd5318f9e1c14c",
+      "deployer": "0x2D035C06a82eaC9822A731707566C339a09A68DD",
+      "originalMinter": null,
+      "prettySymbol": "TADA",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/tada.svg"
+      },
+      "deploymentMessageId": "0x27b48cf6bc5db9c2675ceffda248ff469da331bfd22a44ae9cffe9e1ab34f401-39",
+      "chains": [
+        {
+          "symbol": "TADA",
+          "name": "TADA",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x9b26e318bc6A2c8B45f5Daea2cc14697e0e0F8b5",
+          "tokenManager": "0x38f538766b46bF8a5bc4cAc252d3E86CFafc522C",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "TADA",
+          "name": "TADA",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x339bd6484a2b238b897339368C32006B4b4f2e5E",
+          "tokenManager": "0x38f538766b46bF8a5bc4cAc252d3E86CFafc522C",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x54f3321a19571b923e46a37cc00b0e812b00afe1ad07eac32295a7fcddbac40e": {
+      "tokenId": "0x54f3321a19571b923e46a37cc00b0e812b00afe1ad07eac32295a7fcddbac40e",
+      "deployer": "0x3B532DcBcb693BB5B08F15eB82DABDe49845679f",
+      "originalMinter": null,
+      "prettySymbol": "IMR",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/imr.svg"
+      },
+      "deploymentMessageId": "0x4f655937d155f570f8e73df461574a27948923f48a0f27e040b60ed9db95f1de-24",
+      "chains": [
+        {
+          "symbol": "IMR",
+          "name": "Immutable Runner Token",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xd15afd445fee7074ca094dc6218d4be164fc4073",
+          "tokenManager": "0xE513F207485f478ed71177750Dd61f309E30a370",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "IMR",
+          "name": "Immutable Runner Token",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0x915d2F39e89D3fEE3F0a9Ca060a9DAFd560ea226",
+          "tokenManager": "0xE513F207485f478ed71177750Dd61f309E30a370",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
