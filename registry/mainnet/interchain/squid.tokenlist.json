@@ -4707,30 +4707,6 @@
           "tokenAddress": "0x00d3C94031F4C7479e3A28d9B466662Be216c22D",
           "tokenManager": "0x671E662E3385064FEfBa617fd95Cf16aD8bD688D",
           "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "NUTS",
-          "name": "NUTS",
-          "axelarChainId": "avalanche",
-          "tokenAddress": "0x00d3C94031F4C7479e3A28d9B466662Be216c22D",
-          "tokenManager": "0x671E662E3385064FEfBa617fd95Cf16aD8bD688D",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "NUTS",
-          "name": "NUTS",
-          "axelarChainId": "arbitrum",
-          "tokenAddress": "0x00d3C94031F4C7479e3A28d9B466662Be216c22D",
-          "tokenManager": "0x671E662E3385064FEfBa617fd95Cf16aD8bD688D",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "NUTS",
-          "name": "NUTS",
-          "axelarChainId": "immutable",
-          "tokenAddress": "0x00d3C94031F4C7479e3A28d9B466662Be216c22D",
-          "tokenManager": "0x671E662E3385064FEfBa617fd95Cf16aD8bD688D",
-          "tokenManagerType": "mintBurn"
         }
       ]
     }
