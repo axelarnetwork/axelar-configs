@@ -2551,6 +2551,86 @@
         }
       ]
     },
+    "0x1ac831937426660d5952bc9ae0dc7c895a3c3f5f159d3518813df30181404be6": {
+      "tokenId": "0x1ac831937426660d5952bc9ae0dc7c895a3c3f5f159d3518813df30181404be6",
+      "deployer": "0x7AAd74b7f0d60D5867B59dbD377a71783425af47",
+      "originalMinter": null,
+      "prettySymbol": "agETH",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/ageth.svg"
+      },
+      "deploymentMessageId": "0x9c77e79177ec83dff97c1d0749cd9d4cd2a7f2c6b36256d017df53819e10ab0e-476",
+      "chains": [
+        {
+          "symbol": "agETH",
+          "name": "Kelp Gain",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xe1b4d34e8754600962cd944b535180bd758e6c2e",
+          "tokenManager": "0xa526eDa85A1CF901E77a33493852B0aFD910Ed0d",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "agETH",
+          "name": "Kelp Gain",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x1bD0Fe8E92a157D3ef66C9FB9e38621252b407c2",
+          "tokenManager": "0xa526eDa85A1CF901E77a33493852B0aFD910Ed0d",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "agETH",
+          "name": "Kelp Gain",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0x1bD0Fe8E92a157D3ef66C9FB9e38621252b407c2",
+          "tokenManager": "0xa526eDa85A1CF901E77a33493852B0aFD910Ed0d",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "agETH",
+          "name": "Kelp Gain",
+          "axelarChainId": "linea",
+          "tokenAddress": "0x1bD0Fe8E92a157D3ef66C9FB9e38621252b407c2",
+          "tokenManager": "0xa526eDa85A1CF901E77a33493852B0aFD910Ed0d",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "agETH",
+          "name": "Kelp Gain",
+          "axelarChainId": "base",
+          "tokenAddress": "0x1bD0Fe8E92a157D3ef66C9FB9e38621252b407c2",
+          "tokenManager": "0xa526eDa85A1CF901E77a33493852B0aFD910Ed0d",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "agETH",
+          "name": "Kelp Gain",
+          "axelarChainId": "scroll",
+          "tokenAddress": "0x1bD0Fe8E92a157D3ef66C9FB9e38621252b407c2",
+          "tokenManager": "0xa526eDa85A1CF901E77a33493852B0aFD910Ed0d",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "agETH",
+          "name": "Kelp Gain",
+          "axelarChainId": "blast",
+          "tokenAddress": "0x1bD0Fe8E92a157D3ef66C9FB9e38621252b407c2",
+          "tokenManager": "0xa526eDa85A1CF901E77a33493852B0aFD910Ed0d",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "agETH",
+          "name": "Kelp Gain",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x1bD0Fe8E92a157D3ef66C9FB9e38621252b407c2",
+          "tokenManager": "0xa526eDa85A1CF901E77a33493852B0aFD910Ed0d",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0x291401f2645b4a6a6439323c4db76a820439ace0a5ad7637e10a3f5adfdd7c33": {
       "tokenId": "0x291401f2645b4a6a6439323c4db76a820439ace0a5ad7637e10a3f5adfdd7c33",
       "deployer": "0xfb311Eb413a49389a2078284B57C8BEFeF6aFF67",
