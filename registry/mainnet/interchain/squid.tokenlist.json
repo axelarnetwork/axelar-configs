@@ -4418,15 +4418,16 @@
         }
       ]
     },
-    "0x2c94f50469714d746c99779696eb5ef99317841ed93de8df2d01baf31ee4ff16": {
-      "tokenId": "0x2c94f50469714d746c99779696eb5ef99317841ed93de8df2d01baf31ee4ff16",
+    "0x18466ba5be6c1433cf90c8220e415a79b73e8fcd519a36c6dfe02a3ddad9a613": {
+      "tokenId": "0x18466ba5be6c1433cf90c8220e415a79b73e8fcd519a36c6dfe02a3ddad9a613",
       "deployer": "0xFB232F53e40F3EcbEad986E922A8Abe1Ff3AA146",
       "originalMinter": null,
       "prettySymbol": "PELL",
       "decimals": 18,
       "originAxelarChainId": "ethereum",
       "tokenType": "customInterchain",
-      "deploySalt": "0xc6293789674a64b26f1dadda9bab7e9beada0bc7a2c9a37df6a16fa5b70f2bf7",
+      "deploySalt": "0xee02f19ada4010684a45d1923eb442cb6993256fb9b740c2b93b1a663e136e69",
+      "coinGeckoId": "pell-network-token",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/pell.svg"
       },
@@ -4437,15 +4438,15 @@
           "name": "PELL Network Token",
           "axelarChainId": "ethereum",
           "tokenAddress": "0xC65d8d96cddDB31328186EFA113a460b0Af9Ec63",
-          "tokenManager": "0x60686085D75B490c6D5C0d2243e6Db710Ae36EaB",
-          "tokenManagerType": "lockUnlock"
+          "tokenManager": "0x11DbAeAb39e33E92111590970e10B363795B61e6",
+          "tokenManagerType": "mintBurnFrom"
         },
         {
           "symbol": "PELL",
           "name": "PELL Network Token",
           "axelarChainId": "arbitrum",
           "tokenAddress": "0xC65d8d96cddDB31328186EFA113a460b0Af9Ec63",
-          "tokenManager": "0x60686085D75B490c6D5C0d2243e6Db710Ae36EaB",
+          "tokenManager": "0x11DbAeAb39e33E92111590970e10B363795B61e6",
           "tokenManagerType": "mintBurnFrom"
         },
         {
@@ -4453,7 +4454,7 @@
           "name": "PELL Network Token",
           "axelarChainId": "binance",
           "tokenAddress": "0xC65d8d96cddDB31328186EFA113a460b0Af9Ec63",
-          "tokenManager": "0x60686085D75B490c6D5C0d2243e6Db710Ae36EaB",
+          "tokenManager": "0x11DbAeAb39e33E92111590970e10B363795B61e6",
           "tokenManagerType": "mintBurnFrom"
         },
         {
@@ -4461,7 +4462,7 @@
           "name": "PELL Network Token",
           "axelarChainId": "mantle",
           "tokenAddress": "0xC65d8d96cddDB31328186EFA113a460b0Af9Ec63",
-          "tokenManager": "0x60686085D75B490c6D5C0d2243e6Db710Ae36EaB",
+          "tokenManager": "0x11DbAeAb39e33E92111590970e10B363795B61e6",
           "tokenManagerType": "mintBurnFrom"
         }
       ]
@@ -4570,6 +4571,142 @@
           "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
           "tokenManager": "0x902a8FD72e30A9F0010611CB56321334b5d725E4",
           "tokenManagerType": "mintBurnFrom"
+        }
+      ]
+    },
+    "0x4e713577e144411a01d8af0d3dfce506e7cb9d0f372639162efd5318f9e1c14c": {
+      "tokenId": "0x4e713577e144411a01d8af0d3dfce506e7cb9d0f372639162efd5318f9e1c14c",
+      "deployer": "0x2D035C06a82eaC9822A731707566C339a09A68DD",
+      "originalMinter": null,
+      "prettySymbol": "TADA",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/tada.svg"
+      },
+      "deploymentMessageId": "0x27b48cf6bc5db9c2675ceffda248ff469da331bfd22a44ae9cffe9e1ab34f401-39",
+      "chains": [
+        {
+          "symbol": "TADA",
+          "name": "TADA",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x9b26e318bc6A2c8B45f5Daea2cc14697e0e0F8b5",
+          "tokenManager": "0x38f538766b46bF8a5bc4cAc252d3E86CFafc522C",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "TADA",
+          "name": "TADA",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x339bd6484a2b238b897339368C32006B4b4f2e5E",
+          "tokenManager": "0x38f538766b46bF8a5bc4cAc252d3E86CFafc522C",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x54f3321a19571b923e46a37cc00b0e812b00afe1ad07eac32295a7fcddbac40e": {
+      "tokenId": "0x54f3321a19571b923e46a37cc00b0e812b00afe1ad07eac32295a7fcddbac40e",
+      "deployer": "0x3B532DcBcb693BB5B08F15eB82DABDe49845679f",
+      "originalMinter": null,
+      "prettySymbol": "IMR",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/imr.svg"
+      },
+      "deploymentMessageId": "0x4f655937d155f570f8e73df461574a27948923f48a0f27e040b60ed9db95f1de-24",
+      "chains": [
+        {
+          "symbol": "IMR",
+          "name": "Immutable Runner Token",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xd15afd445fee7074ca094dc6218d4be164fc4073",
+          "tokenManager": "0xE513F207485f478ed71177750Dd61f309E30a370",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "IMR",
+          "name": "Immutable Runner Token",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0x915d2F39e89D3fEE3F0a9Ca060a9DAFd560ea226",
+          "tokenManager": "0xE513F207485f478ed71177750Dd61f309E30a370",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x3b21d030bd00800a56c14bef51c8219a7fe1fb73288cb7a9adef7c9ec94a529d": {
+      "tokenId": "0x3b21d030bd00800a56c14bef51c8219a7fe1fb73288cb7a9adef7c9ec94a529d",
+      "deployer": "0x7921eC049a6070aec51c7Ca0e77D9056De46e381",
+      "originalMinter": null,
+      "prettySymbol": "TURBO",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/turbo.svg"
+      },
+      "deploymentMessageId": "0xc053d6163133161a7b001106ae7110903bab97efa2ad34127b209b6dffd936a4-29",
+      "chains": [
+        {
+          "symbol": "TURBO",
+          "name": "Turbo",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xa35923162c49cf95e6bf26623385eb431ad920d3",
+          "tokenManager": "0x54D45Dc8C68d171c24cee3674b846833bD2F5551",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "TURBO",
+          "name": "Turbo",
+          "axelarChainId": "base",
+          "tokenAddress": "0xDDb2d8dc203918234d0ef41F2EF99D13D8e38d39",
+          "tokenManager": "0x54D45Dc8C68d171c24cee3674b846833bD2F5551",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "TURBO",
+          "name": "Turbo",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xDDb2d8dc203918234d0ef41F2EF99D13D8e38d39",
+          "tokenManager": "0x54D45Dc8C68d171c24cee3674b846833bD2F5551",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xccffae8bac87b9483579ca6bb614667b369ae2df484315ba6112672f5fe68af9": {
+      "tokenId": "0xccffae8bac87b9483579ca6bb614667b369ae2df484315ba6112672f5fe68af9",
+      "deployer": "0x6229E0ddDBE2EC81Dd745C99659d52688a5BaE0f",
+      "originalMinter": null,
+      "prettySymbol": "NUTS",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/nuts.svg"
+      },
+      "deploymentMessageId": "0x334b8612684b491f200cb7281682a1eaae911dbe82c7466c65c5b52315aa60fa-163",
+      "chains": [
+        {
+          "symbol": "NUTS",
+          "name": "NUTS",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x195f5C217b96Cd3dd75D39327161B8911A42E509",
+          "tokenManager": "0x671E662E3385064FEfBa617fd95Cf16aD8bD688D",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "NUTS",
+          "name": "NUTS",
+          "axelarChainId": "base",
+          "tokenAddress": "0x00d3C94031F4C7479e3A28d9B466662Be216c22D",
+          "tokenManager": "0x671E662E3385064FEfBa617fd95Cf16aD8bD688D",
+          "tokenManagerType": "mintBurn"
         }
       ]
     }
