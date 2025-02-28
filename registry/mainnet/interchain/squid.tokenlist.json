@@ -3357,6 +3357,14 @@
           "tokenAddress": "0xF63b14F5eE5574e3F337b2796Bbdf6dcfB4E2CB7",
           "tokenManager": "0x08EF516c5Eb9159C6Bea5B87FB902b3B1CDabAf5",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "KIP",
+          "name": "KIP Protocol",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xF63b14F5eE5574e3F337b2796Bbdf6dcfB4E2CB7",
+          "tokenManager": "0x08EF516c5Eb9159C6Bea5B87FB902b3B1CDabAf5",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
