@@ -4709,6 +4709,70 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xb3245635de36c44e857c06f94ac0baa7e0be44ac693e897808a721a48dc0fa62": {
+      "tokenId": "0xb3245635de36c44e857c06f94ac0baa7e0be44ac693e897808a721a48dc0fa62",
+      "deployer": "0xB09d500Af56cb2BB41a7E23460B93CF9BA857E74",
+      "originalMinter": null,
+      "prettySymbol": "EARTH",
+      "decimals": 18,
+      "originAxelarChainId": "base",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/earth.svg"
+      },
+      "deploymentMessageId": "0xdbe0f5fe4c78180ef20f18cf8b1da02946f998aa1d39cfcbfc5fbc0c3485d080-116",
+      "chains": [
+        {
+          "symbol": "EARTH",
+          "name": "Earth",
+          "axelarChainId": "base",
+          "tokenAddress": "0x9d6501275e91c0b2b0845C2c5334dEa1EC6a3c18",
+          "tokenManager": "0x637858456993e0C5531c9FfBF7344710932015cc",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "EARTH",
+          "name": "Earth",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xBe4247bDF0e161B65747E4fEFBd4821D21Ed05d2",
+          "tokenManager": "0x637858456993e0C5531c9FfBF7344710932015cc",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "EARTH",
+          "name": "Earth",
+          "axelarChainId": "celo",
+          "tokenAddress": "0xBe4247bDF0e161B65747E4fEFBd4821D21Ed05d2",
+          "tokenManager": "0x637858456993e0C5531c9FfBF7344710932015cc",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "EARTH",
+          "name": "Earth",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0xBe4247bDF0e161B65747E4fEFBd4821D21Ed05d2",
+          "tokenManager": "0x637858456993e0C5531c9FfBF7344710932015cc",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "EARTH",
+          "name": "Earth",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0xBe4247bDF0e161B65747E4fEFBd4821D21Ed05d2",
+          "tokenManager": "0x637858456993e0C5531c9FfBF7344710932015cc",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "EARTH",
+          "name": "Earth",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xBe4247bDF0e161B65747E4fEFBd4821D21Ed05d2",
+          "tokenManager": "0x637858456993e0C5531c9FfBF7344710932015cc",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
