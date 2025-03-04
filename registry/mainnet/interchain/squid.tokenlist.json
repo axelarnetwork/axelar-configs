@@ -4781,6 +4781,46 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xf15b0bb5061ee0466e82a001d9e87bf9acdcb914e396a61ed7a6f0a76f579b64": {
+      "tokenId": "0xf15b0bb5061ee0466e82a001d9e87bf9acdcb914e396a61ed7a6f0a76f579b64",
+      "deployer": "0xe863301a642FF6Aef1d265AB362BF2AcC81717dc",
+      "originalMinter": null,
+      "prettySymbol": "RECALL",
+      "decimals": 18,
+      "originAxelarChainId": "base",
+      "tokenType": "customInterchain",
+      "deploySalt": "0x341bb76302c76fb57d6fe6c003c4fc68e56cbe5c5a4c04bedf1522a15c7e41a0",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/recall.svg"
+      },
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "RECALL",
+          "name": "Recall",
+          "axelarChainId": "base",
+          "tokenAddress": "0x1f16e03C1a5908818F47f6EE7bB16690b40D0671",
+          "tokenManager": "0xdA708C1D4eD8675697811b7F2590cdD6205E65CF",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "RECALL",
+          "name": "Recall",
+          "axelarChainId": "filecoin",
+          "tokenAddress": "0x1f16e03C1a5908818F47f6EE7bB16690b40D0671",
+          "tokenManager": "0xdA708C1D4eD8675697811b7F2590cdD6205E65CF",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "RECALL",
+          "name": "Recall",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x1f16e03C1a5908818F47f6EE7bB16690b40D0671",
+          "tokenManager": "0xdA708C1D4eD8675697811b7F2590cdD6205E65CF",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
