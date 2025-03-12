@@ -4495,7 +4495,7 @@
           "name": "Staked USDX",
           "axelarChainId": "binance",
           "tokenAddress": "0x7788A3538C5fc7F9c7C8A74EAC4c898fC8d87d92",
-          "tokenManager": "0x902a8FD72e30A9F0010611CB56321334b5d725E4",
+          "tokenManager": "0xE85b59733D666601d37bf17D1Ced8cb8D044d324",
           "tokenManagerType": "lockUnlock"
         },
         {
@@ -4503,7 +4503,7 @@
           "name": "Wrapped sUSDX",
           "axelarChainId": "base",
           "tokenAddress": "0x7788A3538C5fc7F9c7C8A74EAC4c898fC8d87d92",
-          "tokenManager": "0x902a8FD72e30A9F0010611CB56321334b5d725E4",
+          "tokenManager": "0xE85b59733D666601d37bf17D1Ced8cb8D044d324",
           "tokenManagerType": "mintBurnFrom"
         }
       ]
@@ -4566,18 +4566,18 @@
         },
         {
           "symbol": "USDX",
-          "name": "Wrapped USDX",
+          "name": "USDX",
           "axelarChainId": "ethereum",
           "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
-          "tokenManager": "0x902a8FD72e30A9F0010611CB56321334b5d725E4",
+          "tokenManager": "0x8c580947B3f4540Aa641EaeD623121BFf68383ee",
           "tokenManagerType": "mintBurnFrom"
         },
         {
           "symbol": "USDX",
-          "name": "Wrapped USDX",
+          "name": "USDX",
           "axelarChainId": "arbitrum",
           "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
-          "tokenManager": "0x902a8FD72e30A9F0010611CB56321334b5d725E4",
+          "tokenManager": "0x8c580947B3f4540Aa641EaeD623121BFf68383ee",
           "tokenManagerType": "mintBurnFrom"
         }
       ]
