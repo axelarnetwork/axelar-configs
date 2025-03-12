@@ -3357,6 +3357,14 @@
           "tokenAddress": "0xF63b14F5eE5574e3F337b2796Bbdf6dcfB4E2CB7",
           "tokenManager": "0x08EF516c5Eb9159C6Bea5B87FB902b3B1CDabAf5",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "KIP",
+          "name": "KIP Protocol",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xF63b14F5eE5574e3F337b2796Bbdf6dcfB4E2CB7",
+          "tokenManager": "0x08EF516c5Eb9159C6Bea5B87FB902b3B1CDabAf5",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
@@ -4487,7 +4495,7 @@
           "name": "Staked USDX",
           "axelarChainId": "binance",
           "tokenAddress": "0x7788A3538C5fc7F9c7C8A74EAC4c898fC8d87d92",
-          "tokenManager": "0x902a8FD72e30A9F0010611CB56321334b5d725E4",
+          "tokenManager": "0xE85b59733D666601d37bf17D1Ced8cb8D044d324",
           "tokenManagerType": "lockUnlock"
         },
         {
@@ -4495,7 +4503,7 @@
           "name": "Wrapped sUSDX",
           "axelarChainId": "base",
           "tokenAddress": "0x7788A3538C5fc7F9c7C8A74EAC4c898fC8d87d92",
-          "tokenManager": "0x902a8FD72e30A9F0010611CB56321334b5d725E4",
+          "tokenManager": "0xE85b59733D666601d37bf17D1Ced8cb8D044d324",
           "tokenManagerType": "mintBurnFrom"
         }
       ]
@@ -4558,18 +4566,18 @@
         },
         {
           "symbol": "USDX",
-          "name": "Wrapped USDX",
+          "name": "USDX",
           "axelarChainId": "ethereum",
           "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
-          "tokenManager": "0x902a8FD72e30A9F0010611CB56321334b5d725E4",
+          "tokenManager": "0x8c580947B3f4540Aa641EaeD623121BFf68383ee",
           "tokenManagerType": "mintBurnFrom"
         },
         {
           "symbol": "USDX",
-          "name": "Wrapped USDX",
+          "name": "USDX",
           "axelarChainId": "arbitrum",
           "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
-          "tokenManager": "0x902a8FD72e30A9F0010611CB56321334b5d725E4",
+          "tokenManager": "0x8c580947B3f4540Aa641EaeD623121BFf68383ee",
           "tokenManagerType": "mintBurnFrom"
         }
       ]
@@ -4770,6 +4778,78 @@
           "axelarChainId": "ethereum",
           "tokenAddress": "0xBe4247bDF0e161B65747E4fEFBd4821D21Ed05d2",
           "tokenManager": "0x637858456993e0C5531c9FfBF7344710932015cc",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xd1a82b16485921bd107a97a081eb4c7927535a315bfdd3700e741d4e18baa60a": {
+      "tokenId": "0xd1a82b16485921bd107a97a081eb4c7927535a315bfdd3700e741d4e18baa60a",
+      "deployer": "0x8b55501865a8C9a9e442f58d5b5D4e07d822d64d",
+      "originalMinter": null,
+      "prettySymbol": "PUNDIAI",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/pundiai.svg"
+      },
+      "deploymentMessageId": "0x5eca0191a7e1ad8ba3bc6519831cb6cd0f4e2d4d871aa8e04d8c4f935173d91c-71",
+      "chains": [
+        {
+          "symbol": "PUNDIAI",
+          "name": "Pundi AI",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x075f23b9cdfce2cc0ca466f4ee6cb4bd29d83bef",
+          "tokenManager": "0x2a0B01F2525B557E461CEdaa140c36DF0D93Fba2",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "PUNDIAI",
+          "name": "Pundi AI",
+          "axelarChainId": "base",
+          "tokenAddress": "0x67AA700Ab0110Cc52bf7F308fe25068E87a0f581",
+          "tokenManager": "0x2a0B01F2525B557E461CEdaa140c36DF0D93Fba2",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xf15b0bb5061ee0466e82a001d9e87bf9acdcb914e396a61ed7a6f0a76f579b64": {
+      "tokenId": "0xf15b0bb5061ee0466e82a001d9e87bf9acdcb914e396a61ed7a6f0a76f579b64",
+      "deployer": "0xe863301a642FF6Aef1d265AB362BF2AcC81717dc",
+      "originalMinter": null,
+      "prettySymbol": "RECALL",
+      "decimals": 18,
+      "originAxelarChainId": "base",
+      "tokenType": "customInterchain",
+      "deploySalt": "0x341bb76302c76fb57d6fe6c003c4fc68e56cbe5c5a4c04bedf1522a15c7e41a0",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/recall.svg"
+      },
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "RECALL",
+          "name": "Recall",
+          "axelarChainId": "base",
+          "tokenAddress": "0x1f16e03C1a5908818F47f6EE7bB16690b40D0671",
+          "tokenManager": "0xdA708C1D4eD8675697811b7F2590cdD6205E65CF",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "RECALL",
+          "name": "Recall",
+          "axelarChainId": "filecoin",
+          "tokenAddress": "0x1f16e03C1a5908818F47f6EE7bB16690b40D0671",
+          "tokenManager": "0xdA708C1D4eD8675697811b7F2590cdD6205E65CF",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "RECALL",
+          "name": "Recall",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x1f16e03C1a5908818F47f6EE7bB16690b40D0671",
+          "tokenManager": "0xdA708C1D4eD8675697811b7F2590cdD6205E65CF",
           "tokenManagerType": "mintBurn"
         }
       ]
