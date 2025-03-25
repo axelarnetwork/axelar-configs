@@ -4957,14 +4957,6 @@
           "tokenAddress": "0xB035723D62e0e2ea7499D76355c9D560f13ba404",
           "tokenManager": "0x87451a5a87Be2Be4f2A5fe3FC04270726a31F1d0",
           "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "OIK",
-          "name": "Space Nation Oikos",
-          "axelarChainId": "immutable",
-          "tokenAddress": "0xB035723D62e0e2ea7499D76355c9D560f13ba404",
-          "tokenManager": "0x87451a5a87Be2Be4f2A5fe3FC04270726a31F1d0",
-          "tokenManagerType": "mintBurn"
         }
       ]
     }
