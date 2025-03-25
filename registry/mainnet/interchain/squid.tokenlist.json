@@ -4895,6 +4895,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x3eba956f56f00c2fb0ea865d22d87ef9aed0e7108856a67f8a416503b899c021": {
+      "tokenId": "0x3eba956f56f00c2fb0ea865d22d87ef9aed0e7108856a67f8a416503b899c021",
+      "deployer": "0x83de5Ad1f7ef743877F808092e615B4777B6dAAD",
+      "originalMinter": null,
+      "prettySymbol": "IMT",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/imt.svg"
+      },
+      "deploymentMessageId": "0xa56ce535428e9e80651f5369f4dfc3773b6ebc86ae0d316f9b1e810fe112a805-65",
+      "chains": [
+        {
+          "symbol": "IMT",
+          "name": "Immortal Token",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0xe2616122eD554bd693335E9143C47Df187a86EF3",
+          "tokenManager": "0xdb069995B24BC91f0643c124ad1afcCF6BebBFc5",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "IMT",
+          "name": "Immortal Token",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0x80807723CFC04bf5dBe3186EBd8A7486e78cd8cA",
+          "tokenManager": "0xdb069995B24BC91f0643c124ad1afcCF6BebBFc5",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
