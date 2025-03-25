@@ -4927,6 +4927,46 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xb63115820f141b31d64d98c483244e2cace14b85808d1bc5fd93134e0011f1e6": {
+      "tokenId": "0xb63115820f141b31d64d98c483244e2cace14b85808d1bc5fd93134e0011f1e6",
+      "deployer": "0x97cc8706a4c9c10ed7D70594f05168F919aeD7D4",
+      "originalMinter": null,
+      "prettySymbol": "OIK",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/oik.svg"
+      },
+      "deploymentMessageId": "0xa3ca06e2bf5d9c46e8ed51eb952a595c114d6afb1db96dd26bd38d20464d2ca1-130",
+      "chains": [
+        {
+          "symbol": "OIK",
+          "name": "Space Nation Oikos",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x6E7F11641c1EC71591828E531334192d622703F7",
+          "tokenManager": "0x87451a5a87Be2Be4f2A5fe3FC04270726a31F1d0",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "OIK",
+          "name": "Space Nation Oikos",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xB035723D62e0e2ea7499D76355c9D560f13ba404",
+          "tokenManager": "0x87451a5a87Be2Be4f2A5fe3FC04270726a31F1d0",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "OIK",
+          "name": "Space Nation Oikos",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0xB035723D62e0e2ea7499D76355c9D560f13ba404",
+          "tokenManager": "0x87451a5a87Be2Be4f2A5fe3FC04270726a31F1d0",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
