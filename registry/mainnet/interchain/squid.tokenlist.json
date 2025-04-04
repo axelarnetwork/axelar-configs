@@ -4976,7 +4976,7 @@
       "chains": [
         {
           "symbol": "FDUSD",
-          "name": "First Digital USD",
+          "name": "First Digital USD (Test)",
           "axelarChainId": "ethereum",
           "tokenAddress": "0xB035723D62e0e2ea7499D76355c9D560f13ba404",
           "tokenManager": "0xf1dDfadEbd1028E82558C52cD684A4389dCbC9Ab",
@@ -4984,7 +4984,7 @@
         },
         {
           "symbol": "FDUSD",
-          "name": "First Digital USD",
+          "name": "First Digital USD (Test)",
           "axelarChainId": "flow",
           "tokenAddress": "0xB035723D62e0e2ea7499D76355c9D560f13ba404",
           "tokenManager": "0xf1dDfadEbd1028E82558C52cD684A4389dCbC9Ab",
