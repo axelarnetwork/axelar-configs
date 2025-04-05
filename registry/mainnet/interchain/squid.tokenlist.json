@@ -4976,19 +4976,27 @@
       "chains": [
         {
           "symbol": "FDUSD",
-          "name": "First Digital USD (Test)",
-          "axelarChainId": "ethereum",
-          "tokenAddress": "0xB035723D62e0e2ea7499D76355c9D560f13ba404",
-          "tokenManager": "0xf1dDfadEbd1028E82558C52cD684A4389dCbC9Ab",
+          "name": "First Digital USD",
+          "axelarChainId": "sui",
+          "tokenAddress": "0xf16e6b723f242ec745dfd7634ad072c42d5c1d9ac9d62a39c381303eaa57693a::fdusd::FDUSD",
+          "tokenManager": "0xe5c7fee93d8818849e5a5d5154f6ff7a246c19468d82d2c65be9335a7a30367a",
           "tokenManagerType": "lockUnlock"
         },
         {
           "symbol": "FDUSD",
-          "name": "First Digital USD (Test)",
-          "axelarChainId": "flow",
-          "tokenAddress": "0xB035723D62e0e2ea7499D76355c9D560f13ba404",
+          "name": "First Digital USD",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x0168872F7781A17cDe75D45995b9A205015CAb1D",
           "tokenManager": "0xf1dDfadEbd1028E82558C52cD684A4389dCbC9Ab",
-          "tokenManagerType": "lockUnlock"
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "FDUSD",
+          "name": "First Digital USD",
+          "axelarChainId": "flow",
+          "tokenAddress": "0x0168872F7781A17cDe75D45995b9A205015CAb1D",
+          "tokenManager": "0xf1dDfadEbd1028E82558C52cD684A4389dCbC9Ab",
+          "tokenManagerType": "mintBurn"
         }
       ]
     }
