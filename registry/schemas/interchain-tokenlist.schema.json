@@ -27,7 +27,7 @@
       "type": "object",
       "properties": {
         "axelarChainId": { "type": "string" },
-        "tokenAddress": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
+        "tokenAddress": { "type": "string" },
         "tokenManager": {
           "$ref": "#/definitions/chains/properties/tokenAddress"
         },
