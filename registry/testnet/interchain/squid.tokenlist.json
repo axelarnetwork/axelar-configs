@@ -138,7 +138,7 @@
           "name": "Squid",
           "axelarChainId": "xrpl",
           "tokenAddress": "SQD.rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
-          "tokenManager": "",
+          "tokenManager": "rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
           "tokenManagerType": "mintBurn"
         }
       ]
