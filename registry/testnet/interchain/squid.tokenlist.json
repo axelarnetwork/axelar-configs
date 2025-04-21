@@ -86,6 +86,54 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x42e69c5a9903ba193f3e9214d41b1ad495faace3ca712fb0c9d0c44cc4d31a0c": {
+      "tokenId": "0x42e69c5a9903ba193f3e9214d41b1ad495faace3ca712fb0c9d0c44cc4d31a0c",
+      "deployer": "0xba353a510d8a1174b37c31e6eab6e2d6d93cdb31cd093efdd30c177853533ab0",
+      "originalMinter": null,
+      "prettySymbol": "SQD",
+      "decimals": 9,
+      "deploymentMessageId": "HzP396Njj6awueLpgMDF3RvuFgJXCDStRhK6Mr8DSSYV-3",
+      "tokenType": "interchain",
+      "originAxelarChainId": "sui",
+      "deploySalt": "0x8ee12465429373d266028755f6f2c87f52a32c245e020b23acf08d2314216aca",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/sqd.svg"
+      },
+      "chains": [
+        {
+          "symbol": "SQD",
+          "name": "Squid",
+          "axelarChainId": "sui",
+          "tokenAddress": "0xdec8d72a69438bc872824e70944cd4d89d25c34e3f149993b2d06718d4fd87e2::sqd::SQD",
+          "tokenManager": "0x6cbd77c514249cbb307658e4bcba2c273890529f99d2dbeaafb75ace7af7cefb",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "SQD",
+          "name": "Squid",
+          "axelarChainId": "flow",
+          "tokenAddress": "0xd5e67bFbFfE0A6439be6738587B115053f77aB3b",
+          "tokenManager": "0xF26F015022631ABeAC79E7c91D48551f9b1C7774",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "SQD",
+          "name": "Squid",
+          "axelarChainId": "ethereum-sepolia",
+          "tokenAddress": "0xd5e67bFbFfE0A6439be6738587B115053f77aB3b",
+          "tokenManager": "0xF26F015022631ABeAC79E7c91D48551f9b1C7774",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "SQD",
+          "name": "Squid",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0xd5e67bFbFfE0A6439be6738587B115053f77aB3b",
+          "tokenManager": "0xF26F015022631ABeAC79E7c91D48551f9b1C7774",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
