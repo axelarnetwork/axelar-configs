@@ -5026,7 +5026,7 @@
           "symbol": "GRAM",
           "name": "GRAM Token",
           "axelarChainId": "immutable",
-          "tokenAddress": "0x856D602E73545deAA1491a3726cF628d49f74F51",
+          "tokenAddress": "0x7eBdb159139fF7dBF65bEbdbe59e4E2683868560",
           "tokenManager": "0xC1764cb42100C59f243392ea446b13195da4355c",
           "tokenManagerType": "mintBurn"
         }
