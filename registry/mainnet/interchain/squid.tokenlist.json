@@ -4999,6 +4999,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xce4624d1b8689a005951e459460b6b7a1cf13a549c387f6577cfef634effff2f": {
+      "tokenId": "0xce4624d1b8689a005951e459460b6b7a1cf13a549c387f6577cfef634effff2f",
+      "deployer": "0x6229E0ddDBE2EC81Dd745C99659d52688a5BaE0f",
+      "originalMinter": null,
+      "prettySymbol": "GRAM",
+      "decimals": 18,
+      "originAxelarChainId": "base",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/gram.svg"
+      },
+      "deploymentMessageId": "0xb28385fa795f1db86f5892700332ad1c3e90748c0bcd3b144e1bbfcdf5adf0a2-56",
+      "chains": [
+        {
+          "symbol": "GRAM",
+          "name": "GRAM Token",
+          "axelarChainId": "base",
+          "tokenAddress": "0x856D602E73545deAA1491a3726cF628d49f74F51",
+          "tokenManager": "0xC1764cb42100C59f243392ea446b13195da4355c",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "GRAM",
+          "name": "GRAM Token",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0x7eBdb159139fF7dBF65bEbdbe59e4E2683868560",
+          "tokenManager": "0xC1764cb42100C59f243392ea446b13195da4355c",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
