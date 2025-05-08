@@ -5032,6 +5032,103 @@
         }
       ]
     },
+    "0xa7457b77fed88990d9b1d8a222d99fc8d018b651f5085236ba5f5ef425baeb58": {
+      "tokenId": "0xa7457b77fed88990d9b1d8a222d99fc8d018b651f5085236ba5f5ef425baeb58",
+      "deployer": "0xfBe09B7A6C6cc3A72B4CA41cdD9c88AC62bb7937",
+      "originalMinter": null,
+      "prettySymbol": "BUNNI",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "customInterchain",
+      "deploySalt": "0xf00000000000000000000000001b71977417651eae98854a09fef1b1a02a0f62",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/bunni.svg"
+      },
+      "coinGeckoId": "bunni",
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "BUNNI",
+          "name": "Bunni",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x000000C396558ffbAB5Ea628f39658Bdf61345b3",
+          "tokenManager": "0xFF4719131C34d8913abE4Ff728f29498ab911aB1",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "BUNNI",
+          "name": "Bunni",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x000000C396558ffbAB5Ea628f39658Bdf61345b3",
+          "tokenManager": "0xFF4719131C34d8913abE4Ff728f29498ab911aB1",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "BUNNI",
+          "name": "Bunni",
+          "axelarChainId": "base",
+          "tokenAddress": "0x000000C396558ffbAB5Ea628f39658Bdf61345b3",
+          "tokenManager": "0xFF4719131C34d8913abE4Ff728f29498ab911aB1",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "BUNNI",
+          "name": "Bunni",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x000000C396558ffbAB5Ea628f39658Bdf61345b3",
+          "tokenManager": "0xFF4719131C34d8913abE4Ff728f29498ab911aB1",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x82912654aca10c469237a9afa4e7021a16715d1ffb850a2fc539d9454dcdb4b8": {
+      "tokenId": "0x82912654aca10c469237a9afa4e7021a16715d1ffb850a2fc539d9454dcdb4b8",
+      "deployer": "0xfBe09B7A6C6cc3A72B4CA41cdD9c88AC62bb7937",
+      "originalMinter": null,
+      "prettySymbol": "oBUNNI",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "customInterchain",
+      "deploySalt": "0x1000000000000000000000000064769afae7cef2b823161f3a2cf49cc35ffab8",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/bunni.svg"
+      },
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "oBUNNI",
+          "name": "Bunni Call Option Token",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x000000Dc51B82DC9C14c2c034341c912907d0d59",
+          "tokenManager": "0x92ae5f13500cf43796CbEe79C03fEC6c4F3F1D26",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oBUNNI",
+          "name": "Bunni Call Option Token",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x000000Dc51B82DC9C14c2c034341c912907d0d59",
+          "tokenManager": "0x92ae5f13500cf43796CbEe79C03fEC6c4F3F1D26",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oBUNNI",
+          "name": "Bunni Call Option Token",
+          "axelarChainId": "base",
+          "tokenAddress": "0x000000Dc51B82DC9C14c2c034341c912907d0d59",
+          "tokenManager": "0x92ae5f13500cf43796CbEe79C03fEC6c4F3F1D26",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "oBUNNI",
+          "name": "Bunni Call Option Token",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x000000Dc51B82DC9C14c2c034341c912907d0d59",
+          "tokenManager": "0x92ae5f13500cf43796CbEe79C03fEC6c4F3F1D26",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0x390fc5f01870b258ddb5b27f05986c8077cf6e04cf1853e6e14ee2a88be61f5c": {
       "tokenId": "0x390fc5f01870b258ddb5b27f05986c8077cf6e04cf1853e6e14ee2a88be61f5c",
       "deployer": "0x2A07D2cb962C447B1BB97BaDA075e78253c68f58",
