@@ -5042,7 +5042,7 @@
       "tokenType": "canonical",
       "deploySalt": "0x",
       "iconUrls": {
-        "svg": "https://emerald-peculiar-kite-606.mypinata.cloud/ipfs/bafkreidzlpzpjrg6ln3xd66i2zspk5ecrxotqp4dvb4uoyfoedlvhxvpgi"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/triumph.svg"
       },
       "deploymentMessageId": "0x7c0555327888dc8da1973829896cf2f5bd1ed5f307d0543c6b28ad3d711e1e3b-9",
       "chains": [
