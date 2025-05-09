@@ -5060,7 +5060,7 @@
           "axelarChainId": "immutable",
           "tokenAddress": "0x6A58b83677b9F0ffe185aF056a3C30F7700441e3",
           "tokenManager": "0x715Fea1D042F426387305033308B4619761824f8",
-          "tokenManagerType": "lockUnlock"
+          "tokenManagerType": "mintBurn"
         }
       ]
     }
