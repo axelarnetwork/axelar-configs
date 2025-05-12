@@ -140,6 +140,14 @@
           "tokenAddress": "SQD.rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
           "tokenManager": "rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "SQD",
+          "name": "Squid",
+          "axelarChainId": "stellar-2025-q1",
+          "tokenAddress": "CDBBR6BVVZO32NMFCJJWRJFTKV3QQ2ZLITKKGINP2ONUQCTK7PCT4M3W",
+          "tokenManager": "CDP7FCROXVPRRMK273OWD6Z52QMZWYI4BSM4KG3LJYXLUCGMD22HN422",
+          "tokenManagerType": "mintBurn"
         }
       ]
     }
