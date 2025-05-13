@@ -89,29 +89,29 @@
     },
     "0xba5a21ca88ef6bba2bfff5088994f90e1077e2a1cc3dcc38bd261f00fce2824f": {
       "tokenId": "0xba5a21ca88ef6bba2bfff5088994f90e1077e2a1cc3dcc38bd261f00fce2824f",
-      "deployer": "",
+      "deployer": "rrrrrrrrrrrrrrrrrrrrrhoLvTp",
       "originalMinter": null,
       "prettySymbol": "XRP",
-      "decimals": 18,
+      "decimals": 6,
       "deploymentMessageId": "",
       "tokenType": "interchain",
       "originAxelarChainId": "xrpl",
-      "deploySalt": "",
+      "deploySalt": "1508b4a3d03188624857f7c24ef5e8d4c7852e39f0f81cce0f4fe03966550403",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/xrpb.svg"
       },
       "chains": [
         {
           "symbol": "XRP",
-          "name": "Ripple",
+          "name": "XRPL",
           "axelarChainId": "xrpl",
           "tokenAddress": "XRP",
-          "tokenManager": "",
+          "tokenManager": "rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
           "tokenManagerType": "canonical"
         },
         {
           "symbol": "XRP",
-          "name": "Ripple",
+          "name": "XRPL EVM",
           "axelarChainId": "xrpl-evm",
           "tokenAddress": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
           "tokenManager": "0xdb0a778c57Bd31E401D52ba6cf936D06E1324aE8",
