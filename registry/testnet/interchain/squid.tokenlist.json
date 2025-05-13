@@ -93,7 +93,7 @@
       "originalMinter": null,
       "prettySymbol": "XRP",
       "decimals": 6,
-      "deploymentMessageId": "",
+      "deploymentMessageId": "0x4383b3a04fa0eb774bc5b843f3d196638ae8c7e77d0c75d199142544abe2235f-0",
       "tokenType": "interchain",
       "originAxelarChainId": "xrpl",
       "deploySalt": "0x1508b4a3d03188624857f7c24ef5e8d4c7852e39f0f81cce0f4fe03966550403",
