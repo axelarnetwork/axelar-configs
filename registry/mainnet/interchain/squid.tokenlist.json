@@ -5070,14 +5070,6 @@
           "tokenAddress": "0x000000C396558ffbAB5Ea628f39658Bdf61345b3",
           "tokenManager": "0xFF4719131C34d8913abE4Ff728f29498ab911aB1",
           "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "BUNNI",
-          "name": "Bunni",
-          "axelarChainId": "binance",
-          "tokenAddress": "0x000000C396558ffbAB5Ea628f39658Bdf61345b3",
-          "tokenManager": "0xFF4719131C34d8913abE4Ff728f29498ab911aB1",
-          "tokenManagerType": "mintBurn"
         }
       ]
     },
@@ -5115,14 +5107,6 @@
           "symbol": "oBUNNI",
           "name": "Bunni Call Option Token",
           "axelarChainId": "base",
-          "tokenAddress": "0x000000Dc51B82DC9C14c2c034341c912907d0d59",
-          "tokenManager": "0x92ae5f13500cf43796CbEe79C03fEC6c4F3F1D26",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "oBUNNI",
-          "name": "Bunni Call Option Token",
-          "axelarChainId": "binance",
           "tokenAddress": "0x000000Dc51B82DC9C14c2c034341c912907d0d59",
           "tokenManager": "0x92ae5f13500cf43796CbEe79C03fEC6c4F3F1D26",
           "tokenManagerType": "mintBurn"
