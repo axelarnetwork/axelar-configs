@@ -111,7 +111,7 @@
         },
         {
           "symbol": "XRP",
-          "name": "XRPL EVM",
+          "name": "XRP",
           "axelarChainId": "xrpl-evm",
           "tokenAddress": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
           "tokenManager": "0xdb0a778c57Bd31E401D52ba6cf936D06E1324aE8",
