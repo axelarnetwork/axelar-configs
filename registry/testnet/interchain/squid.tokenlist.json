@@ -94,7 +94,7 @@
       "prettySymbol": "XRP",
       "decimals": 6,
       "deploymentMessageId": "0x4383b3a04fa0eb774bc5b843f3d196638ae8c7e77d0c75d199142544abe2235f-0",
-      "tokenType": "interchain",
+      "tokenType": "customInterchain",
       "originAxelarChainId": "xrpl",
       "deploySalt": "0x1508b4a3d03188624857f7c24ef5e8d4c7852e39f0f81cce0f4fe03966550403",
       "iconUrls": {
@@ -107,7 +107,7 @@
           "axelarChainId": "xrpl",
           "tokenAddress": "XRP",
           "tokenManager": "rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
-          "tokenManagerType": "canonical"
+          "tokenManagerType": "lockUnlock"
         },
         {
           "symbol": "XRP",
