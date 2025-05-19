@@ -411,6 +411,14 @@
           "tokenAddress": "0x2598c30330D5771AE9F983979209486aE26dE875",
           "tokenManager": "0xD7756Ef16Bb257CB5C84ed8103D221d619b1b44F",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "AI",
+          "name": "Any Inu",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0x2598c30330D5771AE9F983979209486aE26dE875",
+          "tokenManager": "0xD7756Ef16Bb257CB5C84ed8103D221d619b1b44F",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
