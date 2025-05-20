@@ -101,7 +101,7 @@ jobs:
           PR_NUMBER=$(echo $RESPONSE | jq -r .number)
           echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_ENV
 
-      # TODO: Uncomment this section to automatically merge the generated PRs on `chains` repo if we are confident enough on the `generate.py` output.
+      # TODO: Uncomment this section to automatically merge the generated PRs on the internal repo once the maturity of the script is tested.
       # - name: Merge Pull Request
       #   if: env.NETWORK != 'none'
       #   run: |
