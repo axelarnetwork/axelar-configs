@@ -75,11 +75,11 @@ jobs:
         run: |
           cd ${{ secrets.EXTERNAL_REPO }}
           curl -sSL https://install.python-poetry.org | python3 -
-          poetry install
+          poetry install --no-interaction
           git config --local user.email "devops@axelar.network"
           git config --local user.name "devops"
           git checkout -b ${{ steps.branch-name.outputs.branch }}
-          poetry run python generate.py --network ${{ env.NETWORK }} --generate-config
+          poetry run python generate.py --network ${{ env.NETWORK }} gen-configs all-configs
           git add --all
           git commit -m "create branch ${{ steps.branch-name.outputs.branch }}"
           git push --set-upstream origin ${{ steps.branch-name.outputs.branch }}
@@ -101,23 +101,14 @@ jobs:
           PR_NUMBER=$(echo $RESPONSE | jq -r .number)
           echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_ENV
 
-      - name: Merge Pull Request
-        if: env.NETWORK != 'none'
-        run: |
-          PR_NUMBER=${{ env.PR_NUMBER }}
-          PR_TITLE="feat: update configurations for ${{ env.NETWORK }}"
-          curl -s -X PUT \
-            -H "Authorization: token ${{ secrets.CHAINS_PAT }}" \
-            -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/axelarnetwork/${{ secrets.EXTERNAL_REPO }}/pulls/$PR_NUMBER/merge \
-            -d "{\"commit_title\":\"Merge PR #$PR_NUMBER: $PR_TITLE\",\"merge_method\":\"squash\"}"
-
-      - name: Publish configuration
-        if: env.NETWORK != 'none'
-        run: |
-          WORKFLOW_FILE="publish-${{ env.NETWORK }}-configs.yaml"
-          curl -X POST \
-            -H "Authorization: token ${{ secrets.CHAINS_PAT }}" \
-            -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/axelarnetwork/${{ secrets.EXTERNAL_REPO }}/actions/workflows/$WORKFLOW_FILE/dispatches \
-            -d '{"ref":"main"}'
+      # TODO: Uncomment this section to automatically merge the generated PRs on `chains` repo if we are confident enough on the `generate.py` output.
+      # - name: Merge Pull Request
+      #   if: env.NETWORK != 'none'
+      #   run: |
+      #     PR_NUMBER=${{ env.PR_NUMBER }}
+      #     PR_TITLE="feat: update configurations for ${{ env.NETWORK }}"
+      #     curl -s -X PUT \
+      #       -H "Authorization: token ${{ secrets.CHAINS_PAT }}" \
+      #       -H "Accept: application/vnd.github.v3+json" \
+      #       https://api.github.com/repos/axelarnetwork/${{ secrets.EXTERNAL_REPO }}/pulls/$PR_NUMBER/merge \
+      #       -d "{\"commit_title\":\"Merge PR #$PR_NUMBER: $PR_TITLE\",\"merge_method\":\"squash\"}"
