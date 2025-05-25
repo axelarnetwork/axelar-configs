@@ -14,7 +14,7 @@ export const currencyIconUrl = z
     "the icon for the currency, must be a relative path to a svg icon under /images/tokens"
   );
 
-export const address = z.string().regex(/^0x[a-fA-F0-9]{40}$/);
+export const address = z.string();
 
 export const hash = z.string().regex(/^0x[a-fA-F0-9]{64}$/);
 
