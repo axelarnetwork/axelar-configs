@@ -4820,6 +4820,14 @@
           "tokenAddress": "0x67AA700Ab0110Cc52bf7F308fe25068E87a0f581",
           "tokenManager": "0x2a0B01F2525B557E461CEdaa140c36DF0D93Fba2",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "PUNDIAI",
+          "name": "Pundi AI",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x67AA700Ab0110Cc52bf7F308fe25068E87a0f581",
+          "tokenManager": "0x2a0B01F2525B557E461CEdaa140c36DF0D93Fba2",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
