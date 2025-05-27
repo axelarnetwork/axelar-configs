@@ -182,7 +182,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
-          "decimals": 9,
+          "decimals": 7,
           "axelarChainId": "stellar-2025-q1",
           "tokenAddress": "CDBBR6BVVZO32NMFCJJWRJFTKV3QQ2ZLITKKGINP2ONUQCTK7PCT4M3W",
           "tokenManager": "CDP7FCROXVPRRMK273OWD6Z52QMZWYI4BSM4KG3LJYXLUCGMD22HN422",
