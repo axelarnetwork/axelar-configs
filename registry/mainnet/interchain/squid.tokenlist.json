@@ -7,6 +7,39 @@
     "patch": 0
   },
   "tokens": {
+    "0xba5a21ca88ef6bba2bfff5088994f90e1077e2a1cc3dcc38bd261f00fce2824f": {
+      "tokenId": "0xba5a21ca88ef6bba2bfff5088994f90e1077e2a1cc3dcc38bd261f00fce2824f",
+      "deployer": "rrrrrrrrrrrrrrrrrrrrrhoLvTp",
+      "originalMinter": null,
+      "prettySymbol": "XRP",
+      "decimals": 6,
+      "deploymentMessageId": "0x08622e8b6ff93a35f335ab88c9781dc444ebf8cf6e0b7966e088171be5253fcf-0",
+      "tokenType": "customInterchain",
+      "originAxelarChainId": "xrpl",
+      "deploySalt": "0x1508b4a3d03188624857f7c24ef5e8d4c7852e39f0f81cce0f4fe03966550403",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/xrpb.svg"
+      },
+      "chains": [
+        {
+          "symbol": "XRP",
+          "name": "XRP",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "XRP",
+          "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "XRP",
+          "name": "XRP",
+          "decimals": 18,
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+          "tokenManager": "0xdb0a778c57Bd31E401D52ba6cf936D06E1324aE8",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0xb689de707e78469c6a115fdcfd9a0c2db9f8e7ce5ade7b29526d63f4e01d77fb": {
       "tokenId": "0xb689de707e78469c6a115fdcfd9a0c2db9f8e7ce5ade7b29526d63f4e01d77fb",
       "prettySymbol": "RMRK",
