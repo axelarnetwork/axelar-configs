@@ -137,6 +137,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
+          "decimals": 9,
           "axelarChainId": "sui",
           "tokenAddress": "0xdec8d72a69438bc872824e70944cd4d89d25c34e3f149993b2d06718d4fd87e2::sqd::SQD",
           "tokenManager": "0x6cbd77c514249cbb307658e4bcba2c273890529f99d2dbeaafb75ace7af7cefb",
@@ -145,6 +146,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
+          "decimals": 9,
           "axelarChainId": "flow",
           "tokenAddress": "0xd5e67bFbFfE0A6439be6738587B115053f77aB3b",
           "tokenManager": "0xF26F015022631ABeAC79E7c91D48551f9b1C7774",
@@ -153,6 +155,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
+          "decimals": 9,
           "axelarChainId": "ethereum-sepolia",
           "tokenAddress": "0xd5e67bFbFfE0A6439be6738587B115053f77aB3b",
           "tokenManager": "0xF26F015022631ABeAC79E7c91D48551f9b1C7774",
@@ -161,6 +164,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
+          "decimals": 9,
           "axelarChainId": "xrpl-evm",
           "tokenAddress": "0xd5e67bFbFfE0A6439be6738587B115053f77aB3b",
           "tokenManager": "0xF26F015022631ABeAC79E7c91D48551f9b1C7774",
@@ -169,6 +173,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
+          "decimals": 6,
           "axelarChainId": "xrpl",
           "tokenAddress": "SQD.rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
           "tokenManager": "rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
@@ -177,6 +182,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
+          "decimals": 9,
           "axelarChainId": "stellar-2025-q1",
           "tokenAddress": "CDBBR6BVVZO32NMFCJJWRJFTKV3QQ2ZLITKKGINP2ONUQCTK7PCT4M3W",
           "tokenManager": "CDP7FCROXVPRRMK273OWD6Z52QMZWYI4BSM4KG3LJYXLUCGMD22HN422",
