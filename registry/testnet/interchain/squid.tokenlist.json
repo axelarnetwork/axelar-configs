@@ -98,7 +98,7 @@
       "originAxelarChainId": "xrpl",
       "deploySalt": "0x1508b4a3d03188624857f7c24ef5e8d4c7852e39f0f81cce0f4fe03966550403",
       "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/xrpb.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/xrp.svg"
       },
       "chains": [
         {
