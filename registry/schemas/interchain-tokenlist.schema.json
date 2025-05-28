@@ -28,7 +28,6 @@
       "properties": {
         "axelarChainId": { "type": "string" },
         "tokenAddress": { "type": "string" },
-        "decimals": { "type": "integer" },
         "tokenManager": {
           "$ref": "#/definitions/chains/properties/tokenAddress"
         },
