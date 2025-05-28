@@ -28,13 +28,13 @@
       "properties": {
         "axelarChainId": { "type": "string" },
         "tokenAddress": { "type": "string" },
-        "decimals": { "type": "integer" },
         "tokenManager": {
           "$ref": "#/definitions/chains/properties/tokenAddress"
         },
         "tokenManagerType": { "type": "string" },
         "symbol": { "type": "string" },
-        "name": { "type": "string" }
+        "name": { "type": "string" },
+        "decimals": { "type": "integer" }
       },
       "required": [
         "axelarChainId",
