@@ -37,24 +37,38 @@ jobs:
           MERGE_COMMIT=$(git log -1 --pretty=format:"%H")
           echo "MERGE_COMMIT=$MERGE_COMMIT" >> $GITHUB_ENV
 
-      - name: Determine NETWORK
-        id: determine_network
+      - name: Determine NETWORKS
+        id: determine_networks
         run: |
           echo "Checking modified files in commit ${{ env.MERGE_COMMIT }}"
           MODIFIED_FILES=$(git diff --name-only HEAD~1..HEAD)
           echo "Modified files: $MODIFIED_FILES"
+
+          NETWORKS=()
+
           if echo "$MODIFIED_FILES" | grep -q "registry/mainnet/interchain/squid.tokenlist.json"; then
-            echo "NETWORK=mainnet" >> $GITHUB_ENV
-          elif echo "$MODIFIED_FILES" | grep -q "registry/testnet/interchain/squid.tokenlist.json"; then
-            echo "NETWORK=testnet" >> $GITHUB_ENV
-          else
+            NETWORKS+=("mainnet")
+          fi
+          if echo "$MODIFIED_FILES" | grep -q "registry/testnet/interchain/squid.tokenlist.json"; then
+            NETWORKS+=("testnet")
+          fi
+          if echo "$MODIFIED_FILES" | grep -q "registry/stagenet/interchain/squid.tokenlist.json"; then
+            NETWORKS+=("stagenet")
+          fi
+          if echo "$MODIFIED_FILES" | grep -q "registry/devnet-amplifier/interchain/squid.tokenlist.json"; then
+            NETWORKS+=("devnet-amplifier")
+          fi
+
+          if [ ${#NETWORKS[@]} -eq 0 ]; then
             echo "No relevant changes detected."
-            echo "NETWORK=none" >> $GITHUB_ENV
+            echo "NETWORKS=none" >> $GITHUB_ENV
             exit 0
           fi
 
+          echo "Detected networks: ${NETWORKS[*]}"
+          echo "NETWORKS=${NETWORKS[*]}" >> $GITHUB_ENV
       - name: Checkout external repository
-        if: env.NETWORK != 'none'
+        if: env.NETWORKS != 'none'
         uses: actions/checkout@v4
         with:
           repository: axelarnetwork/${{ secrets.EXTERNAL_REPO }}
@@ -62,16 +76,16 @@ jobs:
           token: ${{ secrets.CHAINS_PAT }}
 
       - name: Install jq
-        if: env.NETWORK != 'none'
+        if: env.NETWORKS != 'none'
         run: sudo apt-get install -y jq
 
       - name: Setup Branch Name
-        if: env.NETWORK != 'none'
+        if: env.NETWORKS != 'none'
         id: branch-name
-        run: echo "::set-output name=branch::feat/config-update-$(date +'%Y-%m-%d-%H-%M-%S')"
+        run: echo "branch=feat/config-update-$(date +'%Y-%m-%d-%H-%M-%S')" >> "$GITHUB_OUTPUT"
 
       - name: Create branch and generate config
-        if: env.NETWORK != 'none'
+        if: env.NETWORKS != 'none'
         run: |
           cd ${{ secrets.EXTERNAL_REPO }}
           curl -sSL https://install.python-poetry.org | python3 -
@@ -79,17 +93,21 @@ jobs:
           git config --local user.email "devops@axelar.network"
           git config --local user.name "devops"
           git checkout -b ${{ steps.branch-name.outputs.branch }}
-          poetry run python generate.py --network ${{ env.NETWORK }} gen-configs all-configs
+
+          for NETWORK in ${{ env.NETWORKS }}; do
+            echo "Generating config for $NETWORK"
+            poetry run python generate.py --network "$NETWORK" gen-configs all-configs
+          done
           git add --all
           git commit -m "create branch ${{ steps.branch-name.outputs.branch }}"
           git push --set-upstream origin ${{ steps.branch-name.outputs.branch }}
 
       - name: Create Pull Request
-        if: env.NETWORK != 'none'
+        if: env.NETWORKS != 'none'
         id: create_pr
         run: |
           cd ${{ secrets.EXTERNAL_REPO }}
-          PR_TITLE="feat: update configurations for ${{ env.NETWORK }}"
+          PR_TITLE="feat: update configurations for ${{ env.NETWORKS }}"
           PR_BODY="Auto-generated PR with updated configuration files"
           PR_HEAD="${{ steps.branch-name.outputs.branch }}"
           PR_BASE="main"
@@ -101,14 +119,13 @@ jobs:
           PR_NUMBER=$(echo $RESPONSE | jq -r .number)
           echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_ENV
 
-      # TODO: Uncomment this section to automatically merge the generated PRs on the internal repo once the maturity of the script is tested.
-      # - name: Merge Pull Request
-      #   if: env.NETWORK != 'none'
-      #   run: |
-      #     PR_NUMBER=${{ env.PR_NUMBER }}
-      #     PR_TITLE="feat: update configurations for ${{ env.NETWORK }}"
-      #     curl -s -X PUT \
-      #       -H "Authorization: token ${{ secrets.CHAINS_PAT }}" \
-      #       -H "Accept: application/vnd.github.v3+json" \
-      #       https://api.github.com/repos/axelarnetwork/${{ secrets.EXTERNAL_REPO }}/pulls/$PR_NUMBER/merge \
-      #       -d "{\"commit_title\":\"Merge PR #$PR_NUMBER: $PR_TITLE\",\"merge_method\":\"squash\"}"
+      - name: Merge Pull Request
+        if: env.NETWORKS != 'none'
+        run: |
+          PR_NUMBER=${{ env.PR_NUMBER }}
+          PR_TITLE="feat: update configurations for ${{ env.NETWORK }}"
+          curl -s -X PUT \
+            -H "Authorization: token ${{ secrets.CHAINS_PAT }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/axelarnetwork/${{ secrets.EXTERNAL_REPO }}/pulls/$PR_NUMBER/merge \
+            -d "{\"commit_title\":\"Merge PR #$PR_NUMBER: $PR_TITLE\",\"merge_method\":\"squash\"}"
