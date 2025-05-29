@@ -98,6 +98,7 @@ jobs:
             echo "Generating config for $NETWORK"
             poetry run python generate.py --network "$NETWORK" gen-configs all-configs
           done
+
           git add --all
           git commit -m "create branch ${{ steps.branch-name.outputs.branch }}"
           git push --set-upstream origin ${{ steps.branch-name.outputs.branch }}
