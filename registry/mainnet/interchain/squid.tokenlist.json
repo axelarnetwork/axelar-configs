@@ -5300,6 +5300,7 @@
         {
           "symbol": "M-BTC",
           "name": "Merlin BTC",
+          "decimals": 6,
           "axelarChainId": "sui",
           "tokenAddress": "0x66ee42c6126957171da98e382fc27e1b03f4d37b1520e56e69752b22af10b56c::mbtc::MBTC",
           "tokenManager": "0xc693d98329644f4cfdf19c740d491584feebfcdaff058157fdf011e3e8a4fae0",
