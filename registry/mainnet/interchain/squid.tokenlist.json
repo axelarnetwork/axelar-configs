@@ -5274,6 +5274,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xefe142c0d0e034f9c95f5af0af363560ce2d04bbbf66c466d64cdfa806e92324": {
+      "tokenId": "0xefe142c0d0e034f9c95f5af0af363560ce2d04bbbf66c466d64cdfa806e92324",
+      "deployer": "0xdA084147EEe60866C5487E1f7464a5B1c559bC03",
+      "originalMinter": null,
+      "prettySymbol": "M-BTC",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/m-btc.svg"
+      },
+      "deploymentMessageId": "0x92ae2db14bb5fcda383b9402427714675d532dcd9aebfce35362793e0a79a854-34",
+      "chains": [
+        {
+          "symbol": "M-BTC",
+          "name": "Merlin BTC",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x2F913C820ed3bEb3a67391a6eFF64E70c4B20b19",
+          "tokenManager": "0xcB825769029567D7A16EEE6c2C28A3584eC5f7F3",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "M-BTC",
+          "name": "Merlin BTC",
+          "axelarChainId": "sui",
+          "tokenAddress": "0x66ee42c6126957171da98e382fc27e1b03f4d37b1520e56e69752b22af10b56c::mbtc::MBTC",
+          "tokenManager": "0xc693d98329644f4cfdf19c740d491584feebfcdaff058157fdf011e3e8a4fae0",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
