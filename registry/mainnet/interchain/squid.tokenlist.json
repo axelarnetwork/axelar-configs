@@ -5252,23 +5252,7 @@
         {
           "symbol": "USDC",
           "name": "USD Coin",
-          "axelarChainId": "sui",
-          "tokenAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "tokenManager": "",
-          "tokenManagerType": "lockUnlock"
-        },
-        {
-          "symbol": "USDC",
-          "name": "USD Coin",
           "axelarChainId": "xrpl-evm",
-          "tokenAddress": "0xa16148c6Ac9EDe0D82f0c52899e22a575284f131",
-          "tokenManager": "0x3591e59F908d09A5cC085f5D808823a3769D1cbB",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "USDC",
-          "name": "USD Coin",
-          "axelarChainId": "Avalanche",
           "tokenAddress": "0xa16148c6Ac9EDe0D82f0c52899e22a575284f131",
           "tokenManager": "0x3591e59F908d09A5cC085f5D808823a3769D1cbB",
           "tokenManagerType": "mintBurn"
@@ -5279,7 +5263,7 @@
           "axelarChainId": "stellar",
           "tokenAddress": "CDPV3H7C3MR2R4Y4GAEJN4AXXY4LBITRRVE74VSMVCSBWISIU3Q4QTMW",
           "tokenManager": "CBW73NFK3QHM3L72MOONBUL2EHMT4NKAK73EJ4KIFGCZYHU67655KVLI",
-          "tokenManagerType": "lockUnlock"
+          "tokenManagerType": "mintBurn"
         }
       ]
     }
