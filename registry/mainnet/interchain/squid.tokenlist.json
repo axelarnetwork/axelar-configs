@@ -5194,87 +5194,6 @@
         }
       ]
     },
-    "0xa7457b77fed88990d9b1d8a222d99fc8d018b651f5085236ba5f5ef425baeb58": {
-      "tokenId": "0xa7457b77fed88990d9b1d8a222d99fc8d018b651f5085236ba5f5ef425baeb58",
-      "deployer": "0xfBe09B7A6C6cc3A72B4CA41cdD9c88AC62bb7937",
-      "originalMinter": null,
-      "prettySymbol": "BUNNI",
-      "decimals": 18,
-      "originAxelarChainId": "Ethereum",
-      "tokenType": "customInterchain",
-      "deploySalt": "0xf00000000000000000000000001b71977417651eae98854a09fef1b1a02a0f62",
-      "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/bunni.svg"
-      },
-      "coinGeckoId": "bunni",
-      "deploymentMessageId": "",
-      "chains": [
-        {
-          "symbol": "BUNNI",
-          "name": "Bunni",
-          "axelarChainId": "Ethereum",
-          "tokenAddress": "0x000000C396558ffbAB5Ea628f39658Bdf61345b3",
-          "tokenManager": "0xFF4719131C34d8913abE4Ff728f29498ab911aB1",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "BUNNI",
-          "name": "Bunni",
-          "axelarChainId": "arbitrum",
-          "tokenAddress": "0x000000C396558ffbAB5Ea628f39658Bdf61345b3",
-          "tokenManager": "0xFF4719131C34d8913abE4Ff728f29498ab911aB1",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "BUNNI",
-          "name": "Bunni",
-          "axelarChainId": "base",
-          "tokenAddress": "0x000000C396558ffbAB5Ea628f39658Bdf61345b3",
-          "tokenManager": "0xFF4719131C34d8913abE4Ff728f29498ab911aB1",
-          "tokenManagerType": "mintBurn"
-        }
-      ]
-    },
-    "0x82912654aca10c469237a9afa4e7021a16715d1ffb850a2fc539d9454dcdb4b8": {
-      "tokenId": "0x82912654aca10c469237a9afa4e7021a16715d1ffb850a2fc539d9454dcdb4b8",
-      "deployer": "0xfBe09B7A6C6cc3A72B4CA41cdD9c88AC62bb7937",
-      "originalMinter": null,
-      "prettySymbol": "oBUNNI",
-      "decimals": 18,
-      "originAxelarChainId": "Ethereum",
-      "tokenType": "customInterchain",
-      "deploySalt": "0x1000000000000000000000000064769afae7cef2b823161f3a2cf49cc35ffab8",
-      "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/bunni.svg"
-      },
-      "deploymentMessageId": "",
-      "chains": [
-        {
-          "symbol": "oBUNNI",
-          "name": "Bunni Call Option Token",
-          "axelarChainId": "Ethereum",
-          "tokenAddress": "0x000000Dc51B82DC9C14c2c034341c912907d0d59",
-          "tokenManager": "0x92ae5f13500cf43796CbEe79C03fEC6c4F3F1D26",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "oBUNNI",
-          "name": "Bunni Call Option Token",
-          "axelarChainId": "arbitrum",
-          "tokenAddress": "0x000000Dc51B82DC9C14c2c034341c912907d0d59",
-          "tokenManager": "0x92ae5f13500cf43796CbEe79C03fEC6c4F3F1D26",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "oBUNNI",
-          "name": "Bunni Call Option Token",
-          "axelarChainId": "base",
-          "tokenAddress": "0x000000Dc51B82DC9C14c2c034341c912907d0d59",
-          "tokenManager": "0x92ae5f13500cf43796CbEe79C03fEC6c4F3F1D26",
-          "tokenManagerType": "mintBurn"
-        }
-      ]
-    },
     "0xefe142c0d0e034f9c95f5af0af363560ce2d04bbbf66c466d64cdfa806e92324": {
       "tokenId": "0xefe142c0d0e034f9c95f5af0af363560ce2d04bbbf66c466d64cdfa806e92324",
       "deployer": "0xdA084147EEe60866C5487E1f7464a5B1c559bC03",
@@ -5304,6 +5223,38 @@
           "axelarChainId": "sui",
           "tokenAddress": "0x66ee42c6126957171da98e382fc27e1b03f4d37b1520e56e69752b22af10b56c::mbtc::MBTC",
           "tokenManager": "0xc693d98329644f4cfdf19c740d491584feebfcdaff058157fdf011e3e8a4fae0",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x949812bf4d82589ca4e953b25135bb824c16a905facf9792c24d14892bb3ae39": {
+      "tokenId": "0x949812bf4d82589ca4e953b25135bb824c16a905facf9792c24d14892bb3ae39",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "FDUSD",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/fdusd.svg"
+      },
+      "deploymentMessageId": "0x5b9904258eacdbcb27eaee0ab2563ad4ba9a55ad301c2c6d811faabe8bce42dd-63",
+      "chains": [
+        {
+          "symbol": "FDUSD",
+          "name": "First Digital USD",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409",
+          "tokenManager": "0xCc35bf4a2D6c0beAf298FFC5A604031b7A04EeAC",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "FDUSD",
+          "name": "First Digital USD",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0xE5747226D2005d7f0865780E8517397de66f2a76",
+          "tokenManager": "0xCc35bf4a2D6c0beAf298FFC5A604031b7A04EeAC",
           "tokenManagerType": "mintBurn"
         }
       ]
