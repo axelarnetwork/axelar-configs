@@ -5231,7 +5231,7 @@
       "tokenId": "0xaab70a74fae5d4d70134970cc0a7a03ff70bfffd5891f79d2f4daf1b5fade846",
       "deployer": "0x493C88e5fa016805907821C1b7015f4576EE7B47",
       "originalMinter": null,
-      "prettySymbol": "USDC",
+      "prettySymbol": "USDC.axl",
       "decimals": 6,
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
