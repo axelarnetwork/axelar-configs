@@ -33,7 +33,8 @@
         },
         "tokenManagerType": { "type": "string" },
         "symbol": { "type": "string" },
-        "name": { "type": "string" }
+        "name": { "type": "string" },
+        "decimals": { "type": "integer" }
       },
       "required": [
         "axelarChainId",

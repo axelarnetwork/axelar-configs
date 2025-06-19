@@ -10,6 +10,7 @@ export const chains = z.object({
   tokenAddress: address,
   tokenManager: address,
   tokenManagerType: z.string(),
+  decimals: z.number().int().optional(),
   symbol: z.string(),
   name: z.string(),
 });

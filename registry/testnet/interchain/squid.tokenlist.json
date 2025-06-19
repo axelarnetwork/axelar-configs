@@ -87,6 +87,39 @@
         }
       ]
     },
+    "0xba5a21ca88ef6bba2bfff5088994f90e1077e2a1cc3dcc38bd261f00fce2824f": {
+      "tokenId": "0xba5a21ca88ef6bba2bfff5088994f90e1077e2a1cc3dcc38bd261f00fce2824f",
+      "deployer": "rrrrrrrrrrrrrrrrrrrrrhoLvTp",
+      "originalMinter": null,
+      "prettySymbol": "XRP",
+      "decimals": 6,
+      "deploymentMessageId": "0x4383b3a04fa0eb774bc5b843f3d196638ae8c7e77d0c75d199142544abe2235f-0",
+      "tokenType": "customInterchain",
+      "originAxelarChainId": "xrpl",
+      "deploySalt": "0x1508b4a3d03188624857f7c24ef5e8d4c7852e39f0f81cce0f4fe03966550403",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/xrp.svg"
+      },
+      "chains": [
+        {
+          "symbol": "XRP",
+          "name": "XRP",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "XRP",
+          "tokenManager": "rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "XRP",
+          "name": "XRP",
+          "decimals": 18,
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+          "tokenManager": "0xdb0a778c57Bd31E401D52ba6cf936D06E1324aE8",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0x42e69c5a9903ba193f3e9214d41b1ad495faace3ca712fb0c9d0c44cc4d31a0c": {
       "tokenId": "0x42e69c5a9903ba193f3e9214d41b1ad495faace3ca712fb0c9d0c44cc4d31a0c",
       "deployer": "0xba353a510d8a1174b37c31e6eab6e2d6d93cdb31cd093efdd30c177853533ab0",
@@ -104,6 +137,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
+          "decimals": 9,
           "axelarChainId": "sui",
           "tokenAddress": "0xdec8d72a69438bc872824e70944cd4d89d25c34e3f149993b2d06718d4fd87e2::sqd::SQD",
           "tokenManager": "0x6cbd77c514249cbb307658e4bcba2c273890529f99d2dbeaafb75ace7af7cefb",
@@ -112,6 +146,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
+          "decimals": 9,
           "axelarChainId": "flow",
           "tokenAddress": "0xd5e67bFbFfE0A6439be6738587B115053f77aB3b",
           "tokenManager": "0xF26F015022631ABeAC79E7c91D48551f9b1C7774",
@@ -120,6 +155,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
+          "decimals": 9,
           "axelarChainId": "ethereum-sepolia",
           "tokenAddress": "0xd5e67bFbFfE0A6439be6738587B115053f77aB3b",
           "tokenManager": "0xF26F015022631ABeAC79E7c91D48551f9b1C7774",
@@ -128,6 +164,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
+          "decimals": 9,
           "axelarChainId": "xrpl-evm",
           "tokenAddress": "0xd5e67bFbFfE0A6439be6738587B115053f77aB3b",
           "tokenManager": "0xF26F015022631ABeAC79E7c91D48551f9b1C7774",
@@ -136,9 +173,19 @@
         {
           "symbol": "SQD",
           "name": "Squid",
+          "decimals": 6,
           "axelarChainId": "xrpl",
           "tokenAddress": "SQD.rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
           "tokenManager": "rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "SQD",
+          "name": "Squid",
+          "decimals": 7,
+          "axelarChainId": "stellar-2025-q1",
+          "tokenAddress": "CDBBR6BVVZO32NMFCJJWRJFTKV3QQ2ZLITKKGINP2ONUQCTK7PCT4M3W",
+          "tokenManager": "CDP7FCROXVPRRMK273OWD6Z52QMZWYI4BSM4KG3LJYXLUCGMD22HN422",
           "tokenManagerType": "mintBurn"
         }
       ]
