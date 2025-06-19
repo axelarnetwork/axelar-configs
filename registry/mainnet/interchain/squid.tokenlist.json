@@ -5203,6 +5203,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "merlin-s-seal-btc",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/m-btc.svg"
       },
@@ -5236,6 +5237,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "dai",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/dai.svg"
       },
@@ -5268,6 +5270,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "first-digital-usd",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/fdusd.svg"
       },
@@ -5300,6 +5303,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "tether",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdt.svg"
       },
@@ -5332,6 +5336,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "ethereum",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/weth.svg"
       },
@@ -5372,6 +5377,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "usd-coin",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdc.svg"
       },
@@ -5420,6 +5426,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "wrapped-bitcoin",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/wbtc.svg"
       },
