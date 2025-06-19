@@ -5237,7 +5237,7 @@
       "tokenType": "canonical",
       "deploySalt": "0x",
       "iconUrls": {
-          "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/weth.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/weth.svg"
       },
       "deploymentMessageId": "0x8d818a61844cda421dd74a38716acccf1fa61e0974124414cb9aca20edebaffc-16",
       "chains": [
