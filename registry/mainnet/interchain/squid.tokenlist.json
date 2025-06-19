@@ -5227,6 +5227,38 @@
         }
       ]
     },
+    "0xb3ff96207da921dcadd11c92037602784a376cef1c2bd00bc341ca95bf0684ce": {
+      "tokenId": "0xb3ff96207da921dcadd11c92037602784a376cef1c2bd00bc341ca95bf0684ce",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "DAI",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/dai.svg"
+      },
+      "deploymentMessageId": "0xbb59cdc54e8d3e836fe6624db48233614508ce51e8fff12215863c10794399fd-18",
+      "chains": [
+        {
+          "symbol": "DAI",
+          "name": "Dai Stablecoin",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+          "tokenManager": "0xD9Ffc6F51dF57711Df9124117aCa89F1555Aa21d",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "DAI",
+          "name": "Dai Stablecoin",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0xDc556F7209C48fC53a8cDf1339c033743A7e3e75",
+          "tokenManager": "0xD9Ffc6F51dF57711Df9124117aCa89F1555Aa21d",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0x949812bf4d82589ca4e953b25135bb824c16a905facf9792c24d14892bb3ae39": {
       "tokenId": "0x949812bf4d82589ca4e953b25135bb824c16a905facf9792c24d14892bb3ae39",
       "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
