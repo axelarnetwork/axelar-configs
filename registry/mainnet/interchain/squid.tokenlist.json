@@ -5227,6 +5227,38 @@
         }
       ]
     },
+    "0xe492d9a67fbc2152a57ac8c08784f7d45cf13f4415a11cd0d787235c5f9219f7": {
+      "tokenId": "0xe492d9a67fbc2152a57ac8c08784f7d45cf13f4415a11cd0d787235c5f9219f7",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "USDT",
+      "decimals": 6,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdt.svg"
+      },
+      "deploymentMessageId": "0xa86cb5e137ae786d0b6c7d65c661a11f4379a10ade17e5d9878e97a0e386c699-88",
+      "chains": [
+        {
+          "symbol": "USDT",
+          "name": "Tether USD",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "tokenManager": "0x25176D4e6E719880E522f38f5A27fD7236F106f7",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "USDT",
+          "name": "Tether USD",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0x9F8CF9c00fac501b3965872f4ed3271f6f4d06fF",
+          "tokenManager": "0x25176D4e6E719880E522f38f5A27fD7236F106f7",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0xdf27e9d024db321e54430ed2a2d5945c6955fbafb5c386a1358008a042e3fda6": {
       "tokenId": "0xdf27e9d024db321e54430ed2a2d5945c6955fbafb5c386a1358008a042e3fda6",
       "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
