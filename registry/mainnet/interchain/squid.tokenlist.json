@@ -5227,6 +5227,38 @@
         }
       ]
     },
+    "0xdf27e9d024db321e54430ed2a2d5945c6955fbafb5c386a1358008a042e3fda6": {
+      "tokenId": "0xdf27e9d024db321e54430ed2a2d5945c6955fbafb5c386a1358008a042e3fda6",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "WETH",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/weth.svg"
+      },
+      "deploymentMessageId": "0x8d818a61844cda421dd74a38716acccf1fa61e0974124414cb9aca20edebaffc-16",
+      "chains": [
+        {
+          "symbol": "WETH",
+          "name": "Wrapped Ether",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "tokenManager": "0x5ae342E85367d36A20392297284FfB9Db5BF63F3",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "WETH",
+          "name": "Wrapped Ether",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0x50498dC52bCd3dAeB54B7225A7d2FA8D536F313E",
+          "tokenManager": "0x5ae342E85367d36A20392297284FfB9Db5BF63F3",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0xaab70a74fae5d4d70134970cc0a7a03ff70bfffd5891f79d2f4daf1b5fade846": {
       "tokenId": "0xaab70a74fae5d4d70134970cc0a7a03ff70bfffd5891f79d2f4daf1b5fade846",
       "deployer": "0x493C88e5fa016805907821C1b7015f4576EE7B47",
