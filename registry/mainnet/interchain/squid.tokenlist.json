@@ -5259,6 +5259,142 @@
         }
       ]
     },
+    "0x949812bf4d82589ca4e953b25135bb824c16a905facf9792c24d14892bb3ae39": {
+      "tokenId": "0x949812bf4d82589ca4e953b25135bb824c16a905facf9792c24d14892bb3ae39",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "FDUSD",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/fdusd.svg"
+      },
+      "deploymentMessageId": "0x5b9904258eacdbcb27eaee0ab2563ad4ba9a55ad301c2c6d811faabe8bce42dd-63",
+      "chains": [
+        {
+          "symbol": "FDUSD",
+          "name": "First Digital USD",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409",
+          "tokenManager": "0xCc35bf4a2D6c0beAf298FFC5A604031b7A04EeAC",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "FDUSD",
+          "name": "First Digital USD",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0xE5747226D2005d7f0865780E8517397de66f2a76",
+          "tokenManager": "0xCc35bf4a2D6c0beAf298FFC5A604031b7A04EeAC",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xe492d9a67fbc2152a57ac8c08784f7d45cf13f4415a11cd0d787235c5f9219f7": {
+      "tokenId": "0xe492d9a67fbc2152a57ac8c08784f7d45cf13f4415a11cd0d787235c5f9219f7",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "USDT",
+      "decimals": 6,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdt.svg"
+      },
+      "deploymentMessageId": "0xa86cb5e137ae786d0b6c7d65c661a11f4379a10ade17e5d9878e97a0e386c699-88",
+      "chains": [
+        {
+          "symbol": "USDT",
+          "name": "Tether USD",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "tokenManager": "0x25176D4e6E719880E522f38f5A27fD7236F106f7",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "USDT",
+          "name": "Tether USD",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0x9F8CF9c00fac501b3965872f4ed3271f6f4d06fF",
+          "tokenManager": "0x25176D4e6E719880E522f38f5A27fD7236F106f7",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xdf27e9d024db321e54430ed2a2d5945c6955fbafb5c386a1358008a042e3fda6": {
+      "tokenId": "0xdf27e9d024db321e54430ed2a2d5945c6955fbafb5c386a1358008a042e3fda6",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "WETH",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/weth.svg"
+      },
+      "deploymentMessageId": "0x8d818a61844cda421dd74a38716acccf1fa61e0974124414cb9aca20edebaffc-16",
+      "chains": [
+        {
+          "symbol": "WETH",
+          "name": "Wrapped Ether",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "tokenManager": "0x5ae342E85367d36A20392297284FfB9Db5BF63F3",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "WETH",
+          "name": "Wrapped Ether",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0x50498dC52bCd3dAeB54B7225A7d2FA8D536F313E",
+          "tokenManager": "0x5ae342E85367d36A20392297284FfB9Db5BF63F3",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xaab70a74fae5d4d70134970cc0a7a03ff70bfffd5891f79d2f4daf1b5fade846": {
+      "tokenId": "0xaab70a74fae5d4d70134970cc0a7a03ff70bfffd5891f79d2f4daf1b5fade846",
+      "deployer": "0x493C88e5fa016805907821C1b7015f4576EE7B47",
+      "originalMinter": null,
+      "prettySymbol": "USDC.axl",
+      "decimals": 6,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdc.svg"
+      },
+      "deploymentMessageId": "0x89ea9c39ac47a9dbf8a7f4c68c991b437622c68dc9ae5fb93be51f9b3de38bb1-8",
+      "chains": [
+        {
+          "symbol": "USDC",
+          "name": "USD Coin",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "tokenManager": "0x3591e59F908d09A5cC085f5D808823a3769D1cbB",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "USDC",
+          "name": "USD Coin",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0xa16148c6Ac9EDe0D82f0c52899e22a575284f131",
+          "tokenManager": "0x3591e59F908d09A5cC085f5D808823a3769D1cbB",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "USDC",
+          "name": "USD Coin",
+          "axelarChainId": "stellar",
+          "tokenAddress": "CDPV3H7C3MR2R4Y4GAEJN4AXXY4LBITRRVE74VSMVCSBWISIU3Q4QTMW",
+          "tokenManager": "CBW73NFK3QHM3L72MOONBUL2EHMT4NKAK73EJ4KIFGCZYHU67655KVLI",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0x27c24fcc5d9b67e9b469901e6c4b85d9553f317dedd1f29a175e6c749bda3f23": {
       "tokenId": "0x27c24fcc5d9b67e9b469901e6c4b85d9553f317dedd1f29a175e6c749bda3f23",
       "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
