@@ -5255,7 +5255,7 @@
           "axelarChainId": "xrpl-evm",
           "tokenAddress": "0x50498dC52bCd3dAeB54B7225A7d2FA8D536F313E",
           "tokenManager": "0x5ae342E85367d36A20392297284FfB9Db5BF63F3",
-          "tokenManagerType": "lockUnlock"
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
