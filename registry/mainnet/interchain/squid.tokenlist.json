@@ -5362,7 +5362,7 @@
           "symbol": "WETH",
           "name": "Wrapped Ether",
           "axelarChainId": "xrpl",
-          "tokenAddress": "5745544800000000000000000000000000000000",
+          "tokenAddress": "5745544800000000000000000000000000000000. rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManagerType": "mintBurn"
         }
@@ -5411,7 +5411,7 @@
           "symbol": "USDC.axl",
           "name": "USD Coin",
           "axelarChainId": "xrpl",
-          "tokenAddress": "555344432E61786C000000000000000000000000",
+          "tokenAddress": "555344432E61786C000000000000000000000000. rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManagerType": "mintBurn"
         }
@@ -5452,7 +5452,7 @@
           "symbol": "WBTC",
           "name": "Wrapped BTC",
           "axelarChainId": "xrpl",
-          "tokenAddress": "5742544300000000000000000000000000000000",
+          "tokenAddress": "5742544300000000000000000000000000000000. rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManagerType": "mintBurn"
         }
