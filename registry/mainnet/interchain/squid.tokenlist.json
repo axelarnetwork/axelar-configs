@@ -5489,6 +5489,38 @@
           "tokenManagerType": "lockUnlock"
         }
       ]
+    },
+    "0x44c5f58ced409d4664934edb1dea23bf5a5baf654c592270f89d21ff4e75b1e5": {
+      "tokenId": "0x44c5f58ced409d4664934edb1dea23bf5a5baf654c592270f89d21ff4e75b1e5",
+      "deployer": "0xbA2294333EAf9036090F4E1EEFAD623D4bB27423",
+      "originalMinter": null,
+      "prettySymbol": "FIG",
+      "decimals": 18,
+      "originAxelarChainId": "filecoin",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/fig.svg"
+      },
+      "deploymentMessageId": "0x46af79621b2db7851b09128182f90d29920997e227d69f30c0b37463f0348d2c-49",
+      "chains": [
+        {
+          "symbol": "FIG",
+          "name": "FILLiquid Governance",
+          "axelarChainId": "filecoin",
+          "tokenAddress": "0xc87FAb479B450993E8A7b498C631AdF81f3ca5B4",
+          "tokenManager": "0xDc0Ad5D0138A7536Ffd2BA2FfF7664B182694279",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "FIG",
+          "name": "FILLiquid Governance",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x2f3E415F56BA07b444bc68ED037377dE1a668D6B",
+          "tokenManager": "0xDc0Ad5D0138A7536Ffd2BA2FfF7664B182694279",
+          "tokenManagerType": "lockUnlock"
+        }
+      ]
     }
   }
 }
