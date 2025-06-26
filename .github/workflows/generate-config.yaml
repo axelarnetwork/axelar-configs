@@ -129,7 +129,7 @@ jobs:
           echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_ENV
 
       - name: Merge Pull Request
-        if: steps.create_pr.outcome == 'success'
+        if: env.NETWORKS != 'none'
         run: |
           PR_NUMBER=${{ env.PR_NUMBER }}
           PR_TITLE="chore: update configs for ${{ env.NETWORKS }} from axelar-configs"
