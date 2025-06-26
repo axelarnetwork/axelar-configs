@@ -5387,7 +5387,7 @@
           "symbol": "USDC",
           "name": "USD Coin",
           "axelarChainId": "Ethereum",
-          "tokenAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "tokenAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
           "tokenManager": "0x3591e59F908d09A5cC085f5D808823a3769D1cbB",
           "tokenManagerType": "lockUnlock"
         },
@@ -5455,6 +5455,70 @@
           "tokenAddress": "5742544300000000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x838256516f48f2cec49be4fc14e947de0b238dcb590c9782fc73c5ae0e13f3ce": {
+      "tokenId": "0x838256516f48f2cec49be4fc14e947de0b238dcb590c9782fc73c5ae0e13f3ce",
+      "deployer": "0xb43e8aFBa87756d46aef4D207df4C6b7b9Dc29C6",
+      "originalMinter": null,
+      "prettySymbol": "END",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/end.svg"
+      },
+      "deploymentMessageId": "0x133ad6d312d89cb66c3c0ece3ae8429c65cd9db558c8f2ff56469de7d48b7861-34",
+      "chains": [
+        {
+          "symbol": "END",
+          "name": "Endless Clouds",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x2BbD8602091bd1B90797d894163c0DE76045F71c",
+          "tokenManager": "0x87dc63D48BA69947d2EA0F0181623B47292ce2F1",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "END",
+          "name": "Endless Clouds",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0x43D7B1F2E92c620FC45cC81d3818E4620AbaF240",
+          "tokenManager": "0x87dc63D48BA69947d2EA0F0181623B47292ce2F1",
+          "tokenManagerType": "lockUnlock"
+        }
+      ]
+    },
+    "0x44c5f58ced409d4664934edb1dea23bf5a5baf654c592270f89d21ff4e75b1e5": {
+      "tokenId": "0x44c5f58ced409d4664934edb1dea23bf5a5baf654c592270f89d21ff4e75b1e5",
+      "deployer": "0xbA2294333EAf9036090F4E1EEFAD623D4bB27423",
+      "originalMinter": null,
+      "prettySymbol": "FIG",
+      "decimals": 18,
+      "originAxelarChainId": "filecoin",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/fig.svg"
+      },
+      "deploymentMessageId": "0x46af79621b2db7851b09128182f90d29920997e227d69f30c0b37463f0348d2c-49",
+      "chains": [
+        {
+          "symbol": "FIG",
+          "name": "FILLiquid Governance",
+          "axelarChainId": "filecoin",
+          "tokenAddress": "0xc87FAb479B450993E8A7b498C631AdF81f3ca5B4",
+          "tokenManager": "0xDc0Ad5D0138A7536Ffd2BA2FfF7664B182694279",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "FIG",
+          "name": "FILLiquid Governance",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x2f3E415F56BA07b444bc68ED037377dE1a668D6B",
+          "tokenManager": "0xDc0Ad5D0138A7536Ffd2BA2FfF7664B182694279",
+          "tokenManagerType": "lockUnlock"
         }
       ]
     }
