@@ -112,7 +112,6 @@ jobs:
           PR_BODY="Auto-generated PR with updated configuration files"
           PR_HEAD="${{ steps.branch-name.outputs.branch }}"
           PR_BASE="main"
-          # Capture both response and HTTP status code
           RESPONSE=$(curl -s -w "%{http_code}" -o response.json -X POST \
             -H "Authorization: token ${{ secrets.CHAINS_PAT }}" \
             -H "Accept: application/vnd.github.v3+json" \
