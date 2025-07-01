@@ -90,7 +90,7 @@ jobs:
           cd ${{ secrets.EXTERNAL_REPO }}
           curl -sSL https://install.python-poetry.org | python3 -
           poetry install --no-interaction
-          git config --local user.email "77072110+interoplabs-ci@users.noreply.github.com"
+          git config --local user.email "devops@interoplabs.io"
           git config --local user.name "Interop Labs CI"
           git checkout -b ${{ steps.branch-name.outputs.branch }}
 
