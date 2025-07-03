@@ -5553,6 +5553,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x7acd4d25ac35ef1ba2fe2f12514b23108fc0d54edef32de9b697af3e0e0b25b4": {
+      "tokenId": "0x7acd4d25ac35ef1ba2fe2f12514b23108fc0d54edef32de9b697af3e0e0b25b4",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "mF-ONE",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mf-one.svg"
+      },
+      "deploymentMessageId": "0xf37165b548a6bd21de70a61888a90db0f8f05a81c463a12f217acd735c3530b9-26",
+      "chains": [
+        {
+          "symbol": "mF-ONE",
+          "name": "Midas Fasanara ONE",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x238a700eD6165261Cf8b2e544ba797BC11e466Ba",
+          "tokenManager": "0xE07bf13CFC6F6e78CcC9df79e0740b7DA911Bccd",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "mF-ONE",
+          "name": "Midas Fasanara ONE",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0x6d2Ad50b4ab0F02d8021b0A3E555C5FcBAF1DaC7",
+          "tokenManager": "0xE07bf13CFC6F6e78CcC9df79e0740b7DA911Bccd",
+          "tokenManagerType": "lockUnlock"
+        }
+      ]
     }
   }
 }
