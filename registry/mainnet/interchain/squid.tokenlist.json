@@ -5553,6 +5553,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xb0f71c5da6df1e6ae6fd6c0cdcc27ac8275f305be260f4f58040164b7eaa4bc9": {
+      "tokenId": "0xb0f71c5da6df1e6ae6fd6c0cdcc27ac8275f305be260f4f58040164b7eaa4bc9",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "mRe7YIELD",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mre7yield.svg"
+      },
+      "deploymentMessageId": "0x0ce06b4798a07e29dbb92d3b0ead271ad62432e6aaeab24d8a08848d808926bc-25",
+      "chains": [
+        {
+          "symbol": "mRe7YIELD",
+          "name": "Midas Re7 Yield",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x87C9053C819bB28e0D73d33059E1b3DA80AFb0cf",
+          "tokenManager": "0xbE7c8658C69a2355c44032a5e168569F9987D20a",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "mRe7YIELD",
+          "name": "Midas Re7 Yield",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0x94aacC87222941918Ad067b20A0E96f8dEb48b2a",
+          "tokenManager": "0xbE7c8658C69a2355c44032a5e168569F9987D20a",
+          "tokenManagerType": "lockUnlock"
+        }
+      ]
     }
   }
 }
