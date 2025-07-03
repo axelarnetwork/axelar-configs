@@ -5521,6 +5521,30 @@
           "tokenManagerType": "lockUnlock"
         }
       ]
+    },
+    "0x6d6d087abd714f0efd022a68e8698f13c429207b967324e1cc3e4af5c3e7aabe": {
+      "tokenId": "0x6d6d087abd714f0efd022a68e8698f13c429207b967324e1cc3e4af5c3e7aabe",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "mMEV",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mmev.svg"
+      },
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "mMEV",
+          "name": "Midas MEV",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x030b69280892c888670EDCDCD8B69Fd8026A0BF3",
+          "tokenManager": "0x86B7fe8845E1FdEd48dFaEeEAf4099901B805e6D",
+          "tokenManagerType": "lockUnlock"
+        }
+      ]
     }
   }
 }
