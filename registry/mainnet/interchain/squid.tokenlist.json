@@ -5543,6 +5543,14 @@
           "tokenAddress": "0x030b69280892c888670EDCDCD8B69Fd8026A0BF3",
           "tokenManager": "0x86B7fe8845E1FdEd48dFaEeEAf4099901B805e6D",
           "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "mMEV",
+          "name": "Midas MEV",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "6D4D455600000000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "mintBurn"
         }
       ]
     }
