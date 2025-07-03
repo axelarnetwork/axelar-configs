@@ -5534,7 +5534,7 @@
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mmev.svg"
       },
-      "deploymentMessageId": "",
+      "deploymentMessageId": "0xe158430b3bea4affbd653e5dc4ce558646f3b1bc4feb1902495e0fe4ebb544ec",
       "chains": [
         {
           "symbol": "mMEV",
