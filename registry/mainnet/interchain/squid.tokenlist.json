@@ -5554,6 +5554,38 @@
         }
       ]
     },
+    "0x03a72c69af6fb37471748205367854af68c6c5f2caed35762f370c1e84feddd3": {
+      "tokenId": "0x03a72c69af6fb37471748205367854af68c6c5f2caed35762f370c1e84feddd3",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "mBTC",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mbtc.svg"
+      },
+      "deploymentMessageId": "0x19c4f977b51150a8718fcd1f5fdc6f9830c3c043367a4386296b43186020a031-13",
+      "chains": [
+        {
+          "symbol": "mBTC",
+          "name": "Midas BTC Yield Token",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x007115416AB6c266329a03B09a8aa39aC2eF7d9d",
+          "tokenManager": "0xee771bc921EAE6BA9da16626968c02CCBc6ab4FE",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "mBTC",
+          "name": "Midas BTC Yield Token",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0x45C1bB8f57A53A8a7384998c5693873400196053",
+          "tokenManager": "0xee771bc921EAE6BA9da16626968c02CCBc6ab4FE",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0xc4b8b690c16d309b3202f5366c99f2a14d997a3a1a894f487a828291c09d0700": {
       "tokenId": "0xc4b8b690c16d309b3202f5366c99f2a14d997a3a1a894f487a828291c09d0700",
       "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
