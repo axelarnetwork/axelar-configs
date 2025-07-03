@@ -5553,6 +5553,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x36e31e81c2f6120a565ad0758e938ceccc363ad1e72fde1013dd0316d598f39e": {
+      "tokenId": "0x36e31e81c2f6120a565ad0758e938ceccc363ad1e72fde1013dd0316d598f39e",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "mEDGE",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/medge.svg"
+      },
+      "deploymentMessageId": "0x30234cf60bf8b395c3fb3ff492efd088d87308ba93051769a9795f7eefa38230-46",
+      "chains": [
+        {
+          "symbol": "mEDGE",
+          "name": "Midas mEDGE",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xbB51E2a15A9158EBE2b0Ceb8678511e063AB7a55",
+          "tokenManager": "0xee03a844d4df22605d7c1BD91613B712B2CFf771",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "mEDGE",
+          "name": "Midas mEDGE",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0xD73f426D3F7048199934102da58BF856f369B3B3",
+          "tokenManager": "0xee03a844d4df22605d7c1BD91613B712B2CFf771",
+          "tokenManagerType": "lockUnlock"
+        }
+      ]
     }
   }
 }
