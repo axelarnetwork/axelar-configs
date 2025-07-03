@@ -5585,7 +5585,7 @@
           "tokenManagerType": "mintBurn"
         }
       ]
-    }
+    },
     "0x36e31e81c2f6120a565ad0758e938ceccc363ad1e72fde1013dd0316d598f39e": {
       "tokenId": "0x36e31e81c2f6120a565ad0758e938ceccc363ad1e72fde1013dd0316d598f39e",
       "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
