@@ -5655,6 +5655,14 @@
           "tokenAddress": "0x693Ee27688B4E77788BCc31948f4C83e540d3a3e",
           "tokenManager": "0xf5C3C06c0A65D973D268AdaED5d674452753d9aA",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "mTBILL",
+          "name": "Midas US Treasury Bill Token",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "6D5442494C4C0000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
