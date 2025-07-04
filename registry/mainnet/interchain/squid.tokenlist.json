@@ -5783,6 +5783,14 @@
           "tokenAddress": "0x40E0E0e4038DB29182668B18fbbEDc189024cf63",
           "tokenManager": "0x6bf1161B1Ce5C04ff17674185cFdFc4f97AE717a",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "sUSDf",
+          "name": "Staked Falcon USD",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "7355534466000000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "mintBurn"
         }
       ]
     }
