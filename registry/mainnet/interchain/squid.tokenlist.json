@@ -5753,6 +5753,46 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x3238479c976f258e46c926182b17066a9c13a2bfe9132e00de80c42ed1e477ce": {
+      "tokenId": "0x3238479c976f258e46c926182b17066a9c13a2bfe9132e00de80c42ed1e477ce",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "sUSDf",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/susdf.svg"
+      },
+      "deploymentMessageId": "0xa2b2c7cdb19f583781db8a1a135bc8bfdd8385297b73eccc1a2675c079972a3a-66",
+      "chains": [
+        {
+          "symbol": "sUSDf",
+          "name": "Staked Falcon USD",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xc8CF6D7991f15525488b2A83Df53468D682Ba4B0",
+          "tokenManager": "0x6bf1161B1Ce5C04ff17674185cFdFc4f97AE717a",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "sUSDf",
+          "name": "Staked Falcon USD",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0x40E0E0e4038DB29182668B18fbbEDc189024cf63",
+          "tokenManager": "0x6bf1161B1Ce5C04ff17674185cFdFc4f97AE717a",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "sUSDf",
+          "name": "Staked Falcon USD",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "7355534466000000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
