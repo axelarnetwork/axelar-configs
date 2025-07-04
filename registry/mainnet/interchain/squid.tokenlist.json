@@ -5753,6 +5753,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x5e1760162bce4a963e6b17afcc67095489ec864c8e7ad0bbb68b545bdeab31c0": {
+      "tokenId": "0x5e1760162bce4a963e6b17afcc67095489ec864c8e7ad0bbb68b545bdeab31c0",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "USDf",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdf.svg"
+      },
+      "deploymentMessageId": "0xdf82b6b286cb6c4937fbcad013cc116e58444bf5d078a8a07e98838eddc6ba3e-36",
+      "chains": [
+        {
+          "symbol": "USDf",
+          "name": "Falcon USD",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xFa2B947eEc368f42195f24F36d2aF29f7c24CeC2",
+          "tokenManager": "0x468c1eB1d9c8116E93ad9eBe7Fb26Fe43E9B2Fd7",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "USDf",
+          "name": "Falcon USD",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0x5E54c1bbc5F19C7A39CC6ff7dbdFBdF438a3CD60",
+          "tokenManager": "0x468c1eB1d9c8116E93ad9eBe7Fb26Fe43E9B2Fd7",
+          "tokenManagerType": "lockUnlock"
+        }
+      ]
     }
   }
 }
