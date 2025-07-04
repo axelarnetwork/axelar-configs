@@ -5719,6 +5719,14 @@
           "tokenAddress": "0x94aacC87222941918Ad067b20A0E96f8dEb48b2a",
           "tokenManager": "0xbE7c8658C69a2355c44032a5e168569F9987D20a",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "mRe7YIELD",
+          "name": "Midas Re7 Yield",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "6D5265375949454C440000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
