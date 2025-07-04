@@ -5782,7 +5782,15 @@
           "axelarChainId": "xrpl-evm",
           "tokenAddress": "0x5E54c1bbc5F19C7A39CC6ff7dbdFBdF438a3CD60",
           "tokenManager": "0x468c1eB1d9c8116E93ad9eBe7Fb26Fe43E9B2Fd7",
-          "tokenManagerType": "lockUnlock"
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "USDf",
+          "name": "Falcon USD",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "5553446600000000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "mintBurn"
         }
       ]
     }
