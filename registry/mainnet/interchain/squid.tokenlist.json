@@ -5751,6 +5751,14 @@
           "tokenAddress": "0xD73f426D3F7048199934102da58BF856f369B3B3",
           "tokenManager": "0xee03a844d4df22605d7c1BD91613B712B2CFf771",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "mEDGE",
+          "name": "Midas mEDGE",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "6D45444745000000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "mintBurn"
         }
       ]
     }
