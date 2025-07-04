@@ -5591,6 +5591,14 @@
           "tokenAddress": "0x6d2Ad50b4ab0F02d8021b0A3E555C5FcBAF1DaC7",
           "tokenManager": "0xE07bf13CFC6F6e78CcC9df79e0740b7DA911Bccd",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "mF-ONE",
+          "name": "Midas Fasanara ONE",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "6D462D4F4E450000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
