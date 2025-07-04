@@ -5687,6 +5687,14 @@
           "tokenAddress": "0x6372E3b999B839417311DcCc5AF5592aa91F4ff0",
           "tokenManager": "0xbF04057781E8885fD96fb9C159c3Be61B8C76222",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "mBASIS",
+          "name": "Midas Basis Trading Token",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "6D42415349530000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
