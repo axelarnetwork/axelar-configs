@@ -5623,6 +5623,14 @@
           "tokenAddress": "0x45C1bB8f57A53A8a7384998c5693873400196053",
           "tokenManager": "0xee771bc921EAE6BA9da16626968c02CCBc6ab4FE",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "mBTC",
+          "name": "Midas BTC Yield Token",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "6D42544300000000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
