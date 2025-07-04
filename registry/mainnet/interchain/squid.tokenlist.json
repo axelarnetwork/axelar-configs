@@ -5531,6 +5531,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "midas-mmev",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mmev.svg"
       },
@@ -5571,6 +5572,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mf-one.svg"
       },
@@ -5611,6 +5613,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "midas-btc-yield-token",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mbtc.svg"
       },
@@ -5651,6 +5654,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "midas-mtbill",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mtbill.svg"
       },
@@ -5691,6 +5695,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "midas-basis-trading-token",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mbasis.svg"
       },
@@ -5731,6 +5736,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "midas-mre7yield",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mre7yield.svg"
       },
@@ -5771,6 +5777,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "midas-medge",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/medge.svg"
       },
@@ -5811,6 +5818,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/susdf.svg"
       },
@@ -5851,6 +5859,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "falcon-finance",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdf.svg"
       },
