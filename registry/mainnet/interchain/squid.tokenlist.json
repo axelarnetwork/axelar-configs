@@ -5890,6 +5890,54 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x4d73839f1a55e32827d2ac311f8d7f03f7264f72272aad04c8a3b00025d05d68": {
+      "tokenId": "0x4d73839f1a55e32827d2ac311f8d7f03f7264f72272aad04c8a3b00025d05d68",
+      "deployer": "0xE42a3B5480bAaf36e330bf9b172dfF0D720AEcd5",
+      "originalMinter": null,
+      "prettySymbol": "HYB",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/hyb.svg"
+      },
+      "deploymentMessageId": "0x0ecbd0f05c189ea1bb2f22e5ed3493b3cfa3f5c68a6f44ffbaaac80a9fd83afb-100",
+      "chains": [
+        {
+          "symbol": "HYB",
+          "name": "Hybrid",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x8428f3c2EE618528Ad71Db6cFd3d3205E5E6685D",
+          "tokenManager": "0x739CCF2114371C1c8b76805dDd1c35B32316C25a",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "HYB",
+          "name": "Hybrid",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xcEA8C7255a7B6b455CF26ACe9578a55D9560441F",
+          "tokenManager": "0x739CCF2114371C1c8b76805dDd1c35B32316C25a",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "HYB",
+          "name": "Hybrid",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xcEA8C7255a7B6b455CF26ACe9578a55D9560441F",
+          "tokenManager": "0x739CCF2114371C1c8b76805dDd1c35B32316C25a",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "HYB",
+          "name": "Hybrid",
+          "axelarChainId": "base",
+          "tokenAddress": "0xcEA8C7255a7B6b455CF26ACe9578a55D9560441F",
+          "tokenManager": "0x739CCF2114371C1c8b76805dDd1c35B32316C25a",
+          "tokenManagerType": "lockUnlock"
+        }
+      ]
     }
   }
 }
