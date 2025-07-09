@@ -5901,7 +5901,7 @@
       "tokenType": "canonical",
       "deploySalt": "0x",
       "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/hyb.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/hybrid.svg"
       },
       "deploymentMessageId": "0x0ecbd0f05c189ea1bb2f22e5ed3493b3cfa3f5c68a6f44ffbaaac80a9fd83afb-100",
       "chains": [
@@ -5919,7 +5919,7 @@
           "axelarChainId": "arbitrum",
           "tokenAddress": "0xcEA8C7255a7B6b455CF26ACe9578a55D9560441F",
           "tokenManager": "0x739CCF2114371C1c8b76805dDd1c35B32316C25a",
-          "tokenManagerType": "lockUnlock"
+          "tokenManagerType": "mintBurn"
         },
         {
           "symbol": "HYB",
@@ -5927,7 +5927,7 @@
           "axelarChainId": "Ethereum",
           "tokenAddress": "0xcEA8C7255a7B6b455CF26ACe9578a55D9560441F",
           "tokenManager": "0x739CCF2114371C1c8b76805dDd1c35B32316C25a",
-          "tokenManagerType": "lockUnlock"
+          "tokenManagerType": "mintBurn"
         },
         {
           "symbol": "HYB",
@@ -5935,7 +5935,7 @@
           "axelarChainId": "base",
           "tokenAddress": "0xcEA8C7255a7B6b455CF26ACe9578a55D9560441F",
           "tokenManager": "0x739CCF2114371C1c8b76805dDd1c35B32316C25a",
-          "tokenManagerType": "lockUnlock"
+          "tokenManagerType": "mintBurn"
         }
       ]
     }
