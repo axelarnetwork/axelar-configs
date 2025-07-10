@@ -45,18 +45,6 @@ const configType = await select({
       description: "Generates a config for a Cosmos compatible chain",
       value: "cosmos-chain" as const,
     },
-    // TODO: Marked as TODO, because we don't have a way to generate assetlist yet
-    //       NOTE: Add an issue to track this
-    // {
-    //   name: "EVM Assetlist",
-    //   description: "Generates an assetlist for an EVM compatible chain",
-    //   value: "evm-assetlist" as const,
-    // },
-    // {
-    //   name: "Cosmos Assetlist",
-    //   description: "Generates an assetlist for a Cosmos compatible chain",
-    //   value: "cosmos-assetlist" as const,
-    // },
     {
       name: "N/A",
       description: "Exit the wizard",
