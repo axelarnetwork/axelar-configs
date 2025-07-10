@@ -56,8 +56,8 @@ npm run wizard
 The wizard currently allows you to:
 
 - [List an interchain token on Squid](/cli/wizard/commands/list-squid-token/README.md)
-- Add a Cosmos/EVM chain config
-- Add a Cosmos/EVM asset list config
+- [Add a Cosmos chain config](cli/wizard/commands/add-cosmos-chain/README.md)
+- [Add a EVM chain config](cli/wizard/commands/add-evm-chain/README.md)
 - more to come...
 
 **Note:** You must provide an `*.svg` logo file of the processed token. Sometimes converting from a raster image to SVG (vector image) can cause color issues.If you have trouble with the conversion, try using this [tool](https://www.adobe.com/express/feature/image/convert/jpg-to-svg).
