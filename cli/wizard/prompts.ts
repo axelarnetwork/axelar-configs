@@ -1,6 +1,6 @@
 import { input, select, checkbox } from "@inquirer/prompts";
 import chalk from "chalk";
-import { confirmPrompt, defaultBech32Config, validators } from "./utils";
+import { confirmPrompt, validators } from "./utils";
 
 export const commonPrompts = {
   configKind: () =>

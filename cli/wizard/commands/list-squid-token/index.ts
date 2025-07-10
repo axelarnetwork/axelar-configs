@@ -72,7 +72,14 @@ export async function listSquidToken() {
         .catch(() => ({})) as Promise<InterchainTokenDetailsApiResponse>
   );
 
-  const newTokenConfig = parseAsInterchainTokenConfig(tokenDetails);
+  const coinGeckoId = await input({
+    message: "What is the CoinGecko ID of the token?",
+  });
+
+  const newTokenConfig = parseAsInterchainTokenConfig(
+    tokenDetails,
+    coinGeckoId
+  );
 
   console.log("Here is your interchain token config:\n");
   console.log(JSON.stringify(newTokenConfig, null, 2));
@@ -180,7 +187,8 @@ export type InterchainTokenDetailsApiResponse = {
 };
 
 function parseAsInterchainTokenConfig(
-  data: InterchainTokenDetailsApiResponse
+  data: InterchainTokenDetailsApiResponse,
+  coinGeckoId: string
 ): InterchainTokenConfig {
   return {
     tokenId: hash.parse(data.tokenId),
@@ -215,6 +223,7 @@ function parseAsInterchainTokenConfig(
         tokenManagerType: snakeToCamelCase(token.tokenManagerType),
       })),
     ],
+    coinGeckoId,
   };
 }
 
