@@ -60,8 +60,6 @@ The wizard currently allows you to:
 - [Add a EVM chain config](cli/wizard/commands/add-evm-chain/README.md)
 - more to come...
 
-**Note:** You must provide an `*.svg` logo file of the processed token. Sometimes converting from a raster image to SVG (vector image) can cause color issues.If you have trouble with the conversion, try using this [tool](https://www.adobe.com/express/feature/image/convert/jpg-to-svg).
-
 ### Registering a new EVM chain
 
 `coming soon...`
