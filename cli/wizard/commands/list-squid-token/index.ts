@@ -54,6 +54,8 @@ export async function listSquidToken() {
 
   const searchApiUrl = `${baseUrl}/api/interchain-token/search?tokenAddress=${tokenAddress}`;
 
+  console.log(`\nSearch API URL: ${searchApiUrl}\n`);
+
   const searchResult = await spinner(
     `Searching ${environment} token...`,
     () =>
@@ -190,6 +192,8 @@ function parseAsInterchainTokenConfig(
   data: InterchainTokenDetailsApiResponse,
   coinGeckoId: string
 ): InterchainTokenConfig {
+  const originChainId = data.axelarChainId;
+
   return {
     tokenId: hash.parse(data.tokenId),
     deployer: data.deployerAddress,
@@ -211,7 +215,12 @@ function parseAsInterchainTokenConfig(
           axelarChainId: data.axelarChainId,
           tokenAddress: address.parse(data.tokenAddress),
           tokenManager: address.parse(data.tokenManagerAddress),
-          tokenManagerType: snakeToCamelCase(data.tokenManagerType),
+          tokenManagerType: validateAndCorrectTokenManagerType(
+            data.tokenManagerType,
+            data.axelarChainId,
+            originChainId,
+            true // isOriginChain
+          ),
         },
       ],
       ...data.remoteTokens.map((token) => ({
@@ -220,11 +229,52 @@ function parseAsInterchainTokenConfig(
         axelarChainId: token.axelarChainId,
         tokenAddress: address.parse(token.tokenAddress),
         tokenManager: address.parse(token.tokenManagerAddress),
-        tokenManagerType: snakeToCamelCase(token.tokenManagerType),
+        tokenManagerType: validateAndCorrectTokenManagerType(
+          token.tokenManagerType,
+          token.axelarChainId,
+          originChainId,
+          false // isOriginChain
+        ),
       })),
     ],
     coinGeckoId,
   };
+}
+
+/**
+ * Validates and corrects the tokenManagerType based on whether the token is on its native chain
+ * @param tokenManagerType - The original tokenManagerType from the API
+ * @param currentChainId - The current chain's Axelar chain ID
+ * @param originChainId - The origin chain's Axelar chain ID
+ * @param isOriginChain - Whether this is the origin chain
+ * @returns The corrected tokenManagerType
+ */
+function validateAndCorrectTokenManagerType(
+  tokenManagerType: string,
+  currentChainId: string,
+  originChainId: string,
+  isOriginChain: boolean
+): string {
+  const normalizedType = snakeToCamelCase(tokenManagerType);
+
+  // If this is the origin chain, MINT_BURN is valid
+  if (isOriginChain) {
+    return normalizedType;
+  }
+
+  // For remote chains, MINT_BURN should not be used
+  if (normalizedType === "mintBurn") {
+    console.log(
+      chalk.yellow(
+        `⚠️  Warning: MINT_BURN tokenManagerType detected for remote chain ${currentChainId}. ` +
+          `This should only be used for tokens on their native chain (${originChainId}). ` +
+          `Using LOCK_UNLOCK instead.`
+      )
+    );
+    return "lockUnlock";
+  }
+
+  return normalizedType;
 }
 
 function getEnvironmentFromUrl(tokenDetailsUrl: string) {
