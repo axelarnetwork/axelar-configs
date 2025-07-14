@@ -5958,7 +5958,7 @@
           "name": "Dante Token",
           "axelarChainId": "immutable",
           "tokenAddress": "0x0320928c14D84ebC5f32A75C9175B25113A1E974",
-          "tokenManager": "0x1c7cEBF3F28ccCC00dd146242E455c3023c53c9d",          
+          "tokenManager": "0x1c7cEBF3F28ccCC00dd146242E455c3023c53c9d",
           "tokenManagerType": "mintBurn"
         }
       ]
