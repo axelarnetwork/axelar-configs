@@ -54,8 +54,6 @@ export async function listSquidToken() {
 
   const searchApiUrl = `${baseUrl}/api/interchain-token/search?tokenAddress=${tokenAddress}`;
 
-  console.log(`\nSearch API URL: ${searchApiUrl}\n`);
-
   const searchResult = await spinner(
     `Searching ${environment} token...`,
     () =>
