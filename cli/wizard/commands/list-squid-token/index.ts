@@ -216,8 +216,7 @@ function parseAsInterchainTokenConfig(
           tokenManagerType: validateAndCorrectTokenManagerType(
             data.tokenManagerType,
             data.axelarChainId,
-            originChainId,
-            true // isOriginChain
+            false
           ),
         },
       ],
@@ -230,8 +229,7 @@ function parseAsInterchainTokenConfig(
         tokenManagerType: validateAndCorrectTokenManagerType(
           token.tokenManagerType,
           token.axelarChainId,
-          originChainId,
-          false // isOriginChain
+          true
         ),
       })),
     ],
@@ -243,29 +241,23 @@ function parseAsInterchainTokenConfig(
  * Validates and corrects the tokenManagerType based on whether the token is on its native chain
  * @param tokenManagerType - The original tokenManagerType from the API
  * @param currentChainId - The current chain's Axelar chain ID
- * @param originChainId - The origin chain's Axelar chain ID
- * @param isOriginChain - Whether this is the origin chain
+ * @param isRemoteChain - Whether this is the origin chain or remote chain
  * @returns The corrected tokenManagerType
  */
 function validateAndCorrectTokenManagerType(
   tokenManagerType: string,
   currentChainId: string,
-  originChainId: string,
-  isOriginChain: boolean
+  isRemoteChain: boolean
 ): string {
   const normalizedType = snakeToCamelCase(tokenManagerType);
 
-  // For native chains, LOCK_UNLOCK and LOCK_UNLOCK_FEE are valid
-  if (isOriginChain) {
-    return normalizedType;
-  }
-
-  // For remote chains, LOCK_UNLOCK and LOCK_UNLOCK_FEE should not be used
-  if (normalizedType === "lockUnlock" || normalizedType === "lockUnlockFee") {
+  if (
+    isRemoteChain &&
+    (normalizedType === "lockUnlock" || normalizedType === "lockUnlockFee")
+  ) {
     console.log(
       chalk.yellow(
         `⚠️  Warning: LOCK_UNLOCK or LOCK_UNLOCK_FEE tokenManagerType detected for remote chain ${currentChainId}. ` +
-          `This should only be used for tokens on their native chain (${originChainId}). ` +
           `Using MINT_BURN instead.`
       )
     );
