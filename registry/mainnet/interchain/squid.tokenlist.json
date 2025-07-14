@@ -5891,6 +5891,46 @@
         }
       ]
     },
+    "0x8736225bf2e4e57ed16dc71e2024f330045e04c9428f0d561bd0b44d039a8163": {
+      "tokenId": "0x8736225bf2e4e57ed16dc71e2024f330045e04c9428f0d561bd0b44d039a8163",
+      "deployer": "0x8b9054B5f1056b04cF3a12490754497e7cd2c8de",
+      "originalMinter": null,
+      "prettySymbol": "HYB",
+      "decimals": 18,
+      "originAxelarChainId": "base",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/hybrid.svg"
+      },
+      "deploymentMessageId": "0x46faf0acb21a10ddf98d87ee647d3dbf77827e45b80d3e61c6227424a46f3c34-24",
+      "chains": [
+        {
+          "symbol": "HYB",
+          "name": "Hybrid",
+          "axelarChainId": "base",
+          "tokenAddress": "0x4ED9C2cB1c0331AFD73Fef1bE5Dea4866d8EA5f9",
+          "tokenManager": "0xC288F97c68348648AeED9256F89d760e2AC72457",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "HYB",
+          "name": "Hybrid",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xb37194e8b99020AE0B8b6861d4217a9f016706a4",
+          "tokenManager": "0xC288F97c68348648AeED9256F89d760e2AC72457",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "HYB",
+          "name": "Hybrid",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xb37194e8b99020AE0B8b6861d4217a9f016706a4",
+          "tokenManager": "0xC288F97c68348648AeED9256F89d760e2AC72457",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
     "0x805b68c10b5c55f8d0e65027e8510515d32c23d8b97ae26906074b9afddf03f5": {
       "tokenId": "0x805b68c10b5c55f8d0e65027e8510515d32c23d8b97ae26906074b9afddf03f5",
       "deployer": "0x491aE4A7bE91BB6b84232bAC79A9Cd5AB017E715",
@@ -5918,7 +5958,7 @@
           "name": "Dante Token",
           "axelarChainId": "immutable",
           "tokenAddress": "0x0320928c14D84ebC5f32A75C9175B25113A1E974",
-          "tokenManager": "0x1c7cEBF3F28ccCC00dd146242E455c3023c53c9d",
+          "tokenManager": "0x1c7cEBF3F28ccCC00dd146242E455c3023c53c9d",          
           "tokenManagerType": "mintBurn"
         }
       ]
