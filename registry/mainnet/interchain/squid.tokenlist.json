@@ -5930,6 +5930,38 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x805b68c10b5c55f8d0e65027e8510515d32c23d8b97ae26906074b9afddf03f5": {
+      "tokenId": "0x805b68c10b5c55f8d0e65027e8510515d32c23d8b97ae26906074b9afddf03f5",
+      "deployer": "0x491aE4A7bE91BB6b84232bAC79A9Cd5AB017E715",
+      "originalMinter": null,
+      "prettySymbol": "DANTE",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/dante.svg"
+      },
+      "deploymentMessageId": "0x347bf5dcc199fc751abb366ecde53820e0fd20924ae604dc3accbcf8c7a44456-59",
+      "chains": [
+        {
+          "symbol": "DANTE",
+          "name": "Dante Token",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xBc6F0F41145Aa4884F9948faC7cd7BeDA537A102",
+          "tokenManager": "0x1c7cEBF3F28ccCC00dd146242E455c3023c53c9d",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "DANTE",
+          "name": "Dante Token",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0x0320928c14D84ebC5f32A75C9175B25113A1E974",
+          "tokenManager": "0x1c7cEBF3F28ccCC00dd146242E455c3023c53c9d",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
