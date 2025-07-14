@@ -257,21 +257,21 @@ function validateAndCorrectTokenManagerType(
 ): string {
   const normalizedType = snakeToCamelCase(tokenManagerType);
 
-  // If this is the origin chain, MINT_BURN is valid
-  if (isOriginChain) {
+  // For remote chains, LOCK_UNLOCK and LOCK_UNLOCK_FEE are valid
+  if (!isOriginChain) {
     return normalizedType;
   }
 
-  // For remote chains, MINT_BURN should not be used
-  if (normalizedType === "mintBurn") {
+  // For remote chains, LOCK_UNLOCK should not be used
+  if (normalizedType === "lockUnlock" || normalizedType === "lockUnlockFee") {
     console.log(
       chalk.yellow(
-        `⚠️  Warning: MINT_BURN tokenManagerType detected for remote chain ${currentChainId}. ` +
+        `⚠️  Warning: LOCK_UNLOCK or LOCK_UNLOCK_FEE tokenManagerType detected for remote chain ${currentChainId}. ` +
           `This should only be used for tokens on their native chain (${originChainId}). ` +
-          `Using LOCK_UNLOCK instead.`
+          `Using MINT_BURN instead.`
       )
     );
-    return "lockUnlock";
+    return "mintBurn";
   }
 
   return normalizedType;

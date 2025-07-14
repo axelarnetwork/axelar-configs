@@ -142,20 +142,12 @@ The command creates/updates the following files:
 
 The command includes automatic validation for the `tokenManagerType` field to ensure proper token management across chains:
 
-### Token Manager Types
-
-- **NATIVE_INTERCHAIN_TOKEN**: Reserved for interchain tokens deployed by ITS
-- **MINT_BURN_FROM**: Tokens are minted/burned on transfers (requires mint permission)
-- **LOCK_UNLOCK**: Tokens are locked/unlocked at the token manager
-- **LOCK_UNLOCK_FEE**: Tokens are locked/unlocked with fee-on-transfer accounting
-- **MINT_BURN**: Tokens are minted/burned on transfers (requires mint and burn permission)
-
 ### Validation Rules
 
-- **MINT_BURN** should only be used for tokens on their native/origin chain
-- For remote chains, if `MINT_BURN` is detected, the command will:
+- **LOCK_UNLOCK** should only be used for tokens on their native/origin chain
+- For remote chains, if `LOCK_UNLOCK` is detected, the command will:
   - Display a warning message
-  - Automatically convert it to `LOCK_UNLOCK`
+  - Automatically convert it to `MINT_BURN`
   - Continue with the corrected configuration
 
 This validation ensures that token configurations follow the correct patterns for interchain token management across different blockchains.
