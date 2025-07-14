@@ -257,12 +257,12 @@ function validateAndCorrectTokenManagerType(
 ): string {
   const normalizedType = snakeToCamelCase(tokenManagerType);
 
-  // For remote chains, LOCK_UNLOCK and LOCK_UNLOCK_FEE are valid
-  if (!isOriginChain) {
+  // For native chains, LOCK_UNLOCK and LOCK_UNLOCK_FEE are valid
+  if (isOriginChain) {
     return normalizedType;
   }
 
-  // For remote chains, LOCK_UNLOCK should not be used
+  // For remote chains, LOCK_UNLOCK and LOCK_UNLOCK_FEE should not be used
   if (normalizedType === "lockUnlock" || normalizedType === "lockUnlockFee") {
     console.log(
       chalk.yellow(
