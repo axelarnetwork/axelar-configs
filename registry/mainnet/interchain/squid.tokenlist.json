@@ -5940,6 +5940,7 @@
       "originAxelarChainId": "Ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "dante-games",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/dante.svg"
       },
