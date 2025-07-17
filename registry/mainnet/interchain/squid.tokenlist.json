@@ -5900,6 +5900,7 @@
       "originAxelarChainId": "base",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "hybrid-2",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/hybrid.svg"
       },
