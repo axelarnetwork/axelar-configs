@@ -190,6 +190,8 @@ function parseAsInterchainTokenConfig(
   data: InterchainTokenDetailsApiResponse,
   coinGeckoId: string
 ): InterchainTokenConfig {
+  const originChainId = data.axelarChainId;
+
   return {
     tokenId: hash.parse(data.tokenId),
     deployer: data.deployerAddress,
@@ -211,7 +213,11 @@ function parseAsInterchainTokenConfig(
           axelarChainId: data.axelarChainId,
           tokenAddress: address.parse(data.tokenAddress),
           tokenManager: address.parse(data.tokenManagerAddress),
-          tokenManagerType: snakeToCamelCase(data.tokenManagerType),
+          tokenManagerType: validateAndCorrectTokenManagerType(
+            data.tokenManagerType,
+            data.axelarChainId,
+            false
+          ),
         },
       ],
       ...data.remoteTokens.map((token) => ({
@@ -220,11 +226,45 @@ function parseAsInterchainTokenConfig(
         axelarChainId: token.axelarChainId,
         tokenAddress: address.parse(token.tokenAddress),
         tokenManager: address.parse(token.tokenManagerAddress),
-        tokenManagerType: snakeToCamelCase(token.tokenManagerType),
+        tokenManagerType: validateAndCorrectTokenManagerType(
+          token.tokenManagerType,
+          token.axelarChainId,
+          true
+        ),
       })),
     ],
     coinGeckoId,
   };
+}
+
+/**
+ * Validates and corrects the tokenManagerType based on whether the token is on its native chain
+ * @param tokenManagerType - The original tokenManagerType from the API
+ * @param currentChainId - The current chain's Axelar chain ID
+ * @param isRemoteChain - Whether this is the origin chain or remote chain
+ * @returns The corrected tokenManagerType
+ */
+function validateAndCorrectTokenManagerType(
+  tokenManagerType: string,
+  currentChainId: string,
+  isRemoteChain: boolean
+): string {
+  const normalizedType = snakeToCamelCase(tokenManagerType);
+
+  if (
+    isRemoteChain &&
+    (normalizedType === "lockUnlock" || normalizedType === "lockUnlockFee")
+  ) {
+    console.log(
+      chalk.yellow(
+        `⚠️  Warning: LOCK_UNLOCK or LOCK_UNLOCK_FEE tokenManagerType detected for remote chain ${currentChainId}. ` +
+          `Using MINT_BURN instead.`
+      )
+    );
+    return "mintBurn";
+  }
+
+  return normalizedType;
 }
 
 function getEnvironmentFromUrl(tokenDetailsUrl: string) {

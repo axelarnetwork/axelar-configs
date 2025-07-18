@@ -138,6 +138,20 @@ The command creates/updates the following files:
 - The command validates all data against the interchain token schema
 - If API calls fail, the command proceeds with empty data and relies on user input
 
+## Token Manager Type Validation
+
+The command includes automatic validation for the `tokenManagerType` field to ensure proper token management across chains:
+
+### Validation Rules
+
+- **LOCK_UNLOCK** should only be used for tokens on their native/origin chain
+- For remote chains, if `LOCK_UNLOCK` is detected, the command will:
+  - Display a warning message
+  - Automatically convert it to `MINT_BURN`
+  - Continue with the corrected configuration
+
+This validation ensures that token configurations follow the correct patterns for interchain token management across different blockchains.
+
 ## Next Steps
 
 After running the command:
