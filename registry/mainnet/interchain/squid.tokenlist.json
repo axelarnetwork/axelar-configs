@@ -5965,14 +5965,14 @@
         }
       ]
     },
-        "0xb4b3fd1c860bdbab75f3d97e709cc1b6a30ba9a834d722cccc64adc150009ee2": {
+    "0xb4b3fd1c860bdbab75f3d97e709cc1b6a30ba9a834d722cccc64adc150009ee2": {
       "tokenId": "0xb4b3fd1c860bdbab75f3d97e709cc1b6a30ba9a834d722cccc64adc150009ee2",
       "deployer": "0x5ba397662e0Dc4569199De084C340Cd15b151716",
       "originalMinter": null,
       "prettySymbol": "CHAR",
       "decimals": 18,
       "originAxelarChainId": "arbitrum",
-      "tokenType": "nativeInterchainToken",
+      "tokenType": "interchain",
       "deploySalt": "0x",
       "coinGeckoId": "n/a",
       "iconUrls": {
