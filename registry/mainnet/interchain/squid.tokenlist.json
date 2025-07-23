@@ -5964,6 +5964,95 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xb4b3fd1c860bdbab75f3d97e709cc1b6a30ba9a834d722cccc64adc150009ee2": {
+      "tokenId": "0xb4b3fd1c860bdbab75f3d97e709cc1b6a30ba9a834d722cccc64adc150009ee2",
+      "deployer": "0x5ba397662e0Dc4569199De084C340Cd15b151716",
+      "originalMinter": null,
+      "prettySymbol": "CHAR",
+      "decimals": 18,
+      "originAxelarChainId": "arbitrum",
+      "tokenType": "interchain",
+      "deploySalt": "0x",
+      "coinGeckoId": "n/a",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/char.svg"
+      },
+      "deploymentMessageId": "0xa24fa9f00851f2582af9531b292417a29415081b5b5eed76b7287f0b9700f6e9-3",
+      "chains": [
+        {
+          "symbol": "CHAR",
+          "name": "Charlie Bull",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x7F9532940e98eB7c2da6ba23c3f3D06315BfaAF1",
+          "tokenManager": "0x1312878f2263067c98F93D2Fee8865cA6b4f02C7",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CHAR",
+          "name": "Charlie Bull",
+          "axelarChainId": "base",
+          "tokenAddress": "0x7F9532940e98eB7c2da6ba23c3f3D06315BfaAF1",
+          "tokenManager": "0x1312878f2263067c98F93D2Fee8865cA6b4f02C7",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CHAR",
+          "name": "Charlie Bull",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x7F9532940e98eB7c2da6ba23c3f3D06315BfaAF1",
+          "tokenManager": "0x1312878f2263067c98F93D2Fee8865cA6b4f02C7",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CHAR",
+          "name": "Charlie Bull",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0x7F9532940e98eB7c2da6ba23c3f3D06315BfaAF1",
+          "tokenManager": "0x1312878f2263067c98F93D2Fee8865cA6b4f02C7",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CHAR",
+          "name": "Charlie Bull",
+          "axelarChainId": "mantle",
+          "tokenAddress": "0x7F9532940e98eB7c2da6ba23c3f3D06315BfaAF1",
+          "tokenManager": "0x1312878f2263067c98F93D2Fee8865cA6b4f02C7",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CHAR",
+          "name": "Charlie Bull",
+          "axelarChainId": "linea",
+          "tokenAddress": "0x7F9532940e98eB7c2da6ba23c3f3D06315BfaAF1",
+          "tokenManager": "0x1312878f2263067c98F93D2Fee8865cA6b4f02C7",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CHAR",
+          "name": "Charlie Bull",
+          "axelarChainId": "blast",
+          "tokenAddress": "0x7F9532940e98eB7c2da6ba23c3f3D06315BfaAF1",
+          "tokenManager": "0x1312878f2263067c98F93D2Fee8865cA6b4f02C7",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CHAR",
+          "name": "Charlie Bull",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x7F9532940e98eB7c2da6ba23c3f3D06315BfaAF1",
+          "tokenManager": "0x1312878f2263067c98F93D2Fee8865cA6b4f02C7",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "CHAR",
+          "name": "Charlie Bull",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x7F9532940e98eB7c2da6ba23c3f3D06315BfaAF1",
+          "tokenManager": "0x1312878f2263067c98F93D2Fee8865cA6b4f02C7",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
