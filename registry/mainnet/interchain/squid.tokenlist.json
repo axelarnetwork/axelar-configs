@@ -5974,7 +5974,7 @@
       "originAxelarChainId": "arbitrum",
       "tokenType": "interchain",
       "deploySalt": "0x",
-      "coinGeckoId": "n/a",
+      "coinGeckoId": "",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/char.svg"
       },
