@@ -6059,7 +6059,7 @@
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/anusd.svg"
       },
       "deploymentMessageId": "0x16659e2f170be2e3462431d83d43f522082e263ddddda31f7f41f1942cbdbcae-4",
-      "coinGeckoId": "anusd"
+      "coinGeckoId": "anusd",
       "chains": [
         {
           "symbol": "AnUSD",
