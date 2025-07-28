@@ -9,9 +9,7 @@
     "decimals": 18,
     "iconUrl": "/images/tokens/coston-two.svg"
   },
-  "rpcUrls": [
-    "https://coston2-api.flare.network/ext/C/rpc"
-  ],
+  "rpcUrls": ["https://coston2-api.flare.network/ext/C/rpc"],
   "blockExplorers": [
     {
       "name": "coston2-explorer",

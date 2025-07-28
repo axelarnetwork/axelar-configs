@@ -9,9 +9,7 @@
     "decimals": 18,
     "iconUrl": "/images/tokens/flr.svg"
   },
-  "rpcUrls": [
-    "https://flare-api.flare.network/ext/C/rpc"
-  ],
+  "rpcUrls": ["https://flare-api.flare.network/ext/C/rpc"],
   "blockExplorers": [
     {
       "name": "flare-explorer",
