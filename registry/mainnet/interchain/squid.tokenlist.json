@@ -6045,6 +6045,55 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xcd261531175cc98fc64c98688c13a21d72a4af8442477a901cad5cbdb7c177ac": {
+      "tokenId": "0xcd261531175cc98fc64c98688c13a21d72a4af8442477a901cad5cbdb7c177ac",
+      "deployer": "0x1A4e0ED0A2f1d76DCaB06a88CaA0a1542982b258",
+      "originalMinter": null,
+      "prettySymbol": "AnUSD",
+      "decimals": 18,
+      "originAxelarChainId": "arbitrum",
+      "tokenType": "interchain",
+      "deploySalt": "0xed925ccc92be9e16b87e64251e0b3300be88863fe0e50ac9cd5de340c7b57c7d",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/anusd.svg"
+      },
+      "deploymentMessageId": "0x16659e2f170be2e3462431d83d43f522082e263ddddda31f7f41f1942cbdbcae-4",
+      "chains": [
+        {
+          "symbol": "AnUSD",
+          "name": "Token of AnoxChange Ecosystem",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0xb6Ad6eB0B4d673b3Cc4A1dA446fa3bcfEa04d4e8",
+          "tokenManager": "0xF8c4C616a0333BD2D3517B0e33c0B516FCb35743",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "AnUSD",
+          "name": "Token of AnoxChange Ecosystem",
+          "axelarChainId": "Polygon",
+          "tokenAddress": "0xb6Ad6eB0B4d673b3Cc4A1dA446fa3bcfEa04d4e8",
+          "tokenManager": "0xF8c4C616a0333BD2D3517B0e33c0B516FCb35743",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "AnUSD",
+          "name": "Token of AnoxChange Ecosystem",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xb6Ad6eB0B4d673b3Cc4A1dA446fa3bcfEa04d4e8",
+          "tokenManager": "0xF8c4C616a0333BD2D3517B0e33c0B516FCb35743",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "AnUSD",
+          "name": "Token of AnoxChange Ecosystem",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xb6Ad6eB0B4d673b3Cc4A1dA446fa3bcfEa04d4e8",
+          "tokenManager": "0xF8c4C616a0333BD2D3517B0e33c0B516FCb35743",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": "anusd"
     }
   }
 }
