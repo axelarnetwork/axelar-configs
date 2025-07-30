@@ -4833,6 +4833,7 @@
       "originAxelarChainId": "ethereum",
       "tokenType": "canonical",
       "deploySalt": "0xc144c0dcfd41bcf51f2ee6d6cea553d8bf07f31c330cf5b698b0dee6bdb41308",
+      "coinGeckoId": "pundi-aifx",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/pundiai.svg"
       },
@@ -4852,6 +4853,39 @@
           "axelarChainId": "binance",
           "tokenAddress": "0x7a986bA67227acfab86385FF33436a80E2BB4CC5",
           "tokenManager": "0xf7333A9d101f7644fC8E754EB26A029D01dEE025",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x356E4BD1C16AF509DCA054F702F8781E6A23D9EAB283237422BB1B8DDE2534D6": {
+      "tokenId": "0x356E4BD1C16AF509DCA054F702F8781E6A23D9EAB283237422BB1B8DDE2534D6",
+      "deployer": "0x0F413055AdEF9b61e9507928c6856F438d690882",
+      "originalMinter": null,
+      "prettySymbol": "PUNDIAI",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0xc144c0dcfd41bcf51f2ee6d6cea553d8bf07f31c330cf5b698b0dee6bdb41308",
+      "coinGeckoId": "pundi-aifx",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/pundiai.svg"
+      },
+      "deploymentMessageId": "0xde30f5725ca6147f9123397123050d52f61e2d08cf784be3166adf0e145793bd-42",
+      "chains": [
+        {
+          "symbol": "PUNDIAI",
+          "name": "Pundi AI",
+          "axelarChainId": "ethereum",
+          "tokenAddress": "0x075f23b9cdfce2cc0ca466f4ee6cb4bd29d83bef",
+          "tokenManager": "0xf7333A9d101f7644fC8E754EB26A029D01dEE025",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "PUNDIAI",
+          "name": "Pundi AI",
+          "axelarChainId": "base",
+          "tokenAddress": "0x44e2A17aD6830C440afb96a89823d09066512452",
+          "tokenManager": "0xeB0F8C81dF33F95f7d2Ea31bE76600D512581030",
           "tokenManagerType": "mintBurn"
         }
       ]
