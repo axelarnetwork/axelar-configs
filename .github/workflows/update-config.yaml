@@ -1,0 +1,30 @@
+name: Update config
+on:
+  pull_request_target:
+    types: [closed]
+
+jobs:
+  reusable-update-config:
+    if: github.event.pull_request.merged == true
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        include:
+          - network: mainnet
+            files: registry/mainnet/interchain/squid.tokenlist.json
+          - network: testnet
+            files: registry/testnet/interchain/squid.tokenlist.json
+          - network: stagenet
+            files: registry/stagenet/interchain/squid.tokenlist.json
+          - network: devnet-amplifier
+            files: registry/devnet-amplifier/interchain/squid.tokenlist.json
+    uses: axelar-network/axelar-contract-deployments/.github/workflows/reusable-update-config.yaml@main
+    with:
+      source_repo: axelar-configs
+      network: ${{ matrix.network }}
+      files: ${{ matrix.files }}
+    secrets:
+      SOURCE_REPO_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      CHAINS_REPO_CICD_TOKEN: ${{ secrets.CHAINS_REPO_CICD_TOKEN }}
+      CONFIG_REPO: ${{ secrets.CONFIG_REPO }}
