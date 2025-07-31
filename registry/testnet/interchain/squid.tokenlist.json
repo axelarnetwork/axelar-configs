@@ -160,7 +160,7 @@
       "originAxelarChainId": "ethereum-sepolia",
       "deploySalt": "0xdb508c07da6d2fa51f6bd2680fcd784c1400885e18bb2b1c2cc167267cb50229",
       "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/test.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/sqd.svg"
       },
       "chains": [
         {
