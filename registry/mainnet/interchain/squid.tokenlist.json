@@ -4877,7 +4877,7 @@
           "name": "Pundi AI",
           "axelarChainId": "ethereum",
           "tokenAddress": "0x075f23b9cdfce2cc0ca466f4ee6cb4bd29d83bef",
-          "tokenManager": "0xf7333A9d101f7644fC8E754EB26A029D01dEE025",
+          "tokenManager": "0xeB0F8C81dF33F95f7d2Ea31bE76600D512581030",
           "tokenManagerType": "lockUnlock"
         },
         {
