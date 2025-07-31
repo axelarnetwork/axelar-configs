@@ -6094,6 +6094,47 @@
         }
       ],
       "coinGeckoId": "anusd"
+    },
+    "0x1caf2314f135e86a5448278ae9b7fa510b23f50d9f0764183810e1eb5d4f6431": {
+      "tokenId": "0x1caf2314f135e86a5448278ae9b7fa510b23f50d9f0764183810e1eb5d4f6431",
+      "deployer": "0x69816490Bcf638f5f6D6B7D8e2cD8E073217a6Ae",
+      "originalMinter": null,
+      "prettySymbol": "MANYU",
+      "decimals": 9,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/manyu.svg"
+      },
+      "deploymentMessageId": "0x7ccdac08a3276f6f44f5025be0313c87d00ca9e47236a64d0563bf4fbf842309-1",
+      "chains": [
+        {
+          "symbol": "MANYU",
+          "name": "Manyu",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x95AF4aF910c28E8EcE4512BFE46F1F33687424ce",
+          "tokenManager": "0x4EeA25AAb093390d973BbA58EF409E135bF6d0e0",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "MANYU",
+          "name": "Manyu",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x95AF4aF910c28E8EcE4512BFE46F1F33687424ce",
+          "tokenManager": "0x4EeA25AAb093390d973BbA58EF409E135bF6d0e0",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MANYU",
+          "name": "Manyu",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x95AF4aF910c28E8EcE4512BFE46F1F33687424ce",
+          "tokenManager": "0x4EeA25AAb093390d973BbA58EF409E135bF6d0e0",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": "manyu-2"
     }
   }
 }
