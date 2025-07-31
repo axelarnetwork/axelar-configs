@@ -166,7 +166,7 @@
         {
           "symbol": "TEST",
           "name": "Test",
-          "decimals": 18,
+          "decimals": 6,
           "axelarChainId": "sui",
           "tokenAddress": "0x3b09fe0f78b65b4d1c9dcf08d5a7a0f5d70246e9925f03f61ea3f4a954406c76::test::TEST",
           "tokenManager": "0x9625c5709c95db082afb49c320cbca3cc0de2a929dbe6170f82193d2269d741a",
