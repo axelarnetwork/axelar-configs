@@ -184,7 +184,7 @@
         {
           "symbol": "TEST",
           "name": "Test",
-          "decimals": 18,
+          "decimals": 15,
           "axelarChainId": "xrpl",
           "tokenAddress": "5445535400000000000000000000000000000000.rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
           "tokenManager": "rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
