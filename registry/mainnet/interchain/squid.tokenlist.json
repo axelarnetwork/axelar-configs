@@ -4870,7 +4870,7 @@
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/pundiai.svg"
       },
-      "deploymentMessageId": "0xa8f28ac402414d80294a054c741f519eb574427c885c85bac795ba9efe590d79-42",
+      "deploymentMessageId": "0xde30f5725ca6147f9123397123050d52f61e2d08cf784be3166adf0e145793bd-98",
       "chains": [
         {
           "symbol": "PUNDIAI",
