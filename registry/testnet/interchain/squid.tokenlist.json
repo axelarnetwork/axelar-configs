@@ -148,6 +148,49 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xc6b71ecb80f8f32ff4044b7c813f2af80029064883624fa7940b79ba3aaa864b": {
+      "tokenId": "0xc6b71ecb80f8f32ff4044b7c813f2af80029064883624fa7940b79ba3aaa864b",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "TEST",
+      "decimals": 18,
+      "deploymentMessageId": "0x",
+      "tokenType": "interchain",
+      "originAxelarChainId": "ethereum-sepolia",
+      "deploySalt": "0xdb508c07da6d2fa51f6bd2680fcd784c1400885e18bb2b1c2cc167267cb50229",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/sqd.svg"
+      },
+      "chains": [
+        {
+          "symbol": "TEST",
+          "name": "Test",
+          "decimals": 6,
+          "axelarChainId": "sui",
+          "tokenAddress": "0x3b09fe0f78b65b4d1c9dcf08d5a7a0f5d70246e9925f03f61ea3f4a954406c76::test::TEST",
+          "tokenManager": "0x9625c5709c95db082afb49c320cbca3cc0de2a929dbe6170f82193d2269d741a",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "TEST",
+          "name": "Test",
+          "decimals": 18,
+          "axelarChainId": "ethereum-sepolia",
+          "tokenAddress": "0x6a3d312C98eF92d1520D7255A5b7d9B3C612B771",
+          "tokenManager": "0x23FD1014f7F11121f3FCd53bc0b8CF3bc130efe2",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "TEST",
+          "name": "Test",
+          "decimals": 15,
+          "axelarChainId": "xrpl",
+          "tokenAddress": "5445535400000000000000000000000000000000.rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
+          "tokenManager": "rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
