@@ -19,7 +19,7 @@ jobs:
             files: registry/stagenet/interchain/squid.tokenlist.json
           - network: devnet-amplifier
             files: registry/devnet-amplifier/interchain/squid.tokenlist.json
-    uses: axelar-network/axelar-contract-deployments/.github/workflows/reusable-update-config.yaml@main
+    uses: axelarnetwork/axelar-contract-deployments/.github/workflows/reusable-update-config.yaml@main
     with:
       source_repo: axelar-configs
       network: ${{ matrix.network }}
