@@ -140,7 +140,7 @@
         },
         {
           "symbol": "SQD",
-          "name": "Squid",
+           "name": "Squid Test",
           "decimals": 15,
           "axelarChainId": "xrpl",
           "tokenAddress": "SQD.rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
