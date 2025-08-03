@@ -141,7 +141,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
-          "decimals": 6,
+          "decimals": 15,
           "axelarChainId": "xrpl",
           "tokenAddress": "SQD.rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
           "tokenManager": "rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
