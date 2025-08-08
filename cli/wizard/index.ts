@@ -46,16 +46,6 @@ const configType = await select({
       value: "cosmos-chain" as const,
     },
     {
-      name: "EVM Assetlist",
-      description: "Generates an assetlist for an EVM compatible chain",
-      value: "evm-assetlist" as const,
-    },
-    {
-      name: "Cosmos Assetlist",
-      description: "Generates an assetlist for a Cosmos compatible chain",
-      value: "cosmos-assetlist" as const,
-    },
-    {
       name: "N/A",
       description: "Exit the wizard",
       value: "none" as const,
@@ -76,4 +66,9 @@ switch (configType) {
   case "none":
     console.log(chalk.bold.green("\nGoodbye!\n"));
     process.exit(0);
+  default:
+    console.log(
+      chalk.bold.red("\nOption is not supported in the current version\n")
+    );
+    process.exit(1);
 }

@@ -56,24 +56,5 @@ npm run wizard
 The wizard currently allows you to:
 
 - [List an interchain token on Squid](/cli/wizard/commands/list-squid-token/README.md)
-- Add a Cosmos/EVM chain config
-- Add a Cosmos/EVM asset list config
-- more to come...
-
-**Note:** You must provide an `*.svg` logo file of the processed token. Sometimes converting from a raster image to SVG (vector image) can cause color issues.If you have trouble with the conversion, try using this [tool](https://www.adobe.com/express/feature/image/convert/jpg-to-svg).
-
-### Registering a new EVM chain
-
-`coming soon...`
-
-### Registering a new Cosmos chain
-
-`coming soon...`
-
-### Registering a EVM Token Lists
-
-`Token Lists` is a standard for lists of ERC20 tokens within the Ethereum ecosystem. It aids in the discoverability of tokens by mapping ERC20 contracts to their associated metadata, such as token name, symbol, and logo. The lists are community-maintained and serve as a single source of truth for token metadata, ensuring a consistent experience across different platforms and applications.
-
-### Registering a Cosmos Asset List
-
-`Cosmos Asset Lists` is a standard inspired by the Ethereum Token Lists project, tailored for the Cosmos ecosystem. It provides a mechanism for user interfaces to fetch metadata associated with Cosmos SDK denominations, especially for assets sent over IBC (Inter-Blockchain Communication). The lists help in the discoverability of assets by mapping them to their metadata, ensuring a consistent and unified representation across different platforms within the Cosmos ecosystem.
+- [Add a Cosmos chain config](cli/wizard/commands/add-cosmos-chain/README.md)
+- [Add a EVM chain config](cli/wizard/commands/add-evm-chain/README.md)
