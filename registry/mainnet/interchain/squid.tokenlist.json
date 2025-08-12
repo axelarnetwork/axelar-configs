@@ -5188,38 +5188,6 @@
         }
       ]
     },
-    "0x390fc5f01870b258ddb5b27f05986c8077cf6e04cf1853e6e14ee2a88be61f5c": {
-      "tokenId": "0x390fc5f01870b258ddb5b27f05986c8077cf6e04cf1853e6e14ee2a88be61f5c",
-      "deployer": "0x2A07D2cb962C447B1BB97BaDA075e78253c68f58",
-      "originalMinter": null,
-      "prettySymbol": "TRIUMPH",
-      "decimals": 18,
-      "originAxelarChainId": "arbitrum",
-      "tokenType": "canonical",
-      "deploySalt": "0x",
-      "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/triumph.svg"
-      },
-      "deploymentMessageId": "0x7c0555327888dc8da1973829896cf2f5bd1ed5f307d0543c6b28ad3d711e1e3b-9",
-      "chains": [
-        {
-          "symbol": "TRIUMPH",
-          "name": "Triumph",
-          "axelarChainId": "arbitrum",
-          "tokenAddress": "0x685A2Fc638E382662a5D06017B05db4be3c372CB",
-          "tokenManager": "0x715Fea1D042F426387305033308B4619761824f8",
-          "tokenManagerType": "lockUnlock"
-        },
-        {
-          "symbol": "TRIUMPH",
-          "name": "Triumph",
-          "axelarChainId": "immutable",
-          "tokenAddress": "0x6A58b83677b9F0ffe185aF056a3C30F7700441e3",
-          "tokenManager": "0x715Fea1D042F426387305033308B4619761824f8",
-          "tokenManagerType": "mintBurn"
-        }
-      ]
-    },
     "0xefe142c0d0e034f9c95f5af0af363560ce2d04bbbf66c466d64cdfa806e92324": {
       "tokenId": "0xefe142c0d0e034f9c95f5af0af363560ce2d04bbbf66c466d64cdfa806e92324",
       "deployer": "0xdA084147EEe60866C5487E1f7464a5B1c559bC03",
@@ -6161,6 +6129,39 @@
         }
       ],
       "coinGeckoId": "manyu-2"
+    },
+    "0x108916e67d35a1104a731e92129967c518a1e5b85302baae7501d7c6eb346819": {
+      "tokenId": "0x108916e67d35a1104a731e92129967c518a1e5b85302baae7501d7c6eb346819",
+      "deployer": "0x2A07D2cb962C447B1BB97BaDA075e78253c68f58",
+      "originalMinter": null,
+      "prettySymbol": "TRI",
+      "decimals": 18,
+      "originAxelarChainId": "arbitrum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/tri.svg"
+      },
+      "deploymentMessageId": "0xde2f989623df6a16bdc3f98e9a8b0a1d9cbdec4c9f06ed9fc39fabea9da4216b-6",
+      "chains": [
+        {
+          "symbol": "TRI",
+          "name": "Triumph",
+          "axelarChainId": "arbitrum",
+          "tokenAddress": "0x7629c1DF323c8168cf15D4576b340ca74c811207",
+          "tokenManager": "0x526c6Ad4cc2e27f7B6D2261495De50bB62941FB1",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "TRI",
+          "name": "Triumph",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0xdBffb3bbC75528D1bdA5564dC8Ba6461946599c4",
+          "tokenManager": "0x526c6Ad4cc2e27f7B6D2261495De50bB62941FB1",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": ""
     }
   }
 }
