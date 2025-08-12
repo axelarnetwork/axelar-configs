@@ -6170,13 +6170,13 @@
       "prettySymbol": "OOO",
       "decimals": 6,
       "originAxelarChainId": "Avalanche",
-      "tokenType": "interchain",
+      "tokenType": "customInterchain",
       "deploySalt": "0x",
       "coinGeckoId": "",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/ooo.svg"
       },
-      "deploymentMessageId": "",
+      "deploymentMessageId": "0x20232badd7fcfbebd3c902ee39463286c5dba90ca97e03a56d18f73abfd4a8cc-3",
       "chains": [
         {
           "symbol": "OOO",
