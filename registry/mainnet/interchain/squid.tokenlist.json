@@ -6161,8 +6161,7 @@
         }
       ],
       "coinGeckoId": "manyu-2"
-    }
-  },
+    },
     "0xbc6f414a7c5e0414bbda934a532810031048b41ad4f82b306d2c7046371f06b2": {
       "tokenId": "0xbc6f414a7c5e0414bbda934a532810031048b41ad4f82b306d2c7046371f06b2",
       "deployer": "0xd31fE3b2c23bbf7301deB5888F0627482A7622B6",
@@ -6196,4 +6195,5 @@
         }
       ]
     }
+  }
 }
