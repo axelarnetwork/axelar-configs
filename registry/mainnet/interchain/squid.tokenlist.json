@@ -6168,7 +6168,7 @@
       "originalMinter": null,
       "prettySymbol": "OOO",
       "decimals": 6,
-      "originAxelarChainId": "Avalanche",
+      "originAxelarChainId": "avalanche",
       "tokenType": "customInterchain",
       "deploySalt": "0x",
       "coinGeckoId": "",
@@ -6180,7 +6180,7 @@
         {
           "symbol": "OOO",
           "name": "Triple O Gems",
-          "axelarChainId": "Avalanche",
+          "axelarChainId": "avalanche",
           "tokenAddress": "0xF5F02001b1B1D068F6d1CB3CA5904778fB024D99",
           "tokenManager": "0x382A35F2D2D80cB43A56857DdA2E8bc5bb3053cC",
           "tokenManagerType": "mintBurn"
