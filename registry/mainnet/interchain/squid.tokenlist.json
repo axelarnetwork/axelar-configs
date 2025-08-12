@@ -6180,7 +6180,7 @@
       "chains": [
         {
           "symbol": "OOO",
-          "name": ""Triple O Gems",
+          "name": "Triple O Gems",
           "axelarChainId": "Avalanche",
           "tokenAddress": "0xF5F02001b1B1D068F6d1CB3CA5904778fB024D99",
           "tokenManager": "0x382A35F2D2D80cB43A56857DdA2E8bc5bb3053cC",
@@ -6188,7 +6188,7 @@
         },
         {
           "symbol": "OOO",
-          "name": ""Triple O Gems",
+          "name": "Triple O Gems",
           "axelarChainId": "immutable",
           "tokenAddress": "0xFE94C5e28b633904EF7b82534EE9a0F528D14b6c",
           "tokenManager": "0x382A35F2D2D80cB43A56857DdA2E8bc5bb3053cC",
