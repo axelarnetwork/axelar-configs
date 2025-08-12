@@ -4830,7 +4830,7 @@
       "originalMinter": null,
       "prettySymbol": "PUNDIAI",
       "decimals": 18,
-      "originAxelarChainId": "ethereum",
+      "originAxelarChainId": "binance",
       "tokenType": "canonical",
       "deploySalt": "0xc144c0dcfd41bcf51f2ee6d6cea553d8bf07f31c330cf5b698b0dee6bdb41308",
       "coinGeckoId": "pundi-aifx",
