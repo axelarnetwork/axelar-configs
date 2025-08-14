@@ -6136,6 +6136,39 @@
         }
       ],
       "coinGeckoId": "manyu-2"
+    },
+    "0xbc6f414a7c5e0414bbda934a532810031048b41ad4f82b306d2c7046371f06b2": {
+      "tokenId": "0xbc6f414a7c5e0414bbda934a532810031048b41ad4f82b306d2c7046371f06b2",
+      "deployer": "0xd31fE3b2c23bbf7301deB5888F0627482A7622B6",
+      "originalMinter": null,
+      "prettySymbol": "OOO",
+      "decimals": 6,
+      "originAxelarChainId": "avalanche",
+      "tokenType": "customInterchain",
+      "deploySalt": "0x",
+      "coinGeckoId": "",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/ooo.svg"
+      },
+      "deploymentMessageId": "0x20232badd7fcfbebd3c902ee39463286c5dba90ca97e03a56d18f73abfd4a8cc-3",
+      "chains": [
+        {
+          "symbol": "OOO",
+          "name": "Triple O Gems",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0xF5F02001b1B1D068F6d1CB3CA5904778fB024D99",
+          "tokenManager": "0x382A35F2D2D80cB43A56857DdA2E8bc5bb3053cC",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "OOO",
+          "name": "Triple O Gems",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0xFE94C5e28b633904EF7b82534EE9a0F528D14b6c",
+          "tokenManager": "0x382A35F2D2D80cB43A56857DdA2E8bc5bb3053cC",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
