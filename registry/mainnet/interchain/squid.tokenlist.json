@@ -4830,14 +4830,14 @@
       "originalMinter": null,
       "prettySymbol": "PUNDIAI",
       "decimals": 18,
-      "originAxelarChainId": "ethereum",
+      "originAxelarChainId": "binance",
       "tokenType": "canonical",
       "deploySalt": "0xc144c0dcfd41bcf51f2ee6d6cea553d8bf07f31c330cf5b698b0dee6bdb41308",
       "coinGeckoId": "pundi-aifx",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/pundiai.svg"
       },
-      "deploymentMessageId": "0x2b62e96d2047fe855d60d6e018be1de92a80b24e4924c9a1d24d0363c203fd06-98",
+      "deploymentMessageId": "0x2b62e96d2047fe855d60d6e018be1de92a80b24e4924c9a1d24d0363c203fd06-3",
       "chains": [
         {
           "symbol": "PUNDIAI",
@@ -4854,38 +4854,13 @@
           "tokenAddress": "0x7a986bA67227acfab86385FF33436a80E2BB4CC5",
           "tokenManager": "0xf7333A9d101f7644fC8E754EB26A029D01dEE025",
           "tokenManagerType": "mintBurn"
-        }
-      ]
-    },
-    "0x356E4BD1C16AF509DCA054F702F8781E6A23D9EAB283237422BB1B8DDE2534D6": {
-      "tokenId": "0x356E4BD1C16AF509DCA054F702F8781E6A23D9EAB283237422BB1B8DDE2534D6",
-      "deployer": "0x0F413055AdEF9b61e9507928c6856F438d690882",
-      "originalMinter": null,
-      "prettySymbol": "PUNDIAI",
-      "decimals": 18,
-      "originAxelarChainId": "ethereum",
-      "tokenType": "canonical",
-      "deploySalt": "0xc144c0dcfd41bcf51f2ee6d6cea553d8bf07f31c330cf5b698b0dee6bdb41308",
-      "coinGeckoId": "pundi-aifx",
-      "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/pundiai.svg"
-      },
-      "deploymentMessageId": "0xde30f5725ca6147f9123397123050d52f61e2d08cf784be3166adf0e145793bd-98",
-      "chains": [
-        {
-          "symbol": "PUNDIAI",
-          "name": "Pundi AI",
-          "axelarChainId": "ethereum",
-          "tokenAddress": "0x075f23b9cdfce2cc0ca466f4ee6cb4bd29d83bef",
-          "tokenManager": "0xeB0F8C81dF33F95f7d2Ea31bE76600D512581030",
-          "tokenManagerType": "lockUnlock"
         },
         {
           "symbol": "PUNDIAI",
           "name": "Pundi AI",
           "axelarChainId": "base",
           "tokenAddress": "0x44e2A17aD6830C440afb96a89823d09066512452",
-          "tokenManager": "0xeB0F8C81dF33F95f7d2Ea31bE76600D512581030",
+          "tokenManager": "0xf7333A9d101f7644fC8E754EB26A029D01dEE025",
           "tokenManagerType": "mintBurn"
         }
       ]
@@ -6158,6 +6133,40 @@
           "axelarChainId": "immutable",
           "tokenAddress": "0xdBffb3bbC75528D1bdA5564dC8Ba6461946599c4",
           "tokenManager": "0x526c6Ad4cc2e27f7B6D2261495De50bB62941FB1",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": ""
+    },
+    "0xbc6f414a7c5e0414bbda934a532810031048b41ad4f82b306d2c7046371f06b2": {
+      "tokenId": "0xbc6f414a7c5e0414bbda934a532810031048b41ad4f82b306d2c7046371f06b2",
+      "deployer": "0xd31fE3b2c23bbf7301deB5888F0627482A7622B6",
+      "originalMinter": null,
+      "prettySymbol": "OOO",
+      "decimals": 6,
+      "originAxelarChainId": "avalanche",
+      "tokenType": "customInterchain",
+      "deploySalt": "0x",
+      "coinGeckoId": "",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/ooo.svg"
+      },
+      "deploymentMessageId": "0x20232badd7fcfbebd3c902ee39463286c5dba90ca97e03a56d18f73abfd4a8cc-3",
+      "chains": [
+        {
+          "symbol": "OOO",
+          "name": "Triple O Gems",
+          "axelarChainId": "avalanche",
+          "tokenAddress": "0xF5F02001b1B1D068F6d1CB3CA5904778fB024D99",
+          "tokenManager": "0x382A35F2D2D80cB43A56857DdA2E8bc5bb3053cC",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "OOO",
+          "name": "Triple O Gems",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0xFE94C5e28b633904EF7b82534EE9a0F528D14b6c",
+          "tokenManager": "0x382A35F2D2D80cB43A56857DdA2E8bc5bb3053cC",
           "tokenManagerType": "mintBurn"
         }
       ],
