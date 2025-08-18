@@ -6171,6 +6171,33 @@
         }
       ],
       "coinGeckoId": ""
-    }
+    },
+{
+  "terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2": {
+    "tokenId": "terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2",
+    "deployer": "0x2A07D2cb962C447B1BB97BaDA075e78253c68f58",
+    "originalMinter": null,
+    "prettySymbol": "JURIS",
+    "decimals": 6,
+    "originAxelarChainId": "terra",
+    "tokenType": "cw20",
+    "deploySalt": "0x",
+    "iconUrls": {
+      "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/juris.svg", 
+    },
+    "deploymentMessageId": "0xde2f989623df6a16bdc3f98e9a8b0a1d9cbdec4c9f06ed9fc39fabea9da4216b-6",
+    "chains": [ 
+      {
+        "symbol": "JURIS",
+        "name": "Juris Protocol",
+        "axelarChainId": "osmosis",
+        "tokenAddress": "ibc/46579C587A0B8CF8B0A1FF6B0EFA2082F11876578E47FC81A9CAAD31F424AF98",
+        "tokenManager": "0x526c6Ad4cc2e27f7B6D2261495De50bB62941FB1",
+        "tokenManagerType": "mintBurn"
+      }
+    ],
+    "coinGeckoId": "juris-protocol"
+  }
+}
   }
 }
