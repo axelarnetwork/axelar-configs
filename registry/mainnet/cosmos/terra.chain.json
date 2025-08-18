@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schemas/cosmos-chain.schema.json",
+  "rest": "https://lcd-columbus.keplr.app",
+  "rpc": "https://mainnet.rpc.axelar.dev/chain/terra",
+  "chainId": "columbus-5",
+  "chainName": "Terra Classic",
+  "stakeCurrency": {
+    "coinDenom": "LUNC",
+    "coinMinimalDenom": "uluna",
+    "coinDecimals": 6,
+    "coinGeckoId": "terra-luna",
+    "coinImageUrl": "/images/tokens/luna.svg"
+  },
+  "bech32Config": {
+    "bech32PrefixAccAddr": "terra",
+    "bech32PrefixAccPub": "terrapub",
+    "bech32PrefixValAddr": "terravaloper",
+    "bech32PrefixValPub": "terravaloperpub",
+    "bech32PrefixConsAddr": "terravalcons",
+    "bech32PrefixConsPub": "terravalconspub"
+  },
+  "bip44": {
+    "coinType": 118
+  },
+  "feeCurrencies": [
+    {
+      "coinDenom": "LUNC",
+      "coinMinimalDenom": "uluna",
+      "coinDecimals": 6,
+      "coinGeckoId": "terra-luna",
+      "coinImageUrl": "/images/tokens/luna.svg"
+      "gasPriceStep": {
+        "low": 28.325,
+        "average": 28.325,
+        "high": 28.325
+      }
+    },
+    {
+      "coinDenom": "USTC",
+      "coinMinimalDenom": "uusd",
+      "coinDecimals": 6,
+      "coinGeckoId": "terrausd",
+      "coinImageUrl": "/images/tokens/ust.svg"
+      "gasPriceStep": {
+        "low": 0.75,
+        "average": 0.75,
+        "high": 0.75
+      }
+    }
+  ],
+  "currencies": [
+    {
+      "coinDenom": "LUNC",
+      "coinMinimalDenom": "uluna",
+      "coinDecimals": 6,
+      "coinGeckoId": "terra-luna",
+      "coinImageUrl": "/images/tokens/luna.svg"
+    },
+    {
+      "coinDenom": "USTC",
+      "coinMinimalDenom": "uusd",
+      "coinDecimals": 6,
+      "coinGeckoId": "terrausd"
+      "coinImageUrl": "/images/tokens/ust.svg"
+    },
+    {
+      "coinDenom": "KRT",
+      "coinMinimalDenom": "ukrw",
+      "coinDecimals": 6
+      "coinImageUrl": "/images/tokens/krt.svg"
+    }
+  ], 
+  "chainIconUrl": "/images/chains/terra.svg"
+}
