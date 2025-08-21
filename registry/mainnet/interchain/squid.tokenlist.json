@@ -6171,6 +6171,39 @@
         }
       ],
       "coinGeckoId": ""
+    },
+    "0x73c6c46c441ee16932b99375a35d2d42c5a41054b86901fb86e285d6b9128154": {
+      "tokenId": "0x73c6c46c441ee16932b99375a35d2d42c5a41054b86901fb86e285d6b9128154",
+      "deployer": "rHgMYhM946gg9QnWYHU7uPgrBFt4PLjy4a",
+      "originalMinter": null,
+      "prettySymbol": "USDC.xrpl",
+      "decimals": 15,
+      "originAxelarChainId": "xrpl",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "usd-coin",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdc.svg"
+      },
+      "deploymentMessageId": "0xd60f6e328c778a4db5ed125842029f01ee3c91562486c38f3f34222e40be71e0-1929109",
+      "chains": [
+        {
+          "symbol": "USDC.xrpl",
+          "name": "USDC",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0xDaF4556169c4F3f2231d8ab7BC8772Ddb7D4c84C",
+          "tokenManager": "0x17858374D82efDd0998C9845dC9AF4C23578F5a7",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "USDC.xrpl",
+          "name": "USDC",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "5553444300000000000000000000000000000000.rGm7WCVp9gb4jZHWTEtGUr4dd74z2XuWhE",
+          "tokenManager": "rGm7WCVp9gb4jZHWTEtGUr4dd74z2XuWhE",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
