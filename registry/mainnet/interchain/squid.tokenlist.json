@@ -6196,7 +6196,7 @@
           "tokenManagerType": "mintBurn"
         },
         {
-          "symbol": "USDC.xrpl",
+          "symbol": "USDC",
           "name": "USDC",
           "axelarChainId": "xrpl",
           "tokenAddress": "5553444300000000000000000000000000000000.rGm7WCVp9gb4jZHWTEtGUr4dd74z2XuWhE",
