@@ -6201,7 +6201,7 @@
           "axelarChainId": "xrpl",
           "tokenAddress": "5553444300000000000000000000000000000000.rGm7WCVp9gb4jZHWTEtGUr4dd74z2XuWhE",
           "tokenManager": "rGm7WCVp9gb4jZHWTEtGUr4dd74z2XuWhE",
-          "tokenManagerType": "mintBurn"
+          "tokenManagerType": "lockUnlock"
         }
       ]
     }
