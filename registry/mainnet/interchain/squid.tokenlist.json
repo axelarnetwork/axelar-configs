@@ -6189,7 +6189,7 @@
       "chains": [
         {
           "symbol": "USDC.xrpl",
-          "name": "USDC",
+          "name": "USD Coin",
           "axelarChainId": "xrpl-evm",
           "tokenAddress": "0xDaF4556169c4F3f2231d8ab7BC8772Ddb7D4c84C",
           "tokenManager": "0x17858374D82efDd0998C9845dC9AF4C23578F5a7",
