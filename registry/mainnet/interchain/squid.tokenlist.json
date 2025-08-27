@@ -6169,8 +6169,7 @@
           "tokenManager": "0x382A35F2D2D80cB43A56857DdA2E8bc5bb3053cC",
           "tokenManagerType": "mintBurn"
         }
-      ],
-      "coinGeckoId": ""
+      ]
     },
     "0x73c6c46c441ee16932b99375a35d2d42c5a41054b86901fb86e285d6b9128154": {
       "tokenId": "0x73c6c46c441ee16932b99375a35d2d42c5a41054b86901fb86e285d6b9128154",
@@ -6204,6 +6203,39 @@
           "tokenManagerType": "lockUnlock"
         }
       ]
+    },
+    "0x5b51d15110f5490aae887966ce0f748cb6ce0612a38d07092b5d42d7e9908f69": {
+      "tokenId": "0x5b51d15110f5490aae887966ce0f748cb6ce0612a38d07092b5d42d7e9908f69",
+      "deployer": "0x71Cdf4A5A57CC7334004c45127fA5A1C34805EF1",
+      "originalMinter": null,
+      "prettySymbol": "FURY",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/fury.svg"
+      },
+      "deploymentMessageId": "0xa0413e8ca227529928759ecf2d19b59792da8c71c20b8ffc9ede24a284c668b7-12",
+      "chains": [
+        {
+          "symbol": "FURY",
+          "name": "Engines of Fury Token",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x0203D275D2A65030889aF45ed91D472be3948B92",
+          "tokenManager": "0x60Fe7b83Ea1Ea61bFC26c0B7C58465EFb9898aE9",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "FURY",
+          "name": "Engines of Fury Token",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0xD46B5Ab42A96D873F4563925323EEF5F59b11E02",
+          "tokenManager": "0x60Fe7b83Ea1Ea61bFC26c0B7C58465EFb9898aE9",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": "engines-of-fury"
     }
   }
 }
