@@ -6169,8 +6169,7 @@
           "tokenManager": "0x382A35F2D2D80cB43A56857DdA2E8bc5bb3053cC",
           "tokenManagerType": "mintBurn"
         }
-      ],
-      "coinGeckoId": ""
+      ]
     },
     "0x73c6c46c441ee16932b99375a35d2d42c5a41054b86901fb86e285d6b9128154": {
       "tokenId": "0x73c6c46c441ee16932b99375a35d2d42c5a41054b86901fb86e285d6b9128154",
@@ -6204,6 +6203,39 @@
           "tokenManagerType": "lockUnlock"
         }
       ]
+    },
+    "0x020e66801bfcd173cebcf0f0b9f64ff5890fd00f1fa292c0a88647de8d8ed0e0": {
+      "tokenId": "0x020e66801bfcd173cebcf0f0b9f64ff5890fd00f1fa292c0a88647de8d8ed0e0",
+      "deployer": "0x17EBCF4DF185cc7B71d71111268BC132FD369055",
+      "originalMinter": null,
+      "prettySymbol": "BOBINA",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/bobina.svg"
+      },
+      "deploymentMessageId": "0xa50372fb56268b732f6851c740d13bc736dc9eb0304f3e4db11a281b49f6aafa-8",
+      "chains": [
+        {
+          "symbol": "BOBINA",
+          "name": "Bobina",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xAF3a37E800991501b88DC4745A96cc8Fc3D5Cb52",
+          "tokenManager": "0xEA5d8d6997e43cB2cD0B3c4a0c6142d6E33C4AD6",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "BOBINA",
+          "name": "Bobina",
+          "axelarChainId": "base",
+          "tokenAddress": "0x289E4958A93501A463b290C4d910974871614786",
+          "tokenManager": "0xEA5d8d6997e43cB2cD0B3c4a0c6142d6E33C4AD6",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": ""
     }
   }
 }

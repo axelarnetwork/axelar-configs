@@ -20,7 +20,7 @@
   ],
   "license": "LicenseRef-LICENSE",
   "dependencies": {
-    "@inquirer/prompts": "^4.3.0"
+    "@inquirer/prompts": "^4.3.3"
   },
   "devDependencies": {
     "@axelarjs/utils": "^0.1.12",
