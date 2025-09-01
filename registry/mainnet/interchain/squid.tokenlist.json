@@ -6213,6 +6213,7 @@
       "originAxelarChainId": "binance",
       "tokenType": "canonical",
       "deploySalt": "0x",
+      "coinGeckoId": "engines-of-fury",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/fury.svg"
       },
@@ -6234,8 +6235,7 @@
           "tokenManager": "0x60Fe7b83Ea1Ea61bFC26c0B7C58465EFb9898aE9",
           "tokenManagerType": "mintBurn"
         }
-      ],
-      "coinGeckoId": "engines-of-fury"
+      ]
     }
   }
 }
