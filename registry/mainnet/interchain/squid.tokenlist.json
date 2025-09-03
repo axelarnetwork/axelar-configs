@@ -3948,6 +3948,22 @@
           "tokenAddress": "0x1095AE55B62174D9EA3Bc6A4136acacaD461d7ce",
           "tokenManager": "0x560BbFb1ce46D4480D2EE4F444983e392E680880",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "ITHACA",
+          "name": "Ithaca Protocol",
+          "axelarChainId": "base",
+          "tokenAddress": "0x1095AE55B62174D9EA3Bc6A4136acacaD461d7ce",
+          "tokenManager": "0x560BbFb1ce46D4480D2EE4F444983e392E680880",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "ITHACA",
+          "name": "Ithaca Protocol",
+          "axelarChainId": "sui",
+          "tokenAddress": "0xa8871e2b78b9e2462fd2d44560cefcc5d2ecba97028a1ad06a4c63b55fc49e81::ithaca::ITHACA",
+          "tokenManager": "0xa91d2076249bea18ee57f3211c97d3a906a45ddb0dd29551cf2f9f30e4165ef1",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
