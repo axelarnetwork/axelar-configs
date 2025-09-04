@@ -6260,6 +6260,39 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xb120617d02fccfa3fcd8feaa0a365eb1747bc2d07f6b3f940c2764277f3aa32e": {
+      "tokenId": "0xb120617d02fccfa3fcd8feaa0a365eb1747bc2d07f6b3f940c2764277f3aa32e",
+      "deployer": "0x191dB742D901577cf9f02067FBD30F7d4bA3b336",
+      "originalMinter": null,
+      "prettySymbol": "PUNDIX",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/pundix.svg"
+      },
+      "deploymentMessageId": "0x30336efb6cb9727da1e3a60dfd999cc6fa49e16a932d342227b9c27e9da499a0-3",
+      "chains": [
+        {
+          "symbol": "PUNDIX",
+          "name": "Pundi X Token",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38",
+          "tokenManager": "0xd6Ca916da9A55D0e18bdAbb89614889600c226CA",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "PUNDIX",
+          "name": "Pundi X Token",
+          "axelarChainId": "binance",
+          "tokenAddress": "0x502676cB33EcF9FACeff67D92a019D5cCFCb186E",
+          "tokenManager": "0xd6Ca916da9A55D0e18bdAbb89614889600c226CA",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": "pundi-x-2"
     }
   }
 }
