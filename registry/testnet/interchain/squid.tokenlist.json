@@ -32,30 +32,6 @@
         {
           "symbol": "YSLC",
           "name": "Slime Coin",
-          "axelarChainId": "arbitrum",
-          "tokenAddress": "0x8eb86b18a8AB66bAC3Be592e67bf0B2E975e07c5",
-          "tokenManager": "0xc5380cEC8576671d2B271beD0F5ADe9b7Fb7de85",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "YSLC",
-          "name": "Slime Coin",
-          "axelarChainId": "linea",
-          "tokenAddress": "0x8eb86b18a8AB66bAC3Be592e67bf0B2E975e07c5",
-          "tokenManager": "0xc5380cEC8576671d2B271beD0F5ADe9b7Fb7de85",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "YSLC",
-          "name": "Slime Coin",
-          "axelarChainId": "polygon-zkevm",
-          "tokenAddress": "0x8eb86b18a8AB66bAC3Be592e67bf0B2E975e07c5",
-          "tokenManager": "0xc5380cEC8576671d2B271beD0F5ADe9b7Fb7de85",
-          "tokenManagerType": "mintBurn"
-        },
-        {
-          "symbol": "YSLC",
-          "name": "Slime Coin",
           "axelarChainId": "celo",
           "tokenAddress": "0x8eb86b18a8AB66bAC3Be592e67bf0B2E975e07c5",
           "tokenManager": "0xc5380cEC8576671d2B271beD0F5ADe9b7Fb7de85",
@@ -76,13 +52,38 @@
           "tokenAddress": "0x8eb86b18a8AB66bAC3Be592e67bf0B2E975e07c5",
           "tokenManager": "0xc5380cEC8576671d2B271beD0F5ADe9b7Fb7de85",
           "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xba5a21ca88ef6bba2bfff5088994f90e1077e2a1cc3dcc38bd261f00fce2824f": {
+      "tokenId": "0xba5a21ca88ef6bba2bfff5088994f90e1077e2a1cc3dcc38bd261f00fce2824f",
+      "deployer": "rrrrrrrrrrrrrrrrrrrrrhoLvTp",
+      "originalMinter": null,
+      "prettySymbol": "XRP",
+      "decimals": 6,
+      "deploymentMessageId": "0x4383b3a04fa0eb774bc5b843f3d196638ae8c7e77d0c75d199142544abe2235f-0",
+      "tokenType": "customInterchain",
+      "originAxelarChainId": "xrpl",
+      "deploySalt": "0x1508b4a3d03188624857f7c24ef5e8d4c7852e39f0f81cce0f4fe03966550403",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/xrp.svg"
+      },
+      "chains": [
+        {
+          "symbol": "XRP",
+          "name": "XRP",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "XRP",
+          "tokenManager": "rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
+          "tokenManagerType": "lockUnlock"
         },
         {
-          "symbol": "YSLC",
-          "name": "Slime Coin",
-          "axelarChainId": "filecoin-2",
-          "tokenAddress": "0x8eb86b18a8AB66bAC3Be592e67bf0B2E975e07c5",
-          "tokenManager": "0xc5380cEC8576671d2B271beD0F5ADe9b7Fb7de85",
+          "symbol": "XRP",
+          "name": "XRP",
+          "decimals": 18,
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+          "tokenManager": "0xdb0a778c57Bd31E401D52ba6cf936D06E1324aE8",
           "tokenManagerType": "mintBurn"
         }
       ]
@@ -104,6 +105,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
+          "decimals": 9,
           "axelarChainId": "sui",
           "tokenAddress": "0xdec8d72a69438bc872824e70944cd4d89d25c34e3f149993b2d06718d4fd87e2::sqd::SQD",
           "tokenManager": "0x6cbd77c514249cbb307658e4bcba2c273890529f99d2dbeaafb75ace7af7cefb",
@@ -112,6 +114,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
+          "decimals": 9,
           "axelarChainId": "flow",
           "tokenAddress": "0xd5e67bFbFfE0A6439be6738587B115053f77aB3b",
           "tokenManager": "0xF26F015022631ABeAC79E7c91D48551f9b1C7774",
@@ -120,6 +123,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
+          "decimals": 9,
           "axelarChainId": "ethereum-sepolia",
           "tokenAddress": "0xd5e67bFbFfE0A6439be6738587B115053f77aB3b",
           "tokenManager": "0xF26F015022631ABeAC79E7c91D48551f9b1C7774",
@@ -128,6 +132,7 @@
         {
           "symbol": "SQD",
           "name": "Squid",
+          "decimals": 9,
           "axelarChainId": "xrpl-evm",
           "tokenAddress": "0xd5e67bFbFfE0A6439be6738587B115053f77aB3b",
           "tokenManager": "0xF26F015022631ABeAC79E7c91D48551f9b1C7774",
@@ -135,18 +140,54 @@
         },
         {
           "symbol": "SQD",
-          "name": "Squid",
+          "name": "Squid Test",
+          "decimals": 6,
           "axelarChainId": "xrpl",
           "tokenAddress": "SQD.rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
           "tokenManager": "rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
           "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xc6b71ecb80f8f32ff4044b7c813f2af80029064883624fa7940b79ba3aaa864b": {
+      "tokenId": "0xc6b71ecb80f8f32ff4044b7c813f2af80029064883624fa7940b79ba3aaa864b",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "TEST",
+      "decimals": 18,
+      "deploymentMessageId": "0x",
+      "tokenType": "interchain",
+      "originAxelarChainId": "ethereum-sepolia",
+      "deploySalt": "0xdb508c07da6d2fa51f6bd2680fcd784c1400885e18bb2b1c2cc167267cb50229",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/sqd.svg"
+      },
+      "chains": [
+        {
+          "symbol": "TEST",
+          "name": "Test",
+          "decimals": 6,
+          "axelarChainId": "sui",
+          "tokenAddress": "0x3b09fe0f78b65b4d1c9dcf08d5a7a0f5d70246e9925f03f61ea3f4a954406c76::test::TEST",
+          "tokenManager": "0x9625c5709c95db082afb49c320cbca3cc0de2a929dbe6170f82193d2269d741a",
+          "tokenManagerType": "mintBurn"
         },
         {
-          "symbol": "SQD",
-          "name": "Squid",
-          "axelarChainId": "stellar-2025-q1",
-          "tokenAddress": "CDBBR6BVVZO32NMFCJJWRJFTKV3QQ2ZLITKKGINP2ONUQCTK7PCT4M3W",
-          "tokenManager": "CDP7FCROXVPRRMK273OWD6Z52QMZWYI4BSM4KG3LJYXLUCGMD22HN422",
+          "symbol": "TEST",
+          "name": "Test",
+          "decimals": 18,
+          "axelarChainId": "ethereum-sepolia",
+          "tokenAddress": "0x6a3d312C98eF92d1520D7255A5b7d9B3C612B771",
+          "tokenManager": "0x23FD1014f7F11121f3FCd53bc0b8CF3bc130efe2",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "TEST",
+          "name": "Test",
+          "decimals": 15,
+          "axelarChainId": "xrpl",
+          "tokenAddress": "5445535400000000000000000000000000000000.rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
+          "tokenManager": "rNrjh1KGZk2jBR3wPfAQnoidtFFYQKbQn2",
           "tokenManagerType": "mintBurn"
         }
       ]
