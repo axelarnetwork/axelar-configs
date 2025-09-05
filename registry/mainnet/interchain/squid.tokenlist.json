@@ -6285,6 +6285,39 @@
         }
       ],
       "coinGeckoId": "pundi-x-2"
+    },
+    "0xb885cec7a3960e61af38544752d7a41ef9255386563755a67689c7d1c6fe3590": {
+      "tokenId": "0xb885cec7a3960e61af38544752d7a41ef9255386563755a67689c7d1c6fe3590",
+      "deployer": "0x9f3012ae9790dB9E3fdD898EeFdD38669EfA7c18",
+      "originalMinter": null,
+      "prettySymbol": "XION",
+      "decimals": 6,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/xion.svg"
+      },
+      "deploymentMessageId": "0x14a397555ef5055bcb2fe9bde29bb5a3ab54272cce691230ad21ac2c679c5612-28",
+      "chains": [
+        {
+          "symbol": "XION",
+          "name": "XION",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x24d7ad9402717f429a81925fe7643b78918eda8b",
+          "tokenManager": "0x8E3E5f83C8f095e6502D41fC5fC1F1dF6345d084",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "XION",
+          "name": "XION",
+          "axelarChainId": "hyperliquid",
+          "tokenAddress": "0x2C2333A6CB341CcCf5F751DADFDAe81B0B8AaDB5",
+          "tokenManager": "0x8E3E5f83C8f095e6502D41fC5fC1F1dF6345d084",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": "xion-2"
     }
   }
 }
