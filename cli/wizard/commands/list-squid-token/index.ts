@@ -228,13 +228,6 @@ function parseAsInterchainTokenConfig(
 ): InterchainTokenConfig {
   const originChainId = data.axelarChainId;
 
-  // Validate tokenId format before parsing
-  if (!data.tokenId || !/^0x[a-fA-F0-9]{64}$/.test(data.tokenId)) {
-    throw new Error(
-      `Invalid tokenId format: ${data.tokenId}. Expected a 64-character hexadecimal string starting with '0x'.`
-    );
-  }
-
   return {
     tokenId: hash.parse(data.tokenId),
     deployer: data.deployerAddress,
