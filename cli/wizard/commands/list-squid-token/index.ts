@@ -62,7 +62,7 @@ export async function listSquidToken() {
         .catch(() => ({})) as Promise<InterchainTokenSearchResult>
   );
 
-  const detailsApiUrl = `${baseUrl}/api/interchain-token/details?tokenAddress=${tokenAddress}&chainId=${searchResult.chainId}`;
+  const detailsApiUrl = `${baseUrl}/api/interchain-token/details?tokenAddress=${searchResult.tokenAddress}&chainId=${searchResult.chainId}`;
 
   const tokenDetails = await spinner(
     `Fetching ${environment} token details...`,
@@ -71,6 +71,42 @@ export async function listSquidToken() {
         .then((res) => res.json())
         .catch(() => ({})) as Promise<InterchainTokenDetailsApiResponse>
   );
+
+  // Validate that we received the required data
+  if (
+    !tokenDetails.tokenId ||
+    !tokenDetails.tokenSymbol ||
+    !tokenDetails.tokenAddress
+  ) {
+    console.log(chalk.red("\n❌ Failed to fetch token details from the API."));
+    console.log(
+      chalk.red(
+        "Please check that the token details URL is correct and try again.\n"
+      )
+    );
+    console.log(chalk.gray("Debug info:"));
+    console.log(chalk.gray(`  - Token Details URL: ${tokenDetailsUrl}`));
+    console.log(chalk.gray(`  - Search API URL: ${searchApiUrl}`));
+    console.log(chalk.gray(`  - Details API URL: ${detailsApiUrl}`));
+    console.log(
+      chalk.gray(
+        `  - Token ID received: ${tokenDetails.tokenId || "undefined"}`
+      )
+    );
+    console.log(
+      chalk.gray(
+        `  - Token Symbol received: ${tokenDetails.tokenSymbol || "undefined"}`
+      )
+    );
+    console.log(
+      chalk.gray(
+        `  - Token Address received: ${
+          tokenDetails.tokenAddress || "undefined"
+        }\n`
+      )
+    );
+    process.exit(1);
+  }
 
   const coinGeckoId = await input({
     message: "What is the CoinGecko ID of the token?",
@@ -191,6 +227,13 @@ function parseAsInterchainTokenConfig(
   coinGeckoId: string
 ): InterchainTokenConfig {
   const originChainId = data.axelarChainId;
+
+  // Validate tokenId format before parsing
+  if (!data.tokenId || !/^0x[a-fA-F0-9]{64}$/.test(data.tokenId)) {
+    throw new Error(
+      `Invalid tokenId format: ${data.tokenId}. Expected a 64-character hexadecimal string starting with '0x'.`
+    );
+  }
 
   return {
     tokenId: hash.parse(data.tokenId),
