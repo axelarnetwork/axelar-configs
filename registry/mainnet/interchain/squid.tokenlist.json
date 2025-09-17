@@ -6319,5 +6319,38 @@
       ],
       "coinGeckoId": "xion-2"
     }
+  },
+  "0xa4bd87319a0ff1ca83418e5b1b792b8e729c3a5ded95bf92cb1d5647d7f992f6": {
+    "tokenId": "0xa4bd87319a0ff1ca83418e5b1b792b8e729c3a5ded95bf92cb1d5647d7f992f6",
+    "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+    "originalMinter": null,
+    "prettySymbol": "mXRP",
+    "decimals": 18,
+    "originAxelarChainId": "xrpl-evm",
+    "tokenType": "canonical",
+    "deploySalt": "0x",
+    "coinGeckoId": "xrp",
+    "iconUrls": {
+      "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mxrp.svg"
+    },
+    "deploymentMessageId": "0x8d818a61844cda421dd74a38716acccf1fa61e0974124414cb9aca20edebaffc-16",
+    "chains": [
+      {
+        "symbol": "mXRP",
+        "name": "Midas XRP",
+        "axelarChainId": "xrpl-evm",
+        "tokenAddress": "0x06e0B0F1A644Bb9881f675Ef266CeC15a63a3d47",
+        "tokenManager": "0xD0F79e5Db4dfFe7F3e372604f46189a54a3EeeaC",
+        "tokenManagerType": "lockUnlock"
+      },
+      {
+        "symbol": "mXRP",
+        "name": "Midas XRP",
+        "axelarChainId": "xrpl",
+        "tokenAddress": "6D58525000000000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+        "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+        "tokenManagerType": "mintBurn"
+      }
+    ]
   }
 }
