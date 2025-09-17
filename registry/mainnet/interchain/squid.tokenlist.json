@@ -6332,7 +6332,7 @@
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mxrp.svg"
       },
-      "deploymentMessageId": "0x8d818a61844cda421dd74a38716acccf1fa61e0974124414cb9aca20edebaffc-16",
+      "deploymentMessageId": "0xc7f6b73e8076911a70b6f29b623c9cc126f97029fe72452673448139180982a6-3",
       "chains": [
         {
           "symbol": "mXRP",
