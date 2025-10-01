@@ -6117,6 +6117,14 @@
           "tokenAddress": "0xf61c3720839047503E8C150F77F4A58f6ED2c66e",
           "tokenManager": "0x4EeA25AAb093390d973BbA58EF409E135bF6d0e0",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "MANYU",
+          "name": "Manyu",
+          "axelarChainId": "base",
+          "tokenAddress": "0xf61c3720839047503E8C150F77F4A58f6ED2c66e",
+          "tokenManager": "0x4EeA25AAb093390d973BbA58EF409E135bF6d0e0",
+          "tokenManagerType": "mintBurn"
         }
       ],
       "coinGeckoId": "manyu-2"
