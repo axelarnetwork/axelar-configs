@@ -6351,6 +6351,72 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0xedb4e6c60750463f5e3970bd7bdbf4af48ffdcb8ac4e40b680e491ca338dd1ba": {
+      "tokenId": "0xedb4e6c60750463f5e3970bd7bdbf4af48ffdcb8ac4e40b680e491ca338dd1ba",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "solvBTC",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "solv-protocol-btc",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/solvbtc.svg"
+      },
+      "deploymentMessageId": "0x4c161f7f68f39a6fb80e1c23c0482a8538783ea3d6b238291f3f2261a5a8fb16-3",
+      "chains": [
+        {
+          "symbol": "solvBTC",
+          "name": "Solv BTC",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x7A56E1C57C7475CCf742a1832B028F0456652F97",
+          "tokenManager": "0xD0f67282391D64C188775A9Cd0993290CA564fa5",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "solvBTC",
+          "name": "Solv BTC",
+          "axelarChainId": "stellar",
+          "tokenAddress": "CBIJBDNZNF4X35BJ4FFZWCDBSCKOP5NB4PLG4SNENRMLAPYG4P5FM6VN",
+          "tokenManager": "CBAZ3SSP4GLKCOD7CXMCKXJUFFJHEMKPJANGUOILAQH2FPVAEEOARR37",
+          "tokenManagerType": "mintBurnFrom"
+        }
+      ]
+    },
+    "0xe3afde7a239b261a0df4c96115eab67769cead87290a1be930ad4692fecf9d9c": {
+      "tokenId": "0xe3afde7a239b261a0df4c96115eab67769cead87290a1be930ad4692fecf9d9c",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "xSolvBTC",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "solv-protocol-staked-btc",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/xsolvbtc.svg"
+      },
+      "deploymentMessageId": "0x529a5f40495f6fbab79691b63586750b0531fd51a5f4a90231e640ec3402450a-3",
+      "chains": [
+        {
+          "symbol": "xSolvBTC",
+          "name": "xSolvBTC",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xd9D920AA40f578ab794426F5C90F6C731D159DEf",
+          "tokenManager": "0x3F8D166bF37bdBCCDCe03104211896DAd186bC3D",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "solvBTC",
+          "name": "xSolvBTC",
+          "axelarChainId": "stellar",
+          "tokenAddress": "CAUP7NFABXE5TJRL3FKTPMWRLC7IAXYDCTHQRFSCLR5TMGKHOOQO772J",
+          "tokenManager": "CBEZZQZSGQHXIJOSLGSB7U74JBVCSWY5G2YDXRPF32VBZM6GZJPHGQAF",
+          "tokenManagerType": "mintBurnFrom"
+        }
+      ]
     }
   }
 }
