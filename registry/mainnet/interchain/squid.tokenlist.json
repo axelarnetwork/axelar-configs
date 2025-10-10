@@ -6409,7 +6409,7 @@
           "tokenManagerType": "mintBurn"
         },
         {
-          "symbol": "solvBTC",
+          "symbol": "xSolvBTC",
           "name": "xSolvBTC",
           "axelarChainId": "stellar",
           "tokenAddress": "CAUP7NFABXE5TJRL3FKTPMWRLC7IAXYDCTHQRFSCLR5TMGKHOOQO772J",
