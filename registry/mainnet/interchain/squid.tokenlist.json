@@ -6367,7 +6367,7 @@
       "prettySymbol": "solvBTC",
       "decimals": 18,
       "originAxelarChainId": "Ethereum",
-      "tokenType": "canonical",
+      "tokenType": "customInterchain",
       "deploySalt": "0x",
       "coinGeckoId": "solv-protocol-btc",
       "iconUrls": {
@@ -6400,7 +6400,7 @@
       "prettySymbol": "xSolvBTC",
       "decimals": 18,
       "originAxelarChainId": "Ethereum",
-      "tokenType": "canonical",
+      "tokenType": "customInterchain",
       "deploySalt": "0x",
       "coinGeckoId": "solv-protocol-staked-btc",
       "iconUrls": {
