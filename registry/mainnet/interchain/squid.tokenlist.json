@@ -6425,6 +6425,39 @@
           "tokenManagerType": "mintBurnFrom"
         }
       ]
+    },
+    "0x91e104d86483f05635e0dbb3a9016677e00a7504572ea1890ca478eb8750bcfe": {
+      "tokenId": "0x91e104d86483f05635e0dbb3a9016677e00a7504572ea1890ca478eb8750bcfe",
+      "deployer": "GCP2SGZJQSIUSUA6OBLYXXSKXLQUCGJLETIXBG2E2RKJAWH7U227T7QR",
+      "originalMinter": null,
+      "prettySymbol": "SHX",
+      "decimals": 7,
+      "originAxelarChainId": "stellar",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "stronghold",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/shx.svg"
+      },
+      "deploymentMessageId": "0x3c030fbb8af3ead17bd92a134d7ef1892eb7bcaf61289a1e0a45b995cc4b9bcb-3",
+      "chains": [
+        {
+          "symbol": "SHX",
+          "name": "SHX",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x516d31321928700C6B4fB0DB0c8c6BC5d6799787",
+          "tokenManager": "0x07D338D56Fd9bF24035F8445A2A2447cDB014322",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "SHX",
+          "name": "SHX",
+          "axelarChainId": "stellar",
+          "tokenAddress": "CCKCKCPHYVXQD4NECBFJTFSCU2AMSJGCNG4O6K4JVRE2BLPR7WNDBQIQ",
+          "tokenManager": "CC7EVWQR256N5M35573KIQTWKFS22737KTL5JM6UQLZH3CWGHPUFDOFX",
+          "tokenManagerType": "lockUnlock"
+        }
+      ]
     }
   }
 }
