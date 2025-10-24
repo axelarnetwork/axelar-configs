@@ -6431,7 +6431,7 @@
       "deployer": "GCP2SGZJQSIUSUA6OBLYXXSKXLQUCGJLETIXBG2E2RKJAWH7U227T7QR",
       "originalMinter": null,
       "prettySymbol": "SHX",
-      "decimals": 18,
+      "decimals": 7,
       "originAxelarChainId": "stellar",
       "tokenType": "canonical",
       "deploySalt": "0x",
