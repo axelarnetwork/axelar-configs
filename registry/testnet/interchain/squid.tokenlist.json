@@ -99,7 +99,7 @@
       "originAxelarChainId": "sui",
       "deploySalt": "0x8ee12465429373d266028755f6f2c87f52a32c245e020b23acf08d2314216aca",
       "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/sqd.svg"
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/XNCR.svg"
       },
       "chains": [
         {
