@@ -191,6 +191,39 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x656df298f02508be64a1de85553c3c1121ab4580a8aaa93423d9ae5ed9ec620b": {
+      "tokenId": "0x656df298f02508be64a1de85553c3c1121ab4580a8aaa93423d9ae5ed9ec620b",
+      "deployer": "0x5518407f8EdBC4aAb9295D9ff685856C297B3b31",
+      "originalMinter": null,
+      "prettySymbol": "APPL",
+      "decimals": 18,
+      "originAxelarChainId": "ethereum-sepolia",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/appl.svg"
+      },
+      "deploymentMessageId": "0xf642600a21a0d9e4c9a72d05e8c5d6cbbbf2e689b15c2e451d33318b2fdfc066-8",
+      "chains": [
+        {
+          "symbol": "APPL",
+          "name": "AppleToken",
+          "axelarChainId": "ethereum-sepolia",
+          "tokenAddress": "0x2CA6d341dD82f3d929B4d0e812EaBDa9517Fb7D4",
+          "tokenManager": "0x1a994dC25a5Dc2337EF7a6fB6f484e42381BA17b",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "APPL",
+          "name": "AppleToken",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0x2D299D7015bF7c1daaC41b104b473a18616b7AC2",
+          "tokenManager": "0x1a994dC25a5Dc2337EF7a6fB6f484e42381BA17b",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": ""
     }
   }
 }
