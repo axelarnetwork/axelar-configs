@@ -4543,6 +4543,7 @@
       "tokenType": "customInterchain",
       "deploySalt": "0x2c53e91c50ba95d6f8b7a9003827838fbbf46b3f8bdadb1d94e760a5cc8d8329",
       "coinGeckoId": "usdx-money-staked-usdx",
+      "isDisabled": true,
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/susdx.svg"
       },
@@ -4576,6 +4577,7 @@
       "tokenType": "customInterchain",
       "deploySalt": "0xb1c089efc0ec4e421a43ec68fe66c5b1c97b581452ee230e5298556380eced92",
       "coinGeckoId": "usdx-money-usdx",
+      "isDisabled": true,
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdx.svg"
       },
