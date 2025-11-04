@@ -4599,47 +4599,6 @@
         }
       ]
     },
-    "0x8d80350129e734038babbe3bd0330fdf900938027655a0ff3eb4861ccc5fb3b1": {
-      "tokenId": "0x8d80350129e734038babbe3bd0330fdf900938027655a0ff3eb4861ccc5fb3b1",
-      "deployer": "0x5a9002F24cD619c0C183a5B7f9223846d6bd3911",
-      "originalMinter": null,
-      "prettySymbol": "USDX",
-      "decimals": 18,
-      "originAxelarChainId": "binance",
-      "tokenType": "customInterchain",
-      "deploySalt": "0x18d20f9bfb864ef584dd555abd4c1e5120880d0ec360910c2d5db092fbb6668f",
-      "coinGeckoId": "usdx-money-usdx",
-      "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/usdx.svg"
-      },
-      "deploymentMessageId": "",
-      "chains": [
-        {
-          "symbol": "USDX",
-          "name": "USDX",
-          "axelarChainId": "binance",
-          "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
-          "tokenManager": "0x8c580947B3f4540Aa641EaeD623121BFf68383ee",
-          "tokenManagerType": "mintBurnFrom"
-        },
-        {
-          "symbol": "USDX",
-          "name": "USDX",
-          "axelarChainId": "ethereum",
-          "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
-          "tokenManager": "0x8c580947B3f4540Aa641EaeD623121BFf68383ee",
-          "tokenManagerType": "mintBurnFrom"
-        },
-        {
-          "symbol": "USDX",
-          "name": "USDX",
-          "axelarChainId": "arbitrum",
-          "tokenAddress": "0xf3527ef8de265eaa3716fb312c12847bfba66cef",
-          "tokenManager": "0x8c580947B3f4540Aa641EaeD623121BFf68383ee",
-          "tokenManagerType": "mintBurnFrom"
-        }
-      ]
-    },
     "0x4e713577e144411a01d8af0d3dfce506e7cb9d0f372639162efd5318f9e1c14c": {
       "tokenId": "0x4e713577e144411a01d8af0d3dfce506e7cb9d0f372639162efd5318f9e1c14c",
       "deployer": "0x2D035C06a82eaC9822A731707566C339a09A68DD",
