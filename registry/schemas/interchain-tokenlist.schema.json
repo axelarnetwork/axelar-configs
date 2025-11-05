@@ -69,7 +69,7 @@
         },
         "coinGeckoId": { "type": "string" },
         "deploymentMessageId": { "type": "string" },
-        "isDisabled": { "type": "boolean" }
+        "disableInUI": { "type": "boolean" }
       },
       "required": [
         "tokenId",
