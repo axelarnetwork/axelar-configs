@@ -68,7 +68,8 @@
           "items": { "$ref": "#/definitions/chains" }
         },
         "coinGeckoId": { "type": "string" },
-        "deploymentMessageId": { "type": "string" }
+        "deploymentMessageId": { "type": "string" },
+        "disableInUI": { "type": "boolean" }
       },
       "required": [
         "tokenId",
