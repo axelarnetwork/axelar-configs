@@ -6471,7 +6471,7 @@
     },
     "0xc954ab7a151ca4155cf69eb74bce067e67a8cc52d79969f97624c0ff7cd84047": {
       "tokenId": "0xc954ab7a151ca4155cf69eb74bce067e67a8cc52d79969f97624c0ff7cd84047",
-      "deployer": "0xba76c6980428a0b10cfc5d8ccb61949677a61233",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
       "originalMinter": null,
       "prettySymbol": "AXL",
       "decimals": 6,
