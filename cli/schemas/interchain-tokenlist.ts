@@ -28,6 +28,7 @@ export const interchainToken = z.object({
   chains: z.array(chains),
   coinGeckoId: z.string().optional(),
   deploymentMessageId: z.string(),
+  disableInUI: z.boolean().optional(),
 });
 
 export const version = z.object({

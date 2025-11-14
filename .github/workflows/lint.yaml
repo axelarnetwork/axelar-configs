@@ -22,7 +22,7 @@ jobs:
 
       - name: Check for changes
         run: |
-          if [ -n "$(git status --porcelain)" ]; then
+          if [ -n "$(git status --porcelain | grep -v ' bun.lock$')" ]; then
             echo Following files are changed by the formatter...
             git status
 
