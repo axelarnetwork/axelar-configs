@@ -6468,6 +6468,39 @@
           "tokenManagerType": "mintBurnFrom"
         }
       ]
+    },
+    "0xc954ab7a151ca4155cf69eb74bce067e67a8cc52d79969f97624c0ff7cd84047": {
+      "tokenId": "0xc954ab7a151ca4155cf69eb74bce067e67a8cc52d79969f97624c0ff7cd84047",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "AXL",
+      "decimals": 6,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/axl.svg"
+      },
+      "deploymentMessageId": "0x984ea3788ea7e1ed379c642fc829523e0bd192372ebecf626ac5e6789674f774-6",
+      "chains": [
+        {
+          "symbol": "AXL",
+          "name": "Axelar",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x467719aD09025FcC6cF6F8311755809d45a5E5f3",
+          "tokenManager": "0x05E9C5BCc805aEFeFeBbEC13742cEc01C6FAc42E",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "AXL",
+          "name": "Axelar",
+          "axelarChainId": "hyperliquid",
+          "tokenAddress": "0xC4Dc717136B8fd754df181d122914C2866F11a79",
+          "tokenManager": "0x05E9C5BCc805aEFeFeBbEC13742cEc01C6FAc42E",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": "axelar"
     }
   }
 }
