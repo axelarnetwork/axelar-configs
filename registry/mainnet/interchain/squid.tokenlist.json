@@ -6501,6 +6501,63 @@
         }
       ],
       "coinGeckoId": "axelar"
+    },
+    "0x9c9da933ed10ad3944abd417f4c2ac80c6ac6676190e391ae833aa74d4703387": {
+      "tokenId": "0x9c9da933ed10ad3944abd417f4c2ac80c6ac6676190e391ae833aa74d4703387",
+      "deployer": "0x5191eBA6a2B75566855A7F1601Aee0cf0B3a09cF",
+      "originalMinter": null,
+      "prettySymbol": "SAUCE",
+      "decimals": 6,
+      "originAxelarChainId": "hedera",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/sauce.svg"
+      },
+      "deploymentMessageId": "0xf60afa4785a509cd861e8212e266b27fcbdaaa70d14cb62a91a22792d6983822-3",
+      "chains": [
+        {
+          "symbol": "SAUCE",
+          "name": "SAUCE",
+          "axelarChainId": "hedera",
+          "tokenAddress": "0x00000000000000000000000000000000000b2ad5",
+          "tokenManager": "0x1126536EfBd506dfC12f6BC0568c602e6DeEF438",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "SAUCE",
+          "name": "SAUCE",
+          "axelarChainId": "base",
+          "tokenAddress": "0xA4FF56eF7Ef4a2CaD03cFa130208C9BC1b45d293",
+          "tokenManager": "0x1126536EfBd506dfC12f6BC0568c602e6DeEF438",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "SAUCE",
+          "name": "SAUCE",
+          "axelarChainId": "Avalanche",
+          "tokenAddress": "0xA4FF56eF7Ef4a2CaD03cFa130208C9BC1b45d293",
+          "tokenManager": "0x1126536EfBd506dfC12f6BC0568c602e6DeEF438",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "SAUCE",
+          "name": "SAUCE",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xA4FF56eF7Ef4a2CaD03cFa130208C9BC1b45d293",
+          "tokenManager": "0x1126536EfBd506dfC12f6BC0568c602e6DeEF438",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "SAUCE",
+          "name": "SAUCE",
+          "axelarChainId": "optimism",
+          "tokenAddress": "0xA4FF56eF7Ef4a2CaD03cFa130208C9BC1b45d293",
+          "tokenManager": "0x1126536EfBd506dfC12f6BC0568c602e6DeEF438",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": "saucerswap"
     }
   }
 }
