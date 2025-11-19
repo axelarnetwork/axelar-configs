@@ -5368,6 +5368,14 @@
           "tokenAddress": "555344432E61786C000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "USDC",
+          "name": "USD Coin",
+          "axelarChainId": "monad",
+          "tokenAddress": "0xa16148c6Ac9EDe0D82f0c52899e22a575284f131",
+          "tokenManager": "0x3591e59F908d09A5cC085f5D808823a3769D1cbB",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
@@ -5408,6 +5416,14 @@
           "axelarChainId": "xrpl",
           "tokenAddress": "5742544300000000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "WBTC",
+          "name": "Wrapped BTC",
+          "axelarChainId": "monad",
+          "tokenAddress": "0xF8Eb4Ed0d4CF2bb707c0272F8C6827dEB6e4C0A9",
+          "tokenManager": "0x631850051779b1FE4CEdc49731A84c4C862786cA",
           "tokenManagerType": "mintBurn"
         }
       ]
