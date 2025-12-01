@@ -6574,6 +6574,39 @@
         }
       ],
       "coinGeckoId": "saucerswap"
+    },
+    "0x5739e2de5a5b7943ede665db9edfc734193ebd3c6f2b934f3d73d8c0c1deac40": {
+      "tokenId": "0x5739e2de5a5b7943ede665db9edfc734193ebd3c6f2b934f3d73d8c0c1deac40",
+      "deployer": "0x0b951686bBEE86039C0b22F0Dd1cC38d2581F441",
+      "originalMinter": null,
+      "prettySymbol": "ILV",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/ilv.svg"
+      },
+      "deploymentMessageId": "0x457aad5d7a64d5e3e4291d4a5f0f254415f8b44de119fc9e2c324c8237f12564-1",
+      "chains": [
+        {
+          "symbol": "ILV",
+          "name": "Illuvium",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x767fe9edc9e0df98e07454847909b5e959d7ca0e",
+          "tokenManager": "0xA8b7f3a93013F1F7a11953970E58C676d3bEe23e",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "ILV",
+          "name": "Illuvium",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0xd5E2D24e4a753036c1bfae49e056FB06De42C8Df",
+          "tokenManager": "0xA8b7f3a93013F1F7a11953970E58C676d3bEe23e",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": "illuvium"
     }
   }
 }
