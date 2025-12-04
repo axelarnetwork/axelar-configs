@@ -6607,6 +6607,39 @@
         }
       ],
       "coinGeckoId": "illuvium"
+    },
+    "0x6096503c24430fbe88dec5d42e8065eac541627fd2e32a50b0fe464677bcf6b9": {
+      "tokenId": "0x6096503c24430fbe88dec5d42e8065eac541627fd2e32a50b0fe464677bcf6b9",
+      "deployer": "0xBcee21f193Ef98419c8b70E13BC31624164EA850",
+      "originalMinter": null,
+      "prettySymbol": "sILV2",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/silv2.svg"
+      },
+      "deploymentMessageId": "0xafe27fd2e4ab02366c0c177cdab83b6ea7dbd2974145c17b35439009149f99ee-10",
+      "chains": [
+        {
+          "symbol": "sILV2",
+          "name": "Escrowed Illuvium 2",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x7E77dCb127F99ECe88230a64Db8d595F31F1b068",
+          "tokenManager": "0x0A6ce10B0B556DD4CABC2AA5bbE1968b2dc6037B",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "sILV2",
+          "name": "Escrowed Illuvium 2",
+          "axelarChainId": "immutable",
+          "tokenAddress": "0x73fDE64D1df709783ad4f68817821523FB289175",
+          "tokenManager": "0x0A6ce10B0B556DD4CABC2AA5bbE1968b2dc6037B",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": "\"\""
     }
   }
 }
