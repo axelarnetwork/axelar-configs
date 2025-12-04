@@ -6639,7 +6639,7 @@
           "tokenManagerType": "mintBurn"
         }
       ],
-      "coinGeckoId": "\"\""
+      "coinGeckoId": ""
     }
   }
 }
