@@ -6637,6 +6637,14 @@
           "tokenAddress": "0x73fDE64D1df709783ad4f68817821523FB289175",
           "tokenManager": "0x0A6ce10B0B556DD4CABC2AA5bbE1968b2dc6037B",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "sILV2",
+          "name": "Escrowed Illuvium 2",
+          "axelarChainId": "base",
+          "tokenAddress": "0x73fDE64D1df709783ad4f68817821523FB289175",
+          "tokenManager": "0x0A6ce10B0B556DD4CABC2AA5bbE1968b2dc6037B",
+          "tokenManagerType": "mintBurn"
         }
       ],
       "coinGeckoId": ""
