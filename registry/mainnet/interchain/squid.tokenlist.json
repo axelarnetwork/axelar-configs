@@ -6604,6 +6604,14 @@
           "tokenAddress": "0xd5E2D24e4a753036c1bfae49e056FB06De42C8Df",
           "tokenManager": "0xA8b7f3a93013F1F7a11953970E58C676d3bEe23e",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "ILV",
+          "name": "Illuvium",
+          "axelarChainId": "base",
+          "tokenAddress": "0xd5E2D24e4a753036c1bfae49e056FB06De42C8Df",
+          "tokenManager": "0xA8b7f3a93013F1F7a11953970E58C676d3bEe23e",
+          "tokenManagerType": "mintBurn"
         }
       ],
       "coinGeckoId": "illuvium"
