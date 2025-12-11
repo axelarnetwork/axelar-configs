@@ -80,6 +80,11 @@ export const chain = z
       )
       .optional()
       .describe("List of features supported by the chain"),
+    deprecated: z
+      .boolean()
+      .default(false)
+      .optional()
+      .describe("Whether this chain is deprecated"),
   })
   .describe("A Cosmos compatible chain configuration");
 

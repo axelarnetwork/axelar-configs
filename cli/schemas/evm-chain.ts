@@ -36,6 +36,11 @@ const chain = z
     blockExplorers: z.array(blockExplorer).optional(),
     testnet: z.boolean().optional(),
     iconUrl: chainIconUrl,
+    deprecated: z
+      .boolean()
+      .default(false)
+      .optional()
+      .describe("Whether this chain is deprecated"),
   })
   .describe("an EVM compatible chain configuration");
 

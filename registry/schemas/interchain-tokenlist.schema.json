@@ -34,7 +34,12 @@
         "tokenManagerType": { "type": "string" },
         "symbol": { "type": "string" },
         "name": { "type": "string" },
-        "decimals": { "type": "integer" }
+        "decimals": { "type": "integer" },
+        "deprecated": {
+          "type": "boolean",
+          "default": false,
+          "description": "This token on this chain is scheduled to be deprecated"
+        }
       },
       "required": [
         "axelarChainId",

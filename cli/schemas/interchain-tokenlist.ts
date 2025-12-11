@@ -13,6 +13,11 @@ export const chains = z.object({
   decimals: z.number().int().optional(),
   symbol: z.string(),
   name: z.string(),
+  deprecated: z
+    .boolean()
+    .default(false)
+    .optional()
+    .describe("Whether this token on this chain is deprecated"),
 });
 
 export const interchainToken = z.object({

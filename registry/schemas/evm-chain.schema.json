@@ -24,6 +24,11 @@
       "type": "string",
       "pattern": "\\/images\\/chains\\/([a-z\\-]+)\\.svg$",
       "description": "the icon for the chain, must be a relative path to a svg icon under /images/chains"
+    },
+    "deprecated": {
+      "type": "boolean",
+      "default": false,
+      "description": "This chain is scheduled to be deprecated"
     }
   },
   "required": [
