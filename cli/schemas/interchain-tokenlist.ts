@@ -15,9 +15,9 @@ export const chains = z.object({
   name: z.string(),
   deprecated: z
     .boolean()
-    .default(false)
     .optional()
-    .describe("Whether this token on this chain is deprecated"),
+    .default(false)
+    .describe("Whether this token on this chain is scheduled to be deprecated"),
 });
 
 export const interchainToken = z.object({

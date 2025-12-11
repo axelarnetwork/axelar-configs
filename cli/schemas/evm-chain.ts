@@ -38,9 +38,9 @@ const chain = z
     iconUrl: chainIconUrl,
     deprecated: z
       .boolean()
-      .default(false)
       .optional()
-      .describe("Whether this chain is deprecated"),
+      .default(false)
+      .describe("This chain is scheduled to be deprecated"),
   })
   .describe("an EVM compatible chain configuration");
 
