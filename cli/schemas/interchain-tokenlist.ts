@@ -17,7 +17,7 @@ export const chains = z.object({
     .boolean()
     .optional()
     .default(false)
-    .describe("Whether this token on this chain is scheduled to be deprecated"),
+    .describe("The token on this chain is scheduled to be deprecated"),
 });
 
 export const interchainToken = z.object({
