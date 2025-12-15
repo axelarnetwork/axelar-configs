@@ -160,6 +160,11 @@
             ]
           },
           "description": "List of features supported by the chain"
+        },
+        "deprecated": {
+          "type": "boolean",
+          "default": false,
+          "description": "This chain is scheduled to be deprecated"
         }
       },
       "required": [
