@@ -6656,6 +6656,71 @@
         }
       ],
       "coinGeckoId": ""
+    },
+    "0x1eea6b3d52cb701e677f7031216edc53f429665139ee9a9f3846b7203b89b7ec": {
+      "tokenId": "0x1eea6b3d52cb701e677f7031216edc53f429665139ee9a9f3846b7203b89b7ec",
+      "deployer": "0xf2Ee324F85996b60cb9aaF95E16523d3af76F090",
+      "originalMinter": null,
+      "prettySymbol": "BBNK",
+      "decimals": 18,
+      "originAxelarChainId": "monad",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://burn-bank-ui.vercel.app/burnbank-logo.svg"
+      },
+      "deploymentMessageId": "0xe9defedca6feccdab8b4b40509885ea4932d8dc95b755abb28df61de13f2bc87-6",
+      "chains": [
+        {
+          "symbol": "BBNK",
+          "name": "BurnBank",
+          "axelarChainId": "monad",
+          "tokenAddress": "0x81D61e48BCe95aB2Cd16Ced67B8d4aaf682B8350",
+          "tokenManager": "0xa59ba30164e56B3CFfd451Ee81E1B86E84D4509c",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "BBNK",
+          "name": "BurnBank",
+          "axelarChainId": "base",
+          "tokenAddress": "0xa98E0266F0085b606Fde8A30E58546660599c7C7",
+          "tokenManager": "0xa59ba30164e56B3CFfd451Ee81E1B86E84D4509c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "BBNK",
+          "name": "BurnBank",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xa98E0266F0085b606Fde8A30E58546660599c7C7",
+          "tokenManager": "0xa59ba30164e56B3CFfd451Ee81E1B86E84D4509c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "BBNK",
+          "name": "BurnBank",
+          "axelarChainId": "Avalanche",
+          "tokenAddress": "0xa98E0266F0085b606Fde8A30E58546660599c7C7",
+          "tokenManager": "0xa59ba30164e56B3CFfd451Ee81E1B86E84D4509c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "BBNK",
+          "name": "BurnBank",
+          "axelarChainId": "hyperliquid",
+          "tokenAddress": "0xa98E0266F0085b606Fde8A30E58546660599c7C7",
+          "tokenManager": "0xa59ba30164e56B3CFfd451Ee81E1B86E84D4509c",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "BBNK",
+          "name": "BurnBank",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0xa98E0266F0085b606Fde8A30E58546660599c7C7",
+          "tokenManager": "0xa59ba30164e56B3CFfd451Ee81E1B86E84D4509c",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": ""
     }
   }
 }
