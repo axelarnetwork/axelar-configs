@@ -6661,7 +6661,7 @@
       "tokenId": "0xf53b874caa6c232f9660ba5d1262c5fe6ec366f2dcf2f94ac9057faba8098695",
       "deployer": "0x70cAa113fF29D1E3F7a49d3a0fc8D3184F83Db63",
       "originalMinter": null,
-      "prettySymbol": "Soil",
+      "prettySymbol": "SOIL",
       "decimals": 18,
       "originAxelarChainId": "polygon",
       "tokenType": "canonical",
