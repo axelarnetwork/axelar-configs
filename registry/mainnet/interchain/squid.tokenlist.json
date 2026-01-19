@@ -6656,6 +6656,39 @@
         }
       ],
       "coinGeckoId": ""
+    },
+    "0xf53b874caa6c232f9660ba5d1262c5fe6ec366f2dcf2f94ac9057faba8098695": {
+      "tokenId": "0xf53b874caa6c232f9660ba5d1262c5fe6ec366f2dcf2f94ac9057faba8098695",
+      "deployer": "0x70cAa113fF29D1E3F7a49d3a0fc8D3184F83Db63",
+      "originalMinter": null,
+      "prettySymbol": "Soil",
+      "decimals": 18,
+      "originAxelarChainId": "polygon",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "soil",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/soil.svg"
+      },
+      "deploymentMessageId": "",
+      "chains": [
+        {
+          "symbol": "SOIL",
+          "name": "Soil",
+          "axelarChainId": "polygon",
+          "tokenAddress": "0x43C73b90E0C2A355784dCf0Da12f477729b31e77",
+          "tokenManager": "0x99BD57Fc427B0978d9694D1F2204c75071C9cf05",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "SOIL",
+          "name": "Soil",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "534F494C00000000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
