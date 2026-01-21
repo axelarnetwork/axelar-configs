@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/evm-chain.schema.json",
+  "id": 14,
+  "network": "flare",
+  "name": "Flare",
+  "nativeCurrency": {
+    "name": "Flare",
+    "symbol": "FLR",
+    "decimals": 18,
+    "iconUrl": "/images/tokens/flr.svg"
+  },
+  "rpcUrls": ["https://flare-api.flare.network/ext/C/rpc"],
+  "blockExplorers": [
+    {
+      "name": "flare-explorer",
+      "url": "https://flare-explorer.flare.network/"
+    }
+  ],
+  "iconUrl": "/images/chains/flare.svg",
+  "testnet": false
+}
