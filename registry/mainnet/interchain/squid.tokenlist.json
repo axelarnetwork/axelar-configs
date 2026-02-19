@@ -6441,6 +6441,14 @@
           "tokenAddress": "CCKCKCPHYVXQD4NECBFJTFSCU2AMSJGCNG4O6K4JVRE2BLPR7WNDBQIQ",
           "tokenManager": "CC7EVWQR256N5M35573KIQTWKFS22737KTL5JM6UQLZH3CWGHPUFDOFX",
           "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "SHX",
+          "name": "SHX",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "SHX.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
