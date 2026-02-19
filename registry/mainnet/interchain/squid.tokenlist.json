@@ -6452,6 +6452,39 @@
         }
       ]
     },
+    "0xf0d7beb2b03d35e597f432391dc2a6f6eb1a621be6cb5b325f55a49090085239": {
+      "tokenId": "0xf0d7beb2b03d35e597f432391dc2a6f6eb1a621be6cb5b325f55a49090085239",
+      "deployer": "GARPS4JBQXPW7F4O2EFPU2DCGDDPUCHQLRXKXBT4RECZG75KV3GQHECI",
+      "originalMinter": null,
+      "prettySymbol": "XLM",
+      "decimals": 7,
+      "originAxelarChainId": "stellar",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "stellar",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/xlm.svg"
+      },
+      "deploymentMessageId": "0xce6c4876f5a730b7c79285ccca9289bdd151293c72f04400a794e02fc74502ad-3",
+      "chains": [
+        {
+          "symbol": "XLM",
+          "name": "XLM",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x8Cf74fC1ec7B2187DDA77EA289f78CC54e2B7C8B",
+          "tokenManager": "0x45FfC3d7768b3192562FeA73a4a56C37e0d362c6",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "XLM",
+          "name": "XLM",
+          "axelarChainId": "stellar",
+          "tokenAddress": "CAS3J7GYLGXMF6TDJBBYYSE3HQ6BBSMLNUQ34T6TZMYMW2EVH34XOWMA",
+          "tokenManager": "CBLLBQFUH2DQH2RVNFXTQGDTUJ4KFNIPK3R2IN5AYSSF2KEE2IODBTWB",
+          "tokenManagerType": "lockUnlock"
+        }
+      ]
+    },
     "0x8d80350129e734038babbe3bd0330fdf900938027655a0ff3eb4861ccc5fb3b1": {
       "tokenId": "0x8d80350129e734038babbe3bd0330fdf900938027655a0ff3eb4861ccc5fb3b1",
       "deployer": "0x5a9002F24cD619c0C183a5B7f9223846d6bd3911",
