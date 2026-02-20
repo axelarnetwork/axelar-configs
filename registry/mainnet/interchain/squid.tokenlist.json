@@ -6616,6 +6616,39 @@
       ],
       "coinGeckoId": "saucerswap"
     },
+    "0xab0e4c27f6872a75b522dba542cc1fb951bd60946b5913b2cb2b6585013d3839": {
+      "tokenId": "0xab0e4c27f6872a75b522dba542cc1fb951bd60946b5913b2cb2b6585013d3839",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "HBARX",
+      "decimals": 8,
+      "originAxelarChainId": "hedera",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/hbarx.svg"
+      },
+      "deploymentMessageId": "0xd81c328ebd7fc663e6bd25c84ea6b9e5d817f10d4c2045bf4f2079ab222006df-3",
+      "chains": [
+        {
+          "symbol": "HBARX",
+          "name": "HBARX",
+          "axelarChainId": "hedera",
+          "tokenAddress": "0x00000000000000000000000000000000000cba44",
+          "tokenManager": "0xd7d1307f37fd2a6d9deb2a988ce0f1ee32d2fd50",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "HBARX",
+          "name": "HBARX",
+          "axelarChainId": "base",
+          "tokenAddress": "0x525Dc6De4f95fcDfB6349a579310e6806Ef1Bfba",
+          "tokenManager": "0xD7D1307f37Fd2A6d9deB2a988CE0f1EE32D2fd50",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": "hbarx"
+    },
     "0x5739e2de5a5b7943ede665db9edfc734193ebd3c6f2b934f3d73d8c0c1deac40": {
       "tokenId": "0x5739e2de5a5b7943ede665db9edfc734193ebd3c6f2b934f3d73d8c0c1deac40",
       "deployer": "0x0b951686bBEE86039C0b22F0Dd1cC38d2581F441",
