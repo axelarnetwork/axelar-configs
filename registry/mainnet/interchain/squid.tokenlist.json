@@ -6748,6 +6748,39 @@
       ],
       "coinGeckoId": "kabila"
     },
+    "0xc4ad8a7b38652c04137cf0f872209a3fba34b657e05938d340d40db2453b286c": {
+      "tokenId": "0xc4ad8a7b38652c04137cf0f872209a3fba34b657e05938d340d40db2453b286c",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "PACK",
+      "decimals": 6,
+      "originAxelarChainId": "hedera",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/pack.svg"
+      },
+      "deploymentMessageId": "0xc6e0b01509b4384d13263e4685f2a98612764330a8e58452d5058402c8d9f93e-3",
+      "chains": [
+        {
+          "symbol": "PACK",
+          "name": "HashPack",
+          "axelarChainId": "hedera",
+          "tokenAddress": "0x0000000000000000000000000000000000492a28",
+          "tokenManager": "0xab3512a4cdd57466ae4811bf02a94546a2cc02cb",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "PACK",
+          "name": "HashPack",
+          "axelarChainId": "base",
+          "tokenAddress": "0x378010a12b3c59081cfc6bb2d526643463a771b3",
+          "tokenManager": "0xAb3512A4cdd57466Ae4811Bf02a94546a2cC02CB",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": "hashpack"
+    },
     "0x5739e2de5a5b7943ede665db9edfc734193ebd3c6f2b934f3d73d8c0c1deac40": {
       "tokenId": "0x5739e2de5a5b7943ede665db9edfc734193ebd3c6f2b934f3d73d8c0c1deac40",
       "deployer": "0x0b951686bBEE86039C0b22F0Dd1cC38d2581F441",
