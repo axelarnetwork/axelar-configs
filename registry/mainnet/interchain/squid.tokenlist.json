@@ -6715,6 +6715,39 @@
       ],
       "coinGeckoId": "dovu-2"
     },
+    "0x1e7a7c59b8de6acbd8f92bdfa261ccbbd025108c9a7cac320e023bd13ceaa911": {
+      "tokenId": "0x1e7a7c59b8de6acbd8f92bdfa261ccbbd025108c9a7cac320e023bd13ceaa911",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "KBL",
+      "decimals": 6,
+      "originAxelarChainId": "hedera",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/kbl.svg"
+      },
+      "deploymentMessageId": "0xccc0eb881a25cd318a278ec36158d9ab5022e0097ee44f5367a99811c8fb9651-3",
+      "chains": [
+        {
+          "symbol": "KBL",
+          "name": "Kabila",
+          "axelarChainId": "hedera",
+          "tokenAddress": "0x00000000000000000000000000000000005b665a",
+          "tokenManager": "0x5bdf027d30bb4204fcbf7e92cf259ccf9c1efd03",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "KBL",
+          "name": "Kabila",
+          "axelarChainId": "base",
+          "tokenAddress": "0xaae68cab71f6c850396ec5099725742c653412cc",
+          "tokenManager": "0x5bDf027D30bb4204FcBf7E92CF259cCf9c1eFD03",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": "kabila"
+    },
     "0x5739e2de5a5b7943ede665db9edfc734193ebd3c6f2b934f3d73d8c0c1deac40": {
       "tokenId": "0x5739e2de5a5b7943ede665db9edfc734193ebd3c6f2b934f3d73d8c0c1deac40",
       "deployer": "0x0b951686bBEE86039C0b22F0Dd1cC38d2581F441",
