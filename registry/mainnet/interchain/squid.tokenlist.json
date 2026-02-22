@@ -6649,6 +6649,39 @@
       ],
       "coinGeckoId": "hbarx"
     },
+    "0x80ceecf8b572a38b48081c51fc9dec48330979342cb75c7ddfeb9543bceeed4b": {
+      "tokenId": "0x80ceecf8b572a38b48081c51fc9dec48330979342cb75c7ddfeb9543bceeed4b",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "BONZO",
+      "decimals": 8,
+      "originAxelarChainId": "hedera",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/bonzo.svg"
+      },
+      "deploymentMessageId": "0x9aa3b3c6a8a1450e24929a31cc80400b3f2cf45a8f98b02134ddd6b3f3597338-3",
+      "chains": [
+        {
+          "symbol": "BONZO",
+          "name": "BONZO",
+          "axelarChainId": "hedera",
+          "tokenAddress": "0x00000000000000000000000000000000007e545e",
+          "tokenManager": "0xfc5825d9457d4057a8568e62e511b2ffb7bca0f5",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "BONZO",
+          "name": "BONZO",
+          "axelarChainId": "base",
+          "tokenAddress": "0x561003B0400d5ffAd516E041c642335a18a77423",
+          "tokenManager": "0xFC5825D9457D4057A8568e62e511B2ffB7bca0F5",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": "bonzo-finance"
+    },
     "0x5739e2de5a5b7943ede665db9edfc734193ebd3c6f2b934f3d73d8c0c1deac40": {
       "tokenId": "0x5739e2de5a5b7943ede665db9edfc734193ebd3c6f2b934f3d73d8c0c1deac40",
       "deployer": "0x0b951686bBEE86039C0b22F0Dd1cC38d2581F441",
