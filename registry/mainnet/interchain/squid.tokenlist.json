@@ -6682,6 +6682,39 @@
       ],
       "coinGeckoId": "bonzo-finance"
     },
+    "0x0227429f2a2954887e488332f01ec44be402dfc49c59c800e6b1c84ae170c169": {
+      "tokenId": "0x0227429f2a2954887e488332f01ec44be402dfc49c59c800e6b1c84ae170c169",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "DOVU",
+      "decimals": 8,
+      "originAxelarChainId": "hedera",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/dovu.svg"
+      },
+      "deploymentMessageId": "0xff83480f604ae450e7566c215625500eb72db408b91b51ef04e19ef3debbbe79-3",
+      "chains": [
+        {
+          "symbol": "DOVU",
+          "name": "DOVU",
+          "axelarChainId": "hedera",
+          "tokenAddress": "0x000000000000000000000000000000000038b3db",
+          "tokenManager": "0x6df08dddb50f88d5f586cef5198e0441fa8f280d",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "DOVU",
+          "name": "DOVU",
+          "axelarChainId": "base",
+          "tokenAddress": "0x1a796e2de11dcbd8e88db60b78fe3179dcacc673",
+          "tokenManager": "0x6dF08ddDB50F88D5f586CEF5198E0441fa8f280d",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": "dovu-2"
+    },
     "0x5739e2de5a5b7943ede665db9edfc734193ebd3c6f2b934f3d73d8c0c1deac40": {
       "tokenId": "0x5739e2de5a5b7943ede665db9edfc734193ebd3c6f2b934f3d73d8c0c1deac40",
       "deployer": "0x0b951686bBEE86039C0b22F0Dd1cC38d2581F441",
