@@ -5382,7 +5382,7 @@
           "name": "USD Coin",
           "axelarChainId": "hedera",
           "tokenAddress": "0x00000000000000000000000000000000009cf1ae",
-          "tokenManager": "0xe89a3e8e7262d96bd5db9568060b8ddb2e7b7bcd",
+          "tokenManager": "0xE89A3e8E7262d96BD5dB9568060B8DDB2e7B7bCD",
           "tokenManagerType": "mintBurn"
         }
       ]
@@ -6643,7 +6643,7 @@
           "name": "HBARX",
           "axelarChainId": "hedera",
           "tokenAddress": "0x00000000000000000000000000000000000cba44",
-          "tokenManager": "0xd7d1307f37fd2a6d9deb2a988ce0f1ee32d2fd50",
+          "tokenManager": "0xD7D1307f37Fd2A6d9deB2a988CE0f1EE32D2fd50",
           "tokenManagerType": "lockUnlock"
         },
         {
@@ -6676,7 +6676,7 @@
           "name": "BONZO",
           "axelarChainId": "hedera",
           "tokenAddress": "0x00000000000000000000000000000000007e545e",
-          "tokenManager": "0xfc5825d9457d4057a8568e62e511b2ffb7bca0f5",
+          "tokenManager": "0xFC5825D9457D4057A8568e62e511B2ffB7bca0F5",
           "tokenManagerType": "lockUnlock"
         },
         {
@@ -6709,14 +6709,14 @@
           "name": "DOVU",
           "axelarChainId": "hedera",
           "tokenAddress": "0x000000000000000000000000000000000038b3db",
-          "tokenManager": "0x6df08dddb50f88d5f586cef5198e0441fa8f280d",
+          "tokenManager": "0x6dF08ddDB50F88D5f586CEF5198E0441fa8f280d",
           "tokenManagerType": "lockUnlock"
         },
         {
           "symbol": "DOVU",
           "name": "DOVU",
           "axelarChainId": "base",
-          "tokenAddress": "0x1a796e2de11dcbd8e88db60b78fe3179dcacc673",
+          "tokenAddress": "0x1a796e2dE11dCBD8E88DB60B78FE3179dcAcC673",
           "tokenManager": "0x6dF08ddDB50F88D5f586CEF5198E0441fa8f280d",
           "tokenManagerType": "mintBurn"
         }
@@ -6742,14 +6742,14 @@
           "name": "Kabila",
           "axelarChainId": "hedera",
           "tokenAddress": "0x00000000000000000000000000000000005b665a",
-          "tokenManager": "0x5bdf027d30bb4204fcbf7e92cf259ccf9c1efd03",
+          "tokenManager": "0x5bDf027D30bb4204FcBf7E92CF259cCf9c1eFD03",
           "tokenManagerType": "lockUnlock"
         },
         {
           "symbol": "KBL",
           "name": "Kabila",
           "axelarChainId": "base",
-          "tokenAddress": "0xaae68cab71f6c850396ec5099725742c653412cc",
+          "tokenAddress": "0xaae68cAb71F6c850396ec5099725742c653412Cc",
           "tokenManager": "0x5bDf027D30bb4204FcBf7E92CF259cCf9c1eFD03",
           "tokenManagerType": "mintBurn"
         }
@@ -6775,14 +6775,14 @@
           "name": "HashPack",
           "axelarChainId": "hedera",
           "tokenAddress": "0x0000000000000000000000000000000000492a28",
-          "tokenManager": "0xab3512a4cdd57466ae4811bf02a94546a2cc02cb",
+          "tokenManager": "0xAb3512A4cdd57466Ae4811Bf02a94546a2cC02CB",
           "tokenManagerType": "lockUnlock"
         },
         {
           "symbol": "PACK",
           "name": "HashPack",
           "axelarChainId": "base",
-          "tokenAddress": "0x378010a12b3c59081cfc6bb2d526643463a771b3",
+          "tokenAddress": "0x378010A12B3c59081cFC6BB2d526643463a771b3",
           "tokenManager": "0xAb3512A4cdd57466Ae4811Bf02a94546a2cC02CB",
           "tokenManagerType": "mintBurn"
         }
