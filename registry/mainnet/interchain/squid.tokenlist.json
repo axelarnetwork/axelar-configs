@@ -5382,7 +5382,7 @@
           "name": "USD Coin",
           "axelarChainId": "hedera",
           "tokenAddress": "0x00000000000000000000000000000000009cf1ae",
-          "tokenManager": "0xE89A3e8E7262d96BD5dB9568060B8DDB2e7B7bCD",
+          "tokenManager": "0x3591e59F908d09A5cC085f5D808823a3769D1cbB",
           "tokenManagerType": "mintBurn"
         }
       ]
