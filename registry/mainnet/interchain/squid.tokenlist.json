@@ -3337,38 +3337,6 @@
         }
       ]
     },
-    "0xd99313a6f4f70ed25a1583773676bbc4d5af8410c678e6471f74e7d9246011b2": {
-      "tokenId": "0xd99313a6f4f70ed25a1583773676bbc4d5af8410c678e6471f74e7d9246011b2",
-      "deployer": "0x8b55501865a8C9a9e442f58d5b5D4e07d822d64d",
-      "originalMinter": null,
-      "prettySymbol": "FX",
-      "decimals": 18,
-      "originAxelarChainId": "ethereum",
-      "tokenType": "canonical",
-      "deploySalt": "0x",
-      "iconUrls": {
-        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/fx.svg"
-      },
-      "deploymentMessageId": "0x4b0e692b489f4972e0ba69d6cc0d1c9d823192f352f99b3f4a319913cf150805-134",
-      "chains": [
-        {
-          "symbol": "FX",
-          "name": "Function X",
-          "axelarChainId": "ethereum",
-          "tokenAddress": "0x8c15Ef5b4B21951d50E53E4fbdA8298FFAD25057",
-          "tokenManager": "0x6C7C22e07E3A27C9cF4FDcedcD7e8a21170E2A68",
-          "tokenManagerType": "lockUnlock"
-        },
-        {
-          "symbol": "FX",
-          "name": "Function X",
-          "axelarChainId": "base",
-          "tokenAddress": "0x8CECc2360906c812cD7353cd6B10b1dc13bbc777",
-          "tokenManager": "0x6C7C22e07E3A27C9cF4FDcedcD7e8a21170E2A68",
-          "tokenManagerType": "mintBurn"
-        }
-      ]
-    },
     "0x46bfc4338b904cef6f46d6a0d1134f8eeb8407fb3e5bc3e1a702f15277dbca89": {
       "tokenId": "0x46bfc4338b904cef6f46d6a0d1134f8eeb8407fb3e5bc3e1a702f15277dbca89",
       "deployer": "0x291d3813D975317B4375E050217c5335Ab28e87f",
