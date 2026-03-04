@@ -6318,6 +6318,14 @@
           "tokenAddress": "6D58525000000000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "mXRP",
+          "name": "Midas XRP",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xc8739fbBd54C587a2ad43b50CbcC30ae34FE9e34",
+          "tokenManager": "0xA16024Ebc6FC450f57C63fCe1E4CE446Bf1CfE6d",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
