@@ -6404,7 +6404,7 @@
       "originAxelarChainId": "stellar",
       "tokenType": "canonical",
       "deploySalt": "0x",
-      "coinGeckoId": "stronghold",
+      "coinGeckoId": "stronghold-token",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/shx.svg"
       },
