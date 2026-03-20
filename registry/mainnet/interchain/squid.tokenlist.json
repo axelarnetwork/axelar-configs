@@ -6297,7 +6297,7 @@
       "originAxelarChainId": "xrpl-evm",
       "tokenType": "canonical",
       "deploySalt": "0x",
-      "coinGeckoId": "xrp",
+      "coinGeckoId": "midas-xrp",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mxrp.svg"
       },
@@ -6317,6 +6317,39 @@
           "axelarChainId": "xrpl",
           "tokenAddress": "6D58525000000000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x18094f558f8d711e1386b0fdbce61ee57373cf5b31ec69223b87147518eb73d4": {
+      "tokenId": "0x18094f558f8d711e1386b0fdbce61ee57373cf5b31ec69223b87147518eb73d4",
+      "deployer": "0xcB593eD9bCca69f186dA2affC60e29D7BDf967FE",
+      "originalMinter": null,
+      "prettySymbol": "mXRP",
+      "decimals": 18,
+      "originAxelarChainId": "xrpl-evm",
+      "tokenType": "canonical",
+      "deploySalt": "0x56a4be9f94bd303603f318af6efeca4dac599b3a9a339208c54723ddd701c063",
+      "coinGeckoId": "midas-xrp",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mxrp.svg"
+      },
+      "deploymentMessageId": "0xc367e6625381f31c3e27eefa632251265865d09e6477f0f07b3bdd744ed0643c-3",
+      "chains": [
+        {
+          "symbol": "mXRP",
+          "name": "Midas XRP",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0x06e0B0F1A644Bb9881f675Ef266CeC15a63a3d47",
+          "tokenManager": "0xA16024Ebc6FC450f57C63fCe1E4CE446Bf1CfE6d",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "mXRP",
+          "name": "Midas XRP",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xc8739fbBd54C587a2ad43b50CbcC30ae34FE9e34",
+          "tokenManager": "0xA16024Ebc6FC450f57C63fCe1E4CE446Bf1CfE6d",
           "tokenManagerType": "mintBurn"
         }
       ]
