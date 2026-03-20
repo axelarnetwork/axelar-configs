@@ -6297,7 +6297,7 @@
       "originAxelarChainId": "xrpl-evm",
       "tokenType": "canonical",
       "deploySalt": "0x",
-      "coinGeckoId": "xrp",
+      "coinGeckoId": "midas-xrp",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mxrp.svg"
       },
@@ -6341,7 +6341,7 @@
           "name": "Midas XRP",
           "axelarChainId": "xrpl-evm",
           "tokenAddress": "0x06e0B0F1A644Bb9881f675Ef266CeC15a63a3d47",
-          "tokenManager": "0xD0F79e5Db4dfFe7F3e372604f46189a54a3EeeaC",
+          "tokenManager": "0xA16024Ebc6FC450f57C63fCe1E4CE446Bf1CfE6d",
           "tokenManagerType": "lockUnlock"
         },
         {
