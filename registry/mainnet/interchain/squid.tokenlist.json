@@ -6297,7 +6297,7 @@
       "originAxelarChainId": "xrpl-evm",
       "tokenType": "canonical",
       "deploySalt": "0x",
-      "coinGeckoId": "midas-xrp",
+      "coinGeckoId": "xrp",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mxrp.svg"
       },
@@ -6330,7 +6330,7 @@
       "originAxelarChainId": "xrpl-evm",
       "tokenType": "canonical",
       "deploySalt": "0x56a4be9f94bd303603f318af6efeca4dac599b3a9a339208c54723ddd701c063",
-      "coinGeckoId": "midas-xrp",
+      "coinGeckoId": "xrp",
       "iconUrls": {
         "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/mxrp.svg"
       },
