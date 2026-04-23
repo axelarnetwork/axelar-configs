@@ -37,6 +37,14 @@
           "tokenAddress": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
           "tokenManager": "0xdb0a778c57Bd31E401D52ba6cf936D06E1324aE8",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "wXRP",
+          "name": "Wrapped XRP",
+          "axelarChainId": "hedera",
+          "tokenAddress": "0x00000000000000000000000000000000009f69b7",
+          "tokenManager": "0xdb0a778c57Bd31E401D52ba6cf936D06E1324aE8",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
