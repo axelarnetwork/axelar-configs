@@ -6879,6 +6879,142 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x0b7a8843a7bef0be3ccbb192f64ad25daf6f6499e664072aa346015dedfc555d": {
+      "tokenId": "0x0b7a8843a7bef0be3ccbb192f64ad25daf6f6499e664072aa346015dedfc555d",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "WAVAX",
+      "decimals": 18,
+      "originAxelarChainId": "Avalanche",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "wrapped-avax",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/wavax.svg"
+      },
+      "deploymentMessageId": "0x3a90d7d6d55f8fad11b0490018fd5f194dea9afe6cbf0f32a32e6cb26b1a0416-3",
+      "chains": [
+        {
+          "symbol": "WAVAX",
+          "name": "Wrapped AVAX",
+          "axelarChainId": "Avalanche",
+          "tokenAddress": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+          "tokenManager": "0x55A34EF0171Cd52AE6000B276D7dfac195CD13BA",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "WAVAX",
+          "name": "Wrapped AVAX",
+          "decimals": 6,
+          "axelarChainId": "hedera",
+          "tokenAddress": "0x00000000000000000000000000000000009ffD9d",
+          "tokenManager": "0x55A34EF0171Cd52AE6000B276D7dfac195CD13BA",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x6ee8edec882cd816e239518eee7340a71f6b8927dd00ab6f9221ce496fa90c30": {
+      "tokenId": "0x6ee8edec882cd816e239518eee7340a71f6b8927dd00ab6f9221ce496fa90c30",
+      "deployer": "0xba76c6980428A0b10CFC5d8ccb61949677A61233",
+      "originalMinter": null,
+      "prettySymbol": "WBNB",
+      "decimals": 18,
+      "originAxelarChainId": "binance",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "wbnb",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/wbnb.svg"
+      },
+      "deploymentMessageId": "0xe26f021d08771aa75171838756b1eb945c7a0a840c4024fce0a63a07e4409ecb-3",
+      "chains": [
+        {
+          "symbol": "WBNB",
+          "name": "Wrapped BNB",
+          "axelarChainId": "binance",
+          "tokenAddress": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+          "tokenManager": "0x08ff0774e6451CAAf1B6b79F06E3DE32368C192d",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "WBNB",
+          "name": "Wrapped BNB",
+          "decimals": 6,
+          "axelarChainId": "hedera",
+          "tokenAddress": "0x00000000000000000000000000000000009ffd33",
+          "tokenManager": "0x08ff0774e6451CAAf1B6b79F06E3DE32368C192d",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0xb3ea3422860c531e34a7f200ada934d326dbc13c9e507146ff4ccaa28cb00df8": {
+      "tokenId": "0xb3ea3422860c531e34a7f200ada934d326dbc13c9e507146ff4ccaa28cb00df8",
+      "deployer": "0x5Fd24Cd5827eDF6dEb51483103c6f8aE870FB1Cc",
+      "originalMinter": null,
+      "prettySymbol": "QNT",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "quant-network",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/qnt.svg"
+      },
+      "deploymentMessageId": "0x8bc63f7dcaf7ef781fb087c359fe1436a0a3124c508bf8fddcf1267197ce08d9-8",
+      "chains": [
+        {
+          "symbol": "QNT",
+          "name": "Quant",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x4a220E6096B25EADb88358cb44068A3248254675",
+          "tokenManager": "0xB0162cDd3bD29c1915F55192eAc4fb664f53f005",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "QNT",
+          "name": "Quant",
+          "decimals": 6,
+          "axelarChainId": "hedera",
+          "tokenAddress": "0x00000000000000000000000000000000009FF718",
+          "tokenManager": "0xB0162cDd3bD29c1915F55192eAc4fb664f53f005",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
+    },
+    "0x880305cb25a9642d39aee413557f0c34eda113752f72b5c309ad46d36bf81fb6": {
+      "tokenId": "0x880305cb25a9642d39aee413557f0c34eda113752f72b5c309ad46d36bf81fb6",
+      "deployer": "0x5Fd24Cd5827eDF6dEb51483103c6f8aE870FB1Cc",
+      "originalMinter": null,
+      "prettySymbol": "LCX",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "lcx",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/lcx.svg"
+      },
+      "deploymentMessageId": "0xb29ffb868485b08def62e96906475b87029898560aa6e9b8418c5ed93554d720-8",
+      "chains": [
+        {
+          "symbol": "LCX",
+          "name": "LCX",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x8CD41041505885EF0aD3858181D66f17BE8aae7E",
+          "tokenManager": "0x5706B497257Dc84400800343f94661530E5de868",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "LCX",
+          "name": "LCX",
+          "decimals": 6,
+          "axelarChainId": "hedera",
+          "tokenAddress": "0x00000000000000000000000000000000009fF748",
+          "tokenManager": "0x5706B497257Dc84400800343f94661530E5de868",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
