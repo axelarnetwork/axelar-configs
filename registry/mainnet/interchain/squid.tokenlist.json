@@ -6909,7 +6909,8 @@
           "axelarChainId": "solana",
           "tokenAddress": "FgNuB1BWH4KPshxGd9Pae5dg6EJVax8wH6912yMysU9v",
           "tokenManager": "B6WAYnLVt5g5M36UdEEWMqrvFoCYgWL5uNKVVnXcJk9b",
-          "tokenManagerType": "mintBurn"
+          "tokenManagerType": "mintBurn",
+          "tokenProgramId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
         }
       ]
     },
