@@ -32,6 +32,13 @@
           "$ref": "#/definitions/chains/properties/tokenAddress"
         },
         "tokenManagerType": { "type": "string" },
+        "tokenProgramId": {
+          "type": "string",
+          "enum": [
+            "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+            "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          ]
+        },
         "decimals": { "type": "integer" },
         "symbol": { "type": "string" },
         "name": { "type": "string" },
