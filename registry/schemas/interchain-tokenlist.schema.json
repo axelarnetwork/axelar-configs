@@ -32,13 +32,13 @@
           "$ref": "#/definitions/chains/properties/tokenAddress"
         },
         "tokenManagerType": { "type": "string" },
+        "decimals": { "type": "integer" },
         "symbol": { "type": "string" },
         "name": { "type": "string" },
-        "decimals": { "type": "integer" },
         "deprecated": {
           "type": "boolean",
           "default": false,
-          "description": "This token on this chain is scheduled to be deprecated"
+          "description": "The token on this chain is scheduled to be deprecated"
         }
       },
       "required": [
@@ -56,12 +56,7 @@
       "properties": {
         "tokenId": { "type": "string", "pattern": "^0x[a-fA-F0-9]{64}$" },
         "deployer": { "$ref": "#/definitions/chains/properties/tokenAddress" },
-        "originalMinter": {
-          "anyOf": [
-            { "$ref": "#/definitions/chains/properties/tokenAddress" },
-            { "type": "null" }
-          ]
-        },
+        "originalMinter": { "type": ["string", "null"] },
         "prettySymbol": { "type": "string" },
         "decimals": { "type": "integer" },
         "originAxelarChainId": { "type": "string" },
