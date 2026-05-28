@@ -6910,6 +6910,14 @@
           "tokenAddress": "FgNuB1BWH4KPshxGd9Pae5dg6EJVax8wH6912yMysU9v",
           "tokenManager": "B6WAYnLVt5g5M36UdEEWMqrvFoCYgWL5uNKVVnXcJk9b",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "DT0",
+          "name": "Test token DT0",
+          "axelarChainId": "stellar",
+          "tokenAddress": "CCIWRR5WHLXKN22B26ZXQXS255GQZ5CK347WOHPFGCGSV2I3UXDRIBZG",
+          "tokenManager": "CDX2EUKKG3JNL235EKO6OL42P5CEVGCZB7MBKX6J6N2TWUNYGVBBVYCS",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
