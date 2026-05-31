@@ -7100,15 +7100,15 @@
       "chains": [
         {
           "symbol": "LINK",
-          "name": "LINK (Axelar)",
+          "name": "ChainLink",
           "axelarChainId": "Ethereum",
           "tokenAddress": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
           "tokenManager": "0x432f8ef8D70c0E075A571f088228B8163b6d3238",
           "tokenManagerType": "lockUnlock"
         },
         {
-          "symbol": "LINK",
-          "name": "LINK (Axelar)",
+          "symbol": "LINK.axl",
+          "name": "ChainLink (Axelar)",
           "decimals": 6,
           "axelarChainId": "hedera",
           "tokenAddress": "0x0000000000000000000000000000000000a00ddb",
