@@ -7082,6 +7082,40 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x85d3097109556b586f76bf5dd775df1cb4cbecfeff3a90b14074e67451052a8e": {
+      "tokenId": "0x85d3097109556b586f76bf5dd775df1cb4cbecfeff3a90b14074e67451052a8e",
+      "deployer": "0x5Fd24Cd5827eDF6dEb51483103c6f8aE870FB1Cc",
+      "originalMinter": null,
+      "prettySymbol": "LINK",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "chainlink",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/link.svg"
+      },
+      "deploymentMessageId": "0x5731dcb8fbeea7f146cbaa0e98a703079988a993158562993dc65d179f8dac93-8",
+      "chains": [
+        {
+          "symbol": "LINK",
+          "name": "ChainLink",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+          "tokenManager": "0x432f8ef8D70c0E075A571f088228B8163b6d3238",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "LINK.axl",
+          "name": "ChainLink (Axelar)",
+          "decimals": 6,
+          "axelarChainId": "hedera",
+          "tokenAddress": "0x0000000000000000000000000000000000a00ddb",
+          "tokenManager": "0x432f8ef8D70c0E075A571f088228B8163b6d3238",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
