@@ -10,6 +10,13 @@ export const chains = z.object({
   tokenAddress: address,
   tokenManager: address,
   tokenManagerType: z.string(),
+  tokenProgramId: z
+    .enum([
+      // required for Solana tokens
+      "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb", // Token-2022 (default for tokens deployed through ITS)
+      "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA", // Token Program
+    ])
+    .optional(),
   decimals: z.number().int().optional(),
   symbol: z.string(),
   name: z.string(),
