@@ -6901,7 +6901,7 @@
           "axelarChainId": "xrpl-evm",
           "tokenAddress": "0x8616fCe6c7E066A9f87A4e2779e1651Ea1a43FFC",
           "tokenManager": "0x1FDB9eDD2BBd72dBd9d0287468A583Dc43e5bCF7",
-          "tokenManagerType": "lockUnlock"
+          "tokenManagerType": "mintBurn"
         },
         {
           "symbol": "DT0",
@@ -6911,6 +6911,23 @@
           "tokenManager": "B6WAYnLVt5g5M36UdEEWMqrvFoCYgWL5uNKVVnXcJk9b",
           "tokenManagerType": "mintBurn",
           "tokenProgramId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+        },
+        {
+          "symbol": "DT0",
+          "name": "Test token DT0",
+          "axelarChainId": "stellar",
+          "tokenAddress": "CCIWRR5WHLXKN22B26ZXQXS255GQZ5CK347WOHPFGCGSV2I3UXDRIBZG",
+          "tokenManager": "CDX2EUKKG3JNL235EKO6OL42P5CEVGCZB7MBKX6J6N2TWUNYGVBBVYCS",
+          "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "DT0",
+          "name": "Test token DT0",
+          "decimals": 6,
+          "axelarChainId": "sui",
+          "tokenAddress": "0x04d7aca84bd1d6283e0ed783bf5f80d6ffddc8493bf8a238524e0d14c2ac09c6::dt0::DT0",
+          "tokenManager": "0x2f9b7a91361ad01e0ceafca17c476d142e9b182b92226683f6616674aad43b21",
+          "tokenManagerType": "mintBurn"
         }
       ]
     },
