@@ -7109,6 +7109,7 @@
         {
           "symbol": "LINK",
           "name": "LINK (Axelar)",
+          "decimals": 6,
           "axelarChainId": "hedera",
           "tokenAddress": "0x0000000000000000000000000000000000a00ddb",
           "tokenManager": "0x432f8ef8D70c0E075A571f088228B8163b6d3238",
