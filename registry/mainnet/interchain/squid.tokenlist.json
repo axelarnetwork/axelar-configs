@@ -7099,7 +7099,7 @@
       "deploymentMessageId": "0x5731dcb8fbeea7f146cbaa0e98a703079988a993158562993dc65d179f8dac93-8",
       "chains": [
         {
-          "symbol": "LINK.axl",
+          "symbol": "LINK",
           "name": "LINK (Axelar)",
           "axelarChainId": "Ethereum",
           "tokenAddress": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
@@ -7107,7 +7107,7 @@
           "tokenManagerType": "lockUnlock"
         },
         {
-          "symbol": "LINK.axl",
+          "symbol": "LINK",
           "name": "LINK (Axelar)",
           "axelarChainId": "hedera",
           "tokenAddress": "0x0000000000000000000000000000000000a00ddb",
