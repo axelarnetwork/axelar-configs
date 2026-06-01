@@ -6474,7 +6474,8 @@
           "tokenAddress": "EFchnNkBvh4gSY5zqDgqRfuPR7mStBLvKBxPq5JUJcmP",
           "tokenManager": "hWBnfjAhZ8L8LpFnuiRDTHkWfuUhWz2g2haHndAdKP8",
           "tokenManagerType": "mintBurn",
-          "tokenProgramId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+          "tokenProgramId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "decimals": 6
         }
       ]
     },
