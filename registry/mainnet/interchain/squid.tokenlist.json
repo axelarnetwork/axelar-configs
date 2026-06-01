@@ -6638,6 +6638,15 @@
           "tokenAddress": "0xA4FF56eF7Ef4a2CaD03cFa130208C9BC1b45d293",
           "tokenManager": "0x1126536EfBd506dfC12f6BC0568c602e6DeEF438",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "SAUCE",
+          "name": "SAUCE",
+          "axelarChainId": "solana",
+          "tokenAddress": "GZXEn6RMbDTHmQC1wz2jADBjLY2JddakduwaP7CoD9eQ",
+          "tokenManager": "CSSxnHgtdaKn5rre63YbyKRe9rVheWhTH3EyWhLqJNhZ",
+          "tokenManagerType": "mintBurn",
+          "tokenProgramId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
         }
       ],
       "coinGeckoId": "saucerswap"
