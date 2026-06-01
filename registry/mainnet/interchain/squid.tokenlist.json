@@ -6466,6 +6466,15 @@
           "tokenAddress": "SHX.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
           "tokenManagerType": "mintBurn"
+        },
+        {
+          "symbol": "SHX",
+          "name": "SHX",
+          "axelarChainId": "solana",
+          "tokenAddress": "EFchnNkBvh4gSY5zqDgqRfuPR7mStBLvKBxPq5JUJcmP",
+          "tokenManager": "hWBnfjAhZ8L8LpFnuiRDTHkWfuUhWz2g2haHndAdKP8",
+          "tokenManagerType": "mintBurn",
+          "tokenProgramId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
         }
       ]
     },
