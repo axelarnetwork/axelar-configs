@@ -7169,8 +7169,8 @@
       "deploymentMessageId": "5FbBrm8iw42XeCDaXdbBfue8bF4RAj6hR5nFbPkJD8mEdSPfXGV66Wt4D5RsmfQMRpLEzhuG2pRYcStkapjN5Bhd",
       "chains": [
         {
-          "symbol": "SOL",
-          "name": "SOL",
+          "symbol": "WSOL",
+          "name": "Wrapped SOL",
           "axelarChainId": "solana",
           "tokenAddress": "So11111111111111111111111111111111111111112",
           "tokenManager": "F6U7KJWgdWqcUkH993Z9vLLwTQ6aKXqVTfKVraYiS17v",
@@ -7178,56 +7178,56 @@
           "tokenProgramId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
         },
         {
-          "symbol": "SOL.axl",
-          "name": "SOL (Axelar)",
+          "symbol": "WSOL.axl",
+          "name": "Wrapped SOL",
           "axelarChainId": "Ethereum",
           "tokenAddress": "0xB159a9330cA7f965F61B6D1e614b5F139Da3DBF8",
           "tokenManager": "0x0cdF655d8A9C977fF42d4541Eb02b6D3213a83A9",
           "tokenManagerType": "mintBurn"
         },
         {
-          "symbol": "SOL.axl",
-          "name": "SOL (Axelar)",
+          "symbol": "WSOL.axl",
+          "name": "Wrapped SOL",
           "axelarChainId": "Avalanche",
           "tokenAddress": "0xB159a9330cA7f965F61B6D1e614b5F139Da3DBF8",
           "tokenManager": "0x0cdF655d8A9C977fF42d4541Eb02b6D3213a83A9",
           "tokenManagerType": "mintBurn"
         },
         {
-          "symbol": "SOL.axl",
-          "name": "SOL (Axelar)",
+          "symbol": "WSOL.axl",
+          "name": "Wrapped SOL",
           "axelarChainId": "arbitrum",
           "tokenAddress": "0xB159a9330cA7f965F61B6D1e614b5F139Da3DBF8",
           "tokenManager": "0x0cdF655d8A9C977fF42d4541Eb02b6D3213a83A9",
           "tokenManagerType": "mintBurn"
         },
         {
-          "symbol": "SOL.axl",
-          "name": "SOL (Axelar)",
+          "symbol": "WSOL.axl",
+          "name": "Wrapped SOL",
           "axelarChainId": "base",
           "tokenAddress": "0xB159a9330cA7f965F61B6D1e614b5F139Da3DBF8",
           "tokenManager": "0x0cdF655d8A9C977fF42d4541Eb02b6D3213a83A9",
           "tokenManagerType": "mintBurn"
         },
         {
-          "symbol": "SOL.axl",
-          "name": "SOL (Axelar)",
+          "symbol": "WSOL.axl",
+          "name": "Wrapped SOL",
           "axelarChainId": "optimism",
           "tokenAddress": "0xB159a9330cA7f965F61B6D1e614b5F139Da3DBF8",
           "tokenManager": "0x0cdF655d8A9C977fF42d4541Eb02b6D3213a83A9",
           "tokenManagerType": "mintBurn"
         },
         {
-          "symbol": "SOL.axl",
-          "name": "SOL (Axelar)",
+          "symbol": "WSOL.axl",
+          "name": "Wrapped SOL",
           "axelarChainId": "filecoin",
           "tokenAddress": "0xB159a9330cA7f965F61B6D1e614b5F139Da3DBF8",
           "tokenManager": "0x0cdF655d8A9C977fF42d4541Eb02b6D3213a83A9",
           "tokenManagerType": "mintBurn"
         },
         {
-          "symbol": "SOL.axl",
-          "name": "SOL (Axelar)",
+          "symbol": "WSOL.axl",
+          "name": "Wrapped SOL",
           "axelarChainId": "immutable",
           "tokenAddress": "0xB159a9330cA7f965F61B6D1e614b5F139Da3DBF8",
           "tokenManager": "0x0cdF655d8A9C977fF42d4541Eb02b6D3213a83A9",
