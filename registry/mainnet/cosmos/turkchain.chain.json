@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schemas/cosmos-chain.schema.json",
+  "rpc": "https://node.turkscan.com",
+  "rest": "https://api.turkscan.com",
+  "chainId": "1919",
+  "bech32Config": {
+    "bech32PrefixAccAddr": "turk",
+    "bech32PrefixAccPub": "turkpub",
+    "bech32PrefixValAddr": "turkvaloper",
+    "bech32PrefixValPub": "turkvaloperpub",
+    "bech32PrefixConsAddr": "turkvalcons",
+    "bech32PrefixConsPub": "turkvalconspub"
+  },
+  "chainName": "Turkchain",
+  "currencies": [
+    {
+      "coinDenom": "TURK",
+      "coinMinimalDenom": "turk",
+      "coinDecimals": 18
+    }
+  ],
+  "feeCurrencies": [
+    {
+      "coinDenom": "TURK",
+      "coinMinimalDenom": "turk",
+      "coinDecimals": 18
+    }
+  ],
+  "stakeCurrency": {
+    "coinDenom": "TURK",
+    "coinMinimalDenom": "turk",
+    "coinDecimals": 18
+  },
+  "bip44": {
+    "coinType": 60
+  },
+  "chainIconUrl": "/images/chains/turkchain.svg",
+  "features": ["ibc-transfer", "stargate"],
+  "walletUrlForStaking": "https://turkscan.com"
+}
