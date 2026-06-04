@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/evm-chain.schema.json",
+  "id": 1919,
+  "network": "turkchain",
+  "name": "Turkchain",
+  "nativeCurrency": {
+    "name": "TC",
+    "symbol": "TURK",
+    "decimals": 18,
+    "iconUrl": "/images/tokens/turk.svg"
+  },
+  "rpcUrls": ["https://rpc.turkscan.com"],
+  "blockExplorers": [
+    {
+      "name": "Turkscan",
+      "url": "https://turkscan.com"
+    }
+  ],
+  "iconUrl": "/images/chains/turkchain.svg",
+  "testnet": false
+}
