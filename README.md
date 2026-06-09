@@ -57,4 +57,4 @@ The wizard currently allows you to:
 
 - [List an interchain token on Squid](/cli/wizard/commands/list-squid-token/README.md)
 - [Add a Cosmos chain config](cli/wizard/commands/add-cosmos-chain/README.md)
-- [Add a EVM chain config](cli/wizard/commands/add-evm-chain/README.md)
+- [Add an EVM chain config](cli/wizard/commands/add-evm-chain/README.md)
