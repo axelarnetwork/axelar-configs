@@ -191,6 +191,39 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x0e8eb3b3e0e4f0a9c8607002165fa079f43ebfb5373e3144e0c5bc94653047da": {
+      "tokenId": "0x0e8eb3b3e0e4f0a9c8607002165fa079f43ebfb5373e3144e0c5bc94653047da",
+      "deployer": "0x5518407f8EdBC4aAb9295D9ff685856C297B3b31",
+      "originalMinter": null,
+      "prettySymbol": "XNCR",
+      "decimals": 18,
+      "originAxelarChainId": "xrpl-evm",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/xncr.svg"
+      },
+      "deploymentMessageId": "0xf32dee1c5d35eaa899cc6b4e7e6f5873928c68fb3c0634e412078a3fb28508e5-0",
+      "chains": [
+        {
+          "symbol": "XNCR",
+          "name": "XNCRToken",
+          "axelarChainId": "xrpl-evm",
+          "tokenAddress": "0xAC9A287aC25706801C7f0cBd9a5e87698b352A92",
+          "tokenManager": "0x0BA6A26B9802391B1D83Cc160F81a1fE2CA88f3D",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "XNCR",
+          "name": "XNCRToken",
+          "axelarChainId": "ethereum-sepolia",
+          "tokenAddress": "0x4B0AA22C4590661e37569555e1A00dFeCF719026",
+          "tokenManager": "0x0BA6A26B9802391B1D83Cc160F81a1fE2CA88f3D",
+          "tokenManagerType": "mintBurn"
+        }
+      ],
+      "coinGeckoId": ""
     }
   }
 }
