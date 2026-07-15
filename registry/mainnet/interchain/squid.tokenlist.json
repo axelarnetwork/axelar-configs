@@ -882,7 +882,7 @@
       "deployer": "0xF439F013Ef719B52787820B494b968e038b50255",
       "originalMinter": null,
       "prettySymbol": "HOKK",
-      "decimals": 18,
+      "decimals": 9,
       "originAxelarChainId": "ethereum",
       "tokenType": "canonical",
       "deploySalt": "0x",
@@ -3944,6 +3944,7 @@
         {
           "symbol": "ITHACA",
           "name": "Ithaca Protocol",
+          "decimals": 6,
           "axelarChainId": "sui",
           "tokenAddress": "0xa8871e2b78b9e2462fd2d44560cefcc5d2ecba97028a1ad06a4c63b55fc49e81::ithaca::ITHACA",
           "tokenManager": "0xa91d2076249bea18ee57f3211c97d3a906a45ddb0dd29551cf2f9f30e4165ef1",
@@ -6388,6 +6389,7 @@
         {
           "symbol": "solvBTC",
           "name": "Solv BTC",
+          "decimals": 8,
           "axelarChainId": "stellar",
           "tokenAddress": "CBIJBDNZNF4X35BJ4FFZWCDBSCKOP5NB4PLG4SNENRMLAPYG4P5FM6VN",
           "tokenManager": "CBAZ3SSP4GLKCOD7CXMCKXJUFFJHEMKPJANGUOILAQH2FPVAEEOARR37",
@@ -6421,6 +6423,7 @@
         {
           "symbol": "xSolvBTC",
           "name": "xSolvBTC",
+          "decimals": 8,
           "axelarChainId": "stellar",
           "tokenAddress": "CAUP7NFABXE5TJRL3FKTPMWRLC7IAXYDCTHQRFSCLR5TMGKHOOQO772J",
           "tokenManager": "CBEZZQZSGQHXIJOSLGSB7U74JBVCSWY5G2YDXRPF32VBZM6GZJPHGQAF",
@@ -6925,6 +6928,7 @@
         {
           "symbol": "DT0",
           "name": "Test token DT0",
+          "decimals": 6,
           "axelarChainId": "solana",
           "tokenAddress": "FgNuB1BWH4KPshxGd9Pae5dg6EJVax8wH6912yMysU9v",
           "tokenManager": "B6WAYnLVt5g5M36UdEEWMqrvFoCYgWL5uNKVVnXcJk9b",
