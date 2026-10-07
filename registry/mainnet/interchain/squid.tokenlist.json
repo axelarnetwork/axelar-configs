@@ -7238,6 +7238,39 @@
           "tokenManagerType": "mintBurn"
         }
       ]
+    },
+    "0x02c9753f368e6dfc024a30188fc27e97713b4d4d6b4b13d57ddd2a4a581b80b1": {
+      "tokenId": "0x02c9753f368e6dfc024a30188fc27e97713b4d4d6b4b13d57ddd2a4a581b80b1",
+      "deployer": "0x1F4137293e0CC2Ef81f84d439cA87F0Aa52a47f2",
+      "originalMinter": null,
+      "prettySymbol": "PAXG",
+      "decimals": 18,
+      "originAxelarChainId": "Ethereum",
+      "tokenType": "canonical",
+      "deploySalt": "0x",
+      "coinGeckoId": "pax-gold",
+      "iconUrls": {
+        "svg": "https://raw.githubusercontent.com/axelarnetwork/axelar-configs/main/images/tokens/paxg.svg"
+      },
+      "deploymentMessageId": "0xe55922952ce9b58ae527c703a6d316d1eca3a8092c4d80830faed613c19ac2ca-3",
+      "chains": [
+        {
+          "symbol": "PAXG",
+          "name": "Paxos Gold",
+          "axelarChainId": "Ethereum",
+          "tokenAddress": "0x45804880De22913dAFE09f4980848ECE6EcbAf78",
+          "tokenManager": "0x8Dbd24ef49Af488060C91C754806FaEe42922f8E",
+          "tokenManagerType": "lockUnlock"
+        },
+        {
+          "symbol": "PAXG",
+          "name": "Paxos Gold",
+          "axelarChainId": "xrpl",
+          "tokenAddress": "5041584700000000000000000000000000000000.rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManager": "rfmS3zqrQrka8wVyhXifEeyTwe8AMz2Yhw",
+          "tokenManagerType": "mintBurn"
+        }
+      ]
     }
   }
 }
