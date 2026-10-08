@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/evm-chain.schema.json",
+  "id": 114,
+  "network": "flare-testnet",
+  "name": "Coston2",
+  "nativeCurrency": {
+    "name": "Coston2 FLR",
+    "symbol": "C2FLR",
+    "decimals": 18,
+    "iconUrl": "/images/tokens/coston-two.svg"
+  },
+  "rpcUrls": ["https://coston2-api.flare.network/ext/C/rpc"],
+  "blockExplorers": [
+    {
+      "name": "coston2-explorer",
+      "url": "https://coston2-explorer.flare.network/"
+    }
+  ],
+  "iconUrl": "/images/chains/coston-two.svg",
+  "testnet": true
+}
