@@ -10,7 +10,8 @@
     "codegen:chains": "bun run scripts/codegen-chains.ts",
     "codegen": "bun run codegen:schemas && bun run codegen:chains",
     "test": "vitest --run",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "validate": "bun run scripts/run-validation.ts"
   },
   "keywords": [
     "axelar",
@@ -20,7 +21,9 @@
   ],
   "license": "LicenseRef-LICENSE",
   "dependencies": {
-    "@inquirer/prompts": "^4.3.0"
+    "@inquirer/prompts": "^4.3.0",
+    "ethers": "^6.13.2",
+    "axios": "^1.6.7"
   },
   "devDependencies": {
     "@axelarjs/utils": "^0.1.12",
